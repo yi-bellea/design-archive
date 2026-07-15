@@ -2,6 +2,70 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "Deliver good DfE services — 16개 매뉴얼을 하나의 콘텐츠 모델로 통합",
+    category: "콘텐츠 디자인 가이드", date: "2026-07-16", url: "https://design-histories.education.gov.uk/deliver-good-dfe-services/publishing-the-first-release-of-deliver-good-dfe-services",
+    summary: "분산된 16개 매뉴얼과 500여 페이지를 표준·컬렉션·상세 가이드·단계형 안내 같은 콘텐츠 유형으로 재구성한 DfE 서비스 가이드 첫 릴리스.",
+    note: "홈·컬렉션·상세 가이드·입문 단계·다운로드 패턴의 실제 화면이 함께 공개돼 대규모 지침을 한 제품으로 통합할 때 콘텐츠 모델과 탐색 구조를 참고하기 좋음.",
+    tags: ["#콘텐츠디자인", "#정보구조", "#콘텐츠모델", "#가이드통합"],
+    thumbnail: "https://cloud-cube-eu2.s3.amazonaws.com/pkwmignaq6f6/public/Homepage_0f3b485905.png",
+    visual: { background: "#f3f2f1", accent: "#1d70b8", ink: "#0b0c0c", radiusOne: "0", radiusTwo: "0", rotate: "0deg", label: "16 SOURCES / 500+ PAGES" },
+    review: {
+      "유형": "콘텐츠 디자인 가이드", "가치축_이름": "실행가능성",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "홈·컬렉션·상세 가이드·단계형 입문·다운로드 패턴의 실제 화면과 16개 출처 통합 절차가 공개돼 대규모 운영 가이드의 콘텐츠 모델 설계에 바로 전이할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "콘텐츠명료성", "접근성"], "시각렌즈": ["미니멀", "그리드", "여백중심", "절제"], "시각아티팩트_url": "https://cloud-cube-eu2.s3.amazonaws.com/pkwmignaq6f6/public/Homepage_0f3b485905.png", "커버리지_카테고리": "콘텐츠 디자인 가이드", "보안_등급": "raw_ok", "type_block": { "procedure": "16개 매뉴얼 감사→공통 콘텐츠 유형 정의→표준·가이드 우선 이관→소유자·검토일·다운로드 패턴 적용", "evidence": "500여 페이지 중 1차 범위의 홈·컬렉션·상세 가이드·입문·다운로드 화면 공개" } },
+      "출처": { "소스": "https://design-histories.education.gov.uk/deliver-good-dfe-services/publishing-the-first-release-of-deliver-good-dfe-services", "수집일": "2026-07-16", "수집사유": "2026-06-29 갱신된 공식 디자인 히스토리에서 콘텐츠 유형별 실제 화면 5개와 통합 절차가 확인됨" }
+    }
+  },
+  {
+    title: "TechNews Ecosystem — 고밀도 뉴스와 개인화 흐름을 잇는 퍼블리싱 UI",
+    category: "웹·앱 UI", date: "2026-07-16", url: "https://www.behance.net/gallery/252744033/Building-a-news-ecosystemfor-the-tech-industry",
+    summary: "무료 뉴스 집계·유료 전문 콘텐츠·세분 검색·개인화 피드를 공통 그리드와 채널별 성격으로 묶은 기술 뉴스 플랫폼 UI.",
+    note: "많은 기사와 검색 조건을 읽기 쉬운 그리드로 정리하면서 무료 탐색에서 구독 콘텐츠로 이어지는 정보 밀도와 전환 경로를 함께 설계한 점이 실무적임.",
+    tags: ["#웹앱UI", "#뉴스플랫폼", "#개인화피드", "#에디토리얼그리드"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/322dd3252744033.6a572510157ee.png",
+    visual: { background: "#f1efe9", accent: "#ef4d32", ink: "#171717", radiusOne: "0", radiusTwo: "0", rotate: "0deg", label: "NEWS / FILTER / FLOW" },
+    review: {
+      "유형": "웹·앱 UI", "가치축_이름": "시스템화",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 4, "가치축": 5 }, "total": 18, "verdict": "accept",
+      "근거": "무료 집계·유료 채널·다중 검색·개인화 피드의 실제 데스크톱 화면이 공통 그리드로 연결돼 고밀도 퍼블리싱 제품의 탐색과 구독 전환 구조로 전이할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "타이포그래피", "접근성", "콘텐츠명료성"], "시각렌즈": ["에디토리얼", "그리드", "고밀도", "모노톤", "절제"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/322dd3252744033.6a572510157ee.png", "커버리지_카테고리": "웹·앱 UI", "보안_등급": "raw_ok", "type_block": { "flow": "주제 검색·필터→개인화 뉴스 피드→전문 콘텐츠 티저→구독 채널", "screens": "뉴스 블로그·유료 매거진·집계 검색·개인화 결과·디자인 시스템 적용" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252744033/Building-a-news-ecosystemfor-the-tech-industry", "수집일": "2026-07-16", "수집사유": "2026-07-15 공개된 다채널 뉴스 플랫폼의 실제 UI와 공통 그리드 시스템이 확인됨" }
+    }
+  },
+  {
+    title: "Same Logo, Different Perception — 표면과 공정으로 달라지는 물성 실험",
+    category: "비주얼 그래픽", date: "2026-07-16", url: "https://www.behance.net/gallery/252739669/Same-Logo-Different-Perception",
+    summary: "동일한 로고를 크롬 도금·샌드블라스트 알루미늄·무광 도장과 인쇄·레이저·각인·잉크·연마 공정에 적용해 대비와 깊이를 비교한 CMF 표본.",
+    note: "그래픽 자체를 바꾸지 않고 표면 반사·거칠기·깊이·조명 각도를 통제 변수로 만들어 프로토타입 전에 가독성과 제조 효과를 비교할 수 있음.",
+    tags: ["#비주얼그래픽", "#CMF", "#표면처리", "#로고응용"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/012417252739669.6a5706660e3ef.png",
+    visual: { background: "#d9dad7", accent: "#8b8e8a", ink: "#171717", radiusOne: "50%", radiusTwo: "0", rotate: "8deg", label: "SURFACE / LIGHT / DEPTH" },
+    review: {
+      "유형": "비주얼 그래픽", "가치축_이름": "스타일추출성",
+      "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "동일 로고를 세 가지 표면과 여러 제조 공정에 나란히 적용한 실물 결과가 공개돼 반사·대비·깊이·가독성을 조절하는 CMF 그래픽 문법으로 추출할 수 있다.",
+      "metadata": { "정보렌즈": ["브랜드일관성", "접근성"], "시각렌즈": ["미니멀", "모노톤", "중앙집중", "하드라이트", "글로시", "절제"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/012417252739669.6a5706660e3ef.png", "커버리지_카테고리": "비주얼 그래픽", "보안_등급": "raw_ok", "type_block": { "elements": "동일 로고·크롬·샌드블라스트 알루미늄·무광 도장·인쇄·레이저·각인·잉크·연마", "reusable_rule": "아트워크를 고정하고 표면·공정·광원 각도만 바꿔 대비·깊이·가독성을 비교" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252739669/Same-Logo-Different-Perception", "수집일": "2026-07-16", "수집사유": "2026-07-15 공개된 표면·공정별 실물 비교 이미지와 제작 변수가 확인됨" }
+    }
+  },
+  {
+    title: "CASA 13 — 정사각 모듈과 ASCII 도구로 확장하는 스튜디오 아이덴티티",
+    category: "브랜드", date: "2026-07-16", url: "https://www.behance.net/gallery/252410471/CASA-13-Branding-and-Visual-Identity",
+    summary: "정사각형을 타이포·패턴·레이아웃의 기본 단위로 두고 SVG 그리드 생성기와 ASCII 변환 도구로 응용을 확장한 디자인 스튜디오 브랜드.",
+    note: "개별 결과물을 반복 제작하는 대신 편집 가능한 SVG 도구를 브랜드 시스템 일부로 만들어 제작 속도와 일관성을 동시에 확보한 방식이 좋음.",
+    tags: ["#브랜드", "#모듈시스템", "#ASCII", "#생성도구"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/674f66252410471.6a4eab3538aad.png",
+    visual: { background: "#ecebe6", accent: "#e54835", ink: "#171717", radiusOne: "0", radiusTwo: "0", rotate: "0deg", label: "GRID / ASCII / SVG" },
+    review: {
+      "유형": "브랜드", "가치축_이름": "스타일추출성",
+      "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "정사각 모듈·ASCII 그래픽·편집 가능한 SVG 생성 도구가 타이포와 패턴, 디지털 응용에 반복돼 확장 가능한 브랜드 제작 문법으로 추출할 수 있다.",
+      "metadata": { "정보렌즈": ["타이포그래피", "브랜드일관성", "AI활용"], "시각렌즈": ["뉴트로", "모노톤", "그리드", "고밀도", "절제"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/674f66252410471.6a4eab3538aad.png", "커버리지_카테고리": "브랜드", "보안_등급": "raw_ok", "type_block": { "system": "정사각형을 타이포·그래픽·레이아웃의 공통 구축 단위로 사용하는 모듈 아이덴티티", "elements": "C13 Grid Builder·ASCII to SVG·픽셀 패턴·터미널 언어·편집 가능한 SVG" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252410471/CASA-13-Branding-and-Visual-Identity", "수집일": "2026-07-16", "수집사유": "2026-07-14 공개된 브랜드 응용 이미지와 두 가지 SVG 생성 도구의 규칙이 확인됨" }
+    }
+  },
+  {
     title: "JMPY.me — 브랜드 링크와 동적 QR을 캔버스에서 관리",
     category: "Figma 플러그인", date: "2026-07-15", url: "https://www.figma.com/community/plugin/1652124319511508893",
     summary: "선택한 프레임·슬라이드·노드에서 브랜드 단축 링크와 동적 QR을 만들고 UTM·로고·색상·분석 설정까지 한 흐름에서 처리하는 Figma 플러그인.",
