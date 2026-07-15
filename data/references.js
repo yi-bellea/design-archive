@@ -2,6 +2,214 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "JMPY.me — 브랜드 링크와 동적 QR을 캔버스에서 관리",
+    category: "Figma 플러그인", date: "2026-07-15", url: "https://www.figma.com/community/plugin/1652124319511508893",
+    summary: "선택한 프레임·슬라이드·노드에서 브랜드 단축 링크와 동적 QR을 만들고 UTM·로고·색상·분석 설정까지 한 흐름에서 처리하는 Figma 플러그인.",
+    note: "캠페인 링크 생성·QR 스타일링·캔버스 삽입·성과 추적을 연결해 반복적인 마케팅 에셋 제작과 수정 부담을 줄이는 흐름이 실무적임.",
+    tags: ["#Figma플러그인", "#QR코드", "#브랜드링크", "#캠페인운영"],
+    thumbnail: "https://uploads-us-west-2.insided.com/figma-en/attachment/327684ef-e646-43b0-9a01-4dcca3d40a6d.png",
+    visual: { background: "#f1f4ff", accent: "#5a49e8", ink: "#171717", radiusOne: "50%", radiusTwo: "0 50% 50% 50%", rotate: "6deg", label: "LINK / QR / TRACK" },
+    review: {
+      "유형": "Figma 플러그인", "가치축_이름": "유용성",
+      "scores": { "완성도": 4, "신규성": 3, "근거성": 4, "가치축": 5 }, "total": 16, "verdict": "accept",
+      "근거": "공개 실행 화면에서 링크 단축·UTM·브랜드 QR·캔버스 삽입·분석 흐름이 확인돼 캠페인 링크와 QR 에셋의 반복 제작 시간을 줄일 수 있다.",
+      "metadata": { "정보렌즈": ["사용자흐름", "브랜드일관성", "콘텐츠명료성"], "시각렌즈": ["미니멀", "그리드", "여백중심", "절제"], "시각아티팩트_url": "https://uploads-us-west-2.insided.com/figma-en/attachment/327684ef-e646-43b0-9a01-4dcca3d40a6d.png", "커버리지_카테고리": "Figma 플러그인", "보안_등급": "raw_ok", "type_block": { "workflow": "노드 선택→브랜드 링크·UTM 또는 QR 설정→캔버스 삽입→동적 목적지·성과 확인", "repeated_task": "캠페인 단축 링크와 브랜드 QR 제작·수정" } },
+      "출처": { "소스": "https://www.figma.com/community/plugin/1652124319511508893", "수집일": "2026-07-15", "수집사유": "2026-07-13 공개된 Figma Community 플러그인과 공식 Figma 포럼의 실제 실행 화면 5개가 확인됨" }
+    }
+  },
+  {
+    title: "Figma Agent Skills — 팀의 판단 기준을 재사용하는 AI 워크플로", category: "AI 디자인", date: "2026-07-15", url: "https://www.figma.com/blog/got-skills-make-the-figma-agent-a-better-collaborator/",
+    summary: "디자인 비평·UX 라이팅·접근성 검사·리뷰 회고처럼 반복되는 팀 판단을 슬래시 명령형 스킬로 저장하고 캔버스 안에서 다시 실행하는 AI 협업 흐름.", note: "팀이 합의한 검토 기준과 맥락을 에이전트에 연결해 결과의 일관성과 설명 가능성을 높이는 운영 방식이 실무적임.",
+    tags: ["#AI디자인", "#FigmaAgent", "#디자인비평", "#팀워크플로"], thumbnail: "https://cdn.sanity.io/images/599r6htc/regionalized/2dcb38fa0a3fd5b22b72b531ebe5de2b109614fd-3264x1836.png?q=75&fit=crop&crop=focalpoint&auto=format", visual: { background: "#191919", accent: "#5ee17a", ink: "#f6f5f1", radiusOne: "0", radiusTwo: "50%", rotate: "-7deg", label: "SKILL / CRITIQUE / REUSE" },
+    review: { "유형": "AI 디자인", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept", "근거": "실제 Figma 캔버스와 에이전트 작업 화면에서 비평·UX 라이팅·리뷰 회고를 스킬로 저장하고 재호출하는 절차가 공개돼 팀별 AI 디자인 검수 흐름으로 반복 적용할 수 있다.", "metadata": { "정보렌즈": ["AI활용", "사용자흐름", "브랜드일관성", "콘텐츠명료성"], "시각렌즈": ["미니멀", "그리드", "하이채도", "절제"], "시각아티팩트_url": "https://cdn.sanity.io/images/599r6htc/regionalized/2dcb38fa0a3fd5b22b72b531ebe5de2b109614fd-3264x1836.png?q=75&fit=crop&crop=focalpoint&auto=format", "커버리지_카테고리": "AI 디자인", "보안_등급": "raw_ok", "type_block": { "workflow": "팀 기준·예시 작성→슬래시 명령 호출→캔버스 검토→공유 채팅 재사용", "controls": "스킬 범위·첨부 맥락·공개/비공개 채팅·디자인 시스템 연결" } }, "출처": { "소스": "https://www.figma.com/blog/got-skills-make-the-figma-agent-a-better-collaborator/", "수집일": "2026-07-15", "수집사유": "2026-07-01 공개된 공식 글에서 실제 에이전트 작업 화면과 반복 가능한 팀 스킬 사례가 확인됨" } }
+  },
+  {
+    title: "Bodylura — 운동과 식단을 한 흐름으로 묶은 피트니스 앱", category: "웹·앱 UI", date: "2026-07-15", url: "https://www.behance.net/gallery/252449193/Bodylura-All-in-One-Fitness-App",
+    summary: "사용자 수준과 목표에 맞춘 운동 프로그램 선택부터 식단 구성·음식 기록까지 하나의 모바일 여정으로 연결한 피트니스 제품 UI.", note: "목표 설정·계획·실행·기록의 반복 루프로 구조화한 정보 우선순위를 참고하기 좋음.", tags: ["#웹앱UI", "#피트니스앱", "#목표설정", "#진행기록"], thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/229cbb252449193.6a4fa40d3439d.png", visual: { background: "#f4efe9", accent: "#e96d5a", ink: "#171717", radiusOne: "50% 0 50% 50%", radiusTwo: "50%", rotate: "-5deg", label: "GOAL / PLAN / TRACK" },
+    review: { "유형": "웹·앱 UI", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 3, "근거성": 4, "가치축": 4 }, "total": 16, "verdict": "accept", "근거": "운동 수준·목표 선택, 프로그램 구성, 식단 계획과 음식 기록의 실제 모바일 화면이 공개돼 웰니스 앱의 목표-계획-기록 순환 구조로 전이할 수 있다.", "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "콘텐츠명료성"], "시각렌즈": ["미니멀", "여백중심", "파스텔", "따뜻"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/229cbb252449193.6a4fa40d3439d.png", "커버리지_카테고리": "웹·앱 UI", "보안_등급": "raw_ok", "type_block": { "flow": "수준·목표 선택→운동 프로그램→식단 계획→음식·진행 기록", "screens": "온보딩·프로그램·운동 상세·식단·트래킹" } }, "출처": { "소스": "https://www.behance.net/gallery/252449193/Bodylura-All-in-One-Fitness-App", "수집일": "2026-07-15", "수집사유": "2026-07-09 공개된 실제 모바일 화면이 확인됨" } }
+  },
+  {
+    title: "Compilation 35 — 기하 형태와 사이키델릭 컬러의 모듈 조합", category: "비주얼 그래픽", date: "2026-07-15", url: "https://www.behance.net/gallery/247515423/Compilation-35",
+    summary: "굵고 깨끗한 선, 반복되는 기하 모듈, 고채도 대비를 조합해 포스터·패턴·패키지로 확장한 일러스트레이션 시리즈.", note: "단순한 요소를 색 대비와 밀도 변화로 여러 매체에 확장해 캠페인 그래픽 모듈을 설계할 때 참고하기 좋음.", tags: ["#비주얼그래픽", "#사이키델릭", "#기하일러스트", "#고채도"], thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/cf4845247515423.6a213bce990fc.jpg", visual: { background: "#ffea35", accent: "#f0366b", ink: "#122b7a", radiusOne: "50%", radiusTwo: "0 100% 0 100%", rotate: "12deg", label: "SHAPE / COLOR / REPEAT" },
+    review: { "유형": "비주얼 그래픽", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 4, "근거성": 4, "가치축": 5 }, "total": 18, "verdict": "accept", "근거": "기하 모듈·굵은 선·고채도 대비·반복 패턴이 여러 포스터와 패키지 결과물에 일관되게 적용돼 캠페인용 그래픽 문법으로 재조합할 수 있다.", "metadata": { "정보렌즈": ["타이포그래피", "브랜드일관성"], "시각렌즈": ["일러스트", "하이채도", "중앙집중", "글로시", "유희적"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/cf4845247515423.6a213bce990fc.jpg", "커버리지_카테고리": "비주얼 그래픽", "보안_등급": "raw_ok", "type_block": { "elements": "원·곡선 띠·방사형 선·굵은 외곽선", "reusable_rule": "모듈 크기·반복 밀도·색 조합을 바꿔 매체 확장" } }, "출처": { "소스": "https://www.behance.net/gallery/247515423/Compilation-35", "수집일": "2026-07-15", "수집사유": "2026-07-02 공개된 다수의 완성 결과물이 확인됨" } }
+  },
+  {
+    title: "YES PLEASE MORE — 통제된 혼돈의 에디토리얼 브랜드", category: "브랜드", date: "2026-07-15", url: "https://www.behance.net/gallery/243126691/YES-PLEASE-MORE-BRANDING-PROJECT",
+    summary: "에디토리얼 그리드, 실험 타이포, 콜라주와 하프톤을 웹·소셜·사진·인쇄 전반에 확장한 감각 중심 브랜드 시스템.", note: "정돈된 그리드와 불완전한 개입의 규칙을 함께 두어 여러 제작자가 참여해도 통제된 혼돈의 톤을 유지함.", tags: ["#브랜드", "#에디토리얼", "#콜라주", "#실험타이포"], thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/0ad2c9243126691.697b13d8ec6b5.png", visual: { background: "#ece8dd", accent: "#e84a34", ink: "#171717", radiusOne: "0", radiusTwo: "50%", rotate: "-6deg", label: "GRID / COLLAGE / SENSE" },
+    review: { "유형": "브랜드", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept", "근거": "에디토리얼 그리드·실험 타이포·콜라주·하프톤과 감각 기관 모티프가 웹·소셜·사진·인쇄 매체에 반복돼 브랜드 문법으로 추출할 수 있다.", "metadata": { "정보렌즈": ["타이포그래피", "브랜드일관성"], "시각렌즈": ["에디토리얼", "비대칭", "고밀도", "필름그레인", "유희적"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/0ad2c9243126691.697b13d8ec6b5.png", "커버리지_카테고리": "브랜드", "보안_등급": "raw_ok", "type_block": { "system": "편집 그리드 위에 불완전한 콜라주 개입을 허용하는 가변 아이덴티티", "elements": "실험 타이포·하프톤·그레인·감각 기관 모티프" } }, "출처": { "소스": "https://www.behance.net/gallery/243126691/YES-PLEASE-MORE-BRANDING-PROJECT", "수집일": "2026-07-15", "수집사유": "2026-07-07 공개된 웹·소셜·인쇄 적용 이미지가 확인됨" } }
+  },
+  {
+    title: "Koi Breach — High-angle Gen-4.5 Motion Prompt", category: "AI 영상 프롬프트", date: "2026-07-15", url: "https://help.runwayml.com/hc/en-us/articles/47313698911891-Introduction-to-Prompting",
+    summary: "고각 구도에서 잉어가 수면을 뚫고 올라오며 연잎 사이로 잔잔한 파문을 만드는 공식 영상 프롬프트 예시.", note: "카메라 각도·주체 행동·환경 반응을 분리해 영상 움직임의 인과를 명료하게 제어하는 표본으로 유용함.", prompt: "High angle looking down at a serene pond. A koi fish emerges and breaches the surface, sending gentle ripples through the surrounding lily pads.", tags: ["#AI영상프롬프트", "#Runway", "#고각", "#수면모션"], thumbnail: "https://help.runwayml.com/hc/article_attachments/47313698901139",
+    review: { "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept", "근거": "공식 가이드가 전체 프롬프트·Gen-4.5 모델·생성 결과 GIF를 함께 제공해 구도와 행동, 환경 반응의 연결을 재현하며 비교할 수 있다.", "metadata": { "정보렌즈": ["AI활용"], "시각렌즈": ["중앙집중", "소프트확산광", "차가움", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313698901139", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "High angle looking down at a serene pond. A koi fish emerges and breaches the surface, sending gentle ripples through the surrounding lily pads.", "tool_model": "Runway Gen-4.5", "params": "Text to Video·공식 예시·duration/aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313698901139", "fragment_map": [{ "조각": "High angle looking down", "효과": "연못과 연잎 관계를 읽는 고각 구도" }, { "조각": "emerges and breaches the surface", "효과": "잉어의 상승과 수면 돌파 동작" }, { "조각": "sending gentle ripples", "효과": "주체 행동에 반응하는 잔잔한 파문" }] } }, "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/47313698911891-Introduction-to-Prompting", "수집일": "2026-07-15", "수집사유": "공식 가이드에서 프롬프트·모델·결과 영상이 함께 확인됨" } }
+  },
+  {
+    title: "Nord 5 — 18 New Components and a Redesigned Docs Workspace", category: "웹 스타일가이드", date: "2026-07-15", url: "https://nordhealth.design/updates/july-2026-component-updates",
+    summary: "검색·명암 모드·실시간 예제·접근성·API 문서를 한 셸에 묶고 18개 컴포넌트와 56개 파트를 목적별로 재구성한 릴리스.", note: "블록과 전체 페이지 템플릿까지 연결해 탐색→미리보기→복사→구현의 간격을 줄인 운영형 디자인 시스템 사례임.",
+    tags: ["#웹스타일가이드", "#Nord", "#컴포넌트", "#문서시스템"], thumbnail: "https://nordhealth.design/_og/s/o_9yjk0w.png", visual: { background: "#eef6f3", accent: "#0b7356", ink: "#16332b", radiusOne: "0", radiusTwo: "8%", rotate: "0deg", label: "18 COMPONENTS / 56 PARTS" },
+    review: { "유형": "웹 스타일가이드", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept", "근거": "목적별 컴포넌트 분류와 Storybook 예제·접근성·API·블록·템플릿이 동일 문서 셸에서 실제 화면으로 연결돼 디자인 시스템 탐색과 구현 구조로 바로 흡수할 수 있다.", "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "접근성", "브랜드일관성"], "시각렌즈": ["미니멀", "그리드", "여백중심", "절제"], "시각아티팩트_url": "https://nordhealth.design/_og/s/o_9yjk0w.png", "커버리지_카테고리": "웹 스타일가이드", "보안_등급": "raw_ok", "type_block": { "tokens": "전역 light·dark mode와 공통 상태", "components": "18개 신규 컴포넌트·56개 파트·Blocks·Templates" } }, "출처": { "소스": "https://nordhealth.design/updates/july-2026-component-updates", "수집일": "2026-07-15", "수집사유": "2026년 7월 공식 릴리스의 새 문서 셸과 컴포넌트·블록 실제 미리보기가 확인됨" } }
+  },
+  {
+    title: "Find User Insights — Less Content, More Confidence", category: "콘텐츠 디자인 가이드", date: "2026-07-15", url: "https://design-histories.education.gov.uk/find-user-insights/redesigning-the-homepage-less-content-more-confidence",
+    summary: "AI 리서치 서비스 홈의 비필수 설명을 옮기고 즉시 시작 CTA·사용 예·AI 투명성 정보를 재배치해 진입률을 55%에서 70%로 높인 개편.", note: "신경다양성 사용자 피드백, 전후 화면, 문구 변경, 전환 지표가 함께 있어 설명량과 신뢰 정보를 조절하는 근거로 쓰기 좋음.",
+    tags: ["#콘텐츠디자인", "#AI서비스", "#인지부하", "#전환율"], thumbnail: "https://cloud-cube-eu2.s3.amazonaws.com/pkwmignaq6f6/public/Find_user_insights_revised_homepage_4aecc5dfa4.png", visual: { background: "#e8f1f8", accent: "#1d70b8", ink: "#0b0c0c", radiusOne: "0", radiusTwo: "0", rotate: "0deg", label: "55% → 70%" },
+    review: { "유형": "콘텐츠 디자인 가이드", "가치축_이름": "실행가능성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept", "근거": "사용자 발화·개편 전후 화면·CTA 문구·정보 이동·15%p 전환 상승이 연결돼 AI 서비스 홈의 인지 부하와 신뢰 콘텐츠를 조정하는 절차로 즉시 적용할 수 있다.", "metadata": { "정보렌즈": ["콘텐츠명료성", "사용자흐름", "정보구조", "접근성", "AI활용"], "시각렌즈": [], "시각아티팩트_url": "https://cloud-cube-eu2.s3.amazonaws.com/pkwmignaq6f6/public/Find_user_insights_revised_homepage_4aecc5dfa4.png", "커버리지_카테고리": "콘텐츠 디자인 가이드", "보안_등급": "raw_ok", "type_block": { "procedure": "필요성 검토→비필수 설명 이동→상단 CTA·사용 예 추가→AI 신뢰 설명 명료화→전환 측정", "evidence": "홈→서비스 전환 55%→70%" } }, "출처": { "소스": "https://design-histories.education.gov.uk/find-user-insights/redesigning-the-homepage-less-content-more-confidence", "수집일": "2026-07-15", "수집사유": "2026-07-10 공개된 공식 전후 화면·사용자 발화·전환 지표가 확인됨" } }
+  },
+  {
+    title: "Ethereal Tulle Portrait — Detailed Gen-4 Image Prompt", category: "AI 이미지 프롬프트", date: "2026-07-15", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide",
+    summary: "푸른 배경과 오렌지 튤, 젤 조명, 소프트 포커스, 바로크 회화성을 구체화한 공식 이미지 생성 예시.", note: "피사체·소재·조명·초점·색 대비·무드를 독립 조각으로 분해해 상세 지시가 결과 밀도를 바꾸는 방식을 비교하기 좋음.",
+    prompt: "elegant portrait of a woman draped in a sheer tulle veil against a blue background that resembles a sky. Close-up, ethereal warm orange lighting, soft glowing focus. natural face. The orange-toned tulle veil is draped over her head and flows around her face with multiple flowing layers in a weightless, extravagant baroque painting style. The flowing fabric takes up most of the scene, dramatically swirling throughout the environment. Glowing orange lighting creates a dreamy atmosphere. blend of pastel and vibrant color palettes. rich purples and blues, warm pinkish orange skin tone. avant-garde. elegant artistry, elaborate yet minimalist. a chaotic yet elegant scene. dramatic weightless flowing fabric. glowing, gel lighting, ethereal. electric neon peach accents.",
+    tags: ["#이미지프롬프트", "#Gen4Image", "#젤조명", "#몽환초상"], thumbnail: "https://help.runwayml.com/hc/article_attachments/37067220594835", visual: { background: "#342a6f", accent: "#ff8f6b", ink: "#f7eefb", radiusOne: "50% 50% 0 50%", radiusTwo: "50%", rotate: "5deg", label: "TULLE / GEL LIGHT / GLOW" },
+    review: { "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 4 }, "total": 18, "verdict": "accept", "근거": "공식 가이드가 전체 프롬프트·Gen-4 Image 모델·텍스트 생성 조건·1920×1088 결과 이미지를 함께 제공해 조명과 소재 중심 초상 구성을 반복 비교할 수 있다.", "metadata": { "정보렌즈": ["AI활용"], "시각렌즈": ["에디토리얼", "하이채도", "중앙집중", "소프트확산광", "글로시", "몽환"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37067220594835", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "elegant portrait of a woman draped in a sheer tulle veil against a blue background that resembles a sky. Close-up, ethereal warm orange lighting, soft glowing focus. natural face. The orange-toned tulle veil is draped over her head and flows around her face with multiple flowing layers in a weightless, extravagant baroque painting style. The flowing fabric takes up most of the scene, dramatically swirling throughout the environment. Glowing orange lighting creates a dreamy atmosphere. blend of pastel and vibrant color palettes. rich purples and blues, warm pinkish orange skin tone. avant-garde. elegant artistry, elaborate yet minimalist. a chaotic yet elegant scene. dramatic weightless flowing fabric. glowing, gel lighting, ethereal. electric neon peach accents.", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·reference 없음·positive natural-language prompt·공개 결과 1920×1088·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37067220594835", "fragment_map": [{ "조각": "sheer tulle veil with multiple flowing layers", "효과": "얼굴 주변 무중력 소재 레이어" }, { "조각": "ethereal warm orange lighting, soft glowing focus", "효과": "따뜻한 젤 조명과 확산광" }, { "조각": "rich purples and blues, electric neon peach accents", "효과": "차가운 배경과 복숭아색 대비" }] } }, "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-15", "수집사유": "공식 가이드에서 상세 프롬프트·모델·생성 조건·결과 이미지가 확인됨" } }
+  },
+  {
+    title: "Figma Weave — 재사용 가능한 AI 비주얼 워크플로",
+    category: "AI 디자인", date: "2026-07-14", url: "https://www.figma.com/blog/connecting-figma-and-weave/",
+    summary: "스타일 전이·제품 촬영·소재 추출 같은 생성 과정을 노드형 워크플로로 구성하고 Figma 캔버스와 Community에서 재사용하는 AI 디자인 환경.",
+    note: "완성 이미지만 공유하지 않고 입력·모델·수정 단계를 재사용 가능한 도구로 묶어 브랜드 비주얼 제작의 판단 과정을 팀 자산으로 전환한 점이 유용함.",
+    prompt: "Generate a 3D product render from a beer glass, a hop leaf, and a background; refine lighting, camera angle, and texture.",
+    tags: ["#AI디자인", "#FigmaWeave", "#생성워크플로", "#브랜드시스템"],
+    thumbnail: "https://cdn.sanity.io/images/599r6htc/regionalized/d6b5115bb3fc17ee7d5cdb4192a7a3b99d60679a-3264x1836.png?w=1200&q=70&fit=max&auto=format",
+    visual: { background: "#d8f052", accent: "#4b35cc", ink: "#171717", radiusOne: "0", radiusTwo: "50%", rotate: "-8deg", label: "INPUT / MODEL / REUSE" },
+    review: {
+      "유형": "AI 디자인", "가치축_이름": "재현성",
+      "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 4 }, "total": 19, "verdict": "accept",
+      "근거": "입력 이미지·프롬프트·Gemini 모델·조명·카메라·질감 조정이 노드로 공개돼 브랜드 비주얼 제작 절차를 팀 단위로 재현하고 반복할 수 있다.",
+      "metadata": { "렌즈": ["AI활용", "브랜드일관성", "정보구조"], "커버리지_카테고리": "AI 디자인", "보안_등급": "raw_ok", "type_block": { "prompt": "Generate a 3D product render from a beer glass, a hop leaf, and a background; refine lighting, camera angle, and texture.", "model": "Gemini 3 (Nano Banana Pro) in Figma Weave", "settings": "beer glass·hop leaf·background 입력 노드, 프롬프트/이미지 생성 노드, lighting·camera angle·texture 조정, Community workflow publish" } },
+      "출처": { "소스": "https://www.figma.com/blog/connecting-figma-and-weave/", "수집일": "2026-07-14", "수집사유": "2026-06-24 공개된 실제 노드 화면과 결과물·팀 적용 사례가 확인됨" }
+    }
+  },
+  {
+    title: "Apple 27 Design Kits — Expanded States and Dark Mode",
+    category: "웹 스타일가이드", date: "2026-07-14", url: "https://developer.apple.com/news/?id=e2lxw9l1",
+    summary: "iOS·iPadOS·macOS 27의 Liquid Glass 컴포넌트와 상태를 Figma·Sketch 키트로 확장하고 코드 명명·리사이즈·다크 모드 기준을 정렬한 공식 UI 자료.",
+    note: "시각 스타일만 배포하지 않고 상태 범위, 코드와 맞춘 이름, 리사이즈 동작을 함께 갱신해 디자인 시스템 핸드오프 기준을 점검하기 좋음.",
+    tags: ["#웹스타일가이드", "#Apple", "#UI키트", "#컴포넌트상태"],
+    thumbnail: "https://devimages-cdn.apple.com/wwdc-services/articles/images/5903ECCD-08EE-4974-ACF6-141C8B5AAEB2/2048.jpeg",
+    visual: { background: "#17191f", accent: "#9ca9ff", ink: "#f6f5f1", radiusOne: "0", radiusTwo: "50% 0 50% 0", rotate: "0deg", label: "STATE / RESIZE / DARK" },
+    review: {
+      "유형": "웹 스타일가이드", "가치축_이름": "시스템화",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "확장된 컴포넌트 상태·코드 정렬 명명·리사이즈·다크 모드가 실제 공식 키트 화면으로 공개돼 멀티플랫폼 UI 시스템 운영 기준으로 전이할 수 있다.",
+      "metadata": { "렌즈": ["브랜드일관성", "인터랙션", "접근성"], "커버리지_카테고리": "웹 스타일가이드", "보안_등급": "raw_ok", "type_block": { "tokens": "Liquid Glass 재질·다크 모드·플랫폼별 시각 기준", "components": "키보드·탭 바·액션 메뉴·알림·버튼·토글·슬라이더 및 상태" } },
+      "출처": { "소스": "https://developer.apple.com/news/?id=e2lxw9l1", "수집일": "2026-07-14", "수집사유": "2026-06-23 공개된 공식 Figma·Sketch 디자인 키트와 실제 컴포넌트 미리보기가 확인됨" }
+    }
+  },
+  {
+    title: "DfE Find User Insights — Guidance를 Trust로 바꾼 콘텐츠 개편",
+    category: "콘텐츠 디자인 가이드", date: "2026-07-14", url: "https://design-histories.education.gov.uk/find-user-insights/when-guidance-is-not-guidance",
+    summary: "모호한 ‘Guidance’ 페이지를 연구 출처·검증 기준 중심의 ‘About the research’로 바꾸고 오류 안내는 발생 시점으로 이동한 실제 콘텐츠 디자인 사례.",
+    note: "사용자 인용, 기존 화면, 개편 화면, 오류 시나리오 원칙이 한 흐름에 있어 신뢰 정보와 문제 해결 문구의 노출 시점을 설계하는 체크리스트로 쓰기 좋음.",
+    tags: ["#콘텐츠디자인", "#신뢰설계", "#맥락안내", "#사용자조사"],
+    thumbnail: "https://cloud-cube-eu2.s3.eu-west-1.amazonaws.com/pkwmignaq6f6/public/Find_user_insights_revised_guidance_page_About_the_research_in_this_service_0d1a207f02.png",
+    visual: { background: "#e7f1fb", accent: "#1d70b8", ink: "#0b0c0c", radiusOne: "0", radiusTwo: "0", rotate: "0deg", label: "EXPECT / TRUST / MOMENT" },
+    review: {
+      "유형": "콘텐츠 디자인 가이드", "가치축_이름": "실행가능성",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "사용자 발화와 개편 전후 화면을 근거로 신뢰 정보는 앞당기고 오류 지원은 발생 시점에 배치하는 절차가 명확해 AI 서비스 콘텐츠 흐름에 바로 적용할 수 있다.",
+      "metadata": { "렌즈": ["콘텐츠명료성", "사용자흐름", "정보구조", "AI활용"], "커버리지_카테고리": "콘텐츠 디자인 가이드", "보안_등급": "raw_ok", "type_block": { "procedure": "기대 불일치 조사→신뢰 정보 재구성→오류 시나리오 분리→맥락별 안내 배치", "examples": "기존 Guidance 화면과 개편 About the research 화면·사용자 인용" } },
+      "출처": { "소스": "https://design-histories.education.gov.uk/find-user-insights/when-guidance-is-not-guidance", "수집일": "2026-07-14", "수집사유": "2026-07-10 공개된 실제 전후 화면과 사용자 조사·적용 절차가 확인됨" }
+    }
+  },
+  {
+    title: "Super Paste — Bulk Content Population for Figma",
+    category: "Figma 플러그인", date: "2026-07-14", url: "https://forum.figma.com/showcase-your-work-14/super-paste-generate-copy-paste-text-images-plugin-55733",
+    summary: "텍스트·이미지·CSV를 함께 가져와 중첩 레이어를 감지하고 큰 레이아웃에 현실적인 콘텐츠를 일괄 채우는 Figma 플러그인.",
+    note: "반복적인 목업 데이터 입력을 그룹·저장 목록·중첩 구조 단위로 묶어 대시보드와 카드 변형 제작 시간을 직접 줄임.",
+    tags: ["#Figma플러그인", "#벌크입력", "#CSV", "#목업데이터"],
+    thumbnail: "https://uploads-us-west-2.insided.com/figma-en/attachment/cb0455a8-f5d8-4d62-8c1a-cc35864ec85d.gif",
+    visual: { background: "#fff0c9", accent: "#ff5c35", ink: "#171717", radiusOne: "100% 0 70% 30%", radiusTwo: "0", rotate: "11deg", label: "COPY / CSV / POPULATE" },
+    review: {
+      "유형": "Figma 플러그인", "가치축_이름": "유용성",
+      "scores": { "완성도": 4, "신규성": 3, "근거성": 5, "가치축": 5 }, "total": 17, "verdict": "accept",
+      "근거": "공개 데모가 텍스트·이미지·CSV를 중첩 레이어에 일괄 적용하는 과정을 보여줘 반복 목업 데이터 입력 시간을 확실히 절감한다.",
+      "metadata": { "렌즈": ["사용자흐름", "콘텐츠명료성"], "커버리지_카테고리": "Figma 플러그인", "보안_등급": "raw_ok", "type_block": { "workflow": "콘텐츠 목록 또는 CSV 입력→중첩 레이어 감지→텍스트·이미지 일괄 적용", "repeated_task": "카드·테이블·대형 레이아웃의 목업 데이터 채우기" } },
+      "출처": { "소스": "https://forum.figma.com/showcase-your-work-14/super-paste-generate-copy-paste-text-images-plugin-55733", "수집일": "2026-07-14", "수집사유": "2026-07-07 공개 글에 실제 플러그인 GIF와 기능·Community 링크가 확인됨" }
+    }
+  },
+  {
+    title: "겨울 호숫가 강아지에 빨간 모자 추가 — Gemini 3.1 편집 프롬프트",
+    category: "AI 이미지 프롬프트", date: "2026-07-14", url: "https://helpx.adobe.com/in/firefly/web/work-with-images/generate-images/generate-images-using-gemini.html",
+    summary: "기존 강아지 사진을 참조 이미지로 유지하면서 빨간 크리스마스 모자만 추가해 국소적 편집과 장면 보존을 비교하는 공식 Gemini 예시.",
+    note: "짧은 명령으로 추가 요소를 한정하고 참조 이미지·모델·해상도·비율을 고정해 편집 보존력과 지시 이행을 반복 검증하기 좋음.",
+    prompt: "A puppy wearing a red Christmas hat.",
+    tags: ["#이미지프롬프트", "#Gemini31", "#참조이미지", "#국소편집"],
+    thumbnail: "https://helpx-prod.scene7.com/is/image/HelpxProd/non-adobe-models-in-firefly-gemini-01?$png$&jpegSize=200&wid=1173",
+    visual: { background: "#e6edf2", accent: "#b9252f", ink: "#17222a", radiusOne: "50% 50% 10% 10%", radiusTwo: "50%", rotate: "0deg", label: "REFERENCE / ADD / PRESERVE" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성",
+      "scores": { "완성도": 4, "신규성": 3, "근거성": 5, "가치축": 5 }, "total": 17, "verdict": "accept",
+      "근거": "공식 페이지에 입력·결과 이미지와 정확한 프롬프트·Gemini 3.1 모델·해상도·비율 설정이 함께 공개돼 참조 보존 편집을 재현할 수 있다.",
+      "metadata": { "렌즈": ["AI활용", "브랜드일관성"], "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "A puppy wearing a red Christmas hat.", "model": "Gemini 3.1 (Nano Banana 2) in Adobe Firefly", "settings": "reference image 1장·Square 1:1·2K·Generate image 편집" } },
+      "출처": { "소스": "https://helpx.adobe.com/in/firefly/web/work-with-images/generate-images/generate-images-using-gemini.html", "수집일": "2026-07-14", "수집사유": "2026-06-29 갱신된 공식 예제에 프롬프트·모델·설정·입출력 이미지가 모두 확인됨" }
+    }
+  },
+  {
+    title: "숲 배경으로 번지는 불길 — Aleph 2.0 Extra Motion",
+    category: "AI 영상 프롬프트", date: "2026-07-14", url: "https://help.runwayml.com/hc/en-us/articles/52150503729171-Aleph-2-0-Prompting-Guide",
+    summary: "편집된 키프레임에 없던 불길의 확산 동작만 Extra motion으로 추가해 원본 인물과 주변 장면을 유지하는 인컨텍스트 영상 편집 예시.",
+    note: "키프레임이 정의한 외형과 텍스트가 정의한 추가 움직임을 분리해 영상 재촬영 없이 필요한 변화만 통제하는 검증 기준으로 유용함.",
+    prompt: "fire begins to spread up the trees",
+    tags: ["#영상프롬프트", "#Aleph20", "#키프레임", "#모션편집"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/52354918953363",
+    visual: { background: "#252221", accent: "#ef633f", ink: "#f6f5f1", radiusOne: "0 100% 0 100%", radiusTwo: "50%", rotate: "6deg", label: "KEYFRAME / EXTRA MOTION / KEEP" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성",
+      "scores": { "완성도": 4, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 18, "verdict": "accept",
+      "근거": "입력 영상·편집 키프레임·정확한 Extra motion 프롬프트·Aleph 2.0 출력이 한 세트로 공개돼 국소 모션 편집을 반복 재현할 수 있다.",
+      "metadata": { "렌즈": ["AI활용", "인터랙션"], "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "fire begins to spread up the trees", "model": "Runway Aleph 2.0", "settings": "Edit Studio·입력 영상+편집 키프레임·Extra motion 사용·기존 장면 보존" } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/52150503729171-Aleph-2-0-Prompting-Guide", "수집일": "2026-07-14", "수집사유": "공식 API 기준 2026-06-30 갱신된 가이드에 입력·키프레임·프롬프트·출력이 모두 확인됨" }
+    }
+  },
+  {
+    title: "Linear Coding Sessions — 이슈·에이전트·Diff 통합 흐름",
+    category: "웹·앱 UI", date: "2026-07-14", url: "https://linear.app/changelog/2026-06-11-coding-sessions",
+    summary: "이슈의 맥락에서 코딩 세션을 시작하고 진행 상태·결과 diff·후속 피드백을 같은 스레드에서 검토하는 에이전트 작업 UI.",
+    note: "업무 위임에서 코드 검토까지 화면과 맥락을 분리하지 않고 이어 주어 AI 작업의 상태·산출물·다음 행동을 명료하게 만드는 사례임.",
+    tags: ["#웹앱UI", "#에이전트UX", "#코드리뷰", "#상태피드백"],
+    thumbnail: "https://webassets.linear.app/images/ornj730p/production/020e273126f3f486fdc16fdc7b6a8a337fe31aa1-3600x2160.png?auto=format&dpr=2&q=95",
+    visual: { background: "#202124", accent: "#8f7df0", ink: "#f4f4f5", radiusOne: "12%", radiusTwo: "50%", rotate: "0deg", label: "ISSUE / AGENT / DIFF" },
+    review: {
+      "유형": "웹·앱 UI", "가치축_이름": "시스템화",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "이슈 위임·세션 진행·diff 검토·피드백 반복을 하나의 작업 맥락에 연결한 실제 화면이 공개돼 에이전트형 업무 도구의 상태 구조로 전이할 수 있다.",
+      "metadata": { "렌즈": ["정보구조", "사용자흐름", "인터랙션", "AI활용"], "커버리지_카테고리": "웹·앱 UI", "보안_등급": "raw_ok", "type_block": { "structure": "이슈 상세 안의 에이전트 세션·상태 피드·diff 검토", "states": "위임→진행→diff 준비→리뷰→후속 수정" } },
+      "출처": { "소스": "https://linear.app/changelog/2026-06-11-coding-sessions", "수집일": "2026-07-14", "수집사유": "2026-06-11 공개된 공식 릴리스에서 에이전트 세션·diff·완료 상태의 실제 제품 화면이 확인됨" }
+    }
+  },
+  {
+    title: "Garble — Pen Plotter Typography with Human Interruption",
+    category: "비주얼 그래픽", date: "2026-07-14", url: "https://www.itsnicethat.com/articles/stanley-plowman-garble-graphic-design-publication-project-060726",
+    summary: "Helvetica 경로에 도형을 분산한 뒤 펜 교체·종이 이동·겹쳐 찍기로 기계의 정밀함과 사람의 오류를 충돌시킨 플로터 서체와 진.",
+    note: "기하 경로, 펜 크기, 간격, 오버프린트, 작업 중 개입을 명시적 변수로 삼아 디지털 규칙에서 불완전한 질감을 추출하는 방식이 돋보임.",
+    tags: ["#비주얼그래픽", "#실험타이포", "#펜플로터", "#오버프린트"],
+    thumbnail: "https://admin.itsnicethat.com/images/9GOSVysCoHKG6MYudMMhuz6qsZI=/279532/width-1440/stanley-plowman-pen-plotter-illustration-itsnicethat-13.jpeg",
+    visual: { background: "#f3e857", accent: "#e4483f", ink: "#17225d", radiusOne: "50% 0", radiusTwo: "0 50%", rotate: "-11deg", label: "PLOT / INTERRUPT / OVERPRINT" },
+    review: {
+      "유형": "비주얼 그래픽", "가치축_이름": "스타일추출성",
+      "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "기하 경로·도형 분산·펜 교체·종이 이동·오버프린트가 반복 가능한 제작 변수로 공개돼 인간적 오류가 있는 타이포 그래픽 문법으로 추출된다.",
+      "metadata": { "렌즈": ["타이포그래피", "인터랙션"], "커버리지_카테고리": "비주얼 그래픽", "보안_등급": "raw_ok", "type_block": { "mood": "기계 정밀성과 아날로그 오류의 충돌", "elements": "Helvetica 경로·기하 도형·다색 펜·오버프린트·수동 개입" } },
+      "출처": { "소스": "https://www.itsnicethat.com/articles/stanley-plowman-garble-graphic-design-publication-project-060726", "수집일": "2026-07-14", "수집사유": "2026-07-06 공개된 제작 과정과 다수의 실제 결과 이미지가 확인됨" }
+    }
+  },
+  {
+    title: "Ronnie Scott’s — Typography as Jazz Performance",
+    category: "브랜드", date: "2026-07-14", url: "https://www.itsnicethat.com/articles/dan-cottrell-studio-ronnie-scotts-branding-graphic-design-project-080726",
+    summary: "Railroad Gothic과 Century Condensed를 고정 레이아웃 대신 공연처럼 움직이는 조합으로 운용해 재즈 클럽의 디지털·인쇄 접점을 묶은 리브랜딩.",
+    note: "역사적 네온 로고는 보존하면서 활자 대비와 프로그램 편집 리듬을 새 시스템으로 확장해 헤리티지 브랜드의 변화 범위를 조절한 방식이 좋음.",
+    tags: ["#브랜드", "#재즈브랜딩", "#타이포그래피", "#헤리티지"],
+    thumbnail: "https://media.itsnicethat.com/original_images/DanCottrellStudio_RonnieScotts_05.gif",
+    visual: { background: "#191718", accent: "#d8b05a", ink: "#f6f5f1", radiusOne: "0", radiusTwo: "50%", rotate: "8deg", label: "HERITAGE / TYPE / RHYTHM" },
+    review: {
+      "유형": "브랜드", "가치축_이름": "스타일추출성",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "보존한 네온 로고와 두 서체의 크기·밀도·편집 리듬이 디지털 공연 목록과 인쇄 프로그램에 반복돼 헤리티지 브랜드의 유연한 시각 문법으로 추출된다.",
+      "metadata": { "렌즈": ["브랜드일관성", "타이포그래피"], "커버리지_카테고리": "브랜드", "보안_등급": "raw_ok", "type_block": { "mood": "늦은 밤의 재즈 리듬과 역사성", "elements": "Railroad Gothic·Century Condensed·네온 로고·공연 프로그램 리듬" } },
+      "출처": { "소스": "https://www.itsnicethat.com/articles/dan-cottrell-studio-ronnie-scotts-branding-graphic-design-project-080726", "수집일": "2026-07-14", "수집사유": "2026-07-08 공개된 디지털·인쇄 적용 이미지와 시스템 설계 근거가 확인됨" }
+    }
+  },
+  {
     title: "Firefly Prompt Enhancement — Original to Controlled Variation",
     category: "AI 디자인", date: "2026-07-13", url: "https://helpx.adobe.com/ca/firefly/web/work-with-images/generate-images/enhance-prompts-to-generate-images.html",
     summary: "Firefly Image 4 계열에서 원본 프롬프트와 자동 확장 프롬프트를 비교하고 콘텐츠 유형·시각 강도·구도·스타일을 함께 조절하는 생성 경험.",
