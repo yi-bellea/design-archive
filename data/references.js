@@ -2,6 +2,46 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "Red Scarf Dog — GPT Image Subject Edit", category: "AI 이미지 프롬프트", date: "2026-07-16", url: "https://helpx.adobe.com/firefly/web/work-with-images/generate-images/generate-images-using-gpt-image.html",
+    summary: "반려견 원본을 Subject로 고정하고 짧은 텍스트 지시로 빨간 스카프를 추가한 GPT Image 편집 예시.",
+    note: "피사체 정체성과 구도를 입력 이미지에 맡기고 추가할 요소만 간결하게 지시해, 제품·인물 에셋의 국소 변형 프롬프트를 설계할 때 참고하기 좋음.",
+    tags: ["#AI이미지프롬프트", "#GPTImage", "#피사체참조", "#이미지편집"],
+    thumbnail: "https://helpx-prod.scene7.com/is/image/HelpxProd/generate-images-from-text-14?$pjpeg$&jpegSize=200&wid=1200",
+    prompt: "A dog wearing a red scarf.",
+    visual: { background: "#e7e2d8", accent: "#c9342f", ink: "#201d1a", radiusOne: "50%", radiusTwo: "50%", rotate: "-5deg", label: "SUBJECT / ADD / PRESERVE" },
+    review: { "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 4, "신규성": 3, "근거성": 5, "가치축": 5 }, "total": 17, "verdict": "accept", "근거": "공식 문서가 반려견 Subject 입력·GPT Image 모델·프롬프트·생성 결과를 함께 공개해 피사체를 유지한 단일 요소 추가 편집으로 반복 검증할 수 있다.", "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["미니멀", "중앙집중", "따뜻"], "시각아티팩트_url": "https://helpx-prod.scene7.com/is/image/HelpxProd/generate-images-from-text-14?$pjpeg$&jpegSize=200&wid=1200", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "A dog wearing a red scarf.", "tool_model": "GPT Image in Adobe Firefly", "params": "Subject 이미지 1장·Wide 4:3/Square 1:1/Tall 2:3 중 선택·공식 예시는 비율 미공개", "output_url": "https://helpx-prod.scene7.com/is/image/HelpxProd/generate-images-from-text-14?$pjpeg$&jpegSize=200&wid=1200", "fragment_map": [{ "조각": "A dog", "효과": "Subject 이미지의 반려견을 편집 대상으로 고정" }, { "조각": "wearing a red scarf", "효과": "목 주변에 빨간색 착용 요소 추가" }] } }, "출처": { "소스": "https://helpx.adobe.com/firefly/web/work-with-images/generate-images/generate-images-using-gpt-image.html", "수집일": "2026-07-16", "수집사유": "2026-06-16 갱신된 공식 가이드에서 모델·Subject 입력·프롬프트·생성 결과가 함께 확인됨" } }
+  },
+  {
+    title: "Valley Tulip Vase — GPT Image 1.5 Multi-reference", category: "AI 이미지 프롬프트", date: "2026-07-16", url: "https://helpx.adobe.com/firefly/web/work-with-images/edit-images/edit-an-image-using-text.html",
+    summary: "두 장의 참조 이미지를 결합해 계곡 배경의 테이블 위 노란 꽃병과 튤립 장면을 만든 GPT Image 1.5 예시.",
+    note: "오브젝트·식물·배경 관계를 한 문장으로 고정하고 복수 참조를 더해, 캠페인 합성 시 장면 구조와 소재 일관성을 분리 제어하는 방식이 실무적임.",
+    tags: ["#AI이미지프롬프트", "#GPTImage15", "#멀티레퍼런스", "#장면합성"],
+    thumbnail: "https://helpx-prod.scene7.com/is/image/HelpxProd/edit-an-image-using-text-53-firefly?$pjpeg$&jpegSize=200&wid=1300",
+    prompt: "A yellow vase with a tulip on a table, set against a valley backdrop.",
+    visual: { background: "#ddd6bd", accent: "#d9a928", ink: "#25352b", radiusOne: "0 50% 50% 50%", radiusTwo: "50%", rotate: "4deg", label: "2 REFS / OBJECT / SCENE" },
+    review: { "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept", "근거": "공식 문서가 GPT Image 1.5·참조 이미지 2장·전체 프롬프트·생성 결과를 함께 공개해 오브젝트와 배경을 결합하는 멀티레퍼런스 합성을 재현할 수 있다.", "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["미니멀", "어스톤", "중앙집중", "소프트확산광", "따뜻"], "시각아티팩트_url": "https://helpx-prod.scene7.com/is/image/HelpxProd/edit-an-image-using-text-53-firefly?$pjpeg$&jpegSize=200&wid=1300", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "A yellow vase with a tulip on a table, set against a valley backdrop.", "tool_model": "GPT Image 1.5 in Adobe Firefly", "params": "Reference/Subject 이미지 2장·1K/2K/4K 지원·공식 예시 비율과 해상도 미공개", "output_url": "https://helpx-prod.scene7.com/is/image/HelpxProd/edit-an-image-using-text-53-firefly?$pjpeg$&jpegSize=200&wid=1300", "fragment_map": [{ "조각": "A yellow vase with a tulip", "효과": "노란 꽃병과 단일 튤립을 핵심 피사체로 설정" }, { "조각": "on a table", "효과": "정물의 접지면과 스케일 고정" }, { "조각": "set against a valley backdrop", "효과": "실내 오브젝트와 원경 자연 배경의 레이어 결합" }] } }, "출처": { "소스": "https://helpx.adobe.com/firefly/web/work-with-images/edit-images/edit-an-image-using-text.html", "수집일": "2026-07-16", "수집사유": "2026-06-16 갱신된 공식 가이드에서 GPT Image 1.5 멀티레퍼런스 입력과 생성 결과가 확인됨" } }
+  },
+  {
+    title: "Iridescent Butterfly Macro — Gen-4.5 Camera Term", category: "AI 영상 프롬프트", date: "2026-07-16", url: "https://help.runwayml.com/hc/en-us/articles/46749315925395-Camera-Terms-Prompts-Examples",
+    summary: "검은 나비 날개의 무지갯빛 표면을 매크로로 탐색하면서 날개에는 미세한 움직임만 부여한 Gen-4.5 영상 예시.",
+    note: "샷 크기·재질·움직임을 각각 한 조각으로 분리해 제품 소재나 미세 표면을 보여 주는 짧은 매크로 영상의 통제 어휘로 쓰기 좋음.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#매크로", "#재질모션"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/46972936444819",
+    prompt: "A macro close-up explores the iridescent facets of a black butterfly wing. Wings gently move.",
+    visual: { background: "#171821", accent: "#6bd8d2", ink: "#f4a6d7", radiusOne: "50%", radiusTwo: "50%", rotate: "10deg", label: "MACRO / IRIDESCENCE / MICRO MOTION" },
+    review: { "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept", "근거": "Runway 공식 카메라 용어 라이브러리가 전체 프롬프트·Gen-4.5 모델·매크로 결과 GIF를 함께 제공해 재질 탐색과 미세 동작을 분리해 재현할 수 있다.", "metadata": { "정보렌즈": ["AI활용"], "시각렌즈": ["중앙집중", "하이채도", "글로시", "몽환", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/46972936444819", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "A macro close-up explores the iridescent facets of a black butterfly wing. Wings gently move.", "tool_model": "Runway Gen-4.5 Text to Video", "params": "공식 camera-term 예시·aspect ratio/duration/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/46972936444819", "fragment_map": [{ "조각": "A macro close-up explores", "효과": "표면 세부가 화면을 채우는 매크로 탐색" }, { "조각": "iridescent facets of a black butterfly wing", "효과": "검은 바탕 위 무지갯빛 반사 재질" }, { "조각": "Wings gently move", "효과": "구도를 해치지 않는 미세한 날개 동작" }] } }, "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/46749315925395-Camera-Terms-Prompts-Examples", "수집일": "2026-07-16", "수집사유": "최근 갱신된 공식 Gen-4.5 카메라 예시에서 프롬프트와 결과 GIF가 함께 확인됨" } }
+  },
+  {
+    title: "Moon Skateboard Tracking — Gen-4.5 Motion Stack", category: "AI 영상 프롬프트", date: "2026-07-16", url: "https://help.runwayml.com/hc/en-us/articles/47313737321107-Text-to-Video-Prompting-Guide",
+    summary: "달 표면의 우주비행사 스케이트보더를 로우 앵글 핸드헬드로 추적하고 흑백 필름 질감과 빠른 모션 블러를 결합한 예시.",
+    note: "주체·카메라 높이·추적 방식·속도·필름 질감을 독립 조각으로 분해할 수 있어 스포츠·패션 무빙 이미지의 운동감 설계에 전이하기 좋음.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#트래킹숏", "#필름그레인"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/46974514791443",
+    prompt: "A handheld low angle tracking shot, with low contrast and fast-paced motion, follows a skilled astronaut skateboarder on a moon landscape. Their movements blur against the soft glow of the dark lunar environment. Film grain, low contrast, black and white.",
+    visual: { background: "#202126", accent: "#d7d5cc", ink: "#f6f5f1", radiusOne: "50%", radiusTwo: "0", rotate: "-9deg", label: "LOW ANGLE / TRACK / GRAIN" },
+    review: { "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept", "근거": "공식 Gen-4.5 가이드가 로우 앵글·핸드헬드 추적·빠른 동작·흑백 필름 질감을 포함한 전체 프롬프트와 결과 GIF를 제공해 운동감 있는 단일 숏으로 재현할 수 있다.", "metadata": { "정보렌즈": ["AI활용", "인터랙션"], "시각렌즈": ["모노톤", "비대칭", "필름그레인", "차가움", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/46974514791443", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "A handheld low angle tracking shot, with low contrast and fast-paced motion, follows a skilled astronaut skateboarder on a moon landscape. Their movements blur against the soft glow of the dark lunar environment. Film grain, low contrast, black and white.", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·공식 예시·aspect ratio/duration/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/46974514791443", "fragment_map": [{ "조각": "handheld low angle tracking shot", "효과": "낮은 시점의 흔들리는 추적 카메라" }, { "조각": "fast-paced motion", "효과": "스케이트 동작의 빠른 속도감" }, { "조각": "movements blur against the soft glow", "효과": "어두운 배경과 피사체 모션 블러의 대비" }, { "조각": "Film grain, low contrast, black and white", "효과": "거친 흑백 다큐멘터리 필름 톤" }] } }, "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/47313737321107-Text-to-Video-Prompting-Guide", "수집일": "2026-07-16", "수집사유": "최근 갱신된 공식 Text to Video 가이드에서 Gen-4.5 프롬프트와 결과 GIF가 함께 확인됨" } }
+  },
+  {
     title: "Deliver good DfE services — 16개 매뉴얼을 하나의 콘텐츠 모델로 통합",
     category: "콘텐츠 디자인 가이드", date: "2026-07-16", url: "https://design-histories.education.gov.uk/deliver-good-dfe-services/publishing-the-first-release-of-deliver-good-dfe-services",
     summary: "분산된 16개 매뉴얼과 500여 페이지를 표준·컬렉션·상세 가이드·단계형 안내 같은 콘텐츠 유형으로 재구성한 DfE 서비스 가이드 첫 릴리스.",

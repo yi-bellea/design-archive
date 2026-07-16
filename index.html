@@ -17,7 +17,7 @@
       <section class="intro">
         <p class="eyebrow">CURATED DAILY</p>
         <h1>좋은 화면은<br />좋은 관찰에서 시작된다.</h1>
-        <p class="intro-copy">웹·앱 UI, 브랜드, AI, 비주얼 그래픽을 실무 관점에서 수집합니다. 카드를 누르면 원본 레퍼런스로 이동합니다.</p>
+        <p class="intro-copy">웹·앱 UI, 브랜드, AI, 비주얼 그래픽을 실무 관점에서 수집합니다. 썸네일을 누르면 원본 레퍼런스로 이동합니다.</p>
       </section>
       <section class="toolbar" aria-label="아카이브 필터">
         <div class="search-shell">
@@ -42,7 +42,7 @@
     </main>
     <template id="card-template">
       <article class="reference-card">
-        <a class="card-link" target="_blank" rel="noreferrer">
+        <a class="thumbnail-link" target="_blank" rel="noreferrer" aria-label="원본 레퍼런스 열기">
           <div class="visual" aria-hidden="true">
             <span class="visual-index"></span>
             <span class="thumbnail-category"></span>
@@ -50,16 +50,19 @@
             <span class="visual-shape shape-two"></span>
             <span class="visual-label"></span>
           </div>
-          <div class="card-body">
-            <div class="card-topline"><span class="category"></span><span class="date"></span></div>
-            <h2></h2>
-            <p class="summary"></p>
-            <p class="designer-note"></p>
-            <p class="prompt"></p>
-            <ul class="tags"></ul>
-            <span class="source">원본 보기 <span aria-hidden="true">↗</span></span>
-          </div>
         </a>
+        <div class="card-body">
+          <div class="card-topline"><span class="category"></span><span class="date"></span></div>
+          <h2></h2>
+          <p class="summary"></p>
+          <p class="designer-note"></p>
+          <div class="prompt-block">
+            <p class="prompt"></p>
+            <button class="copy-prompt" type="button">프롬프트 복사</button>
+          </div>
+          <ul class="tags"></ul>
+          <p class="source">썸네일에서 원본 보기 <span aria-hidden="true">↗</span></p>
+        </div>
       </article>
     </template>
     <script src="data/references.js"></script>

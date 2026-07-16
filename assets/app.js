@@ -29,6 +29,23 @@ const searchableText = (item) => normalize([
   item.title, item.category, item.summary, item.note, item.prompt, ...(item.tags || [])
 ].join(" "));
 const searchIndex = new Map(references.map((item) => [item, searchableText(item)]));
+const getPrompt = (item) => item.prompt || item.review?.metadata?.type_block?.prompt || "";
+
+async function copyText(value) {
+  if (navigator.clipboard?.writeText && window.isSecureContext) {
+    await navigator.clipboard.writeText(value);
+    return;
+  }
+  const area = document.createElement("textarea");
+  area.value = value;
+  area.style.position = "fixed";
+  area.style.opacity = "0";
+  document.body.append(area);
+  area.select();
+  const copied = document.execCommand("copy");
+  area.remove();
+  if (!copied) throw new Error("copy failed");
+}
 
 function getVisibleItems() {
   const terms = normalize(state.query).split(/\s+/).filter(Boolean);
@@ -44,7 +61,7 @@ function render() {
   archive.replaceChildren();
   items.forEach((item, index) => {
     const node = template.content.cloneNode(true);
-    const link = node.querySelector(".card-link");
+    const link = node.querySelector(".thumbnail-link");
     const visual = node.querySelector(".visual");
     node.querySelector(".reference-card").style.setProperty("--card-order", index);
     link.href = item.url;
@@ -69,11 +86,23 @@ function render() {
     node.querySelector("h2").textContent = item.title;
     node.querySelector(".summary").textContent = item.summary;
     node.querySelector(".designer-note").textContent = item.note;
+    const promptBlock = node.querySelector(".prompt-block");
     const prompt = node.querySelector(".prompt");
-    if (item.prompt) {
-      prompt.textContent = "PROMPT — " + item.prompt;
+    const promptValue = getPrompt(item);
+    if (promptValue) {
+      prompt.textContent = "PROMPT — " + promptValue;
+      const copyButton = node.querySelector(".copy-prompt");
+      copyButton.addEventListener("click", async () => {
+        try {
+          await copyText(promptValue);
+          copyButton.textContent = "복사됨";
+        } catch {
+          copyButton.textContent = "복사 실패";
+        }
+        window.setTimeout(() => { copyButton.textContent = "프롬프트 복사"; }, 1600);
+      });
     } else {
-      prompt.remove();
+      promptBlock.remove();
     }
     item.tags.forEach((tag) => { const li = document.createElement("li"); li.textContent = tag; node.querySelector(".tags").append(li); });
     archive.append(node);
