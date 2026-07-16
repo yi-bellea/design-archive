@@ -2,6 +2,63 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "Future Luxury Showroom — 밝은 유리 공간의 자동차 광고", category: "AI 이미지 프롬프트", date: "2026-07-17", url: "https://lexica.art/prompt/65563c5a-4346-4da2-b18b-e5a1047c51d1",
+    summary: "미래형 럭셔리 자동차를 유리벽·광택 바닥·밝은 조명으로 구성한 깨끗한 하이테크 쇼룸 광고 비주얼.",
+    note: "차량 자체보다 반사 환경과 건축 배경을 함께 지시해 차체 표면의 광택과 프리미엄 인상을 만드는 스튜디오형 자동차 광고에 참고하기 좋음.",
+    tags: ["#AI이미지프롬프트", "#자동차", "#3D", "#쇼룸광고"],
+    thumbnail: "https://lexica.art/prompt/65563c5a-4346-4da2-b18b-e5a1047c51d1/opengraph-image?d26e3adb96114073",
+    prompt: "Futuristic car, luxury, dealership, cleanliness, high-tech design, shiny surfaces, cutting-edge technology, bright showroom, glass walls, spotless, modern architecture, sleek lines, polished floors, minimalistic, exclusive models, innovative, prestige, gleaming lights, advanced features, elegance",
+    visual: { background: "#e9edf0", accent: "#3f8fc9", ink: "#17212a", radiusOne: "0", radiusTwo: "50%", rotate: "-4deg", label: "GLASS / POLISH / SHOWROOM" },
+    review: { "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept", "근거": "공개 결과 이미지와 전체 프롬프트·Aperture v3·guidance 7·1152×768 설정이 함께 있어 유리와 광택 반사를 활용한 밝은 자동차 쇼룸 광고로 반복 생성할 수 있다.", "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["3D", "모노톤", "중앙집중", "글로시", "럭셔리"], "시각아티팩트_url": "https://lexica.art/prompt/65563c5a-4346-4da2-b18b-e5a1047c51d1/opengraph-image?d26e3adb96114073", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "Futuristic car, luxury, dealership, cleanliness, high-tech design, shiny surfaces, cutting-edge technology, bright showroom, glass walls, spotless, modern architecture, sleek lines, polished floors, minimalistic, exclusive models, innovative, prestige, gleaming lights, advanced features, elegance", "tool_model": "Lexica Aperture v3", "params": "guidance scale 7·1152×768", "output_url": "https://lexica.art/prompt/65563c5a-4346-4da2-b18b-e5a1047c51d1/opengraph-image?d26e3adb96114073", "fragment_map": [{ "조각": "bright showroom, glass walls", "효과": "밝고 투명한 미래형 실내 공간" }, { "조각": "shiny surfaces, polished floors", "효과": "차체와 바닥에 정돈된 광택 반사" }, { "조각": "minimalistic, prestige, elegance", "효과": "요소를 줄인 프리미엄 광고 톤" }] } }, "출처": { "소스": "https://lexica.art/prompt/65563c5a-4346-4da2-b18b-e5a1047c51d1", "수집일": "2026-07-17", "수집사유": "공개 결과 이미지와 프롬프트·모델·guidance·크기 설정이 모두 확인된 미래형 자동차 쇼룸 표본" } }
+  },
+  {
+    title: "Forest Cinematic Car — 자연광 로케이션 무드", category: "AI 이미지 프롬프트", date: "2026-07-17", url: "https://lexica.art/prompt/f56637fa-f7ea-4aa6-a450-4e990860320e",
+    summary: "숲이라는 단일 환경과 시네마틱 톤을 결합해 자동차를 자연 속 캠페인 키비주얼로 만든 로케이션 이미지.",
+    note: "스튜디오 조명과 반대로 숲의 깊이·자연광·차체 대비를 모델 해석에 맡기는 짧은 프롬프트라, 로케이션 방향을 빠르게 탐색하는 초기 광고 시안에 유용함.",
+    tags: ["#AI이미지프롬프트", "#자동차", "#시네마틱", "#로케이션광고"],
+    thumbnail: "https://lexica.art/prompt/f56637fa-f7ea-4aa6-a450-4e990860320e/opengraph-image?d26e3adb96114073",
+    prompt: "Car in a forest, cinematic",
+    visual: { background: "#1f2b25", accent: "#b8c86a", ink: "#f2eee4", radiusOne: "50%", radiusTwo: "0", rotate: "7deg", label: "FOREST / DEPTH / CINEMA" },
+    review: { "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 4, "신규성": 3, "근거성": 4, "가치축": 4 }, "total": 15, "verdict": "accept", "근거": "공개 결과와 Aperture v2·guidance 7·512×768·2048×3072 업스케일 설정이 있어 숲의 자연광과 깊이를 활용한 자동차 로케이션 무드를 반복 비교할 수 있다.", "metadata": { "정보렌즈": ["AI활용"], "시각렌즈": ["어스톤", "중앙집중", "소프트확산광", "몽환"], "시각아티팩트_url": "https://lexica.art/prompt/f56637fa-f7ea-4aa6-a450-4e990860320e/opengraph-image?d26e3adb96114073", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "Car in a forest, cinematic", "tool_model": "Lexica Aperture v2", "params": "guidance scale 7·512×768·upscaled 2048×3072", "output_url": "https://lexica.art/prompt/f56637fa-f7ea-4aa6-a450-4e990860320e/opengraph-image?d26e3adb96114073", "fragment_map": [{ "조각": "Car in a forest", "효과": "자동차와 숲의 자연적 스케일 대비" }, { "조각": "cinematic", "효과": "깊이감 있는 조명과 캠페인형 색보정" }] } }, "출처": { "소스": "https://lexica.art/prompt/f56637fa-f7ea-4aa6-a450-4e990860320e", "수집일": "2026-07-17", "수집사유": "결과 이미지·모델·guidance·원본 및 업스케일 크기가 확인된 시네마틱 자동차 로케이션 표본" } }
+  },
+  {
+    title: "Automotive AI Lab — 컬러풀한 3D 디자인 프로세스 비주얼", category: "AI 이미지 프롬프트", date: "2026-07-17", url: "https://lexica.art/prompt/28d3f62d-8ec5-4bc4-8cbe-ac0250889d8b",
+    summary: "자동차 디자인 랩과 AI 3D 모델링 과정을 컬러풀하고 미니멀한 초현실 기술 광고로 번역한 세로형 비주얼.",
+    note: "완성차 영웅 숏이 아니라 설계 화면·랩 환경·데이터 이미지를 함께 보여 줘 모빌리티 기술이나 디자인 프로세스를 소개하는 B2B 광고에 전이하기 좋음.",
+    tags: ["#AI이미지프롬프트", "#자동차", "#3D모델링", "#테크광고"],
+    thumbnail: "https://lexica.art/prompt/28d3f62d-8ec5-4bc4-8cbe-ac0250889d8b/opengraph-image?d26e3adb96114073",
+    prompt: "Car visualization, work of AI 3d modelling in computer, on a lab of automotive design. Data science in business, finance and innovation.. surrealistic landscape. colorful, minimal. hiper realistic fashion technology. 35mm. award winning photography.",
+    visual: { background: "#d9d5f0", accent: "#f0643f", ink: "#21223b", radiusOne: "0 50% 50% 50%", radiusTwo: "50%", rotate: "-8deg", label: "LAB / DATA / 3D MODEL" },
+    review: { "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 4, "가치축": 5 }, "total": 19, "verdict": "accept", "근거": "공개 결과와 전체 프롬프트·Aperture v3.5·832×1152 설정이 있어 자동차 3D 설계와 데이터 랩을 컬러풀한 기술 광고 장면으로 재현할 수 있다.", "metadata": { "정보렌즈": ["AI활용", "콘텐츠명료성"], "시각렌즈": ["3D", "하이채도", "비대칭", "글로시", "유희적"], "시각아티팩트_url": "https://lexica.art/prompt/28d3f62d-8ec5-4bc4-8cbe-ac0250889d8b/opengraph-image?d26e3adb96114073", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "Car visualization, work of AI 3d modelling in computer, on a lab of automotive design. Data science in business, finance and innovation.. surrealistic landscape. colorful, minimal. hiper realistic fashion technology. 35mm. award winning photography.", "tool_model": "Lexica Aperture v3.5", "params": "832×1152·guidance/seed 미공개", "output_url": "https://lexica.art/prompt/28d3f62d-8ec5-4bc4-8cbe-ac0250889d8b/opengraph-image?d26e3adb96114073", "fragment_map": [{ "조각": "AI 3d modelling in computer, on a lab of automotive design", "효과": "차량과 디지털 설계 환경을 한 장면에 결합" }, { "조각": "surrealistic landscape. colorful, minimal", "효과": "기술 이미지를 컬러풀한 추상 광고로 전환" }, { "조각": "hiper realistic fashion technology. 35mm", "효과": "패션 테크 캠페인처럼 정제된 카메라 질감" }] } }, "출처": { "소스": "https://lexica.art/prompt/28d3f62d-8ec5-4bc4-8cbe-ac0250889d8b", "수집일": "2026-07-17", "수집사유": "공개 결과·전체 프롬프트·Aperture v3.5·세로 크기가 확인된 자동차 디자인 랩 3D 광고 표본" } }
+  },
+  {
+    title: "Turners Cars — 신뢰와 속도를 연결한 자동차 브랜드 시스템", category: "브랜드", date: "2026-07-16", url: "https://www.behance.net/gallery/249568333/Car-Branding-Automotive-Branding-Modern-Logo-Design",
+    summary: "굵은 자동차 심벌과 명확한 타이포그래피를 차량·사인·패키지·소셜·디지털 화면에 확장한 자동차 판매 브랜드 아이덴티티.",
+    note: "자동차 실루엣을 직접 묘사하는 데서 그치지 않고 신뢰와 주행 자신감이라는 메시지를 접점별 일관된 고대비 시스템으로 반복한 점이 실무적임.",
+    tags: ["#브랜드", "#자동차", "#아이덴티티", "#접점확장"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/151f54249568333.6a0af3bc1a530.jpg",
+    visual: { background: "#121417", accent: "#e44b35", ink: "#f3f1ea", radiusOne: "0", radiusTwo: "50%", rotate: "-5deg", label: "TRUST / DRIVE / SYSTEM" },
+    review: { "유형": "브랜드", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 3, "근거성": 4, "가치축": 5 }, "total": 17, "verdict": "accept", "근거": "로고·가이드·차량·사인·패키지·소셜·UI의 공개 응용 이미지가 동일한 고대비 조형 언어로 연결돼 자동차 서비스 브랜드의 접점 확장 규칙으로 추출할 수 있다.", "metadata": { "정보렌즈": ["브랜드일관성", "타이포그래피"], "시각렌즈": ["미니멀", "하이채도", "그리드", "절제"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/151f54249568333.6a0af3bc1a530.jpg", "커버리지_카테고리": "브랜드", "보안_등급": "raw_ok", "type_block": { "system": "굵은 자동차 심벌·고대비 팔레트·명확한 산세리프를 전 접점에 반복", "applications": "차량·사인·패키지·소셜 캠페인·디지털 UI" } }, "출처": { "소스": "https://www.behance.net/gallery/249568333/Car-Branding-Automotive-Branding-Modern-Logo-Design", "수집일": "2026-07-16", "수집사유": "2026-05-18 공개된 자동차 브랜드의 다중 접점 실제 응용 이미지와 시스템 규칙이 확인됨" } }
+  },
+  {
+    title: "Car Check — 차량 이력을 한 흐름으로 묶은 모바일 앱", category: "웹·앱 UI", date: "2026-07-16", url: "https://www.behance.net/gallery/248044553/Mobile-App-Design-Car-Check",
+    summary: "차량 이력·MOT·주행거리·세금·소유 정보를 조회와 관리 흐름으로 통합한 자동차 정보 앱 UI.",
+    note: "구매 전 확인해야 할 분산 정보를 상태별 카드와 명확한 우선순위로 묶어, 복잡한 차량 데이터의 모바일 정보 구조와 신뢰 설계를 참고하기 좋음.",
+    tags: ["#웹앱UI", "#자동차", "#차량이력", "#모바일앱"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/cd1104248044553.69eb35f17e020.png",
+    visual: { background: "#161a22", accent: "#6bd46b", ink: "#f5f6f2", radiusOne: "50%", radiusTwo: "0", rotate: "6deg", label: "HISTORY / STATUS / OWNERSHIP" },
+    review: { "유형": "웹·앱 UI", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 4, "근거성": 4, "가치축": 5 }, "total": 18, "verdict": "accept", "근거": "차량 이력·검사·주행거리·세금·소유 도구의 실제 모바일 화면이 공개돼 복합 차량 정보를 조회·판단·관리하는 카드형 제품 구조로 전이할 수 있다.", "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "콘텐츠명료성", "접근성"], "시각렌즈": ["미니멀", "모노톤", "그리드", "고밀도", "절제"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/cd1104248044553.69eb35f17e020.png", "커버리지_카테고리": "웹·앱 UI", "보안_등급": "raw_ok", "type_block": { "flow": "차량 검색→이력·MOT·주행거리·세금 확인→소유 차량 관리", "screens": "차량 요약·상태 카드·상세 기록·소유 도구·앱스토어 프리뷰" } }, "출처": { "소스": "https://www.behance.net/gallery/248044553/Mobile-App-Design-Car-Check", "수집일": "2026-07-16", "수집사유": "2026-04-24 공개된 차량 정보 앱의 실제 화면과 주요 조회·관리 흐름이 확인됨" } }
+  },
+  {
+    title: "Automotive Visual Direction — 광고 수준의 자동차 CGI 조명 실험", category: "비주얼 그래픽", date: "2026-07-16", url: "https://www.behance.net/gallery/247937759/Automotive-Visual-Direction-CGI",
+    summary: "차량 콘셉트를 제품 중심 숏·라이프스타일 장면·캠페인 구도로 변주한 고완성도 3D 자동차 광고 비주얼 시리즈.",
+    note: "차체 도장과 유리·금속 반사, 배경 대비, 카메라 높이, 키라이트 방향을 장면별로 비교할 수 있어 고급 3D 제품 이미지의 아트 디렉션 표본으로 유용함.",
+    tags: ["#비주얼그래픽", "#자동차", "#3D", "#CGI광고"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ec2a96247937759.69e66df8823b0.jpg",
+    visual: { background: "#242427", accent: "#dc402d", ink: "#f1eee8", radiusOne: "50%", radiusTwo: "0", rotate: "8deg", label: "CGI / LIGHT / MATERIAL" },
+    review: { "유형": "비주얼 그래픽", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 4, "근거성": 4, "가치축": 5 }, "total": 18, "verdict": "accept", "근거": "제품 숏·라이프스타일·캠페인 구도의 공개 CGI 결과에서 차체 재질·조명·카메라·배경 변수를 비교할 수 있어 자동차 광고용 3D 아트 디렉션 문법으로 추출할 수 있다.", "metadata": { "정보렌즈": ["브랜드일관성"], "시각렌즈": ["3D", "중앙집중", "하드라이트", "글로시", "럭셔리"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ec2a96247937759.69e66df8823b0.jpg", "커버리지_카테고리": "비주얼 그래픽", "보안_등급": "raw_ok", "type_block": { "elements": "자동차 차체·금속·유리·도장·스튜디오 및 로케이션 배경", "reusable_rule": "차량 형태를 고정하고 키라이트·반사 환경·카메라 높이·배경 대비를 장면별로 변주" } }, "출처": { "소스": "https://www.behance.net/gallery/247937759/Automotive-Visual-Direction-CGI", "수집일": "2026-07-16", "수집사유": "2026-04-20 공개된 자동차 CGI 시리즈에서 광고형 실제 결과와 3D·후반 제작 워크플로가 확인됨" } }
+  },
+  {
     title: "Red Scarf Dog — GPT Image Subject Edit", category: "AI 이미지 프롬프트", date: "2026-07-16", url: "https://helpx.adobe.com/firefly/web/work-with-images/generate-images/generate-images-using-gpt-image.html",
     summary: "반려견 원본을 Subject로 고정하고 짧은 텍스트 지시로 빨간 스카프를 추가한 GPT Image 편집 예시.",
     note: "피사체 정체성과 구도를 입력 이미지에 맡기고 추가할 요소만 간결하게 지시해, 제품·인물 에셋의 국소 변형 프롬프트를 설계할 때 참고하기 좋음.",
