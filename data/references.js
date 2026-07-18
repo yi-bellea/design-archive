@@ -2,6 +2,38 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "Maison WeCraft — 수공예 유산을 절제된 실버 시스템으로 번역",
+    category: "브랜드", date: "2026-07-18", url: "https://www.behance.net/gallery/252695393/Maison-WeCraft-Brand-Identity",
+    summary: "수공예 갤러리의 ‘House of Craft’ 개념을 모노그램·세리프 조합·실버 물성·여백 중심 편집으로 연결한 프리미엄 아이덴티티.",
+    note: "수공예를 장식적 민속 이미지로 재현하지 않고 금속 질감과 조용한 타이포 위계로 추상화해, 문화·리빙 브랜드의 현대적 헤리티지 표현에 전이하기 좋음.",
+    tags: ["#브랜드", "#수공예", "#헤리티지", "#럭셔리", "#편집디자인"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/7d7dc2252695393.6a5701e8c8bf5.png",
+    visual: { background: "#e7e5df", accent: "#9b9a96", ink: "#1c1b19", radiusOne: "0", radiusTwo: "50%", rotate: "-3deg", label: "CRAFT / SILVER / RESTRAINT" },
+    review: {
+      "유형": "브랜드", "가치축_이름": "스타일추출성",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 4, "가치축": 5 }, "total": 18, "verdict": "accept",
+      "근거": "모노그램·타이포·아이콘·실버 소재·웹 응용이 같은 절제된 규칙으로 반복돼 수공예 기반 프리미엄 브랜드의 현대적 헤리티지 문법으로 추출할 수 있다.",
+      "metadata": { "정보렌즈": ["브랜드일관성", "타이포그래피"], "시각렌즈": ["미니멀", "모노톤", "여백중심", "글로시", "럭셔리"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/7d7dc2252695393.6a5701e8c8bf5.png", "커버리지_카테고리": "브랜드", "보안_등급": "raw_ok", "type_block": { "elements": "모노그램·세리프/산세리프 조합·실버 물성·아이콘·웹/인쇄 응용", "reusable_rule": "수공예의 손맛을 직접 묘사하지 않고 금속 질감과 넓은 여백, 낮은 채도의 타이포 위계로 현대화" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252695393/Maison-WeCraft-Brand-Identity", "수집일": "2026-07-18", "수집사유": "2026-07-15 공개된 전체 아이덴티티와 1396×1056 공식 대표 이미지가 확인됨" }
+    }
+  },
+  {
+    title: "O Brasileirão Voltou — 트로피로 시선을 모으는 시네마틱 스포츠 KV",
+    category: "비주얼 그래픽", date: "2026-07-18", url: "https://www.behance.net/gallery/252884613/O-Brasileirao-Voltou-Direcao-de-Arte",
+    summary: "세 명의 골키퍼를 트로피 앞에 배치하고 원근·빛과 그림자·깊이로 우승 목표를 집중시키는 스포츠 캠페인 키 비주얼.",
+    note: "여러 인물을 단순 나열하지 않고 공통 목표물을 소실점과 최고 명도로 설정해, 팀·제품군 캠페인에서 복수 주체의 시선을 하나로 묶는 구성법이 명확함.",
+    tags: ["#비주얼그래픽", "#스포츠캠페인", "#키비주얼", "#시네마틱", "#빛과그림자"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/fae933252884613.6a5a3361bcd6b.png",
+    visual: { background: "#171b20", accent: "#d8b34d", ink: "#f2eee5", radiusOne: "50%", radiusTwo: "0", rotate: "5deg", label: "DEPTH / TROPHY / FOCUS" },
+    review: {
+      "유형": "비주얼 그래픽", "가치축_이름": "스타일추출성",
+      "scores": { "완성도": 5, "신규성": 3, "근거성": 5, "가치축": 5 }, "total": 18, "verdict": "accept",
+      "근거": "복수 인물의 시선·원근·최고 명도를 중앙 트로피에 수렴시킨 1080×1440 결과가 공개돼 스포츠·팀 캠페인의 목표 집중형 합성 규칙으로 재사용할 수 있다.",
+      "metadata": { "정보렌즈": ["브랜드일관성"], "시각렌즈": ["중앙집중", "하드라이트", "필름그레인", "럭셔리"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/fae933252884613.6a5a3361bcd6b.png", "커버리지_카테고리": "비주얼 그래픽", "보안_등급": "raw_ok", "type_block": { "elements": "골키퍼 3인·중앙 트로피·저채도 경기장·금색 하이라이트·원근 안개", "reusable_rule": "복수 주체를 전경 양쪽에 두고 공통 목표물을 소실점과 최고 명도로 설정해 시선을 수렴" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252884613/O-Brasileirao-Voltou-Direcao-de-Arte", "수집일": "2026-07-18", "수집사유": "2026-07-17 공개된 캠페인 방향 설명과 1080×1440 공식 키 비주얼이 확인됨" }
+    }
+  },
+  {
     title: "Future Luxury Showroom — 밝은 유리 공간의 자동차 광고", category: "AI 이미지 프롬프트", date: "2026-07-17", url: "https://lexica.art/prompt/65563c5a-4346-4da2-b18b-e5a1047c51d1",
     summary: "미래형 럭셔리 자동차를 유리벽·광택 바닥·밝은 조명으로 구성한 깨끗한 하이테크 쇼룸 광고 비주얼.",
     note: "차량 자체보다 반사 환경과 건축 배경을 함께 지시해 차체 표면의 광택과 프리미엄 인상을 만드는 스튜디오형 자동차 광고에 참고하기 좋음.",
