@@ -1,8 +1,10 @@
-const state = { filter: "전체", query: "" };
+const state = { view: "archive", filter: "전체", query: "" };
 const archive = document.querySelector("#archive");
+const newsList = document.querySelector("#news");
 const filters = document.querySelector("#filters");
 const count = document.querySelector("#count");
 const template = document.querySelector("#card-template");
+const newsTemplate = document.querySelector("#news-template");
 const search = document.querySelector("#archive-search");
 const searchShell = document.querySelector(".search-shell");
 const clearSearch = document.querySelector("#search-clear");
@@ -23,7 +25,10 @@ const thumbnails = {
 const thumbnailByTitle = {
   "반투명 오브젝트의 제품 스틸라이프": { image: "assets/thumbnails/prompt-sheet.png", position: "100% 0%", size: "300% 200%" }
 };
-const categories = ["전체", ...new Set(references.map((item) => item.category))];
+const viewCopy = {
+  archive: { eyebrow: "CURATED DAILY", title: "좋은 화면은<br />좋은 관찰에서 시작된다.", copy: "웹·앱 UI, 브랜드, AI, 비주얼 그래픽을 실무 관점에서 수집합니다. 썸네일을 누르면 원본 레퍼런스로 이동합니다.", placeholder: "제목, 태그, 메모 검색" },
+  news: { eyebrow: "DESIGN NEWS / SIGNALS", title: "변화의 신호를<br />디자인 관점으로 읽는다.", copy: "새 도구와 디자인 시스템, 브랜드와 AI의 변화를 짧게 선별합니다. 원문과 함께 실무에 중요한 이유를 확인하세요.", placeholder: "뉴스 제목, 출처, 주제 검색" }
+};
 const normalize = (value) => String(value || "").toLocaleLowerCase("ko-KR").normalize("NFKC");
 const searchableText = (item) => normalize([
   item.title, item.category, item.summary, item.note, item.prompt, ...(item.tags || [])
@@ -56,7 +61,50 @@ function getVisibleItems() {
   });
 }
 
+function getVisibleNews() {
+  const terms = normalize(state.query).split(/\s+/).filter(Boolean);
+  return designNews.filter((item) => {
+    const matchesTopic = state.filter === "전체" || item.category === state.filter;
+    const haystack = normalize([item.title, item.category, item.source, item.summary, item.impact, ...(item.tags || [])].join(" "));
+    return matchesTopic && terms.every((term) => haystack.includes(term));
+  }).sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+}
+
+function renderFilters() {
+  const values = state.view === "archive" ? [...new Set(references.map((item) => item.category))] : ["AI 디자인 뉴스", "피그마 뉴스", "UI·UX 뉴스", "디자인 일반"];
+  filters.replaceChildren();
+  ["전체", ...values].forEach((category) => {
+    const button = document.createElement("button");
+    button.className = "filter"; button.type = "button"; button.textContent = category;
+    button.setAttribute("aria-pressed", String(category === state.filter));
+    button.addEventListener("click", () => { state.filter = category; renderFilters(); render(); });
+    filters.append(button);
+  });
+}
+
 function render() {
+  if (state.view === "news") {
+    const items = getVisibleNews();
+    newsList.replaceChildren();
+    items.forEach((item, index) => {
+      const node = newsTemplate.content.cloneNode(true);
+      node.querySelector(".news-card").style.setProperty("--card-order", index);
+      const imageLink = node.querySelector(".news-thumbnail"); imageLink.href = item.url;
+      const image = node.querySelector("img"); image.src = item.thumbnail; image.alt = `${item.title} 대표 이미지`;
+      node.querySelector(".news-topic").textContent = item.category;
+      node.querySelector(".news-source").textContent = item.source;
+      const time = node.querySelector("time"); time.textContent = item.publishedAt; time.dateTime = item.publishedAt;
+      const titleLink = node.querySelector("h2 a"); titleLink.textContent = item.title; titleLink.href = item.url;
+      node.querySelector(".news-summary").textContent = item.summary;
+      node.querySelector(".news-impact").textContent = item.impact;
+      const arrow = node.querySelector(".news-arrow"); arrow.href = item.url;
+      item.tags.forEach((tag) => { const li = document.createElement("li"); li.textContent = tag; node.querySelector(".tags").append(li); });
+      newsList.append(node);
+    });
+    archive.hidden = true; newsList.hidden = items.length === 0; emptyState.hidden = items.length !== 0;
+    count.textContent = `${items.length} / ${designNews.length} NEWS`;
+    return;
+  }
   const items = getVisibleItems();
   archive.replaceChildren();
   items.forEach((item, index) => {
@@ -108,16 +156,21 @@ function render() {
     archive.append(node);
   });
   archive.hidden = items.length === 0;
+  newsList.hidden = true;
   emptyState.hidden = items.length !== 0;
   count.textContent = `${items.length} / ${references.length} REFERENCES`;
 }
-categories.forEach((category) => {
-  const button = document.createElement("button");
-  button.className = "filter"; button.type = "button"; button.textContent = category;
-  button.setAttribute("aria-pressed", String(category === state.filter));
-  button.addEventListener("click", () => { state.filter = category; [...filters.children].forEach((child) => child.setAttribute("aria-pressed", String(child.textContent === category))); render(); });
-  filters.append(button);
-});
+document.querySelectorAll("[data-view]").forEach((button) => button.addEventListener("click", () => {
+  state.view = button.dataset.view; state.filter = "전체"; state.query = ""; search.value = "";
+  document.querySelectorAll("[data-view]").forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+  const copy = viewCopy[state.view];
+  document.querySelector("#intro-eyebrow").textContent = copy.eyebrow;
+  document.querySelector("#intro-title").innerHTML = copy.title;
+  document.querySelector("#intro-copy").textContent = copy.copy;
+  emptyState.querySelector("h2").textContent = state.view === "news" ? "찾는 디자인 뉴스가 없습니다." : "찾는 레퍼런스가 없습니다.";
+  search.placeholder = copy.placeholder; searchShell.classList.remove("has-value");
+  renderFilters(); render();
+}));
 function updateQuery(value) {
   state.query = value.trim();
   searchShell.classList.toggle("has-value", Boolean(value));
@@ -141,4 +194,5 @@ document.addEventListener("keydown", (event) => {
   }
 });
 document.querySelector("#today").textContent = new Intl.DateTimeFormat("ko-KR", { dateStyle: "medium" }).format(new Date());
+renderFilters();
 render();
