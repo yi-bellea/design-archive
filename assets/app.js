@@ -26,8 +26,8 @@ const thumbnailByTitle = {
   "반투명 오브젝트의 제품 스틸라이프": { image: "assets/thumbnails/prompt-sheet.png", position: "100% 0%", size: "300% 200%" }
 };
 const viewCopy = {
-  archive: { eyebrow: "CURATED DAILY", title: "좋은 화면은<br />좋은 관찰에서 시작된다.", copy: "웹·앱 UI, 브랜드, AI, 비주얼 그래픽을 실무 관점에서 수집합니다. 썸네일을 누르면 원본 레퍼런스로 이동합니다.", placeholder: "제목, 태그, 메모 검색" },
-  news: { eyebrow: "DESIGN NEWS / SIGNALS", title: "변화의 신호를<br />디자인 관점으로 읽는다.", copy: "새 도구와 디자인 시스템, 브랜드와 AI의 변화를 짧게 선별합니다. 원문과 함께 실무에 중요한 이유를 확인하세요.", placeholder: "뉴스 제목, 출처, 주제 검색" }
+  archive: { placeholder: "제목, 태그, 메모 검색" },
+  news: { placeholder: "뉴스 제목, 출처, 주제 검색" }
 };
 const normalize = (value) => String(value || "").toLocaleLowerCase("ko-KR").normalize("NFKC");
 const archivedUrls = new Set(references.map((item) => item.url));
@@ -166,9 +166,6 @@ document.querySelectorAll("[data-view]").forEach((button) => button.addEventList
   state.view = button.dataset.view; state.filter = "전체"; state.query = ""; search.value = "";
   document.querySelectorAll("[data-view]").forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
   const copy = viewCopy[state.view];
-  document.querySelector("#intro-eyebrow").textContent = copy.eyebrow;
-  document.querySelector("#intro-title").innerHTML = copy.title;
-  document.querySelector("#intro-copy").textContent = copy.copy;
   emptyState.querySelector("h2").textContent = state.view === "news" ? "찾는 디자인 뉴스가 없습니다." : "찾는 레퍼런스가 없습니다.";
   search.placeholder = copy.placeholder; searchShell.classList.remove("has-value");
   renderFilters(); render();
