@@ -30,6 +30,8 @@ const viewCopy = {
   news: { eyebrow: "DESIGN NEWS / SIGNALS", title: "변화의 신호를<br />디자인 관점으로 읽는다.", copy: "새 도구와 디자인 시스템, 브랜드와 AI의 변화를 짧게 선별합니다. 원문과 함께 실무에 중요한 이유를 확인하세요.", placeholder: "뉴스 제목, 출처, 주제 검색" }
 };
 const normalize = (value) => String(value || "").toLocaleLowerCase("ko-KR").normalize("NFKC");
+const archivedUrls = new Set(references.map((item) => item.url));
+const visibleNews = designNews.filter((item) => !archivedUrls.has(item.url));
 const searchableText = (item) => normalize([
   item.title, item.category, item.summary, item.note, item.prompt, ...(item.tags || [])
 ].join(" "));
@@ -63,7 +65,7 @@ function getVisibleItems() {
 
 function getVisibleNews() {
   const terms = normalize(state.query).split(/\s+/).filter(Boolean);
-  return designNews.filter((item) => {
+  return visibleNews.filter((item) => {
     const matchesTopic = state.filter === "전체" || item.category === state.filter;
     const haystack = normalize([item.title, item.category, item.source, item.summary, item.impact, ...(item.tags || [])].join(" "));
     return matchesTopic && terms.every((term) => haystack.includes(term));
@@ -102,7 +104,7 @@ function render() {
       newsList.append(node);
     });
     archive.hidden = true; newsList.hidden = items.length === 0; emptyState.hidden = items.length !== 0;
-    count.textContent = `${items.length} / ${designNews.length} NEWS`;
+    count.textContent = `${items.length} / ${visibleNews.length} NEWS`;
     return;
   }
   const items = getVisibleItems();
