@@ -164,7 +164,7 @@ function render() {
 }
 document.querySelectorAll("[data-view]").forEach((button) => button.addEventListener("click", () => {
   state.view = button.dataset.view; state.filter = "전체"; state.query = ""; search.value = "";
-  document.querySelectorAll("[data-view]").forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+  document.querySelectorAll("[data-view]").forEach((item) => item.setAttribute("aria-pressed", String(item.dataset.view === state.view)));
   const copy = viewCopy[state.view];
   emptyState.querySelector("h2").textContent = state.view === "news" ? "찾는 디자인 뉴스가 없습니다." : "찾는 레퍼런스가 없습니다.";
   search.placeholder = copy.placeholder; searchShell.classList.remove("has-value");
