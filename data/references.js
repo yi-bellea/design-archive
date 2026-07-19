@@ -2,6 +2,154 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "Workflow Lab — 디자인 수정에서 접근성 PR까지 잇는 AI 핸드오프",
+    category: "AI 디자인", date: "2026-07-20", url: "https://www.figma.com/blog/workflow-lab-deploying-designs-directly-with-figma-make/",
+    summary: "Figma 에이전트의 합성 페르소나 검토에서 실제 코드 수정·접근성 주석·GitHub PR까지 연결한 공식 디자인-코드 워크플로.",
+    note: "작은 UX 개선을 티켓으로 넘기지 않고 디자인 의도·접근성 요구·코드 변경 이력을 한 흐름에 보존하는 협업 모델로 전이하기 좋음.",
+    tags: ["#AI디자인", "#FigmaMake", "#접근성", "#디자인투코드", "#테크IT"],
+    thumbnail: "https://cdn.sanity.io/images/599r6htc/regionalized/109e9f7c7d82c472f812ee14861b883dd4b1665a-3840x2160.png?rect=2,0,3837,2160&w=1080&h=608&q=75&fit=max&auto=format",
+    visual: { background: "#ece9ff", accent: "#5b49d8", ink: "#171717", radiusOne: "24px", radiusTwo: "50%", rotate: "-3deg", label: "REVIEW / CODE / PR" },
+    review: {
+      "유형": "AI 디자인", "가치축_이름": "재현성",
+      "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "실제 모바일 여정 화면·에이전트 피드백·공유 컴포넌트 수정·접근성 주석·병합 PR이 한 사례로 공개돼 디자이너 주도 소규모 개선 흐름으로 반복 적용할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용", "사용자흐름", "접근성", "인터랙션"], "시각렌즈": ["미니멀", "그리드", "여백중심", "절제"], "시각아티팩트_url": "https://cdn.sanity.io/images/599r6htc/regionalized/109e9f7c7d82c472f812ee14861b883dd4b1665a-3840x2160.png?rect=2,0,3837,2160&w=1080&h=608&q=75&fit=max&auto=format", "커버리지_카테고리": "AI 디자인", "보안_등급": "raw_ok", "type_block": { "workflow": "합성 페르소나 검토→팀 합의→프로덕션 코드 연결→공유 컴포넌트 수정→접근성 주석→PR 병합", "controls": "브랜치 범위·공유 의존성·aria-label·포커스 순서·빈 상태 메시지" } },
+      "출처": { "소스": "https://www.figma.com/blog/workflow-lab-deploying-designs-directly-with-figma-make/", "수집일": "2026-07-20", "수집사유": "2026-07-16 공개된 공식 사례에서 실제 화면과 디자인-코드-PR 전 과정이 확인됨" }
+    }
+  },
+  {
+    title: "Worried Presenter — 발표를 듣고 스크립트를 코칭하는 Figma 플러그인",
+    category: "Figma 플러그인", date: "2026-07-20", url: "https://www.figma.com/community/plugin/1647613618742509370/worried-presenter",
+    summary: "디자인 발표를 녹음·전사·분석해 더 자신감 있고 이야기 중심인 발표 스크립트와 개선 피드백을 제공하는 AI 코치.",
+    note: "디자인 리뷰 전에 발표 논리와 전달 품질을 반복 점검해 시각 산출물의 의도 설명과 이해관계자 설득을 함께 다듬기 좋음.",
+    tags: ["#Figma플러그인", "#발표코칭", "#AI활용", "#디자인리뷰", "#테크IT"],
+    thumbnail: "https://www.figma.com/community/thumbnail?resource_id=1647613618742509370&resource_type=plugin",
+    visual: { background: "#f4f1ea", accent: "#7957e8", ink: "#171717", radiusOne: "24px", radiusTwo: "50%", rotate: "3deg", label: "LISTEN / COACH / PRESENT" },
+    review: {
+      "유형": "Figma 플러그인", "가치축_이름": "유용성",
+      "scores": { "완성도": 4, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 18, "verdict": "accept",
+      "근거": "공식 3840×1916 커버에서 발표 목록·AI 스크립트 코치·녹음·전사·피드백 기능이 실제 화면으로 확인돼 디자인 리뷰 준비 시간을 반복적으로 줄일 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용", "콘텐츠명료성", "사용자흐름"], "시각렌즈": [], "시각아티팩트_url": "https://www.figma.com/community/thumbnail?resource_id=1647613618742509370&resource_type=plugin", "커버리지_카테고리": "Figma 플러그인", "보안_등급": "raw_ok", "type_block": { "workflow": "발표 선택→발표 녹음→전사·분석→스토리형 스크립트와 개선 피드백 확인", "repeated_task": "디자인 발표 리허설과 설명 문장 개선" } },
+      "출처": { "소스": "https://forum.figma.com/ask-the-community-7/our-new-ai-powered-presentation-coach-56163", "수집일": "2026-07-20", "수집사유": "2026-07-19 공개된 공식 Community 플러그인과 실제 제품 화면 커버가 확인됨" }
+    }
+  },
+  {
+    title: "Blue Nails Minimal Portrait — 네이비 배경의 날카로운 35mm 초상",
+    category: "AI 이미지 프롬프트", date: "2026-07-20", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#modern-blue-nails",
+    summary: "검은 손과 긴 블루 네일을 어두운 네이비 배경·35mm·미니멀 조형으로 분리한 공식 Gen-4 Image 예시.",
+    note: "피사체·배경을 같은 블루 계열 안에서 명도와 광택으로 분리해 뷰티·액세서리 캠페인의 절제된 컬러 키를 설계하기 좋음.",
+    prompt: "photorealistic. a black hand with long blue nails holding the face from the side. The person is bald but has some short hair around their face and head with dark skin, with a minimal, simple, dark blue background, 35mm. sharp, clean, minimalistic.",
+    tags: ["#AI이미지프롬프트", "#블루톤", "#미니멀", "#뷰티캠페인", "#Gen4Image"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37148062120211",
+    visual: { background: "#101b3d", accent: "#3189ff", ink: "#edf5ff", radiusOne: "50%", radiusTwo: "0", rotate: "-5deg", label: "NAVY / NAILS / 35MM" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 4 }, "total": 18, "verdict": "accept",
+      "근거": "공식 가이드가 전체 프롬프트·Gen-4 Image 모델·결과 이미지를 함께 제공하며 네이비 배경, 블루 네일, 35mm, 날카로운 미니멀 처리를 명시해 블루톤 초상을 반복 비교할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용"], "시각렌즈": ["미니멀", "모노톤", "중앙집중", "글로시", "차가움"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37148062120211", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "photorealistic. a black hand with long blue nails holding the face from the side. The person is bald but has some short hair around their face and head with dark skin, with a minimal, simple, dark blue background, 35mm. sharp, clean, minimalistic.", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Modern 스타일 예시·720p/1080p 지원·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37148062120211", "fragment_map": [{ "조각": "long blue nails", "효과": "손끝에 글로시한 블루 포인트 형성" }, { "조각": "minimal, simple, dark blue background", "효과": "저채도 네이비 면으로 피사체 윤곽 분리" }, { "조각": "35mm. sharp, clean, minimalistic", "효과": "선명하고 절제된 캠페인 초상 질감" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-20", "수집사유": "공식 프롬프트 가이드에서 블루톤 결과물·전체 프롬프트·모델 조건이 확인됨" }
+    }
+  },
+  {
+    title: "Sage Perfume Still Life — 소재 배치로 만드는 미니멀 제품 광고",
+    category: "AI 이미지 프롬프트", date: "2026-07-20", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#product-photography-perfume",
+    summary: "독특한 향수병을 세이지 그린 팔레트·꽃·목재·밝은 조명으로 구성한 공식 제품 사진 프롬프트.",
+    note: "제품 실루엣, 컬러 키, 보조 소재, 조명의 역할을 짧게 분리해 뷰티 제품 KV의 구도와 재질 실험 기준선으로 쓰기 좋음.",
+    prompt: "modern product photography of perfume in a unique bottle. minimalist, clean. sage green color palette. thoughtfully arranged floral and wood elements. bright lighting accentuates the perfume bottle.",
+    tags: ["#AI이미지프롬프트", "#제품광고", "#향수", "#스틸라이프", "#Gen4Image"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37148062154003",
+    visual: { background: "#d8dfcc", accent: "#8b6a46", ink: "#1d251d", radiusOne: "24px", radiusTwo: "50%", rotate: "4deg", label: "SAGE / GLASS / LIGHT" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성",
+      "scores": { "완성도": 5, "신규성": 3, "근거성": 5, "가치축": 5 }, "total": 18, "verdict": "accept",
+      "근거": "공식 가이드가 전체 프롬프트·Gen-4 Image 모델·결과 이미지를 함께 제공하고 향수병·세이지 팔레트·꽃과 목재·밝은 조명을 분리해 제품 스틸라이프로 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["미니멀", "어스톤", "중앙집중", "소프트확산광", "글로시", "절제"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37148062154003", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "modern product photography of perfume in a unique bottle. minimalist, clean. sage green color palette. thoughtfully arranged floral and wood elements. bright lighting accentuates the perfume bottle.", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Product photography 예시·720p/1080p 지원·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37148062154003", "fragment_map": [{ "조각": "perfume in a unique bottle", "효과": "향수병 실루엣을 주 피사체로 고정" }, { "조각": "sage green color palette", "효과": "차분한 식물성 컬러 키 형성" }, { "조각": "thoughtfully arranged floral and wood elements", "효과": "꽃과 목재로 자연 소재의 높이·깊이 구성" }, { "조각": "bright lighting accentuates the perfume bottle", "효과": "유리 윤곽과 투과 반사를 밝게 강조" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-20", "수집사유": "공식 가이드에서 제품 사진 전체 프롬프트·모델·결과 이미지가 확인됨" }
+    }
+  },
+  {
+    title: "Arc to Crash Zoom — 수평 아크에서 눈으로 급가속하는 카메라",
+    category: "AI 영상 프롬프트", date: "2026-07-20", url: "https://help.runwayml.com/hc/en-us/articles/48324313115155-Image-to-Video-Prompting-Guide#arc-crash-zoom",
+    summary: "피사체를 크게 도는 수평 아크 뒤 눈에 초점을 맞춘 급격한 크래시 줌으로 마감하는 Gen-4.5 이미지 투 비디오 예시.",
+    note: "두 카메라 동작을 순서와 종착 초점으로 연결해 짧은 제품·인물 숏의 에너지와 시선 도착점을 동시에 제어하는 데 유용함.",
+    prompt: "The camera executes an aggressive, sweeping horizontal arc around the subject, followed by an extremely rapid, aggressive crash zoom that concludes with a sharp focus on the subject's eyes.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#크래시줌", "#카메라무브", "#모션"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/48369404758291",
+    visual: { background: "#201b2b", accent: "#ea6b59", ink: "#f7f4ee", radiusOne: "50%", radiusTwo: "0", rotate: "6deg", label: "ARC / ZOOM / FOCUS" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "공식 Gen-4.5 가이드가 입력 이미지 기반 전체 프롬프트와 결과 GIF를 함께 제공해 수평 아크·크래시 줌·눈의 종착 초점을 하나의 연속 숏으로 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용", "인터랙션"], "시각렌즈": ["비대칭", "하드라이트", "차가움", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/48369404758291", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "The camera executes an aggressive, sweeping horizontal arc around the subject, followed by an extremely rapid, aggressive crash zoom that concludes with a sharp focus on the subject's eyes.", "tool_model": "Runway Gen-4.5 Image to Video", "params": "Image to Video·공식 예시 입력 이미지·duration/aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/48369404758291", "fragment_map": [{ "조각": "aggressive, sweeping horizontal arc", "효과": "피사체 주위를 빠르고 크게 도는 수평 카메라" }, { "조각": "followed by an extremely rapid crash zoom", "효과": "아크 이후 급격한 전진 가속" }, { "조각": "sharp focus on the subject's eyes", "효과": "마지막 프레임의 시선 도착점 고정" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/48324313115155-Image-to-Video-Prompting-Guide", "수집일": "2026-07-20", "수집사유": "최근 갱신된 공식 Gen-4.5 가이드에서 전체 프롬프트와 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Coastal Bus Leading Lines — 곡선 도로로 움직임을 유도하는 숏",
+    category: "AI 영상 프롬프트", date: "2026-07-20", url: "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples#leading-lines-bus",
+    summary: "해안 도로의 곡선을 선행선으로 삼아 흰색·주황 버스가 배경에서 전경으로 접근하는 Gen-4.5 영상 예시.",
+    note: "도로 곡선, 주체 이동, 전경 도착, 석양 색 대비를 한 문장에 묶어 모빌리티 캠페인의 진행 방향과 깊이를 설계하기 좋음.",
+    prompt: "Leading line composition of a classic white and orange municipal bus with tinted windows navigating a curve on a coastal road. The bus slowly approaches from the background, smoothly turning the bend and heading towards the foreground. The bright white and orange of the bus pop against the deep purples, oranges, and blues of the sky and distant landscape, imbued with the golden hour light. Anime art style, hand-drawn aesthetic, serene atmosphere.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#선행선", "#모빌리티", "#골든아워"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/47313504733075",
+    visual: { background: "#33264f", accent: "#ef8f45", ink: "#fff7e8", radiusOne: "24px", radiusTwo: "50%", rotate: "-6deg", label: "CURVE / APPROACH / GOLDEN HOUR" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "공식 가이드가 전체 프롬프트·Gen-4.5 모델·결과 GIF를 함께 제공해 해안 도로의 선행선, 버스의 전경 접근, 골든아워 색 대비를 반복 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용"], "시각렌즈": ["일러스트", "하이채도", "비대칭", "하드라이트", "따뜻", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313504733075", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "Leading line composition of a classic white and orange municipal bus with tinted windows navigating a curve on a coastal road. The bus slowly approaches from the background, smoothly turning the bend and heading towards the foreground. The bright white and orange of the bus pop against the deep purples, oranges, and blues of the sky and distant landscape, imbued with the golden hour light. Anime art style, hand-drawn aesthetic, serene atmosphere.", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·공식 Leading lines 예시·duration/aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313504733075", "fragment_map": [{ "조각": "Leading line composition", "효과": "곡선 도로가 주체 이동 방향을 안내" }, { "조각": "approaches from the background ... foreground", "효과": "배경에서 전경으로 이어지는 깊이와 접근 동작" }, { "조각": "white and orange ... deep purples, oranges, and blues", "효과": "버스와 석양 배경의 고채도 색 대비" }, { "조각": "golden hour light", "효과": "따뜻한 저각광과 긴 그림자" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples", "수집일": "2026-07-20", "수집사유": "최근 갱신된 공식 카메라 예시에서 프롬프트·모델·결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Decagon QA Workspace — AI 인사이트와 편집형 데이터 테이블의 결합",
+    category: "웹·앱 UI", date: "2026-07-20", url: "https://www.figma.com/blog/how-decagon-uses-ai-for-design-system-saturation/",
+    summary: "AI 고객지원 분석 프롬프트, 워크플로 탭, QA 대시보드, 편집형 데이터 테이블을 공통 디자인 시스템으로 묶은 실제 제품 화면.",
+    note: "자유 질의형 AI와 구조화된 분석·검수 도구를 한 작업 공간에서 오가게 해 에이전트 제품의 탐색성과 통제감을 함께 설계한 사례임.",
+    tags: ["#웹앱UI", "#AI에이전트", "#데이터테이블", "#QA대시보드", "#테크IT"],
+    thumbnail: "https://cdn.sanity.io/images/599r6htc/regionalized/971c05ae16b76a56dd3c005f2e5751985b7c0020-3744x2238.png?rect=1,0,3742,2238&w=1080&h=646&q=75&fit=max&auto=format",
+    visual: { background: "#ebe7fa", accent: "#7057e5", ink: "#1b1a20", radiusOne: "24px", radiusTwo: "0", rotate: "2deg", label: "ASK / ANALYZE / QA" },
+    review: {
+      "유형": "웹·앱 UI", "가치축_이름": "시스템화",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "AI 질의·워크플로 탭·추천 분석·QA 대시보드·편집형 테이블과 실제 디자인 시스템 컴포넌트가 공개돼 에이전트형 B2B 제품의 정보 구조와 상태 패턴으로 흡수할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "AI활용", "콘텐츠명료성", "인터랙션"], "시각렌즈": ["미니멀", "그리드", "고밀도", "여백중심", "절제"], "시각아티팩트_url": "https://cdn.sanity.io/images/599r6htc/regionalized/971c05ae16b76a56dd3c005f2e5751985b7c0020-3744x2238.png?rect=1,0,3742,2238&w=1080&h=646&q=75&fit=max&auto=format", "커버리지_카테고리": "웹·앱 UI", "보안_등급": "raw_ok", "type_block": { "flow": "질문 입력→분석 워크플로 선택→추천 질의 실행→QA 테이블 검토·편집", "screens": "AI 분석 홈·워크플로 탭·추천 질문·QA 대시보드·편집형 데이터 테이블" } },
+      "출처": { "소스": "https://www.figma.com/blog/how-decagon-uses-ai-for-design-system-saturation/", "수집일": "2026-07-20", "수집사유": "2026-07-10 공개된 공식 사례에서 실제 AI 분석·QA 제품 화면이 확인됨" }
+    }
+  },
+  {
+    title: "The Wheel of Time S3 — 색·굴절·단계 설계로 전달하는 VFX 콘셉트",
+    category: "비주얼 그래픽", date: "2026-07-20", url: "https://www.behance.net/gallery/251918485/The-Wheel-of-Time-S3-Concept-Designs",
+    summary: "시안 블루 에너지, 유리 숲, 모래·굴절 효과, 포털 변형을 단계별 콘셉트와 최종 장면으로 연결한 VFX 아트 디렉션.",
+    note: "추상적인 힘을 색 대비·두께·불투명도·반사·변형 단계로 분해해 모션·VFX 팀에 넘기는 시각 명세 방식이 구체적임.",
+    tags: ["#비주얼그래픽", "#VFX", "#콘셉트아트", "#시안블루", "#모션필"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/c6d36d251918485.6a42a73646723.jpg",
+    visual: { background: "#261d18", accent: "#69d7ff", ink: "#f6eee5", radiusOne: "0", radiusTwo: "50%", rotate: "5deg", label: "ENERGY / REFRACTION / STAGES" },
+    review: {
+      "유형": "비주얼 그래픽", "가치축_이름": "스타일추출성",
+      "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "공개 콘셉트와 최종 장면이 방사형 에너지·시안/어스톤 대비·유리 굴절·포털 왜곡의 단계별 설계를 보여 줘 복합 VFX의 아트 디렉션 명세로 추출할 수 있다.",
+      "metadata": { "정보렌즈": ["브랜드일관성", "사용자흐름"], "시각렌즈": ["3D", "하이채도", "중앙집중", "하드라이트", "글로시", "몽환", "모션필"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/c6d36d251918485.6a42a73646723.jpg", "커버리지_카테고리": "비주얼 그래픽", "보안_등급": "abstract_only", "type_block": { "elements": "방사형 에너지 직조·시안 발광·사막 어스톤·유리 굴절·모래 파동·포털 왜곡", "reusable_rule": "효과를 색·두께·불투명도·반사·변형 강도 단계로 나눠 콘셉트에서 최종 합성까지 연결" } },
+      "출처": { "소스": "https://www.behance.net/gallery/251918485/The-Wheel-of-Time-S3-Concept-Designs", "수집일": "2026-07-20", "수집사유": "2026-07-18 공개된 다수의 콘셉트 이미지·단계 설명·최종 영상이 확인됨" }
+    }
+  },
+  {
+    title: "EBAT — 예술·과학·기술을 연결하는 교육 브랜드 시스템",
+    category: "브랜드", date: "2026-07-20", url: "https://www.behance.net/gallery/252920017/Manual-de-marca-EBAT",
+    summary: "디지털 신기술 교육을 인간의 창의적 확장으로 정의하고 계산적 구조와 문화적 표현을 함께 묶은 브랜드 매뉴얼.",
+    note: "기술 교육의 차가운 이미지를 그대로 쓰지 않고 엄격한 정보 구조와 유연한 그래픽 언어를 조합해 포용성과 혁신을 동시에 전달함.",
+    tags: ["#브랜드", "#브랜드가이드", "#기술교육", "#예술과기술", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/max_632_webp/a4cb21252920017.6a5b41628b82d.png",
+    visual: { background: "#f2efe7", accent: "#3159d8", ink: "#171717", radiusOne: "24px", radiusTwo: "0", rotate: "-4deg", label: "ART / SCIENCE / TECHNOLOGY" },
+    review: {
+      "유형": "브랜드", "가치축_이름": "스타일추출성",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 4, "가치축": 5 }, "total": 18, "verdict": "accept",
+      "근거": "로고·타이포·컬러·그래픽 규칙과 교육 브랜드 응용물이 공개돼 예술·과학·기술을 연결하는 기관의 계산적이면서 유연한 시각 문법으로 추출할 수 있다.",
+      "metadata": { "정보렌즈": ["브랜드일관성", "타이포그래피", "콘텐츠명료성"], "시각렌즈": ["스위스", "그리드", "비대칭", "하이채도", "절제"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_632_webp/a4cb21252920017.6a5b41628b82d.png", "커버리지_카테고리": "브랜드", "보안_등급": "raw_ok", "type_block": { "system": "계산적 그리드와 유연한 문화 그래픽을 결합한 예술·기술 교육 아이덴티티", "applications": "브랜드 매뉴얼·타이포·컬러·그래픽 모듈·교육 커뮤니케이션" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252920017/Manual-de-marca-EBAT", "수집일": "2026-07-20", "수집사유": "2026-07-18 공개된 공식 브랜드 매뉴얼과 실제 응용 이미지가 확인됨" }
+    }
+  },
+  {
     title: "Driven by Destiny — 생성·합성·보정으로 연결한 AI 시네마 파이프라인",
     category: "AI 디자인", date: "2026-07-19", url: "https://www.behance.net/gallery/252856383/Ayrton-Senna-Driven-by-Destiny",
     summary: "AI 이미지·영상 합성·보이스·업스케일을 거쳐 Premiere 편집과 DaVinci 색보정으로 마감한 모터스포츠 콘셉트 필름 제작 흐름.",
