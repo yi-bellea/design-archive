@@ -2,6 +2,137 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "Driven by Destiny — 생성·합성·보정으로 연결한 AI 시네마 파이프라인",
+    category: "AI 디자인", date: "2026-07-19", url: "https://www.behance.net/gallery/252856383/Ayrton-Senna-Driven-by-Destiny",
+    summary: "AI 이미지·영상 합성·보이스·업스케일을 거쳐 Premiere 편집과 DaVinci 색보정으로 마감한 모터스포츠 콘셉트 필름 제작 흐름.",
+    note: "생성 결과를 단일 툴의 완성본으로 보지 않고 장면 제작·합성·편집·컬러 피니시 단계로 분리해 캠페인 필름 제작 체크리스트로 추상화하기 좋음.",
+    tags: ["#AI디자인", "#AI필름", "#모터스포츠", "#후반제작", "#생성형AI"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a8fdf8252856383.6a597fa0047ca.png",
+    visual: { background: "#171717", accent: "#f1c928", ink: "#f7f4ec", radiusOne: "0", radiusTwo: "50%", rotate: "-4deg", label: "GENERATE / EDIT / GRADE" },
+    review: {
+      "유형": "AI 디자인", "가치축_이름": "재현성",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 4, "가치축": 3 }, "total": 16, "verdict": "accept",
+      "근거": "생성 이미지·영상·보이스·향상 도구와 Premiere 편집·DaVinci 색보정이 완성 장면과 함께 공개돼 멀티툴 AI 필름 제작 단계를 캠페인 워크플로로 전이할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용", "사용자흐름", "브랜드일관성"], "시각렌즈": ["에디토리얼", "중앙집중", "하드라이트", "필름그레인", "럭셔리", "모션필"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a8fdf8252856383.6a597fa0047ca.png", "커버리지_카테고리": "AI 디자인", "보안_등급": "abstract_only", "type_block": { "workflow": "AI 이미지·영상·보이스 생성→장면 합성·향상→Premiere 편집→DaVinci 색보정·피니시", "controls": "장면별 생성 일관성·컷 연결·시네마틱 대비·필름 질감" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252856383/Ayrton-Senna-Driven-by-Destiny", "수집일": "2026-07-19", "수집사유": "2026-07-17 공개된 완성 필름 장면과 생성·편집·색보정 제작 흐름이 확인됨" }
+    }
+  },
+  {
+    title: "StyleSync — 미세 스타일 불일치를 한 번에 찾는 Figma 검사기",
+    category: "Figma 플러그인", date: "2026-07-19", url: "https://www.figma.com/community/plugin/1656255634480891540",
+    summary: "현재 페이지의 폰트 크기·반경·색·선 두께·행간·자간·불투명도 차이를 감지하고 영향 레이어를 모아 수정하는 품질 점검 플러그인.",
+    note: "핸드오프 직전 육안 검수에서 놓치기 쉬운 1px·1pt급 차이를 규칙 기반 목록으로 바꿔 디자인 시스템 정합성 검토 시간을 줄임.",
+    tags: ["#Figma플러그인", "#디자인QA", "#스타일검사", "#핸드오프"],
+    thumbnail: "https://www.figma.com/community/thumbnail?resource_id=1656255634480891540&resource_type=plugin",
+    visual: { background: "#f3f3f3", accent: "#2457f5", ink: "#171717", radiusOne: "8px", radiusTwo: "0", rotate: "0deg", label: "SCAN / SELECT / FIX" },
+    review: {
+      "유형": "Figma 플러그인", "가치축_이름": "유용성",
+      "scores": { "완성도": 4, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 18, "verdict": "accept",
+      "근거": "공식 커버에 실제 캔버스·검사 패널·영향 레이어 선택·일괄 수정 화면이 보여 핸드오프 전 미세 스타일 편차를 반복적으로 줄이는 QA 도구로 즉시 적용할 수 있다.",
+      "metadata": { "정보렌즈": ["브랜드일관성", "접근성", "사용자흐름"], "시각렌즈": [], "시각아티팩트_url": "https://www.figma.com/community/thumbnail?resource_id=1656255634480891540&resource_type=plugin", "커버리지_카테고리": "Figma 플러그인", "보안_등급": "raw_ok", "type_block": { "workflow": "현재 페이지 스캔→미세 불일치 목록 확인→영향 레이어 선택→공통 값으로 수정", "repeated_task": "폰트 크기·반경·색·선·행간·자간·불투명도 정합성 검사" } },
+      "출처": { "소스": "https://www.figma.com/community/plugin/1656255634480891540", "수집일": "2026-07-19", "수집사유": "2026-07-13 공개된 공식 Community 커버에서 실행 화면과 검사·수정 흐름이 확인됨" }
+    }
+  },
+  {
+    title: "Liquid Chrome Architecture — 왜곡 강도를 단계적으로 높이는 이미지 반복",
+    category: "AI 이미지 프롬프트", date: "2026-07-19", url: "https://help.runwayml.com/hc/en-us/articles/37053594806419-Creating-with-Gen-4-Image",
+    summary: "고전 건축을 검은 공간에 분리한 뒤 곡률·글리치·액체 크롬·홀로그램 재질을 추가해 변형 강도를 높인 공식 이미지 반복 예시.",
+    note: "기본 장면을 유지한 채 형태 왜곡과 재질 지시만 증분하는 방식이라 캠페인 키 비주얼의 변주 강도를 비교하는 프롬프트 실험에 유용함.",
+    prompt: "photograph of warped ornate classic buildings in a black abyss. the buildings are in surreal shapes. the buildings curve and bend impossibly high into the black sky in a glitched swirl formation, defying gravity. stark white color palette with cool blue and green tones. distorted. warped, squished, and extremely deformed and exaggerated. avant-garde. vibrant red, blue, purple, jewel green. conjoined bubblegum stretch. hologram. encased in translucent liquid chrome with an iridescent sheen.",
+    tags: ["#AI이미지프롬프트", "#Gen4Image", "#액체크롬", "#초현실건축"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37089796809363",
+    visual: { background: "#080808", accent: "#6ad8df", ink: "#f7f7f7", radiusOne: "0", radiusTwo: "50%", rotate: "6deg", label: "WARP / CHROME / ITERATE" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성",
+      "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway 공식 문서가 전체 수정 프롬프트·Gen-4 Image 모델·지원 해상도·4개 결과를 함께 제공해 형태 왜곡과 액체 크롬 재질의 증분 효과를 반복 비교할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용"], "시각렌즈": ["3D", "하이채도", "비대칭", "글로시", "몽환"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37089796809363", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "photograph of warped ornate classic buildings in a black abyss. the buildings are in surreal shapes. the buildings curve and bend impossibly high into the black sky in a glitched swirl formation, defying gravity. stark white color palette with cool blue and green tones. distorted. warped, squished, and extremely deformed and exaggerated. avant-garde. vibrant red, blue, purple, jewel green. conjoined bubblegum stretch. hologram. encased in translucent liquid chrome with an iridescent sheen.", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·4개 배치·720p/1080p 지원·공식 예시 비율/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37089796809363", "fragment_map": [{ "조각": "warped ornate classic buildings in a black abyss", "효과": "건축 윤곽을 검은 배경에서 분리" }, { "조각": "curve and bend impossibly high into a glitched swirl formation", "효과": "수직 구조를 나선형으로 강하게 왜곡" }, { "조각": "encased in translucent liquid chrome with an iridescent sheen", "효과": "표면에 반투명 크롬과 무지갯빛 반사 부여" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/37053594806419-Creating-with-Gen-4-Image", "수집일": "2026-07-19", "수집사유": "공식 가이드에서 전체 프롬프트·모델·해상도 설정·생성 결과가 함께 확인됨" }
+    }
+  },
+  {
+    title: "Floating Boulder Composite — 두 레퍼런스를 한 장면으로 결합",
+    category: "AI 이미지 프롬프트", date: "2026-07-19", url: "https://help.runwayml.com/hc/en-us/articles/40042718905875-Creating-with-Gen-4-Image-References",
+    summary: "인물 레퍼런스와 부유 바위 장면을 태그로 불러와 피사체 정체성과 환경 구도를 한 이미지에 결합한 공식 멀티레퍼런스 예시.",
+    note: "피사체와 배경을 각각 독립 레퍼런스로 관리해 캐릭터 일관성을 유지하면서 캠페인 장면을 확장하는 합성 워크플로를 이해하기 좋음.",
+    prompt: "@bryan sits atop the floating boulder in IMG_1",
+    tags: ["#AI이미지프롬프트", "#Gen4Image", "#멀티레퍼런스", "#장면합성"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/40794868929811",
+    visual: { background: "#6d99af", accent: "#bf6c31", ink: "#151515", radiusOne: "50%", radiusTwo: "0", rotate: "-5deg", label: "SUBJECT / SCENE / COMBINE" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "공식 문서가 인물·부유 바위 입력 레퍼런스, 태그형 전체 프롬프트, Gen-4 Image 결과를 함께 공개해 주체 보존과 장면 결합을 반복 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["중앙집중", "소프트확산광", "따뜻", "몽환"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/40794868929811", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "@bryan sits atop the floating boulder in IMG_1", "tool_model": "Runway Gen-4 Image References", "params": "Reference 2장(@bryan 인물·IMG_1 부유 바위)·최대 3개 Reference 지원·공식 예시 비율/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/40794868929811", "fragment_map": [{ "조각": "@bryan", "효과": "저장된 인물의 정체성과 외형 유지" }, { "조각": "floating boulder in IMG_1", "효과": "부유 바위의 환경·조명·공간 관계 참조" }, { "조각": "sits atop", "효과": "인물과 바위 사이의 접촉 자세 지정" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/40042718905875-Creating-with-Gen-4-Image-References", "수집일": "2026-07-19", "수집사유": "최근 갱신된 공식 References 가이드에서 입력 이미지·태그 프롬프트·생성 결과가 함께 확인됨" }
+    }
+  },
+  {
+    title: "Blue Orb Concept Car — 시안·옐로 대비의 에디토리얼 3D 광고",
+    category: "AI 이미지 프롬프트", date: "2026-07-19", url: "https://lexica.art/prompt/7cfcecb1-06d0-40d9-84c3-2f8682b6bead",
+    summary: "시안 블루 차체와 네온 옐로 포인트를 투명 오브·반사 바닥·제품 시점으로 묶은 미래형 콘셉트카 광고 이미지.",
+    note: "차량 비례를 유지하면서 색 대비·광택 도장·유리·타이어·반사 환경이 한 세트로 통제돼 3D 자동차 캠페인의 컬러 키 테스트에 적합함.",
+    prompt: "Futuristic sci-fi blue car, Flat Design, Product-View, editorial photography, transparent orb, product photography, natural lighting, neon yellow lights, natural daytime lighting, zbrush, 8k",
+    tags: ["#AI이미지프롬프트", "#자동차", "#블루톤", "#3D", "#제품광고"],
+    thumbnail: "https://lexica.art/prompt/7cfcecb1-06d0-40d9-84c3-2f8682b6bead/opengraph-image?d26e3adb96114073",
+    visual: { background: "#173869", accent: "#e2dc24", ink: "#eef7ff", radiusOne: "50%", radiusTwo: "0", rotate: "4deg", label: "CYAN / YELLOW / PRODUCT" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "공개 결과 4장과 전체 프롬프트·Aperture v3.5·832×1152 설정에서 시안 차체, 옐로 키라이트, 유리·도장·타이어 반사가 일관되게 확인돼 에디토리얼 자동차 제품 광고로 반복 생성할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["3D", "하이채도", "중앙집중", "글로시", "럭셔리"], "시각아티팩트_url": "https://lexica.art/prompt/7cfcecb1-06d0-40d9-84c3-2f8682b6bead/opengraph-image?d26e3adb96114073", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "Futuristic sci-fi blue car, Flat Design, Product-View, editorial photography, transparent orb, product photography, natural lighting, neon yellow lights, natural daytime lighting, zbrush, 8k", "tool_model": "Lexica Aperture v3.5", "params": "832×1152·guidance/seed 미공개", "output_url": "https://lexica.art/prompt/7cfcecb1-06d0-40d9-84c3-2f8682b6bead/opengraph-image?d26e3adb96114073", "fragment_map": [{ "조각": "Futuristic sci-fi blue car", "효과": "브랜드 비종속 미래형 차체와 시안 도장" }, { "조각": "Product-View, editorial photography", "효과": "차량 비례를 읽기 쉬운 광고형 제품 시점" }, { "조각": "transparent orb, neon yellow lights", "효과": "유리 투과와 시안·옐로 보색 대비" }, { "조각": "zbrush, 8k", "효과": "글로시 도장·금속·타이어의 3D 표면 디테일 강화" }] } },
+      "출처": { "소스": "https://lexica.art/prompt/7cfcecb1-06d0-40d9-84c3-2f8682b6bead", "수집일": "2026-07-19", "수집사유": "공개 결과에서 블루·시안 차체와 옐로 조명, 차체 비례·광택·반사 환경이 확인되고 프롬프트·모델·크기가 공개됨" }
+    }
+  },
+  {
+    title: "DesignAI Interior — 생성·탐색·저장을 연결한 모바일 공간 설계",
+    category: "웹·앱 UI", date: "2026-07-19", url: "https://www.behance.net/gallery/252882405/AI-Interior-Design-Mobile-App",
+    summary: "공간 사진에서 AI 인테리어 콘셉트를 생성하고 스타일 탐색·즐겨찾기·프로젝트 관리로 이어지는 모바일 앱 화면 시스템.",
+    note: "생성 CTA를 홈의 핵심 과업으로 두고 결과를 방 유형·스타일·프로젝트 단위로 다시 찾게 해 AI 산출물이 일회성으로 끝나지 않는 정보 구조를 보여 줌.",
+    tags: ["#웹앱UI", "#AI인테리어", "#모바일앱", "#프로젝트관리", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/260d4f252882405.6a5a29d48cf2c.png",
+    visual: { background: "#f4f0e8", accent: "#2f6b4a", ink: "#1e2420", radiusOne: "24px", radiusTwo: "50%", rotate: "-3deg", label: "GENERATE / EXPLORE / SAVE" },
+    review: {
+      "유형": "웹·앱 UI", "가치축_이름": "시스템화",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 4, "가치축": 4 }, "total": 17, "verdict": "accept",
+      "근거": "AI 제안 홈·방별 프로젝트 카드·탐색·즐겨찾기·관리 화면이 공개돼 공간 생성 결과를 장기 프로젝트로 전환하는 모바일 정보 구조와 흐름으로 흡수할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "AI활용", "콘텐츠명료성"], "시각렌즈": ["미니멀", "어스톤", "그리드", "여백중심", "소프트확산광", "절제"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/260d4f252882405.6a5a29d48cf2c.png", "커버리지_카테고리": "웹·앱 UI", "보안_등급": "raw_ok", "type_block": { "flow": "공간/스타일 선택→AI 콘셉트 생성→영감 탐색→즐겨찾기→프로젝트 관리", "screens": "홈·AI 제안·프로젝트 목록·방 유형 필터·탐색·즐겨찾기" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252882405/AI-Interior-Design-Mobile-App", "수집일": "2026-07-19", "수집사유": "최근 공개된 1405×1054 공식 프로젝트 이미지에서 AI 생성과 프로젝트 관리 모바일 화면이 확인됨" }
+    }
+  },
+  {
+    title: "Cloud Hosting Campaign — 서버 개념을 네온 3D 카드로 설명",
+    category: "비주얼 그래픽", date: "2026-07-19", url: "https://www.behance.net/gallery/252889105/Social-Media-Campaign-Web-Hosting-Cloud-Services",
+    summary: "공유·전용 호스팅, 클라우드, 도메인, 비즈니스 메일을 서버·퍼즐·케이블 3D 메타포와 일관된 그린 톤으로 설명한 소셜 캠페인.",
+    note: "보이지 않는 인프라 서비스를 하나의 오브젝트 메타포와 질문형 헤드라인으로 번역해 기술 콘텐츠를 카드 시리즈로 확장하는 규칙이 명확함.",
+    tags: ["#비주얼그래픽", "#클라우드", "#웹호스팅", "#3D", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/40785d252889105.6a5a47e3ea647.png",
+    visual: { background: "#0f351f", accent: "#8cf8a7", ink: "#f3fff6", radiusOne: "0", radiusTwo: "50%", rotate: "5deg", label: "SERVER / METAPHOR / SERIES" },
+    review: {
+      "유형": "비주얼 그래픽", "가치축_이름": "스타일추출성",
+      "scores": { "완성도": 4, "신규성": 4, "근거성": 4, "가치축": 4 }, "total": 16, "verdict": "accept",
+      "근거": "호스팅·클라우드·도메인의 실제 캠페인 카드에서 서버·퍼즐·케이블 3D 메타포와 그린 광원·질문형 헤드라인이 반복돼 기술 서비스 설명 그래픽 문법으로 추출할 수 있다.",
+      "metadata": { "정보렌즈": ["콘텐츠명료성", "브랜드일관성", "타이포그래피", "AI활용"], "시각렌즈": ["3D", "하이채도", "고밀도", "글로시", "차가움"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/40785d252889105.6a5a47e3ea647.png", "커버리지_카테고리": "비주얼 그래픽", "보안_등급": "raw_ok", "type_block": { "elements": "서버 랙·퍼즐·케이블·그린 네온·질문형 헤드라인·서비스 필", "reusable_rule": "기술 개념마다 하나의 3D 오브젝트 메타포를 배정하고 공통 색·광원·타입 위계로 시리즈화" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252889105/Social-Media-Campaign-Web-Hosting-Cloud-Services", "수집일": "2026-07-19", "수집사유": "2026-07-17 공개된 1400×1024 실제 소셜 카드 묶음과 기술 서비스별 그래픽 규칙이 확인됨" }
+    }
+  },
+  {
+    title: "FYND — 3D 프린팅의 발견 경험을 브랜드 시스템으로 확장",
+    category: "브랜드", date: "2026-07-19", url: "https://www.behance.net/gallery/250225465/FYND",
+    summary: "돋보기 모티프·유희적 워드마크·보라색 시스템을 3D 프린팅 제품 큐레이션과 잃어버린 장난감 복원 캠페인에 연결한 아이덴티티.",
+    note: "기술 기능인 3D 복원을 ‘찾기’라는 감정적 행동으로 번역해 제품·캠페인·스토리텔링을 하나의 브랜드 약속으로 묶는 방식이 실무적임.",
+    tags: ["#브랜드", "#3D프린팅", "#테크IT", "#일러스트", "#캠페인"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a29267250225465.6a56cafad542b.jpg",
+    visual: { background: "#e7dbf1", accent: "#59309d", ink: "#211a28", radiusOne: "50%", radiusTwo: "0", rotate: "-6deg", label: "SEARCH / PRINT / RESTORE" },
+    review: {
+      "유형": "브랜드", "가치축_이름": "스타일추출성",
+      "scores": { "완성도": 5, "신규성": 5, "근거성": 4, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "돋보기 심벌·유희적 워드마크·보라색 시스템이 실제 3D 프린터, 제품 복원 캠페인, 일러스트 응용으로 연결돼 기술 기능을 발견 경험으로 전환하는 브랜드 문법으로 추출할 수 있다.",
+      "metadata": { "정보렌즈": ["브랜드일관성", "콘텐츠명료성", "사용자흐름"], "시각렌즈": ["일러스트", "하이채도", "중앙집중", "글로시", "유희적"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a29267250225465.6a56cafad542b.jpg", "커버리지_카테고리": "브랜드", "보안_등급": "raw_ok", "type_block": { "system": "돋보기 기반 심벌·둥근 워드마크·보라/화이트 팔레트·발견과 복원 메시지", "applications": "3D 프린터 환경·제품 표지·빈티지 장난감 복원 캠페인·일러스트" } },
+      "출처": { "소스": "https://www.behance.net/gallery/250225465/FYND", "수집일": "2026-07-19", "수집사유": "2026-07-17 공개된 공식 1401×788 대표 이미지와 3D 프린팅 기반 브랜드·캠페인 응용이 확인됨" }
+    }
+  },
+  {
     title: "Maison WeCraft — 수공예 유산을 절제된 실버 시스템으로 번역",
     category: "브랜드", date: "2026-07-18", url: "https://www.behance.net/gallery/252695393/Maison-WeCraft-Brand-Identity",
     summary: "수공예 갤러리의 ‘House of Craft’ 개념을 모노그램·세리프 조합·실버 물성·여백 중심 편집으로 연결한 프리미엄 아이덴티티.",
