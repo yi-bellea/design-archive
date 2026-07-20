@@ -2,6 +2,138 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "LOLA — 사람 승인을 색으로 구분하는 AI 프로젝트 매니저",
+    category: "AI 디자인", date: "2026-07-21", url: "https://www.behance.net/gallery/252306581/LOLA-An-AI-Project-Manager-for-Creative-Teams",
+    summary: "요청을 읽어 담당자·프로젝트·우선순위를 제안하고 사람이 승인하는 실제 운영형 AI 에이전트와 상태 중심 브랜드 시스템.",
+    note: "AI 제안·사람 승인·추가 질문을 색으로 분리해 자동화의 주체와 책임 경계를 한눈에 읽게 만드는 휴먼 인 더 루프 패턴이 좋음.",
+    tags: ["#AI디자인", "#AI에이전트", "#휴먼인더루프", "#상태디자인", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b137fe252306581.6a5a3d0d6cc63.png",
+    visual: { background: "#f4ead8", accent: "#f28c6f", ink: "#171717", radiusOne: "24px", radiusTwo: "50%", rotate: "-3deg", label: "PROPOSE / APPROVE / ASK" },
+    review: {
+      "유형": "AI 디자인", "가치축_이름": "재현성",
+      "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 4 }, "total": 19, "verdict": "accept",
+      "근거": "실제 운영 중인 요청 분류 에이전트가 제안·승인·질문의 세 상태를 색과 화면으로 공개해 창작팀 자동화에서 사람의 최종 통제권을 보존하는 패턴으로 전이할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용", "사용자흐름", "콘텐츠명료성", "인터랙션"], "시각렌즈": ["미니멀", "듀오톤", "그리드", "여백중심", "절제"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b137fe252306581.6a5a3d0d6cc63.png", "커버리지_카테고리": "AI 디자인", "보안_등급": "raw_ok", "type_block": { "workflow": "요청 접수→AI가 담당자·프로젝트·우선순위 제안→사람 승인 또는 추가 질문", "controls": "따뜻한 색=AI 제안·차가운 색=사람 승인·크림=확인 질문·propose-only 모드" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252306581/LOLA-An-AI-Project-Manager-for-Creative-Teams", "수집일": "2026-07-21", "수집사유": "2026-07-07 공개된 실제 운영형 AI 에이전트의 제품 화면·상태 규칙·구현 흐름이 확인됨" }
+    }
+  },
+  {
+    title: "Orange Tulle Portrait — 블루 배경과 네온 피치 광원의 레이어",
+    category: "AI 이미지 프롬프트", date: "2026-07-21", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#detailed-tulle-portrait",
+    summary: "블루·퍼플 배경 위에 오렌지 튤과 네온 피치 광원을 겹쳐 무중력 바로크 초상을 만드는 Gen-4 Image 예시.",
+    note: "차가운 배경과 따뜻한 반투명 소재를 색온도·레이어·광원 단위로 분리해 패션·뷰티 캠페인의 블루톤 키비주얼을 설계하기 좋음.",
+    prompt: "elegant portrait of a woman draped in a sheer tulle veil against a blue background that resembles a sky. Close-up, ethereal warm orange lighting, soft glowing focus. natural face. The orange-toned tulle veil is draped over her head and flows around her face with multiple flowing layers in a weightless, extravagant baroque painting style. The flowing fabric takes up most of the scene, dramatically swirling throughout the environment. Glowing orange lighting creates a dreamy atmosphere. blend of pastel and vibrant color palettes. rich purples and blues, warm pinkish orange skin tone. avant-garde. elegant artistry, elaborate yet minimalist. a chaotic yet elegant scene. dramatic weightless flowing fabric. glowing, gel lighting, ethereal. electric neon peach accents.",
+    tags: ["#AI이미지프롬프트", "#블루톤", "#패션캠페인", "#젤라이팅", "#Gen4Image"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37067220594835",
+    visual: { background: "#334a9b", accent: "#ff8f72", ink: "#fff4ef", radiusOne: "50%", radiusTwo: "24px", rotate: "4deg", label: "BLUE / TULLE / PEACH" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "공식 가이드가 전체 프롬프트·Gen-4 Image·결과 이미지를 함께 제공하고 블루 배경, 오렌지 튤, 젤 광원, 클로즈업을 구체적으로 명시해 캠페인 초상으로 반복 비교할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["에디토리얼", "하이채도", "중앙집중", "소프트확산광", "몽환"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37067220594835", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "elegant portrait of a woman draped in a sheer tulle veil against a blue background that resembles a sky. Close-up, ethereal warm orange lighting, soft glowing focus. natural face. The orange-toned tulle veil is draped over her head and flows around her face with multiple flowing layers in a weightless, extravagant baroque painting style. The flowing fabric takes up most of the scene, dramatically swirling throughout the environment. Glowing orange lighting creates a dreamy atmosphere. blend of pastel and vibrant color palettes. rich purples and blues, warm pinkish orange skin tone. avant-garde. elegant artistry, elaborate yet minimalist. a chaotic yet elegant scene. dramatic weightless flowing fabric. glowing, gel lighting, ethereal. electric neon peach accents.", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Detailed 예시·720p/1080p 지원·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37067220594835", "fragment_map": [{ "조각": "blue background that resembles a sky", "효과": "풍부한 블루·퍼플 공간색 형성" }, { "조각": "orange-toned tulle veil ... multiple flowing layers", "효과": "반투명 오렌지 소재의 겹과 깊이 생성" }, { "조각": "warm orange lighting ... electric neon peach accents", "효과": "차가운 배경과 대비되는 피치 계열 젤 광원" }, { "조각": "Close-up ... soft glowing focus", "효과": "얼굴 중심의 부드러운 캠페인 초점" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-21", "수집사유": "최근 갱신된 공식 가이드에서 블루톤 결과물·전체 프롬프트·모델 조건이 확인됨" }
+    }
+  },
+  {
+    title: "Glitchcore Fabric Portrait — 데이터모시와 CRT 이상을 섞은 패션 이미지",
+    category: "AI 이미지 프롬프트", date: "2026-07-21", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#glitchcore-fabric-portrait",
+    summary: "흐르는 아방가르드 의상에 데이터모시·크로매틱 애버레이션·CRT 정적을 낮은 대비로 자연스럽게 혼합한 공식 예시.",
+    note: "오류 효과를 장식 필터가 아니라 소재 흐름·저대비 사진·픽셀 변형의 계층으로 정의해 테크 패션 비주얼의 통제 어휘로 쓰기 좋음.",
+    prompt: "abstract, glitchy cinematic photography of a woman wearing an avant garde outfit with cascading layers of flowing fabric. Glitch art, glitchcore, grain texture, datamosh, melting pixels, chromatic aberration, CRT static accents. The low-contrast glitched photograph is naturally blended with visual anomalies.",
+    tags: ["#AI이미지프롬프트", "#글리치코어", "#패션", "#CRT", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37067220597011",
+    visual: { background: "#231c2e", accent: "#58d8de", ink: "#f5f0fb", radiusOne: "24px", radiusTwo: "0", rotate: "-5deg", label: "DATAMOSH / CRT / FABRIC" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "공식 결과와 전체 프롬프트가 소재·그레인·데이터모시·색수차·CRT 정적을 분리해 제시하므로 테크 패션 이미지의 디지털 이상 강도를 조합해 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용"], "시각렌즈": ["에디토리얼", "듀오톤", "비대칭", "필름그레인", "차가움"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37067220597011", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "abstract, glitchy cinematic photography of a woman wearing an avant garde outfit with cascading layers of flowing fabric. Glitch art, glitchcore, grain texture, datamosh, melting pixels, chromatic aberration, CRT static accents. The low-contrast glitched photograph is naturally blended with visual anomalies.", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Glitchcore 예시·720p/1080p 지원·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37067220597011", "fragment_map": [{ "조각": "cascading layers of flowing fabric", "효과": "의상 층의 방향성과 유동적 실루엣" }, { "조각": "datamosh, melting pixels", "효과": "픽셀 용해와 프레임 압축 오류 질감" }, { "조각": "chromatic aberration, CRT static accents", "효과": "색 분리와 아날로그 화면 노이즈" }, { "조각": "low-contrast ... naturally blended", "효과": "오류 효과를 사진에 저대비로 통합" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-21", "수집사유": "최근 갱신된 공식 가이드에서 전체 프롬프트·결과 이미지·모델 조건이 확인됨" }
+    }
+  },
+  {
+    title: "Perfume Pedestal Up — 오팔 유리병을 따라 상승하는 뷰티 제품 숏",
+    category: "AI 영상 프롬프트", date: "2026-07-21", url: "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples#pedestal-perfume",
+    summary: "손이 향수병을 들어 올리는 동작을 페데스털 업 카메라가 따라가며 오팔 반사와 블루·핑크 배경을 드러내는 Gen-4.5 예시.",
+    note: "손·제품·카메라의 수직 이동을 같은 속성으로 묶어 작은 제품을 영웅적으로 드러내는 뷰티 커머셜 숏에 적용하기 좋음.",
+    prompt: "A woman's slender fingers with delicate, polished nails gently grasp the faceted cap of a clear glass perfume bottle, illuminated by soft, prismatic light. The hand lifts the bottle, revealing the faint tattoo on her wrist while the camera executes a gentle pedestal up, following the bottle's ascent. The color palette combines natural skin tones with the opalescent hues of the perfume bottle and the soft cool blue and warm pink background. Commercial beauty photography, ethereal, soft focus, product shot, iridescent, soft pastels",
+    tags: ["#AI영상프롬프트", "#Gen45", "#페데스털", "#제품광고", "#향수"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/47313504754579",
+    visual: { background: "#c9dafa", accent: "#efb1c8", ink: "#222235", radiusOne: "50%", radiusTwo: "24px", rotate: "3deg", label: "LIFT / PEDESTAL / IRIDESCENT" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "공식 Gen-4.5 출력과 전체 프롬프트가 손의 상승, 병의 오팔 반사, 페데스털 업, 블루·핑크 배경을 함께 규정해 제품 공개 숏으로 반복 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용"], "시각렌즈": ["미니멀", "파스텔", "중앙집중", "소프트확산광", "글로시", "몽환", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313504754579", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "A woman's slender fingers with delicate, polished nails gently grasp the faceted cap of a clear glass perfume bottle, illuminated by soft, prismatic light. The hand lifts the bottle, revealing the faint tattoo on her wrist while the camera executes a gentle pedestal up, following the bottle's ascent. The color palette combines natural skin tones with the opalescent hues of the perfume bottle and the soft cool blue and warm pink background. Commercial beauty photography, ethereal, soft focus, product shot, iridescent, soft pastels", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·공식 Pedestal 예시·duration/aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313504754579", "fragment_map": [{ "조각": "hand lifts the bottle", "효과": "손과 제품의 수직 상승 동작" }, { "조각": "gentle pedestal up, following the bottle's ascent", "효과": "제품을 놓치지 않는 부드러운 수직 카메라" }, { "조각": "soft, prismatic light", "효과": "유리 면의 오팔 분광 반사" }, { "조각": "cool blue and warm pink background", "효과": "파스텔 냉온 색 대비" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples", "수집일": "2026-07-21", "수집사유": "최근 갱신된 공식 카메라 예시에서 전체 프롬프트·Gen-4.5 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Pastel Snake Orbit — 초현실 스틸라이프를 천천히 도는 카메라",
+    category: "AI 영상 프롬프트", date: "2026-07-21", url: "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples#orbit-pastel-snake",
+    summary: "알비노 뱀·노란 레몬·핑크 꽃·글리터 식물을 파스텔 배경에 배치하고 느린 궤도 카메라로 전체 재질을 탐색하는 공식 예시.",
+    note: "고정된 제품형 스틸라이프에 느린 오빗만 부여해 소재 반사와 전후 관계를 보여 주는 럭셔리 티저의 기본 움직임으로 좋음.",
+    prompt: "Camera orbits a meticulously arranged, surreal still life featuring an iridescent albino snake coiled among vibrant yellow lemons, soft pink flowers, and shimmering, glitter-dusted flora against a gentle pastel backdrop. The camera executes a slow, deliberate orbit.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#오빗", "#스틸라이프", "#럭셔리"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/47313515624083",
+    visual: { background: "#f2dce7", accent: "#f1dc4d", ink: "#25231f", radiusOne: "24px", radiusTwo: "50%", rotate: "-4deg", label: "SNAKE / STILL LIFE / ORBIT" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "공식 Gen-4.5 결과와 전체 프롬프트가 주체·보조 소재·파스텔 배경·느린 오빗을 분리해 명시하므로 럭셔리 스틸라이프의 전후 관계와 재질 반사를 안정적으로 탐색할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용"], "시각렌즈": ["3D", "파스텔", "중앙집중", "글로시", "럭셔리", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313515624083", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "Camera orbits a meticulously arranged, surreal still life featuring an iridescent albino snake coiled among vibrant yellow lemons, soft pink flowers, and shimmering, glitter-dusted flora against a gentle pastel backdrop. The camera executes a slow, deliberate orbit.", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·공식 Orbit 예시·duration/aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313515624083", "fragment_map": [{ "조각": "iridescent albino snake coiled", "효과": "중앙 주체의 곡선과 오팔 반사" }, { "조각": "yellow lemons, soft pink flowers", "효과": "레몬·핑크의 밝은 색 대비" }, { "조각": "glitter-dusted flora", "효과": "회전 중 점광 하이라이트 생성" }, { "조각": "slow, deliberate orbit", "효과": "스틸라이프 전면과 후면을 느리게 공개" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples", "수집일": "2026-07-21", "수집사유": "최근 갱신된 공식 카메라 예시에서 전체 프롬프트·Gen-4.5 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Mexico & Taiwan Impression — 문화 기호를 색면으로 압축한 포스터",
+    category: "비주얼 그래픽", date: "2026-07-21", url: "https://www.behance.net/gallery/252924549/Mexico-Taiwan-Impression-Poster-Design",
+    summary: "멕시코의 태양석·마리골드와 대만의 오페라·창살·난초를 따뜻한 삼색과 청록·적색의 두 포스터로 재구성한 문화 그래픽.",
+    note: "복수의 문화 상징을 세미오틱 모듈과 제한 팔레트로 묶어 지역 캠페인에서 정보 밀도와 즉시 인식성을 동시에 확보한 사례임.",
+    tags: ["#비주얼그래픽", "#포스터", "#문화기호", "#일러스트", "#하이채도"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/9f360b252924549.6a5b689663046.jpeg",
+    visual: { background: "#f06a3b", accent: "#0f817f", ink: "#171717", radiusOne: "0", radiusTwo: "50%", rotate: "-3deg", label: "SYMBOL / COLOR / PLACE" },
+    review: {
+      "유형": "비주얼 그래픽", "가치축_이름": "스타일추출성",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "두 지역의 문화 상징·인쇄 규격·제한 팔레트와 완성 포스터가 함께 공개돼 지역 행사 그래픽에서 상징 모듈과 색 체계를 재사용할 수 있다.",
+      "metadata": { "정보렌즈": ["타이포그래피", "브랜드일관성", "콘텐츠명료성"], "시각렌즈": ["일러스트", "하이채도", "중앙집중", "고밀도", "따뜻"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/9f360b252924549.6a5b689663046.jpeg", "커버리지_카테고리": "비주얼 그래픽", "보안_등급": "raw_ok", "type_block": { "system": "문화 상징을 중앙 모티프·장식 테두리·제한 팔레트로 모듈화", "applications": "700×1000mm 디지털 인쇄 포스터 2종" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252924549/Mexico-Taiwan-Impression-Poster-Design", "수집일": "2026-07-21", "수집사유": "2026-07-18 공개된 완성 포스터·문화 기호 설명·인쇄 규격이 확인됨" }
+    }
+  },
+  {
+    title: "Operational Command Dashboard — KPI·알림·주문을 한 화면에 묶은 UI",
+    category: "웹·앱 UI", date: "2026-07-21", url: "https://www.behance.net/gallery/252438853/Modern-Operational-Dashboard-UI-Design",
+    summary: "실시간 KPI, 운영 알림, 지역 비교, 성과 분석, 주문 관리 테이블을 단일 의사결정 화면으로 통합한 엔터프라이즈 대시보드.",
+    note: "핵심 수치에서 예외 알림과 상세 주문으로 내려가는 시선 순서를 명확히 해 운영자가 문제를 발견하고 바로 조치하는 정보 구조가 좋음.",
+    tags: ["#웹앱UI", "#운영대시보드", "#데이터시각화", "#엔터프라이즈", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3a5c4c252438853.6a4f73e1101e6.jpg",
+    visual: { background: "#e7edf1", accent: "#3d68d7", ink: "#141820", radiusOne: "24px", radiusTwo: "0", rotate: "2deg", label: "KPI / ALERT / ORDER" },
+    review: {
+      "유형": "웹·앱 UI", "가치축_이름": "시스템화",
+      "scores": { "완성도": 5, "신규성": 3, "근거성": 5, "가치축": 5 }, "total": 18, "verdict": "accept",
+      "근거": "KPI·실시간 알림·지역 비교·분석 차트·주문 테이블이 실제 화면에서 계층화돼 운영형 B2B 제품의 요약→예외→상세 패턴으로 흡수할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "타이포그래피", "콘텐츠명료성", "인터랙션"], "시각렌즈": ["미니멀", "그리드", "고밀도", "여백중심", "절제"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3a5c4c252438853.6a4f73e1101e6.jpg", "커버리지_카테고리": "웹·앱 UI", "보안_등급": "raw_ok", "type_block": { "flow": "KPI 확인→운영 알림 탐색→지역 성과 비교→주문 상세 검토", "screens": "실시간 운영 대시보드·지역 비교·주문 관리 테이블" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252438853/Modern-Operational-Dashboard-UI-Design", "수집일": "2026-07-21", "수집사유": "2026-07-09 공개된 실제 운영 대시보드 화면과 KPI·알림·분석·주문 관리 구조가 확인됨" }
+    }
+  },
+  {
+    title: "CotaSonic — 데이터 기반 견적 플랫폼의 레이더 아이덴티티",
+    category: "브랜드", date: "2026-07-21", url: "https://www.behance.net/gallery/252395513/CotaSonic",
+    summary: "견적 검색·비교·모니터링을 레이더 심벌, 오렌지·블루 팔레트, 기술적 워드마크와 랜딩 페이지로 확장한 테크 브랜드.",
+    note: "제품의 핵심 행위인 탐색과 비교를 심벌·색·그래픽 자산·디지털 화면까지 일관되게 번역해 B2B 데이터 서비스 브랜딩에 유용함.",
+    tags: ["#브랜드", "#테크브랜드", "#데이터플랫폼", "#레이더", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/08432a252395513.6a4e65152bd38.jpg",
+    visual: { background: "#163c75", accent: "#f37a24", ink: "#ffffff", radiusOne: "50%", radiusTwo: "24px", rotate: "4deg", label: "SEARCH / COMPARE / DECIDE" },
+    review: {
+      "유형": "브랜드", "가치축_이름": "스타일추출성",
+      "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "레이더 기반 심벌·기술적 로고·오렌지와 블루 팔레트·랜딩 페이지·소셜 자산이 한 시스템으로 공개돼 데이터 기반 B2B 서비스의 속도와 신뢰를 일관되게 표현할 수 있다.",
+      "metadata": { "정보렌즈": ["브랜드일관성", "정보구조", "콘텐츠명료성"], "시각렌즈": ["미니멀", "듀오톤", "그리드", "글로시", "차가움"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/08432a252395513.6a4e65152bd38.jpg", "커버리지_카테고리": "브랜드", "보안_등급": "raw_ok", "type_block": { "system": "레이더·검색 로직의 심벌, 기술적 워드마크, 오렌지·블루 팔레트", "applications": "랜딩 페이지·소셜 미디어·문구·브랜드 자산" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252395513/CotaSonic", "수집일": "2026-07-21", "수집사유": "2026-07-08 공개된 테크 플랫폼의 전체 아이덴티티·디지털 응용·대표 이미지가 확인됨" }
+    }
+  },
+  {
     title: "Workflow Lab — 디자인 수정에서 접근성 PR까지 잇는 AI 핸드오프",
     category: "AI 디자인", date: "2026-07-20", url: "https://www.figma.com/blog/workflow-lab-deploying-designs-directly-with-figma-make/",
     summary: "Figma 에이전트의 합성 페르소나 검토에서 실제 코드 수정·접근성 주석·GitHub PR까지 연결한 공식 디자인-코드 워크플로.",
