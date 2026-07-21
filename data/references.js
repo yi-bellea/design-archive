@@ -2,6 +2,145 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "Figma Agent Custom Tools — 캔버스에서 직접 만드는 셰이더와 플러그인",
+    category: "AI 디자인", date: "2026-07-22", url: "https://www.figma.com/blog/agent-custom-tools-context-skills/",
+    summary: "디자인 에이전트가 생성형 플러그인, 디더·유체 하프톤 셰이더, 데이터 기반 화면과 접근성 검사를 실제 캔버스에 만드는 공식 사례.",
+    note: "효과를 한 번 생성하는 데서 끝나지 않고 조절 가능한 속성과 재사용 도구로 남겨 팀의 시각 실험을 반복 가능한 제작 시스템으로 바꾸는 점이 좋음.",
+    tags: ["#AI디자인", "#FigmaAgent", "#셰이더", "#생성형플러그인", "#테크IT"],
+    thumbnail: "https://cdn.sanity.io/images/599r6htc/regionalized/3eb5f213296d83bbe51727a7935c471a2ba98649-3264x2176.png?w=804&h=536&q=75&fit=max&auto=format",
+    visual: { background: "#e8e5df", accent: "#f06332", ink: "#171717", radiusOne: "24px", radiusTwo: "0", rotate: "-3deg", label: "AGENT / SHADER / TOOL" },
+    review: {
+      "유형": "AI 디자인", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "공식 Figma 캔버스에서 생성형 플러그인과 디더·유체 하프톤·파티클 셰이더의 실제 결과 및 조절 패널이 공개돼 AI 시각 실험을 재사용 가능한 도구로 전환할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용", "인터랙션", "브랜드일관성"], "시각렌즈": ["에디토리얼", "모노톤", "비대칭", "하드라이트", "필름그레인"], "시각아티팩트_url": "https://cdn.sanity.io/images/599r6htc/regionalized/3eb5f213296d83bbe51727a7935c471a2ba98649-3264x2176.png?w=804&h=536&q=75&fit=max&auto=format", "커버리지_카테고리": "AI 디자인", "보안_등급": "raw_ok", "type_block": { "workflow": "효과 요구 작성→에이전트가 PropsKit 도구·셰이더 생성→캔버스 적용→속성 조절→팀 재사용", "controls": "패턴 유형·스케일·임계값·색상·레이어 효과·프로젝트 맥락" } },
+      "출처": { "소스": "https://www.figma.com/blog/agent-custom-tools-context-skills/", "수집일": "2026-07-22", "수집사유": "2026-06-24 공개된 공식 사례에서 셰이더 라이브러리·실행 패널·생성형 플러그인 결과가 확인됨" }
+    }
+  },
+  {
+    title: "UiChemy — Figma 레이어를 네이티브 WordPress 위젯으로 변환",
+    category: "Figma 플러그인", date: "2026-07-22", url: "https://www.figma.com/community/plugin/1265873702834050352",
+    summary: "Auto Layout·계층·글로벌 스타일을 읽어 Elementor 위젯과 반응형 페이지로 내보내는 Figma 플러그인의 실제 변환 화면.",
+    note: "정적 HTML이 아니라 편집 가능한 네이티브 위젯으로 매핑하고 전역 스타일과 브레이크포인트까지 옮겨 반복적인 디자인 재구축 시간을 줄이기 좋음.",
+    tags: ["#Figma플러그인", "#WordPress", "#디자인투코드", "#AutoLayout", "#테크IT"],
+    thumbnail: "https://ps.w.org/uichemy/assets/Screenshot-1.jpg?rev=3337720",
+    visual: { background: "#f1f4f8", accent: "#6b46e5", ink: "#14151a", radiusOne: "24px", radiusTwo: "50%", rotate: "3deg", label: "FIGMA / MAP / PUBLISH" },
+    review: {
+      "유형": "Figma 플러그인", "가치축_이름": "유용성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "공식 Community 플러그인과 1200×840 실행 화면, 2026년 7월 릴리스가 확인돼 Figma 구조를 편집 가능한 WordPress 요소로 옮기는 반복 제작 시간을 줄일 수 있다.",
+      "metadata": { "정보렌즈": ["사용자흐름", "브랜드일관성", "인터랙션"], "시각렌즈": [], "시각아티팩트_url": "https://ps.w.org/uichemy/assets/Screenshot-1.jpg?rev=3337720", "커버리지_카테고리": "Figma 플러그인", "보안_등급": "raw_ok", "type_block": { "workflow": "Figma 프레임·Auto Layout 정리→UiChemy 태깅→사이트 연결→네이티브 위젯 가져오기", "repeated_task": "Figma 웹 시안을 Elementor·Gutenberg·Bricks 페이지로 재구축" } },
+      "출처": { "소스": "https://wordpress.org/plugins/uichemy/", "수집일": "2026-07-22", "수집사유": "공식 Figma Community 링크, 실제 실행 스크린샷과 2026-07-14 업데이트 내역이 확인됨" }
+    }
+  },
+  {
+    title: "Dreamy Cloud Maze — 빛샘과 미세 그레인으로 만든 1990s 몽환 사진",
+    category: "AI 이미지 프롬프트", date: "2026-07-22", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#dreamy-cloud-maze",
+    summary: "구름으로 된 미로와 인물을 소프트 포커스·빛샘·별 모양 플레어·미세 그레인으로 묶은 공식 Gen-4 Image 결과.",
+    note: "광원마다 플레어 강도를 낮게 고정하고 흐림·빛샘·그레인을 분리해 패션 캠페인의 몽환 효과를 과하지 않게 조절하는 어휘로 유용함.",
+    prompt: "1990s dreamy photography of a man surrounded by fluffy maze walls. the maze walls are made entirely of clouds. Dreamlike, soft focus, light leaks, star lens flare at 5% on all light sources, fine grain, soft gaussian blur, ethereal glow, motion blur",
+    tags: ["#AI이미지프롬프트", "#Gen4Image", "#몽환", "#소프트포커스", "#필름그레인"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37067207449235",
+    visual: { background: "#d9d6ee", accent: "#f4bb82", ink: "#222137", radiusOne: "50%", radiusTwo: "24px", rotate: "4deg", label: "CLOUD / LEAK / GRAIN" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "공식 Gen-4 Image 가이드가 전체 프롬프트와 결과 이미지를 제공하고 플레어 강도·빛샘·그레인·가우시안 블러를 분리해 몽환 사진의 후처리 효과를 조합 가능하게 만든다.",
+      "metadata": { "정보렌즈": ["AI활용"], "시각렌즈": ["에디토리얼", "파스텔", "중앙집중", "소프트확산광", "필름그레인", "몽환"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37067207449235", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "1990s dreamy photography of a man surrounded by fluffy maze walls. the maze walls are made entirely of clouds. Dreamlike, soft focus, light leaks, star lens flare at 5% on all light sources, fine grain, soft gaussian blur, ethereal glow, motion blur", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Dreamy 예시·720p/1080p 지원·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37067207449235", "fragment_map": [{ "조각": "fluffy maze walls ... entirely of clouds", "효과": "부드러운 구름 재질의 미로 공간" }, { "조각": "star lens flare at 5% on all light sources", "효과": "모든 광원에 낮은 강도의 별 모양 플레어" }, { "조각": "fine grain, soft gaussian blur", "효과": "미세 입자와 부드러운 초점 이탈" }, { "조각": "light leaks ... ethereal glow", "효과": "가장자리 빛샘과 확산광 무드" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-22", "수집사유": "최근 갱신된 공식 가이드에서 전체 프롬프트·Gen-4 Image 모델·결과 이미지가 확인됨" }
+    }
+  },
+  {
+    title: "Vaporwave Marble Face — 네온 블루·퍼플 사이버 조각",
+    category: "AI 이미지 프롬프트", date: "2026-07-22", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#vaporwave-marble-face",
+    summary: "대리석 얼굴을 사이버 공간에 놓고 포화 핑크·퍼플·블루와 네온 발광, 90년대 그래픽 요소로 제어한 공식 결과.",
+    note: "차가운 블루·퍼플 공간광에 핑크 네온을 포인트로 더해 반사성 조각과 배경을 분리하는 테크·뷰티 캠페인 컬러 키로 활용하기 좋음.",
+    prompt: "vaporwave. a marble face in cyberspace. saturated pink, purple, and blues. Retro aesthetics. Glowing neon elements. 90s design elements",
+    tags: ["#AI이미지프롬프트", "#블루톤", "#Vaporwave", "#네온", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37148062122003",
+    visual: { background: "#172b75", accent: "#e34ce6", ink: "#d9f5ff", radiusOne: "0", radiusTwo: "50%", rotate: "-4deg", label: "BLUE / MARBLE / NEON" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "공식 Gen-4 Image 결과가 포화 블루·퍼플 공간광, 핑크 네온, 대리석 표면의 냉색 반사를 명확히 보여 주고 전체 프롬프트가 컬러·재질·시대를 분리해 재현한다.",
+      "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["Y2K", "하이채도", "듀오톤", "중앙집중", "글로시", "차가움"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37148062122003", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "vaporwave. a marble face in cyberspace. saturated pink, purple, and blues. Retro aesthetics. Glowing neon elements. 90s design elements", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Vaporwave 예시·720p/1080p 지원·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37148062122003", "fragment_map": [{ "조각": "a marble face in cyberspace", "효과": "반사성 대리석 조각을 사이버 공간의 중심에 고정" }, { "조각": "saturated pink, purple, and blues", "효과": "블루·퍼플 중심의 고채도 냉색 그라데이션" }, { "조각": "Glowing neon elements", "효과": "핑크 네온 포인트와 표면 림라이트" }, { "조각": "90s design elements", "효과": "복고형 디지털 그래픽 문법" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-22", "수집사유": "최근 갱신된 공식 가이드에서 블루톤 결과물·전체 프롬프트·Gen-4 Image 모델이 확인됨" }
+    }
+  },
+  {
+    title: "Giant Soda Push-in — 거대 오브제를 오르는 인물을 따라가는 숏",
+    category: "AI 영상 프롬프트", date: "2026-07-22", url: "https://help.runwayml.com/hc/en-us/articles/48324313115155-Image-to-Video-Prompting-Guide#giant-soda-push-in",
+    summary: "입력 이미지의 거대한 탄산음료 오브제를 인물이 오르는 동안 카메라가 천천히 밀고 들어가는 Gen-4.5 공식 예시.",
+    note: "첫 프레임이 공간·조명·스타일을 담당하고 텍스트는 주체 동작과 카메라 이동만 지시해 거대 제품 캠페인의 움직임을 간결하게 통제함.",
+    prompt: "The camera slowly pushes in as the person scales the giant soda.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#푸시인", "#거대제품", "#모션필"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/48389644368403",
+    visual: { background: "#d7ecf0", accent: "#e34f38", ink: "#182127", radiusOne: "50%", radiusTwo: "24px", rotate: "3deg", label: "SCALE / PUSH IN / GIANT" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "공식 Gen-4.5 입력 이미지와 결과 GIF, 전체 프롬프트가 주체의 상승 동작과 느린 푸시인을 분리해 거대 제품 캠페인의 단일 숏으로 반복 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용", "사용자흐름"], "시각렌즈": ["3D", "중앙집중", "하드라이트", "유희적", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/48389644368403", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "The camera slowly pushes in as the person scales the giant soda.", "tool_model": "Runway Gen-4.5 Image to Video", "params": "Image to Video·공식 입력 이미지·duration/aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/48389644368403", "fragment_map": [{ "조각": "slowly pushes in", "효과": "거대 오브제의 규모를 유지하며 완만하게 전진" }, { "조각": "person scales", "효과": "인물의 연속적인 상승 동작" }, { "조각": "the giant soda", "효과": "제품을 환경 크기로 확장한 초현실 스케일" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/48324313115155-Image-to-Video-Prompting-Guide", "수집일": "2026-07-22", "수집사유": "최근 갱신된 공식 Gen-4.5 가이드에서 입력 이미지·전체 프롬프트·결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Fox Painting Whip-pan — 현실과 그림을 왕복하는 3단 카메라",
+    category: "AI 영상 프롬프트", date: "2026-07-22", url: "https://help.runwayml.com/hc/en-us/articles/48324313115155-Image-to-Video-Prompting-Guide#fox-painting-whip-pan",
+    summary: "여성에서 여우 그림으로, 다시 표정으로, 움직이는 그림으로 빠르게 왕복하며 사건 순서를 통제한 Gen-4.5 예시.",
+    note: "반복되는 휩팬 사이에 표정 변화와 정지 이미지의 생동을 순서대로 배치해 짧은 반전형 소셜 영상의 비트 설계에 유용함.",
+    prompt: "Whip pan to painting of a fox. Whip pan back to the woman with a curious expression. Whip pan back to the fox painting, the fox is moving.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#휩팬", "#시퀀스", "#반전"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/48389644370579",
+    visual: { background: "#e7ddcf", accent: "#c94f35", ink: "#24201c", radiusOne: "0", radiusTwo: "50%", rotate: "-3deg", label: "PAN / REVEAL / MOVE" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "공식 Gen-4.5 결과와 전체 프롬프트가 세 번의 휩팬, 인물 표정 변화, 그림 속 여우의 움직임을 문장 순서로 고정해 반전형 단일 숏의 시간 구조로 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용", "사용자흐름"], "시각렌즈": ["에디토리얼", "비대칭", "하드라이트", "따뜻", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/48389644370579", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "Whip pan to painting of a fox. Whip pan back to the woman with a curious expression. Whip pan back to the fox painting, the fox is moving.", "tool_model": "Runway Gen-4.5 Image to Video", "params": "Image to Video·공식 입력 이미지·duration/aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/48389644370579", "fragment_map": [{ "조각": "Whip pan to painting of a fox", "효과": "첫 번째 고속 횡이동으로 그림을 공개" }, { "조각": "back to the woman with a curious expression", "효과": "인물 반응을 중간 비트로 삽입" }, { "조각": "back to the fox painting", "효과": "동일 경로의 세 번째 휩팬으로 기대 형성" }, { "조각": "the fox is moving", "효과": "마지막 프레임에 초현실 반전 부여" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/48324313115155-Image-to-Video-Prompting-Guide", "수집일": "2026-07-22", "수집사유": "최근 갱신된 공식 Gen-4.5 가이드에서 입력 이미지·순차 프롬프트·결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Lingowire — 연습과 커뮤니티를 연결한 언어 학습 앱",
+    category: "웹·앱 UI", date: "2026-07-22", url: "https://www.behance.net/gallery/252429911/Lingowire-Logo-App-Design",
+    summary: "온보딩, 자기주도 학습, 파트너·그룹 대화, 기능 소개, 다운로드 랜딩을 하나의 친근한 시스템으로 연결한 출시 앱.",
+    note: "혼자 연습하기와 사람에게 연결하기를 같은 탐색 구조 안에 두고 30명 베타 테스트까지 거쳐 학습 동기와 커뮤니티 전환을 함께 설계한 점이 좋음.",
+    tags: ["#웹앱UI", "#언어학습", "#커뮤니티", "#온보딩", "#모바일앱"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a5e548252429911.6a4f498f62ac0.png",
+    visual: { background: "#eef5ef", accent: "#f2a65a", ink: "#173a32", radiusOne: "24px", radiusTwo: "50%", rotate: "4deg", label: "LEARN / PRACTICE / CONNECT" },
+    review: {
+      "유형": "웹·앱 UI", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 3, "근거성": 5, "가치축": 5 }, "total": 18, "verdict": "accept",
+      "근거": "온보딩·학습·파트너와 그룹 연결·랜딩 페이지의 실제 화면과 30명 베타 테스트가 공개돼 언어 학습 서비스의 개인 연습→사회적 연습 흐름으로 전이할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "접근성", "콘텐츠명료성"], "시각렌즈": ["일러스트", "파스텔", "그리드", "여백중심", "유희적"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a5e548252429911.6a4f498f62ac0.png", "커버리지_카테고리": "웹·앱 UI", "보안_등급": "raw_ok", "type_block": { "flow": "온보딩→언어·목표 선택→자기주도 연습→파트너·그룹 연결→반복 학습", "screens": "온보딩·기능 소개·학습·커뮤니티 연결·다운로드 랜딩" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252429911/Lingowire-Logo-App-Design", "수집일": "2026-07-22", "수집사유": "2026-07-14 공개된 출시 모바일 앱·랜딩 화면·스타일가이드·베타 테스트 결과가 확인됨" }
+    }
+  },
+  {
+    title: "Madrid Design Festival — 분야별 별표가 확장되는 가변 포스터 시스템",
+    category: "비주얼 그래픽", date: "2026-07-22", url: "https://www.behance.net/gallery/252476045/Madrid-Design-Festival-Brand-Identity",
+    summary: "하나의 별표를 분야별 비율과 리듬으로 변형하고 이미지 프레임·타이포·포스터에 반복한 흑백·적색 페스티벌 그래픽.",
+    note: "중심 구조는 유지하면서 팔 길이와 비례만 바꿔 여러 디자인 분야를 구분해 다중 트랙 행사에서 통일성과 탐색성을 동시에 확보함.",
+    tags: ["#비주얼그래픽", "#포스터", "#가변시스템", "#타이포그래피", "#페스티벌"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/735978252476045.6a5031e9779ba.png",
+    visual: { background: "#f4f2ee", accent: "#e52b23", ink: "#111111", radiusOne: "0", radiusTwo: "24px", rotate: "-5deg", label: "POINT / EXPAND / CONNECT" },
+    review: {
+      "유형": "비주얼 그래픽", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "분야별 별표 변형, 이미지 마스크, 흑백 기반과 에디션 색, 두 서체의 역할이 다수 포스터에 공개돼 복합 행사의 가변 그래픽 문법으로 재조합할 수 있다.",
+      "metadata": { "정보렌즈": ["타이포그래피", "브랜드일관성", "콘텐츠명료성"], "시각렌즈": ["스위스", "모노톤", "비대칭", "그리드", "하드라이트", "절제"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/735978252476045.6a5031e9779ba.png", "커버리지_카테고리": "비주얼 그래픽", "보안_등급": "raw_ok", "type_block": { "elements": "분야별 별표·이미지 마스크·Impact와 Editorial Today·흑백과 적색", "reusable_rule": "중심점은 고정하고 방사형 팔의 비율·길이·리듬과 에디션 색만 변주" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252476045/Madrid-Design-Festival-Brand-Identity", "수집일": "2026-07-22", "수집사유": "2026-07-09 공개된 완성 포스터·가변 심벌 규칙·타이포와 색상 시스템이 확인됨" }
+    }
+  },
+  {
+    title: "NetCarbon — 산업 에너지와 자연을 겹친 연속 불꽃 아이덴티티",
+    category: "브랜드", date: "2026-07-22", url: "https://www.behance.net/gallery/252155935/NetCarbon-Brand-Identity",
+    summary: "불꽃·공기·잎·탄소 6번 원소를 심벌과 워드마크에 결합하고 오렌지·적색과 딥그린·블루로 확장한 클린에너지 브랜드.",
+    note: "산업적 힘과 환경 책임을 단일 심벌의 외곽과 내부 드롭 형태, 냉온 팔레트로 동시에 표현해 기후테크 브랜딩의 메시지 균형이 좋음.",
+    tags: ["#브랜드", "#클린에너지", "#기후테크", "#심벌시스템", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/58b3f1252155935.6a47fa259b741.png",
+    visual: { background: "#123d38", accent: "#f26732", ink: "#f2eadc", radiusOne: "50%", radiusTwo: "24px", rotate: "3deg", label: "FLAME / CARBON / CONTROL" },
+    review: {
+      "유형": "브랜드", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "연속 불꽃·공기·잎을 결합한 심벌, 탄소 원자번호를 반영한 워드마크, 냉온 팔레트와 실제 응용이 공개돼 기후테크 브랜드의 산업성과 지속가능성을 함께 표현할 수 있다.",
+      "metadata": { "정보렌즈": ["브랜드일관성", "타이포그래피", "콘텐츠명료성"], "시각렌즈": ["미니멀", "듀오톤", "중앙집중", "글로시", "럭셔리"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/58b3f1252155935.6a47fa259b741.png", "커버리지_카테고리": "브랜드", "보안_등급": "raw_ok", "type_block": { "system": "연속 불꽃 외곽과 공기·잎 드롭, 탄소 6을 반영한 E, 냉온 팔레트", "applications": "로고·컬러·타이포·디지털 및 산업 접점" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252155935/NetCarbon-Brand-Identity", "수집일": "2026-07-22", "수집사유": "2026-07-03 공개된 기후테크 아이덴티티의 심벌 논리·색상·타이포·완성 응용이 확인됨" }
+    }
+  },
+  {
     title: "LOLA — 사람 승인을 색으로 구분하는 AI 프로젝트 매니저",
     category: "AI 디자인", date: "2026-07-21", url: "https://www.behance.net/gallery/252306581/LOLA-An-AI-Project-Manager-for-Creative-Teams",
     summary: "요청을 읽어 담당자·프로젝트·우선순위를 제안하고 사람이 승인하는 실제 운영형 AI 에이전트와 상태 중심 브랜드 시스템.",
