@@ -2,6 +2,70 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "Mixed-media Rainforest Figure — 종이·페인트·낙서를 층화한 콜라주",
+    category: "AI 이미지 프롬프트", date: "2026-07-23", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#mixed-media-rainforest-collage",
+    summary: "깊은 녹색 열대우림 위에 적주황 페인트 인물, 핫핑크 낙서, 테이프와 찢긴 종이 가장자리를 겹친 공식 Gen-4 Image 결과.",
+    note: "배경 사진·단색 페인트 피사체·손그림 강조·종이 가장자리를 독립 레이어로 분리해 문화·패션 캠페인 콜라주의 밀도와 색 대비를 재현하기 좋음.",
+    prompt: "mixed media collage featuring realistic scenery with a solid color block subject. in a tropical rainforest with a deep, moody green color palette. a human figure made entirely of vibrant, textured red-orange paint stands in the center of the frame. hand-drawn hot pink scribbles accentuate the silhouette. mixed media accents made of duct tape, collage style magazine cutouts with torn paper edges",
+    tags: ["#AI이미지프롬프트", "#콜라주", "#혼합매체", "#컬러블록", "#캠페인그래픽", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/42893942774419",
+    visual: { background: "#153f34", accent: "#ee593d", ink: "#ff7fc8", radiusOne: "0", radiusTwo: "50%", rotate: "-4deg", label: "PAPER / PAINT / SCRIBBLE" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 프롬프트·Gen-4 Image 모델·결과 PNG를 함께 제공하고 사진 배경, 페인트 피사체, 낙서, 테이프, 찢긴 종이의 역할을 분리해 캠페인 콜라주로 재조합할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["에디토리얼", "하이채도", "비대칭", "필름그레인", "유희적"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/42893942774419", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "mixed media collage featuring realistic scenery with a solid color block subject. in a tropical rainforest with a deep, moody green color palette. a human figure made entirely of vibrant, textured red-orange paint stands in the center of the frame. hand-drawn hot pink scribbles accentuate the silhouette. mixed media accents made of duct tape, collage style magazine cutouts with torn paper edges", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Collage 예시·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/42893942774419", "fragment_map": [{ "조각": "realistic scenery ... tropical rainforest", "효과": "사실적이고 깊은 녹색의 배경 레이어" }, { "조각": "figure made entirely of vibrant, textured red-orange paint", "효과": "중앙 피사체를 적주황 페인트 컬러 블록으로 분리" }, { "조각": "hand-drawn hot pink scribbles", "효과": "실루엣 경계를 따라가는 핫핑크 제스처" }, { "조각": "duct tape ... torn paper edges", "효과": "테이프와 찢긴 종이로 아날로그 콜라주 질감 추가" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-23", "수집사유": "공식 Gen-4 Image 가이드에서 전체 프롬프트와 200 응답의 결과 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "Blue Studio Cat Portrait — 확산광과 단색 배경의 팝 에디토리얼",
+    category: "AI 이미지 프롬프트", date: "2026-07-23", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#blue-studio-cat-portrait",
+    summary: "별 모양 선글라스와 보타이를 착용한 고양이를 균일한 확산광과 선명한 솔리드 블루 배경으로 분리한 공식 결과.",
+    note: "피사체 전면의 부드러운 조도와 채도 높은 블루 배경의 경계를 명확히 해 캐릭터·펫·소형 제품 캠페인에서 안정적인 냉색 키비주얼로 전이하기 좋음.",
+    prompt: "portrait photography of a siberian cat wearing star-shaped sunglasses and a bowtie. The cat's mouth is open, as if meowing. The diffused lighting evenly illuminates the subject while creating a sharp contrast with the solid blue background.",
+    tags: ["#AI이미지프롬프트", "#블루톤", "#에디토리얼", "#확산광", "#팝컬러", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37153279792787",
+    visual: { background: "#184fbd", accent: "#f2cc45", ink: "#ffffff", radiusOne: "50%", radiusTwo: "24px", rotate: "4deg", label: "BLUE / DIFFUSE / POP" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "공식 결과가 균일한 확산광, 채도 높은 솔리드 블루, 별 모양 소품의 명확한 색 대비를 보여 주고 전체 프롬프트가 피사체·조명·배경을 분리해 광고형 포트레이트로 재현한다.",
+      "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["에디토리얼", "하이채도", "중앙집중", "소프트확산광", "유희적"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37153279792787", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "portrait photography of a siberian cat wearing star-shaped sunglasses and a bowtie. The cat's mouth is open, as if meowing. The diffused lighting evenly illuminates the subject while creating a sharp contrast with the solid blue background.", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Portrait photography 예시·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37153279792787", "fragment_map": [{ "조각": "siberian cat wearing star-shaped sunglasses and a bowtie", "효과": "중앙 캐릭터와 팝한 소품을 한 묶음으로 고정" }, { "조각": "mouth is open, as if meowing", "효과": "정적인 포트레이트에 표정과 서사 부여" }, { "조각": "diffused lighting evenly illuminates", "효과": "털과 소품 전면을 고르게 드러내는 소프트 광원" }, { "조각": "sharp contrast with the solid blue background", "효과": "고채도 블루 면과 피사체의 또렷한 분리" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-23", "수집사유": "공식 Gen-4 Image 가이드에서 블루 결과물·전체 프롬프트와 200 응답의 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "Zero-gravity Raccoon — 관찰형 핸드헬드와 무중력 오브젝트 모션",
+    category: "AI 영상 프롬프트", date: "2026-07-23", url: "https://help.runwayml.com/hc/en-us/articles/47313737321107-Text-to-Video-Prompting-Guide#zero-gravity-raccoon",
+    summary: "은색 쓰레기통을 뒤지는 너구리와 떠오르는 쓰레기를 자연광·카메라 흔들림·저예산 다큐 질감으로 묶은 Gen-4.5 공식 숏.",
+    note: "주체 행동, 환경 물리, 핸드헬드 카메라, 관찰형 질감을 각각 지시해 초현실 상황도 촬영된 사건처럼 보이게 만드는 소셜 영상 문법으로 유용함.",
+    prompt: "A raccoon in a plain room in zero gravity trying to steal the garbage from a silver trash can. The garbage floats out in zero gravity. Handheld documentary film style. Natural camera shake. Raw indie film aesthetic. Natural lighting. Unpolished, authentic look. Low budget realism. Observational feel.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#핸드헬드", "#무중력", "#다큐질감", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/47313737306003",
+    visual: { background: "#d8d6cf", accent: "#7f8587", ink: "#1b1d1d", radiusOne: "50%", radiusTwo: "0", rotate: "-3deg", label: "FLOAT / SHAKE / OBSERVE" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway 공식 Gen-4.5 가이드가 전체 프롬프트와 결과 GIF를 제공하고 주체 행동·무중력 환경·카메라 흔들림·자연광·관찰형 질감을 분리해 초현실 다큐 숏으로 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용", "사용자흐름"], "시각렌즈": ["에디토리얼", "모노톤", "비대칭", "필름그레인", "절제", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313737306003", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "A raccoon in a plain room in zero gravity trying to steal the garbage from a silver trash can. The garbage floats out in zero gravity. Handheld documentary film style. Natural camera shake. Raw indie film aesthetic. Natural lighting. Unpolished, authentic look. Low budget realism. Observational feel.", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·공식 예시·duration/aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313737306003", "fragment_map": [{ "조각": "raccoon ... trying to steal the garbage", "효과": "명확한 목표를 가진 연속 주체 동작" }, { "조각": "garbage floats out in zero gravity", "효과": "주변 소품이 천천히 부유하는 환경 물리" }, { "조각": "Handheld documentary ... Natural camera shake", "효과": "현장 촬영처럼 불규칙한 카메라 움직임" }, { "조각": "Natural lighting ... Observational feel", "효과": "연출감을 낮춘 관찰형 인디 필름 톤" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/47313737321107-Text-to-Video-Prompting-Guide", "수집일": "2026-07-23", "수집사유": "공식 Gen-4.5 가이드에서 전체 프롬프트와 200 응답의 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Needle-felt Corgi Timeline — 7초 표정 연기를 고정한 타임스탬프 숏",
+    category: "AI 영상 프롬프트", date: "2026-07-23", url: "https://help.runwayml.com/hc/en-us/articles/47313737321107-Text-to-Video-Prompting-Guide#needle-felt-corgi-timeline",
+    summary: "마트의 니들펠트 코기를 2초 단위 시선 전환, 1초 크래시줌, 눈 찡그림, 느린 눈썹 움직임으로 제어한 공식 Gen-4.5 예시.",
+    note: "외형·공간·소프트 광원은 자연어로 고정하고 표정과 카메라의 사건 순서를 타임코드로 분리해 짧은 캐릭터 광고의 코믹 비트를 설계하기 좋음.",
+    prompt: "A needle-felted orange and white Corgi character wearing a yellow, green, and orange sweater stands in a grocery store aisle, initially facing away from the lens. The Corgi abruptly turns its head to face the camera, triggering a rapid crash zoom directly into its shiny black bead eyes as it squints suspiciously and its woolly brow furrows deeply. The background features blurred shelves stocked with colorful red and blue products under bright, linear fluorescent ceiling lights. The lighting is soft and diffuse, highlighting the fuzzy, fibrous texture of the felted wool against the bokeh of the supermarket. [00:00 through 00:02] looking away, then turns towards camera [00:02 through 00:03] rapidly crash zoom to closely frame his eyes [00:03 through 00:04] black eyes squint [00:04 through 00:07] brow slowly furrows",
+    tags: ["#AI영상프롬프트", "#Gen45", "#타임스탬프", "#크래시줌", "#캐릭터모션", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/47313692840339",
+    visual: { background: "#f1d56a", accent: "#e87535", ink: "#163c35", radiusOne: "24px", radiusTwo: "50%", rotate: "4deg", label: "TURN / ZOOM / SQUINT" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "공식 Gen-4.5 결과와 전체 프롬프트가 캐릭터 재질·마트 조명·크래시줌·눈과 눈썹 연기를 7초 타임스탬프로 고정해 짧은 표정 중심 광고 숏으로 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용", "사용자흐름"], "시각렌즈": ["3D", "하이채도", "중앙집중", "소프트확산광", "유희적", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313692840339", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "A needle-felted orange and white Corgi character wearing a yellow, green, and orange sweater stands in a grocery store aisle, initially facing away from the lens. The Corgi abruptly turns its head to face the camera, triggering a rapid crash zoom directly into its shiny black bead eyes as it squints suspiciously and its woolly brow furrows deeply. The background features blurred shelves stocked with colorful red and blue products under bright, linear fluorescent ceiling lights. The lighting is soft and diffuse, highlighting the fuzzy, fibrous texture of the felted wool against the bokeh of the supermarket. [00:00 through 00:02] looking away, then turns towards camera [00:02 through 00:03] rapidly crash zoom to closely frame his eyes [00:03 through 00:04] black eyes squint [00:04 through 00:07] brow slowly furrows", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·7초 타임스탬프 예시·duration 00:07·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313692840339", "fragment_map": [{ "조각": "needle-felted ... fuzzy, fibrous texture", "효과": "니들펠트 섬유가 보이는 촉각적 캐릭터 재질" }, { "조각": "bright, linear fluorescent ceiling lights", "효과": "마트 공간의 선형 형광등과 배경 보케" }, { "조각": "[00:02 through 00:03] rapidly crash zoom", "효과": "시선 전환 직후 1초 동안 눈으로 급격히 접근" }, { "조각": "[00:03 through 00:07] ... squint ... brow slowly furrows", "효과": "눈 찡그림 뒤 느린 눈썹 연기로 코믹한 의심 표현" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/47313737321107-Text-to-Video-Prompting-Guide", "수집일": "2026-07-23", "수집사유": "공식 Gen-4.5 타임스탬프 가이드에서 전체 프롬프트와 200 응답의 결과 GIF가 확인됨" }
+    }
+  },
+  {
     title: "Figma Agent Custom Tools — 캔버스에서 직접 만드는 셰이더와 플러그인",
     category: "AI 디자인", date: "2026-07-22", url: "https://www.figma.com/blog/agent-custom-tools-context-skills/",
     summary: "디자인 에이전트가 생성형 플러그인, 디더·유체 하프톤 셰이더, 데이터 기반 화면과 접근성 검사를 실제 캔버스에 만드는 공식 사례.",
