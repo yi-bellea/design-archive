@@ -2,6 +2,130 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "Blue Tulle Portrait — 하늘색 배경과 무중력 베일의 단순 프롬프트",
+    category: "AI 이미지 프롬프트", date: "2026-07-24", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#simple-blue-tulle-portrait",
+    summary: "푸른 하늘을 닮은 단색 배경 앞에서 반투명 튤 베일이 얼굴과 화면을 감싸는 구도를 짧은 문장 하나로 만든 공식 Gen-4 Image 결과.",
+    note: "피사체·소재·배경색만 남긴 최소 프롬프트가 푸른 면과 반투명 직물의 대비를 안정적으로 형성해 뷰티 캠페인의 초기 방향 탐색에 유용함.",
+    prompt: "elegant portrait of a woman draped in a flowing sheer tulle veil against a blue background that resembles a sky.",
+    tags: ["#AI이미지프롬프트", "#블루톤", "#튤소재", "#미니멀", "#뷰티캠페인"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37067220591123",
+    visual: { background: "#4f85c7", accent: "#f4b08d", ink: "#f8f4ee", radiusOne: "50%", radiusTwo: "24px", rotate: "3deg", label: "BLUE / TULLE / FLOW" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 3, "근거성": 5, "가치축": 4 }, "total": 17, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 짧은 전체 프롬프트·Gen-4 Image 모델·결과 PNG를 함께 제공하고 푸른 배경, 반투명 튤, 얼굴 중심 구도를 최소 통제어로 재현해 상세 프롬프트 전의 방향 탐색 기준점으로 쓸 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["미니멀", "파스텔", "중앙집중", "소프트확산광", "차가움"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37067220591123", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "elegant portrait of a woman draped in a flowing sheer tulle veil against a blue background that resembles a sky.", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Simple 예시·720p/1080p 지원·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37067220591123", "fragment_map": [{ "조각": "elegant portrait", "효과": "얼굴 중심의 정제된 뷰티 포트레이트 구도" }, { "조각": "flowing sheer tulle veil", "효과": "반투명 직물이 얼굴 주변을 유동적으로 감싸는 레이어" }, { "조각": "blue background that resembles a sky", "효과": "결과 전반을 지배하는 선명한 하늘색 냉색 면" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-24", "수집사유": "최근 갱신된 공식 가이드에서 짧은 전체 프롬프트와 200 응답의 블루 결과 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "Pastel Baroque Birthday — 부드러운 유화와 꽃 모티프의 케이크 초상",
+    category: "AI 이미지 프롬프트", date: "2026-07-24", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#pastel-baroque-birthday",
+    summary: "생일 케이크를 든 인물을 차가운 파스텔과 따뜻한 포인트, 매끈한 유화 명암, 꽃 모티프로 층화한 공식 Gen-4 Image 결과.",
+    note: "주제·팔레트·명암법·장식 모티프·밀도를 각각 조절할 수 있어 뷰티·패션·시즌 캠페인의 고전적이면서 현대적인 에디토리얼에 유용함.",
+    prompt: "elegant baroque artwork of a woman holding a birthday cake. elegant artistry, muted cool pastel color palette with pops of pastel warmth. smooth oil painting with finely blended shading. painted floral motifs. elaborate. a chaotic yet elegant scene",
+    tags: ["#AI이미지프롬프트", "#파스텔", "#바로크", "#유화질감", "#에디토리얼"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37148062126099",
+    visual: { background: "#d9d4ea", accent: "#efb8a8", ink: "#43334f", radiusOne: "24px", radiusTwo: "50%", rotate: "-4deg", label: "PASTEL / OIL / FLORAL" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Runway 공식 결과와 전체 프롬프트가 인물·케이크·냉온 파스텔·유화 명암·꽃 장식·장면 밀도를 명시해 시즌 캠페인용 바로크 초상으로 반복 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["에디토리얼", "파스텔", "중앙집중", "소프트확산광", "몽환"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37148062126099", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "elegant baroque artwork of a woman holding a birthday cake. elegant artistry, muted cool pastel color palette with pops of pastel warmth. smooth oil painting with finely blended shading. painted floral motifs. elaborate. a chaotic yet elegant scene", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Pastel baroque 예시·720p/1080p 지원·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37148062126099", "fragment_map": [{ "조각": "woman holding a birthday cake", "효과": "인물과 케이크를 중앙 서사 피사체로 고정" }, { "조각": "muted cool pastel ... pops of pastel warmth", "효과": "차가운 파스텔 바탕에 따뜻한 포인트 대비" }, { "조각": "smooth oil painting with finely blended shading", "효과": "경계가 부드러운 유화 명암과 표면 질감" }, { "조각": "painted floral motifs ... chaotic yet elegant", "효과": "꽃 장식의 밀도를 높이되 우아한 위계를 유지" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-24", "수집사유": "최근 갱신된 공식 가이드에서 전체 프롬프트와 200 응답의 결과 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "Porcelain Pulse Close-up — 정지 프레임 안에서 팽창하는 투사광",
+    category: "AI 영상 프롬프트", date: "2026-07-24", url: "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples#porcelain-pulse-closeup",
+    summary: "도자기처럼 흰 얼굴의 감긴 눈 위로 블루·퍼플 투사광이 맥동하고 산호색 배경은 흐리게 유지되는 Gen-4.5 공식 숏.",
+    note: "카메라는 고정하고 투사광의 폭과 밝기만 서서히 변화시켜 뷰티·웨어러블·앨범 티저에서 작은 움직임으로 강한 집중을 만드는 문법임.",
+    prompt: "A smooth, porcelain-white face fills the frame with emphasis on the closed, featureless eyes and the abstract, multi-colored light pattern projected across the upper face. The projected light pulses and shifts subtly, causing the blue and purple bands to slowly expand and contract, as the camera holds in a static, tight frame. Against a softly blurred coral-red background. Avant-garde portraiture, surreal.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#익스트림클로즈업", "#투사광", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/47313504712979",
+    visual: { background: "#f07a72", accent: "#6c63ff", ink: "#f6f5f1", radiusOne: "50%", radiusTwo: "0", rotate: "3deg", label: "STATIC / PULSE / EXPAND" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway 공식 카메라 라이브러리가 전체 프롬프트·Gen-4.5 모델·결과 GIF를 제공하고 고정 클로즈업, 블루·퍼플 밴드의 맥동, 산호색 배경을 분리해 반복 가능한 모션 표본으로 만든다.",
+      "metadata": { "정보렌즈": ["AI활용", "인터랙션"], "시각렌즈": ["미니멀", "듀오톤", "중앙집중", "소프트확산광", "몽환", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313504712979", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "A smooth, porcelain-white face fills the frame with emphasis on the closed, featureless eyes and the abstract, multi-colored light pattern projected across the upper face. The projected light pulses and shifts subtly, causing the blue and purple bands to slowly expand and contract, as the camera holds in a static, tight frame. Against a softly blurred coral-red background. Avant-garde portraiture, surreal.", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·2~10초·1280×720·24/25fps·공식 Extreme close up 예시·seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313504712979", "fragment_map": [{ "조각": "porcelain-white face fills the frame", "효과": "도자기 질감의 얼굴이 화면을 채우는 극단적 근접 구도" }, { "조각": "blue and purple bands ... expand and contract", "효과": "냉색 투사광 밴드가 천천히 팽창·수축" }, { "조각": "camera holds in a static, tight frame", "효과": "피사체 변화만 보이도록 카메라 완전 고정" }, { "조각": "softly blurred coral-red background", "효과": "산호색 보케로 냉색 광원과 보색 대비" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples", "수집일": "2026-07-24", "수집사유": "최근 갱신된 공식 Gen-4.5 카메라 예시에서 전체 프롬프트와 200 응답의 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Opalescent Bloom Rise — 진주 골격을 따라 상승하는 로우앵글",
+    category: "AI 영상 프롬프트", date: "2026-07-24", url: "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples#opalescent-bloom-rise",
+    summary: "진주빛 골격 갑옷의 생명체가 자세를 바꾸고 분홍 꽃이 어깨에서 목으로 자라는 궤적을 카메라가 상승하며 추적하는 공식 결과.",
+    note: "재질·미세 신체 움직임·성장 방향·카메라 궤적·팔레트를 한 흐름으로 묶어 향수·주얼리·미래형 패션 필름의 공개 숏을 설계하기 좋음.",
+    prompt: "Viewed from a low angle, an ethereal, alien-like opalescent creature with pearlescent intricate skeletal armor appears majestic as it gracefully shifts its posture, causing long, thin tendrils to sway gently. The camera rises steadily, following the upward trajectory of the dynamic natural growth of pink flower blossoms along the figure's shoulders and neck. The palette features shimmering opals, pale pinks, and deep purples nestled in the crevices of the armor.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#로우앵글", "#성장모션", "#3D", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/47313515601555",
+    visual: { background: "#321f52", accent: "#efb7d5", ink: "#e9eef2", radiusOne: "0", radiusTwo: "50%", rotate: "-3deg", label: "PEARL / BLOOM / RISE" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "공식 Gen-4.5 결과와 전체 프롬프트가 진주 골격 재질, 촉수의 미세 흔들림, 꽃의 상향 성장, 상승 카메라, 오팔·핑크·퍼플 팔레트를 분리해 미래형 패션 숏으로 재현한다.",
+      "metadata": { "정보렌즈": ["AI활용", "사용자흐름"], "시각렌즈": ["3D", "그라디언트", "중앙집중", "글로시", "몽환", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313515601555", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "Viewed from a low angle, an ethereal, alien-like opalescent creature with pearlescent intricate skeletal armor appears majestic as it gracefully shifts its posture, causing long, thin tendrils to sway gently. The camera rises steadily, following the upward trajectory of the dynamic natural growth of pink flower blossoms along the figure's shoulders and neck. The palette features shimmering opals, pale pinks, and deep purples nestled in the crevices of the armor.", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·2~10초·1280×720·24/25fps·공식 Low angle 예시·seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313515601555", "fragment_map": [{ "조각": "opalescent creature with pearlescent intricate skeletal armor", "효과": "진주·오팔 반사를 가진 골격형 3D 재질" }, { "조각": "tendrils to sway gently", "효과": "가느다란 촉수의 느린 보조 움직임" }, { "조각": "camera rises steadily ... upward trajectory", "효과": "꽃의 성장 방향을 따라가는 지속 상승 카메라" }, { "조각": "shimmering opals, pale pinks, and deep purples", "효과": "오팔 하이라이트와 핑크·딥퍼플의 층진 팔레트" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples", "수집일": "2026-07-24", "수집사유": "최근 갱신된 공식 Gen-4.5 카메라 예시에서 전체 프롬프트와 200 응답의 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "GOV.UK Interruption Panel — 여정을 멈추는 역상 확인 상태",
+    category: "웹 스타일가이드", date: "2026-07-24", url: "https://design-system.service.gov.uk/components/panel/",
+    summary: "GOV.UK Frontend v6.4.0이 중요한 정보를 놓치지 않도록 여정을 일시 중단하고 명시적 확인 뒤 재개하는 Panel 변형을 공개.",
+    note: "제목·설명·주 행동·수정 링크를 하나의 역상 컨테이너에 묶고 짧은 카피 규칙까지 제공해 고위험 입력 확인 패턴으로 바로 흡수할 수 있음.",
+    tags: ["#웹스타일가이드", "#GOVUK", "#인터럽션패널", "#접근성", "#서비스디자인"],
+    thumbnail: "https://design-system.service.gov.uk/images/homepage-illustration.svg",
+    visual: { background: "#1d70b8", accent: "#ffdd00", ink: "#ffffff", radiusOne: "0", radiusTwo: "0", rotate: "0deg", label: "PAUSE / CONFIRM / RESUME" },
+    review: {
+      "유형": "웹 스타일가이드", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "공식 v6.4.0 문서가 실제 인터럽션 패널, 확인·수정 행동, HTML/Nunjucks API, 짧은 카피 원칙과 접근성 맥락을 함께 제공해 고위험 입력 확인 컴포넌트로 흡수할 수 있다.",
+      "metadata": { "정보렌즈": ["사용자흐름", "접근성", "콘텐츠명료성", "인터랙션"], "시각렌즈": [], "시각아티팩트_url": "https://design-system.service.gov.uk/images/homepage-illustration.svg", "커버리지_카테고리": "웹 스타일가이드", "보안_등급": "raw_ok", "type_block": { "tokens": "GOV.UK blue 역상 면·inverse-text 기능 색·고대비 행동", "components": "Panel interruption variant·actions items·confirmation variant·HTML/Nunjucks 예시" } },
+      "출처": { "소스": "https://design-system.service.gov.uk/", "수집일": "2026-07-24", "수집사유": "2026-07-16 공식 v6.4.0 릴리스와 실제 인터럽션 패널 상태·코드·공개 SVG가 확인됨" }
+    }
+  },
+  {
+    title: "Fire Panel Point List — 현장 입력부터 잠금·PDF 인계까지",
+    category: "웹·앱 UI", date: "2026-07-24", url: "https://www.behance.net/gallery/252666695/Fire-Panel-Point-List-App",
+    summary: "화재 패널의 포인트·존 기록을 데스크톱·태블릿·모바일에서 동일하게 입력하고 저장·재개·잠금·PDF 출력하는 현장 점검 앱.",
+    note: "중단이 잦고 조도가 불안정한 현장 조건을 전제로 동일한 단계 구조와 높은 대비, 자동 행 확장, 잠금 상태를 설계한 점이 산업용 폼 UX에 구체적임.",
+    tags: ["#웹앱UI", "#현장점검", "#반응형", "#PDF워크플로", "#산업UI", "#테크IT"],
+    thumbnail: "https://raw.githubusercontent.com/tsuki-cruz/fire-panel-point-list-demo-public/main/docs/screenshots/desktop/01-landing-screen.png",
+    visual: { background: "#13181d", accent: "#e44d3a", ink: "#f5f6f7", radiusOne: "24px", radiusTwo: "0", rotate: "2deg", label: "ENTER / LOCK / HANDOFF" },
+    review: {
+      "유형": "웹·앱 UI", "가치축_이름": "시스템화", "scores": { "완성도": 4, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 18, "verdict": "accept",
+      "근거": "공개 데스크톱·태블릿·모바일 화면과 저장·재개·잠금·PDF·이메일 인계 흐름이 실제 코드 저장소와 함께 제공돼 중단 복원력이 필요한 산업용 입력 시스템으로 전이할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "접근성", "인터랙션", "콘텐츠명료성"], "시각렌즈": ["미니멀", "고밀도", "그리드", "하드라이트", "절제"], "시각아티팩트_url": "https://raw.githubusercontent.com/tsuki-cruz/fire-panel-point-list-demo-public/main/docs/screenshots/desktop/01-landing-screen.png", "커버리지_카테고리": "웹·앱 UI", "보안_등급": "raw_ok", "type_block": { "flow": "기록 유형 선택→포인트·존 입력→자동 검증·행 확장→저장·재개→잠금→PDF·이메일 인계", "screens": "랜딩·주소형/재래형 입력·완료 목록·잠금·PDF 출력·모바일·태블릿" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252666695/Fire-Panel-Point-List-App", "수집일": "2026-07-24", "수집사유": "2026-07-14 공개된 실제 반응형 화면·시연·공개 저장소의 200 응답 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "Heat Wave — 코발트 대문자와 기록 사진을 교차한 포스터",
+    category: "비주얼 그래픽", date: "2026-07-24", url: "https://dribbble.com/shots/27110448-Heat-Wave-Editorial-Archive-Poster",
+    summary: "화면을 채우는 코발트 대문자 사이로 흑백 기록 사진을 끼우고 종이 그레인과 라임 포인트를 더한 에디토리얼 포스터.",
+    note: "거대한 단어를 이미지 프레임처럼 사용하고 작은 기록 메타와 단일 형광색으로 긴장을 조절해 전시·행사·문화 콘텐츠의 템플릿으로 추출하기 좋음.",
+    tags: ["#비주얼그래픽", "#에디토리얼", "#코발트블루", "#타이포포스터", "#필름그레인"],
+    thumbnail: "https://cdn.dribbble.com/userupload/46816870/file/f197d35c2e8ab4ab0ba6d571e6964b44.png?resize=752x&vertical=center",
+    visual: { background: "#020985", accent: "#91cc2c", ink: "#d8d1c4", radiusOne: "0", radiusTwo: "0", rotate: "-3deg", label: "TYPE / ARCHIVE / TENSION" },
+    review: {
+      "유형": "비주얼 그래픽", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 4, "근거성": 4, "가치축": 5 }, "total": 18, "verdict": "accept",
+      "근거": "공개 포스터와 팔레트가 코발트 초대형 타이포, 흑백 사진 삽입, 종이 그레인, 라임 포인트, 기록 메타의 위계를 명확히 보여 문화 캠페인용 에디토리얼 문법으로 추출할 수 있다.",
+      "metadata": { "정보렌즈": ["타이포그래피", "브랜드일관성", "콘텐츠명료성"], "시각렌즈": ["에디토리얼", "듀오톤", "비대칭", "필름그레인"], "시각아티팩트_url": "https://cdn.dribbble.com/userupload/46816870/file/f197d35c2e8ab4ab0ba6d571e6964b44.png?resize=752x&vertical=center", "커버리지_카테고리": "비주얼 그래픽", "보안_등급": "raw_ok", "type_block": { "elements": "코발트 초대형 제목·흑백 기록 사진·종이 그레인·라임 포인트·소형 아카이브 메타", "reusable_rule": "제목 글자를 주 프레임으로 키우고 사진을 글자 사이에 교차시킨 뒤 단일 형광색으로 시선 종착점 설정" } },
+      "출처": { "소스": "https://dribbble.com/shots/27110448-Heat-Wave-Editorial-Archive-Poster", "수집일": "2026-07-24", "수집사유": "최근 3일 내 공개 검색된 Dribbble shot에서 원본 포스터·팔레트·구성 설명과 200 응답 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "Innovation Endeavors — 기술 펀드를 위한 절제된 4분할 브랜드",
+    category: "브랜드", date: "2026-07-24", url: "https://www.behance.net/gallery/253036157/Innovation-Endeavors",
+    summary: "기존 심볼의 자산은 유지하고 저채도 블루·그린, 교토 세리프, 룰드 라인, 4분할 그리드와 손그림을 확장한 벤처 펀드 리브랜딩.",
+    note: "인지 자산을 버리지 않으면서 컬러 채도·워드마크 비례·편집 그리드·일러스트 역할만 정교화해 성숙 단계의 테크 브랜드를 진화시키는 방법이 선명함.",
+    tags: ["#브랜드", "#테크브랜드", "#벤처캐피털", "#에디토리얼그리드", "#리브랜딩", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/a05ad5253036157.6a5eae2407b50.png",
+    visual: { background: "#e8e6df", accent: "#3e5d84", ink: "#22231f", radiusOne: "24px", radiusTwo: "0", rotate: "3deg", label: "ANCHOR / GRID / EVOLVE" },
+    review: {
+      "유형": "브랜드", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "심볼 보존, 저채도 팔레트 확장, 세리프 워드마크, 룰드 라인, 4분할 그리드, 손그림 응용이 실제 웹·인쇄 화면으로 공개돼 성숙기 테크 브랜드의 진화 규칙으로 추출할 수 있다.",
+      "metadata": { "정보렌즈": ["브랜드일관성", "타이포그래피", "정보구조"], "시각렌즈": ["에디토리얼", "어스톤", "그리드", "여백중심", "절제"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/a05ad5253036157.6a5eae2407b50.png", "커버리지_카테고리": "브랜드", "보안_등급": "raw_ok", "type_block": { "system": "기존 심볼 유지·저채도 블루/그린·교토 세리프·룰드 라인·4분할 그리드·손그림", "applications": "웹사이트·포트폴리오·인쇄물·인용문·창업가 스토리·일러스트" } },
+      "출처": { "소스": "https://www.behance.net/gallery/253036157/Innovation-Endeavors", "수집일": "2026-07-24", "수집사유": "2026-07-20 공개된 Best of Behance 프로젝트에서 리브랜딩 규칙과 실제 웹·인쇄 응용, 200 응답 WebP가 확인됨" }
+    }
+  },
+  {
     title: "Mixed-media Rainforest Figure — 종이·페인트·낙서를 층화한 콜라주",
     category: "AI 이미지 프롬프트", date: "2026-07-23", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#mixed-media-rainforest-collage",
     summary: "깊은 녹색 열대우림 위에 적주황 페인트 인물, 핫핑크 낙서, 테이프와 찢긴 종이 가장자리를 겹친 공식 Gen-4 Image 결과.",
