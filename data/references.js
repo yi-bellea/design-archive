@@ -2,6 +2,130 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "Liquid Chrome Architecture — 냉색 고전 건축을 휘감는 홀로그램 액체",
+    category: "AI 이미지 프롬프트", date: "2026-07-25", url: "https://help.runwayml.com/hc/en-us/articles/37053594806419-Creating-with-Gen-4-Image#h_01JGX3TAG7VBAKJKGW50003P4C",
+    summary: "백색 고전 건축을 검은 심연 속에서 비현실적으로 휘고 연결한 뒤 블루·그린 냉색과 액체 크롬의 무지갯빛 반사를 입힌 공식 Gen-4 Image 결과.",
+    note: "형태 왜곡, 냉색 팔레트, 연결 재질, 표면 반사를 각각 분리해 통제하므로 테크 캠페인의 추상 건축 키비주얼과 소재 탐색에 바로 전이할 수 있음.",
+    prompt: "photograph of warped ornate classic buildings in a black abyss. the buildings are in surreal shapes. the buildings curve and bend impossibly high into the black sky in a glitched swirl formation, defying gravity. stark white color palette with cool blue and green tones. distorted. warped, squished, and extremely deformed and exaggerated. avant-garde. vibrant red, blue, purple, jewel green. conjoined bubblegum stretch. hologram. encased in translucent liquid chrome with an iridescent sheen.",
+    tags: ["#AI이미지프롬프트", "#블루톤", "#액체크롬", "#추상건축", "#3D", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37089796809363",
+    visual: { background: "#080a0e", accent: "#48d4d0", ink: "#f3f5f7", radiusOne: "24px", radiusTwo: "50%", rotate: "-3deg", label: "WARP / CHROME / IRIDESCENT" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 프롬프트·Gen-4 Image 모델·지원 설정·1342×760 결과 PNG를 제공하고 건축 왜곡, 냉색, 액체 크롬과 무지갯빛 반사를 조합 가능한 통제어로 분리한다.",
+      "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["3D", "그라디언트", "중앙집중", "글로시", "몽환"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37089796809363", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "photograph of warped ornate classic buildings in a black abyss. the buildings are in surreal shapes. the buildings curve and bend impossibly high into the black sky in a glitched swirl formation, defying gravity. stark white color palette with cool blue and green tones. distorted. warped, squished, and extremely deformed and exaggerated. avant-garde. vibrant red, blue, purple, jewel green. conjoined bubblegum stretch. hologram. encased in translucent liquid chrome with an iridescent sheen.", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·1080p/720p·지원 비율 16:9/9:16/1:1/4:3/3:4/21:9·예시의 seed/aesthetic range 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37089796809363", "fragment_map": [{ "조각": "warped ornate classic buildings in a black abyss", "효과": "검은 음영 속 백색 고전 건축을 주 피사체로 분리" }, { "조각": "cool blue and green tones", "효과": "블루·시안·그린 계열의 차가운 색 대비" }, { "조각": "glitched swirl formation, defying gravity", "효과": "건축 덩어리를 중력에서 벗어난 나선형 실루엣으로 왜곡" }, { "조각": "encased in translucent liquid chrome with an iridescent sheen", "효과": "반투명 액체 크롬과 무지갯빛 표면 반사" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/37053594806419-Creating-with-Gen-4-Image", "수집일": "2026-07-25", "수집사유": "2026-06-01 갱신된 공식 가이드에서 전체 프롬프트·모델 설정·200 응답 결과 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "Hologram Static Figure — 밤의 꽃밭에 세운 백색 신호 인체",
+    category: "AI 이미지 프롬프트", date: "2026-07-25", url: "https://help.runwayml.com/hc/en-us/articles/37053594806419-Creating-with-Gen-4-Image#h_01JGX3TAG7HPHKZTS20F3XGVS0",
+    summary: "밤의 꽃밭 한가운데 역동적인 인체를 흰 홀로그램 노이즈로 구성하고 Aesthetic Range 5로 구조적 변주 폭을 넓힌 공식 결과.",
+    note: "피사체·재질·환경·포즈를 짧게 고정한 뒤 단일 설정값으로 변주 폭을 비교할 수 있어 AI 캠페인 콘셉트 탐색과 배치 실험에 효율적임.",
+    prompt: "cinematic photograph of a human made entirely of white hologram static in a field of flowers at night. dynamic pose",
+    tags: ["#AI이미지프롬프트", "#홀로그램", "#노이즈", "#야간", "#콘셉트탐색", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37053594801683",
+    visual: { background: "#101016", accent: "#efeff5", ink: "#d7e9df", radiusOne: "50%", radiusTwo: "24px", rotate: "4deg", label: "STATIC / NIGHT / RANGE 5" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 동일 프롬프트의 Aesthetic Range 0·3·5 결과를 나란히 제공해 피사체 의미는 유지하면서 구조적 변주 강도를 조절하는 실험 기준으로 재사용할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["3D", "모노톤", "중앙집중", "하드라이트", "몽환"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37053594801683", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "cinematic photograph of a human made entirely of white hologram static in a field of flowers at night. dynamic pose", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·Aesthetic Range 5·1080p/720p·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37053594801683", "fragment_map": [{ "조각": "human made entirely of white hologram static", "효과": "인체를 백색 신호 노이즈 재질로 치환" }, { "조각": "in a field of flowers at night", "효과": "어두운 자연 배경과 밝은 디지털 피사체 대비" }, { "조각": "dynamic pose", "효과": "정적인 중앙 배치 안에 관절 방향과 실루엣 긴장 부여" }, { "조각": "Aesthetic Range 5", "효과": "프롬프트 의미를 유지하며 구조·구도의 변주 폭 확대" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/37053594806419-Creating-with-Gen-4-Image", "수집일": "2026-07-25", "수집사유": "2026-06-01 갱신된 공식 가이드에서 전체 프롬프트·Aesthetic Range 5 설정·200 응답 결과 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "Lunar Skate Tracking — 저시점으로 병주하는 흑백 우주 스케이터",
+    category: "AI 영상 프롬프트", date: "2026-07-25", url: "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples#tracking-astronaut-skateboarder",
+    summary: "달 표면을 질주하는 우주 스케이터를 핸드헬드 저시점 카메라가 빠르게 병주하고 필름 그레인과 낮은 대비로 속도를 번지게 한 Gen-4.5 공식 숏.",
+    note: "카메라 높이·추적 방식·속도·잔상·톤을 한 문장에 묶어 웨어러블·모빌리티·미래 스포츠 캠페인의 역동적 추적 숏으로 재사용하기 좋음.",
+    prompt: "A handheld low angle tracking shot, with low contrast and fast-paced motion, follows a skilled astronaut skateboarder on a moon landscape. their movements blur against the soft glow of the dark lunar environment. Film grain, low contrast, black and white",
+    tags: ["#AI영상프롬프트", "#Gen45", "#트래킹숏", "#우주", "#필름그레인", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/47313504752019",
+    visual: { background: "#141414", accent: "#d8d8d2", ink: "#f4f4ef", radiusOne: "0", radiusTwo: "50%", rotate: "-4deg", label: "LOW / TRACK / LUNAR" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway 공식 라이브러리가 전체 프롬프트·Gen-4.5 모델·결과 GIF를 제공하고 저시점 핸드헬드 추적, 빠른 병주, 달 표면 잔상, 흑백 그레인을 독립 통제어로 제시한다.",
+      "metadata": { "정보렌즈": ["AI활용", "인터랙션"], "시각렌즈": ["미니멀", "모노톤", "비대칭", "필름그레인", "차가움", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313504752019", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "A handheld low angle tracking shot, with low contrast and fast-paced motion, follows a skilled astronaut skateboarder on a moon landscape. their movements blur against the soft glow of the dark lunar environment. Film grain, low contrast, black and white", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·2~10초·1280×720·24/25fps·공식 Tracking 예시·seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313504752019", "fragment_map": [{ "조각": "handheld low angle tracking shot", "효과": "피사체 아래에서 흔들림을 유지하며 옆으로 병주" }, { "조각": "fast-paced motion", "효과": "빠른 보드 이동과 카메라 추적 속도 동기화" }, { "조각": "movements blur against the soft glow", "효과": "달 표면의 부드러운 광원 위로 피사체 잔상 형성" }, { "조각": "Film grain, low contrast, black and white", "효과": "기록 필름 같은 저대비 흑백 질감" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples", "수집일": "2026-07-25", "수집사유": "2026-06-27 갱신된 공식 카메라 예시에서 전체 프롬프트·모델 설정·200 응답 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Chrome Bubble Shallow Focus — 흐린 방을 비추는 부유 금속 표면",
+    category: "AI 영상 프롬프트", date: "2026-07-25", url: "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples#shallow-focus-chrome-bubble",
+    summary: "어두운 방을 매우 천천히 가로지르는 크롬 버블 하나에만 얕은 초점을 고정하고 왜곡 반사와 주변 보케를 몽환적으로 유지한 공식 Gen-4.5 결과.",
+    note: "초점 깊이·이동 속도·반사 왜곡·배경 해상도를 독립적으로 지정해 핀테크·하드웨어·소재 브랜드의 정적인 고급 모션 루프로 옮기기 좋음.",
+    prompt: "A shallow focus shot isolates a single, chrome bubble floating impossibly slowly through a dimly lit, silent room, its warping surface reflecting a distorted, blurred reality, while the surrounding furniture and walls dissolve into an impressionistic dreamscape, rendered in a low-contrast, observational style that evokes a sense of surreal tranquility.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#얕은초점", "#크롬", "#반사재질", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/47313504778259",
+    visual: { background: "#24252b", accent: "#b9c2cf", ink: "#f0eee8", radiusOne: "50%", radiusTwo: "50%", rotate: "3deg", label: "SHALLOW / CHROME / DRIFT" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "공식 Gen-4.5 출력과 전체 프롬프트가 얕은 초점, 단일 크롬 버블, 극저속 부유, 왜곡 반사, 저대비 보케를 분리해 고급 소재 모션으로 반복 재현한다.",
+      "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["3D", "모노톤", "중앙집중", "글로시", "몽환", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313504778259", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "A shallow focus shot isolates a single, chrome bubble floating impossibly slowly through a dimly lit, silent room, its warping surface reflecting a distorted, blurred reality, while the surrounding furniture and walls dissolve into an impressionistic dreamscape, rendered in a low-contrast, observational style that evokes a sense of surreal tranquility.", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·2~10초·1280×720·24/25fps·공식 Shallow focus 예시·seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313504778259", "fragment_map": [{ "조각": "shallow focus shot isolates a single, chrome bubble", "효과": "단일 금속 구체만 선명하게 분리" }, { "조각": "floating impossibly slowly", "효과": "중력감이 거의 없는 극저속 수평 부유" }, { "조각": "warping surface reflecting a distorted, blurred reality", "효과": "곡면 크롬에 주변 공간을 늘여 반사" }, { "조각": "furniture and walls dissolve into an impressionistic dreamscape", "효과": "배경 가구와 벽을 저대비 보케로 해체" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples", "수집일": "2026-07-25", "수집사유": "2026-06-27 갱신된 공식 카메라 예시에서 전체 프롬프트·모델 설정·200 응답 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Figma Parallel AI Edits — 캔버스를 멈추지 않는 동시 이미지 생성",
+    category: "AI 디자인", date: "2026-07-25", url: "https://www.figma.com/release-notes/#run-multiple-ai-image-edits-and-keep-designing-while-they-load",
+    summary: "AI 이미지 편집을 여러 건 동시에 실행하고 캔버스 작업을 계속하면서 각 작업의 로딩 상태와 진행 아이콘을 추적하는 Figma의 병렬 생성 흐름.",
+    note: "생성 대기 시간을 모달로 막지 않고 캔버스 안의 비동기 작업 상태로 바꿔, 다수 에셋을 비교·편집하는 캠페인 제작 도구의 상호작용 모델로 참고할 만함.",
+    tags: ["#AI디자인", "#Figma", "#병렬생성", "#로딩상태", "#비동기UX", "#테크IT"],
+    thumbnail: "https://cdn.sanity.io/images/599r6htc/regionalized/afc9f3fa873586b43f0f708ab372c4b2f7fb4385-2988x1680.jpg?auto=format",
+    visual: { background: "#1f1f1f", accent: "#a7e5ca", ink: "#ffffff", radiusOne: "24px", radiusTwo: "0", rotate: "-2deg", label: "QUEUE / EDIT / CONTINUE" },
+    review: {
+      "유형": "AI 디자인", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 4 }, "total": 18, "verdict": "accept",
+      "근거": "Figma 공식 릴리스가 실제 편집 화면 영상 프레임과 병렬 실행·백그라운드 지속·진행 상태 아이콘을 공개해 생성형 도구의 비차단 작업 큐 패턴으로 전이할 수 있다.",
+      "metadata": { "정보렌즈": ["사용자흐름", "인터랙션", "AI활용", "콘텐츠명료성"], "시각렌즈": ["미니멀", "그리드", "고밀도", "절제", "모션필"], "시각아티팩트_url": "https://cdn.sanity.io/images/599r6htc/regionalized/afc9f3fa873586b43f0f708ab372c4b2f7fb4385-2988x1680.jpg?auto=format", "커버리지_카테고리": "AI 디자인", "보안_등급": "raw_ok", "type_block": { "workflow": "툴바에서 복수 AI 이미지 편집 시작→캔버스 작업 지속→개별 로딩 상태 추적→완료 결과 비교", "ai_role": "이미지 편집 생성 작업을 병렬 큐로 처리하고 상태를 캔버스에 피드백" } },
+      "출처": { "소스": "https://www.figma.com/release-notes/", "수집일": "2026-07-25", "수집사유": "2026-07-07 공식 릴리스의 실제 기능 영상 프레임과 안정적인 2988×1680 공개 이미지 URL이 확인됨" }
+    }
+  },
+  {
+    title: "Illoca — 건축 도면의 겹을 제품 경험으로 번역한 웹",
+    category: "웹·앱 UI", date: "2026-07-25", url: "https://www.behance.net/gallery/252077017/Illoca",
+    summary: "트레이싱지, 축척 표시, 연필선, 겹친 도면의 온도를 브랜드와 반응형 웹, 인터랙션, 모션으로 연결한 건축 AI 도구의 공개 제품 경험.",
+    note: "전통 건축가의 작업 언어를 지우지 않고 레이어·주석·종이 질감으로 디지털 도구의 기능적 신뢰를 만든 방식이 전문직 AI 제품 온보딩에 유효함.",
+    tags: ["#웹앱UI", "#건축AI", "#레이어", "#인터랙션", "#모션", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/55d39c252077017.6a467620a28c2.jpg",
+    visual: { background: "#d9d0bd", accent: "#d56a4b", ink: "#22211f", radiusOne: "0", radiusTwo: "24px", rotate: "2deg", label: "PAPER / LAYERS / SUPERPOWER" },
+    review: {
+      "유형": "웹·앱 UI", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 5, "근거성": 4, "가치축": 4 }, "total": 18, "verdict": "accept",
+      "근거": "공개 웹 화면·모션·라이브 사이트가 트레이싱지 레이어, 도면 표식, 재료감, 건축가 중심 메시지를 반복해 전문직 AI 도구의 정보 구조와 브랜드 상호작용으로 시스템화한다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "브랜드일관성", "인터랙션", "AI활용"], "시각렌즈": ["에디토리얼", "어스톤", "비대칭", "매트", "따뜻", "모션필"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/55d39c252077017.6a467620a28c2.jpg", "커버리지_카테고리": "웹·앱 UI", "보안_등급": "raw_ok", "type_block": { "flow": "건축가의 종이 기반 문제 맥락→AI 도구의 마찰 제거 가치→레이어형 기능 시연→라이브 제품 탐색", "screens": "브랜드 도입·제품 메시지·레이어형 도면 인터페이스·인터랙션·반응형 웹·모션 데모" } },
+      "출처": { "소스": "Behance / Unseen Studio", "수집일": "2026-07-25", "수집사유": "2026-07-23 공개된 Best of Behance 프로젝트에서 실제 웹 화면·모션·라이브 사이트와 200 응답 og:image가 확인됨" }
+    }
+  },
+  {
+    title: "Revolut CGI R&D Vol.2 — 재질 시뮬레이션으로 확장한 카드 오브젝트",
+    category: "비주얼 그래픽", date: "2026-07-25", url: "https://www.behance.net/gallery/253112605/Revolut-CGI-RnD-Vol-2",
+    summary: "Houdini·Redshift·Photoshop의 절차형 워크플로로 카드 형태를 유지하면서 유체, 입자, 금속, 반투명 표면을 연속 실험한 CGI 시리즈.",
+    note: "동일한 제품 실루엣을 고정하고 재질·시뮬레이션·광원만 교체해 캠페인 변주를 만드는 방식이 핀테크·하드웨어 3D 키비주얼 시스템에 직접 적용 가능함.",
+    tags: ["#비주얼그래픽", "#CGI", "#Houdini", "#재질실험", "#제품시각화", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ef7d8c253112605.6a6097ebdffd8.jpg",
+    visual: { background: "#1a1831", accent: "#d4ff6b", ink: "#faf7f1", radiusOne: "24px", radiusTwo: "50%", rotate: "-4deg", label: "CARD / MATERIAL / SIMULATION" },
+    review: {
+      "유형": "비주얼 그래픽", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "공개 CGI 시리즈가 하나의 카드 실루엣에 절차형 재질·시뮬레이션·표면 반사·광원 변주를 반복 적용해 제품 캠페인의 확장 가능한 3D 스타일 문법을 추출하게 한다.",
+      "metadata": { "정보렌즈": ["브랜드일관성"], "시각렌즈": ["3D", "그라디언트", "중앙집중", "글로시", "럭셔리"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ef7d8c253112605.6a6097ebdffd8.jpg", "커버리지_카테고리": "비주얼 그래픽", "보안_등급": "raw_ok", "type_block": { "format": "절차형 3D 카드 오브젝트 시리즈", "transferable_style": "고정 실루엣·재질 시뮬레이션 교체·반사광 제어·연속 캠페인 변주" } },
+      "출처": { "소스": "Behance / Mondlicht Studios", "수집일": "2026-07-25", "수집사유": "2026-07-22 공개된 Best of Behance 프로젝트에서 Houdini·Redshift 기반 다중 결과물과 200 응답 og:image가 확인됨" }
+    }
+  },
+  {
+    title: "Jieyuan AI Agent — 해석과 연결을 구조화한 테크 브랜드",
+    category: "브랜드", date: "2026-07-25", url: "https://www.behance.net/gallery/252752029/AI-agent-Tech-Brand-Design",
+    summary: "AI 에이전트의 해석·연결·응답 개념을 정밀한 기하 형태와 반복 그리드, 냉색 디지털 응용물로 확장한 테크 브랜드 시스템.",
+    note: "추상적인 AI 기능을 하나의 기하 모듈과 반복 규칙으로 줄이고 패키지·그래픽·디지털 접점에 확장해 B2B AI 제품의 일관성 설계에 참고할 만함.",
+    tags: ["#브랜드", "#AI에이전트", "#테크브랜딩", "#기하그래픽", "#그리드", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/6c01fc252752029.6a574cbd10af2.jpg",
+    visual: { background: "#151a2c", accent: "#6b8cff", ink: "#f4f5f7", radiusOne: "0", radiusTwo: "24px", rotate: "3deg", label: "AGENT / LINK / SYSTEM" },
+    review: {
+      "유형": "브랜드", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 4, "근거성": 4, "가치축": 4 }, "total": 17, "verdict": "accept",
+      "근거": "공개 아이덴티티가 AI 에이전트의 연결 개념을 기하 모듈, 반복 그리드, 냉색 팔레트와 다중 응용물로 확장해 기술 브랜드의 재사용 가능한 시각 규칙으로 추출된다.",
+      "metadata": { "정보렌즈": ["브랜드일관성", "AI활용"], "시각렌즈": ["미니멀", "그라디언트", "그리드", "글로시", "차가움"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/6c01fc252752029.6a574cbd10af2.jpg", "커버리지_카테고리": "브랜드", "보안_등급": "raw_ok", "type_block": { "identity": "AI 에이전트 연결 개념·기하 모듈·냉색 디지털 팔레트", "applications": "브랜드 그래픽·패키지·디지털 접점·캠페인 응용" } },
+      "출처": { "소스": "Behance / Resauce Studio", "수집일": "2026-07-25", "수집사유": "2026-07-22 공개된 테크 브랜드 프로젝트에서 다중 응용 결과물과 200 응답 og:image가 확인됨" }
+    }
+  },
+  {
     title: "Blue Tulle Portrait — 하늘색 배경과 무중력 베일의 단순 프롬프트",
     category: "AI 이미지 프롬프트", date: "2026-07-24", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#simple-blue-tulle-portrait",
     summary: "푸른 하늘을 닮은 단색 배경 앞에서 반투명 튤 베일이 얼굴과 화면을 감싸는 구도를 짧은 문장 하나로 만든 공식 Gen-4 Image 결과.",
