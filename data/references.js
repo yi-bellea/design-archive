@@ -2,6 +2,129 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "Lo-Fi Space Reader — 우주선 독서 장면을 1980년대 애니 패널로",
+    category: "AI 이미지 프롬프트", date: "2026-07-26", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#lo-fi-spaceship-reading",
+    summary: "우주선 안에서 책을 읽는 인물을 손그림 패널, 저채도 파스텔, 소프트 그레인으로 묶어 미래 배경과 향수 어린 인쇄 감각을 공존시킨 공식 Gen-4 Image 결과.",
+    note: "주제·시대감·인쇄 질감·팔레트를 분리해 통제하므로 AI·우주 테크 콘텐츠를 인간적인 에디토리얼 일러스트로 번역할 때 재사용하기 좋음.",
+    prompt: "a hand drawn panel from an old japanese anime about a woman reading a book in a spaceship. Lo-fi 1980s japanese magazine art style, muted tones, pastel color palette, soft grain, nostalgic aesthetic, animated",
+    tags: ["#AI이미지프롬프트", "#우주선", "#로파이", "#애니패널", "#파스텔", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37067220608659",
+    visual: { background: "#d9d1bc", accent: "#9ab7c7", ink: "#2f3440", radiusOne: "0", radiusTwo: "24px", rotate: "-3deg", label: "LO-FI / SPACE / READER" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 프롬프트·Gen-4 Image 모델·결과 PNG를 함께 제공하고 우주선 배경, 손그림 패널, 저채도 파스텔과 소프트 그레인을 조합 가능한 통제어로 분리한다.",
+      "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["일러스트", "파스텔", "그리드", "필름그레인", "따뜻"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37067220608659", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "a hand drawn panel from an old japanese anime about a woman reading a book in a spaceship. Lo-fi 1980s japanese magazine art style, muted tones, pastel color palette, soft grain, nostalgic aesthetic, animated", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Aesthetic Styles 예시·720p/1080p 지원·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37067220608659", "fragment_map": [{ "조각": "woman reading a book in a spaceship", "효과": "미래형 우주선 안에 정적인 일상 서사를 배치" }, { "조각": "hand drawn panel", "효과": "완결된 한 컷짜리 손그림 프레임 구성" }, { "조각": "lo-fi 1980s japanese magazine art style", "효과": "1980년대 인쇄 애니 패널의 단순화된 선과 면" }, { "조각": "muted tones, pastel color palette, soft grain", "효과": "저채도 파스텔과 부드러운 인쇄 그레인 결합" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-26", "수집사유": "최근 갱신된 공식 가이드에서 전체 프롬프트·모델 설정·200 응답 결과 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "Iridescent Wing Macro — 검은 나비 날개의 미세한 광택 운동",
+    category: "AI 영상 프롬프트", date: "2026-07-26", url: "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples#macro-iridescent-butterfly",
+    summary: "검은 나비 날개의 무지갯빛 비늘을 거대한 지형처럼 확대하고 날개의 미세한 움직임만 남긴 공식 Gen-4.5 매크로 결과.",
+    note: "피사체 크기보다 표면의 광택·패턴·미세 운동을 주인공으로 만드는 문법이라 반도체 웨이퍼, 센서, 소재 기술의 티저 모션으로 전이하기 좋음.",
+    prompt: "A macro close-up explores the iridescent facets of a black butterfly wing. Wings gently move",
+    tags: ["#AI영상프롬프트", "#Gen45", "#매크로", "#무지갯빛", "#미세운동", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/47313515589907",
+    visual: { background: "#111318", accent: "#5ec6c8", ink: "#f1f0ea", radiusOne: "50%", radiusTwo: "24px", rotate: "3deg", label: "MACRO / FACETS / GENTLE" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Runway 공식 카메라 라이브러리가 전체 프롬프트·Gen-4.5 모델·결과 GIF를 제공하고 매크로 배율, 검은 날개, 무지갯빛 미세면과 약한 운동을 분리해 소재 중심 숏으로 반복 재현한다.",
+      "metadata": { "정보렌즈": ["AI활용", "인터랙션"], "시각렌즈": ["3D", "그라디언트", "중앙집중", "글로시", "차가움", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313515589907", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "A macro close-up explores the iridescent facets of a black butterfly wing. Wings gently move", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·2~10초·1280×720·24/25fps·공식 Macro 예시·seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313515589907", "fragment_map": [{ "조각": "macro close-up", "효과": "작은 표면을 화면 전체의 지형처럼 확대" }, { "조각": "iridescent facets", "효과": "각도에 따라 색이 달라지는 미세 광택 면 강조" }, { "조각": "black butterfly wing", "효과": "검은 바탕으로 무지갯빛 반사의 대비 확보" }, { "조각": "Wings gently move", "효과": "형태는 유지하면서 표면 반사만 변하는 미세 운동" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples", "수집일": "2026-07-26", "수집사유": "2026-06-27 갱신된 공식 카메라 예시에서 전체 프롬프트·모델 설정·200 응답 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Bioluminescent Console Push-In — 발광 눈으로 좁혀 가는 외계 조작실",
+    category: "AI 영상 프롬프트", date: "2026-07-26", url: "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples#push-in-bioluminescent-alien",
+    summary: "검은 보호 장비를 입은 물고기형 생명체가 콘솔을 조작하는 중경에서 시작해 비늘과 생체 발광 눈까지 천천히 좁혀 가는 공식 Gen-4.5 숏.",
+    note: "행동·카메라 전진·재질 디테일·포트홀 주변광의 우선순위를 한 문장으로 고정해 게임, 로보틱스, 미래형 인터페이스의 인트로로 활용하기 좋음.",
+    prompt: "A medium shot of a fish-like alien creature in sleek, black protective gear, observing a console with a single three-fingered hand. The camera slowly pushes in, framing the alien's intricate facial scales and large, bioluminescent eyes, illuminated by natural, ambient light filtering through a porthole, highlighting its focused expression.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#푸시인", "#생체발광", "#미래인터페이스", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/47313515615379",
+    visual: { background: "#0b1118", accent: "#76e2cf", ink: "#e9f4f1", radiusOne: "24px", radiusTwo: "50%", rotate: "-2deg", label: "CONSOLE / PUSH / GLOW" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "공식 Gen-4.5 결과와 전체 프롬프트가 콘솔 조작 행동, 느린 푸시인, 얼굴 비늘, 발광 눈과 포트홀 주변광을 분리해 미래형 인터페이스 공개 숏으로 반복 재현한다.",
+      "metadata": { "정보렌즈": ["AI활용", "사용자흐름", "인터랙션"], "시각렌즈": ["3D", "듀오톤", "중앙집중", "글로시", "차가움", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313515615379", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "A medium shot of a fish-like alien creature in sleek, black protective gear, observing a console with a single three-fingered hand. The camera slowly pushes in, framing the alien's intricate facial scales and large, bioluminescent eyes, illuminated by natural, ambient light filtering through a porthole, highlighting its focused expression.", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·2~10초·1280×720·24/25fps·공식 Push in 예시·seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313515615379", "fragment_map": [{ "조각": "medium shot ... observing a console", "효과": "행동과 공간을 함께 읽히는 중경으로 시작" }, { "조각": "camera slowly pushes in", "효과": "관찰 화면에서 표정 중심 화면으로 부드럽게 전진" }, { "조각": "intricate facial scales and large, bioluminescent eyes", "효과": "비늘 재질과 발광 눈을 종착점 디테일로 설정" }, { "조각": "ambient light filtering through a porthole", "효과": "포트홀 자연광으로 검은 보호 장비와 얼굴을 분리" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples", "수집일": "2026-07-26", "수집사유": "2026-06-27 갱신된 공식 카메라 예시에서 전체 프롬프트·모델 설정·200 응답 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Figma Variables HTML to Design — 코드 화면을 토큰에 다시 연결하는 복귀 흐름",
+    category: "AI 디자인", date: "2026-07-26", url: "https://www.figma.com/release-notes/#bring-code-backed-screens-onto-the-canvas-with-variables-attached",
+    summary: "Make 미리보기, Figma MCP, Chrome 캡처로 가져온 코드 기반 화면의 색·타입·간격을 기존 변수에 바인딩하고 Auto Layout까지 유지하는 공식 캔버스 흐름.",
+    note: "AI·코드 결과를 하드코딩된 최종물로 남기지 않고 기존 디자인 시스템 토큰과 편집 가능한 레이아웃에 재결합해 왕복 제작의 정리 비용을 줄임.",
+    tags: ["#AI디자인", "#Figma", "#MCP", "#디자인토큰", "#오토레이아웃", "#테크IT"],
+    thumbnail: "https://i.vimeocdn.com/video/2180479793-828fe12414fedeec619c17ffecb05e3761e8e715d200486d987c5e8fd5a7a18e-d",
+    visual: { background: "#1e1e1e", accent: "#a7e5ca", ink: "#ffffff", radiusOne: "24px", radiusTwo: "0", rotate: "2deg", label: "CODE / VARIABLES / REFLOW" },
+    review: {
+      "유형": "AI 디자인", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Figma 공식 2026-07-16 릴리스가 실제 Variables HTML to Design 영상을 제공하고 코드 화면 가져오기, 기존 변수 바인딩, Auto Layout 복구를 재현 가능한 왕복 제작 흐름으로 공개한다.",
+      "metadata": { "정보렌즈": ["사용자흐름", "브랜드일관성", "인터랙션", "AI활용"], "시각렌즈": ["미니멀", "그리드", "고밀도", "절제", "모션필"], "시각아티팩트_url": "https://i.vimeocdn.com/video/2180479793-828fe12414fedeec619c17ffecb05e3761e8e715d200486d987c5e8fd5a7a18e-d", "커버리지_카테고리": "AI 디자인", "보안_등급": "raw_ok", "type_block": { "workflow": "Make·MCP·Chrome에서 코드 화면 가져오기→기존 색·타입·간격 변수 자동 바인딩→Auto Layout 프레임 편집·리플로", "ai_role": "코드 기반 화면을 생성·캡처한 뒤 디자인 시스템 변수와 편집 가능한 구조로 재결합" } },
+      "출처": { "소스": "https://www.figma.com/release-notes/", "수집일": "2026-07-26", "수집사유": "2026-07-16 공식 릴리스의 실제 기능 영상과 200 응답 3840×2160 Vimeo 포스터가 확인됨" }
+    }
+  },
+  {
+    title: "Apple 27 Design Kits — 코드 명명과 상태를 맞춘 플랫폼 컴포넌트",
+    category: "웹 스타일가이드", date: "2026-07-26", url: "https://developer.apple.com/hello/july26/#design-resources",
+    summary: "iOS·iPadOS·macOS 27의 키보드, 탭 바, 메뉴, 버튼, 슬라이더, 토글을 Liquid Glass·다크 모드·확장 상태와 함께 제공하는 공식 Figma·Sketch 키트.",
+    note: "컴포넌트 이름을 코드와 맞추고 리사이징·상태·다크 모드를 한 키트에 묶어 플랫폼 UI의 디자인→구현 정합성을 관리하는 기준으로 유용함.",
+    tags: ["#웹스타일가이드", "#Apple", "#디자인키트", "#컴포넌트상태", "#다크모드", "#테크IT"],
+    thumbnail: "https://developer.apple.com/click/images/mcfly/hellojuly26-design-resources_2x.jpg",
+    visual: { background: "#0b0b0d", accent: "#b9d8ff", ink: "#ffffff", radiusOne: "24px", radiusTwo: "50%", rotate: "-2deg", label: "PLATFORM / STATE / CODE" },
+    review: {
+      "유형": "웹 스타일가이드", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Apple 공식 2026년 7월 자료가 실제 다크 모드 컴포넌트 콜라주와 함께 Liquid Glass, 확장 상태, 코드 정렬 명명, 리사이징과 macOS 다크 모드까지 공개해 플랫폼 UI 규칙으로 즉시 흡수할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "브랜드일관성", "접근성", "인터랙션"], "시각렌즈": ["글래스모피즘", "모노톤", "그리드", "글로시", "차가움"], "시각아티팩트_url": "https://developer.apple.com/click/images/mcfly/hellojuly26-design-resources_2x.jpg", "커버리지_카테고리": "웹 스타일가이드", "보안_등급": "raw_ok", "type_block": { "tokens": "Liquid Glass·플랫폼별 다크 모드·코드와 정렬된 명명", "components": "키보드·탭 바·컨텍스트 메뉴·액션 버튼·슬라이더·토글의 확장 상태와 리사이징" } },
+      "출처": { "소스": "https://developer.apple.com/hello/july26/", "수집일": "2026-07-26", "수집사유": "2026년 7월 Apple Developer 공식 페이지에서 실제 플랫폼 컴포넌트 콜라주와 200 응답 1400×708 이미지가 확인됨" }
+    }
+  },
+  {
+    title: "Cantor8 — 디지털 자산 인프라를 기관급 신뢰로 번역한 웹",
+    category: "웹·앱 UI", date: "2026-07-26", url: "https://www.behance.net/gallery/252610351/Cantor8",
+    summary: "Canton Network 기반 디지털 자산 인프라의 연결·확장 구조를 절제된 화면 위계와 상호작용으로 설명해 금융기관의 신뢰를 만든 공개 웹 경험.",
+    note: "복잡한 블록체인 인프라를 기능 나열보다 생태계 연결, 기관 신뢰, 확장 흐름의 순서로 풀어 B2B 핀테크 사이트의 정보 구조에 참고할 만함.",
+    tags: ["#웹앱UI", "#핀테크", "#디지털자산", "#정보구조", "#인터랙션", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b40478252610351.6a57ccccb1483.png",
+    visual: { background: "#18191b", accent: "#dfefb1", ink: "#f5f5ef", radiusOne: "0", radiusTwo: "24px", rotate: "3deg", label: "ASSETS / CONNECT / TRUST" },
+    review: {
+      "유형": "웹·앱 UI", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 4, "근거성": 4, "가치축": 4 }, "total": 17, "verdict": "accept",
+      "근거": "공개 실제 웹 화면과 라이브 사이트가 디지털 자산 인프라의 연결 구조, 기관 신뢰 메시지와 상호작용을 일관된 위계로 반복해 B2B 핀테크 정보 구조로 시스템화한다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "브랜드일관성", "인터랙션"], "시각렌즈": ["미니멀", "모노톤", "그리드", "여백중심", "절제", "모션필"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b40478252610351.6a57ccccb1483.png", "커버리지_카테고리": "웹·앱 UI", "보안_등급": "raw_ok", "type_block": { "flow": "기관급 디지털 자산 문제→Canton Network 연결 인프라→보안·확장 가치→라이브 제품 탐색", "screens": "도입·생태계 설명·연결 구조·기관 신뢰 메시지·반응형 웹·인터랙션" } },
+      "출처": { "소스": "Behance / Le:mma Studio", "수집일": "2026-07-26", "수집사유": "2026-07-16 공개된 UI/UX Featured 프로젝트에서 실제 웹 화면·라이브 사이트와 200 응답 og:image가 확인됨" }
+    }
+  },
+  {
+    title: "REMINI — 투명 젤과 별 입자를 쌓은 K-pop 3D 캐릭터",
+    category: "비주얼 그래픽", date: "2026-07-26", url: "https://www.behance.net/gallery/252489311/_",
+    summary: "반투명 젤 재질, 별 입자, 둥근 실루엣과 파스텔 광원을 반복해 공식 캐릭터를 스티커·오브젝트·장면으로 확장한 Cinema 4D·Blender 시리즈.",
+    note: "캐릭터의 핵심 실루엣을 고정하고 투명도·입자·표정·소품만 바꿔 팬 콘텐츠를 연속 생산하는 3D 그래픽 시스템으로 참고하기 좋음.",
+    tags: ["#비주얼그래픽", "#3D캐릭터", "#젤재질", "#파스텔", "#Kpop"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/projects/max_808/1469e5252489311.Y3JvcCwyNDU0LDE5MjAsNTQsMA.jpg",
+    visual: { background: "#d9e9f6", accent: "#efc8e4", ink: "#40354d", radiusOne: "50%", radiusTwo: "24px", rotate: "-4deg", label: "GEL / STAR / CHARACTER" },
+    review: {
+      "유형": "비주얼 그래픽", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 4, "근거성": 4, "가치축": 5 }, "total": 18, "verdict": "accept",
+      "근거": "공개 다중 결과물이 둥근 캐릭터 실루엣, 반투명 젤, 별 입자, 파스텔 광원을 반복해 스티커·3D 오브젝트·장면으로 확장 가능한 스타일 규칙을 명확히 보여 준다.",
+      "metadata": { "정보렌즈": ["브랜드일관성"], "시각렌즈": ["3D", "파스텔", "중앙집중", "글로시", "유희적"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/projects/max_808/1469e5252489311.Y3JvcCwyNDU0LDE5MjAsNTQsMA.jpg", "커버리지_카테고리": "비주얼 그래픽", "보안_등급": "raw_ok", "type_block": { "format": "Cinema 4D·Blender 기반 공식 캐릭터 3D 시리즈", "transferable_style": "둥근 실루엣·반투명 젤·별 입자·파스텔 광원·표정과 소품 변주" } },
+      "출처": { "소스": "Behance / Allabo-x 외", "수집일": "2026-07-26", "수집사유": "2026-07-23 공개된 Best of Behance 프로젝트에서 다중 공식 캐릭터 결과물과 200 응답 og:image가 확인됨" }
+    }
+  },
+  {
+    title: "SYNORA — 오로라와 별의 흐름으로 구축한 AI 플랫폼 브랜드",
+    category: "브랜드", date: "2026-07-26", url: "https://www.behance.net/gallery/252444713/SYNORA-Premium-AI-Platform-Design",
+    summary: "오로라형 그라디언트, 별 점, 심야 네이비와 미니멀한 UI를 하나의 규칙으로 묶어 복잡한 AI 기능을 차분하고 프리미엄하게 보이게 한 아이덴티티.",
+    note: "추상적인 AI의 지능·흐름·가능성을 오로라 곡선과 별 점의 반복 규칙으로 줄여 로고, 웹, 제품 UI에 일관되게 적용한 점이 AI 서비스 브랜딩에 유용함.",
+    tags: ["#브랜드", "#AI플랫폼", "#오로라", "#그라디언트", "#테크브랜딩", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/2cb228252444713.6a4f8d699faa7.png",
+    visual: { background: "#071224", accent: "#7fe7d6", ink: "#f0f5ff", radiusOne: "24px", radiusTwo: "50%", rotate: "2deg", label: "AURORA / STAR / INTELLIGENCE" },
+    review: {
+      "유형": "브랜드", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 4, "근거성": 4, "가치축": 4 }, "total": 17, "verdict": "accept",
+      "근거": "공개 로고·웹·제품 UI가 오로라형 그라디언트, 별 점, 심야 네이비와 여백 규칙을 반복해 AI 플랫폼의 차분한 프리미엄 스타일로 추출 가능하다.",
+      "metadata": { "정보렌즈": ["브랜드일관성", "AI활용"], "시각렌즈": ["미니멀", "그라디언트", "여백중심", "글로시", "차가움"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/2cb228252444713.6a4f8d699faa7.png", "커버리지_카테고리": "브랜드", "보안_등급": "raw_ok", "type_block": { "identity": "오로라 곡선·별 점·심야 네이비·소프트 글로우", "applications": "로고·랜딩 페이지·AI 제품 UI·디지털 캠페인" } },
+      "출처": { "소스": "Behance / Vollyt Design", "수집일": "2026-07-26", "수집사유": "2026-07-09 공개된 AI 플랫폼 아이덴티티에서 다중 브랜드·UI 결과물과 200 응답 og:image가 확인됨" }
+    }
+  },
+  {
     title: "Liquid Chrome Architecture — 냉색 고전 건축을 휘감는 홀로그램 액체",
     category: "AI 이미지 프롬프트", date: "2026-07-25", url: "https://help.runwayml.com/hc/en-us/articles/37053594806419-Creating-with-Gen-4-Image#h_01JGX3TAG7VBAKJKGW50003P4C",
     summary: "백색 고전 건축을 검은 심연 속에서 비현실적으로 휘고 연결한 뒤 블루·그린 냉색과 액체 크롬의 무지갯빛 반사를 입힌 공식 Gen-4 Image 결과.",
