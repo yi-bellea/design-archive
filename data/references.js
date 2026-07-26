@@ -2,6 +2,175 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "Forever Founder — 창립자의 지식을 실시간 대화형 아바타로 보존한 AI 경험",
+    category: "AI 디자인", date: "2026-07-27", url: "https://runwayml.com/news/customers/rga",
+    summary: "R/GA의 50년 기록과 창립자 관점을 지식 베이스·음성·실시간 비디오 에이전트로 결합해 조직의 역사와 원칙을 대화 가능한 경험으로 만든 사례.",
+    note: "단일 아바타의 외형보다 자료 큐레이션, 페르소나 지침, 음성 조정, 현장 대화 검증을 한 흐름으로 묶어 브랜드 아카이브를 온보딩·검색 인터페이스로 전환한 점이 구체적임.",
+    tags: ["#AI디자인", "#실시간아바타", "#지식베이스", "#브랜드아카이브", "#Runway", "#테크IT"],
+    thumbnail: "https://d3phaj0sisr2ct.cloudfront.net/site/images/sanity/2026/07/runwayrga-a-1920x1080-93c567f2-5f06-4b77-a5dd-1a90f9aca1fc.png",
+    visual: { background: "#101010", accent: "#8ef0c6", ink: "#f5f2eb", radiusOne: "24px", radiusTwo: "50%", rotate: "-2deg", label: "ARCHIVE / AVATAR / DIALOGUE" },
+    review: {
+      "유형": "AI 디자인", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway와 R/GA가 공개한 실제 행사 화면, 145개 질문·20회 대화·10분 연속 운용 결과와 자료·음성·프롬프트 조정 과정을 통해 브랜드 지식을 대화형 온보딩 경험으로 전환하는 절차를 검증할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "브랜드일관성", "인터랙션", "AI활용"], "시각렌즈": ["미니멀", "모노톤", "중앙집중", "절제", "모션필"], "시각아티팩트_url": "https://d3phaj0sisr2ct.cloudfront.net/site/images/sanity/2026/07/runwayrga-a-1920x1080-93c567f2-5f06-4b77-a5dd-1a90f9aca1fc.png", "커버리지_카테고리": "AI 디자인", "보안_등급": "raw_ok", "type_block": { "workflow": "창립자 저서·기록 정리→단일 이미지 기반 아바타 프로토타입→음성·페르소나·지식 베이스 조정→행사 현장 대화 검증→다국어 온보딩 확장", "ai_role": "기관의 정적 기록을 검색·응답·표정이 결합된 실시간 브랜드 인터페이스로 변환" } },
+      "출처": { "소스": "https://runwayml.com/news/customers/rga", "수집일": "2026-07-27", "수집사유": "2026-07-17 공개된 Runway 공식 고객 사례에서 실제 아바타 화면과 제작·운용 지표가 확인됨" }
+    }
+  },
+  {
+    title: "Figma Auto Layout Flexbox Parity — 패딩·보더·갭을 CSS와 맞춘 레이아웃 규칙",
+    category: "웹 스타일가이드", date: "2026-07-27", url: "https://help.figma.com/hc/en-us/articles/42031586813719-Use-auto-layout-with-CSS-Flexbox-in-mind",
+    summary: "Auto Layout의 최소 패딩, inside stroke, border-box 분배, auto gap과 단일 자식 정렬을 CSS Flexbox 동작과 일치시키고 이전·이후 화면으로 설명한 공식 규칙.",
+    note: "디자인 캔버스와 브라우저 레이아웃 사이의 예외를 시각 비교와 마이그레이션 체크리스트로 묶어 컴포넌트 시스템의 구현 오차를 줄이는 기준으로 바로 활용 가능함.",
+    tags: ["#웹스타일가이드", "#Figma", "#AutoLayout", "#CSSFlexbox", "#컴포넌트", "#테크IT"],
+    thumbnail: "https://help.figma.com/hc/article_attachments/42168623814423",
+    visual: { background: "#f2f1ed", accent: "#7c5cff", ink: "#181818", radiusOne: "0", radiusTwo: "24px", rotate: "2deg", label: "PADDING / BORDER / GAP" },
+    review: {
+      "유형": "웹 스타일가이드", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Figma 공식 문서가 패딩 최소값, inside stroke, border-box, auto gap의 이전·이후 실제 화면과 업그레이드 절차를 함께 제공해 CSS와 디자인 컴포넌트의 레이아웃 규칙으로 즉시 흡수할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "브랜드일관성", "접근성", "인터랙션"], "시각렌즈": ["미니멀", "그리드", "고밀도", "절제"], "시각아티팩트_url": "https://help.figma.com/hc/article_attachments/42168623814423", "커버리지_카테고리": "웹 스타일가이드", "보안_등급": "raw_ok", "type_block": { "tokens": "padding minimum·inside stroke·border-box sizing·auto gap 0 minimum", "components": "Auto Layout frame·fill-container children·nested stroke·single-child stack·layout version migration" } },
+      "출처": { "소스": "https://help.figma.com/hc/en-us/articles/42031586813719-Use-auto-layout-with-CSS-Flexbox-in-mind", "수집일": "2026-07-27", "수집사유": "2026년 7월 기본 적용되는 공식 Auto Layout 업데이트에서 실제 전후 비교 PNG·GIF 7개가 확인됨" }
+    }
+  },
+  {
+    title: "Progress DevTools Screenshot Guide — 제품 화면의 박스·화살표·라벨 주석 규칙",
+    category: "콘텐츠 디자인 가이드", date: "2026-07-27", url: "https://www.telerik.com/documentation/style-guide/screenshots",
+    summary: "문서용 제품 화면을 준비하고 필요한 영역만 자른 뒤 박스, 화살표, 번호, 라벨을 일관된 색과 간격으로 올리는 Progress DevTools의 공식 이미지 가이드.",
+    note: "UI 설명 문서에서 강조 요소가 제품 화면을 가리지 않도록 캡처 준비·주석·파일명·캡션을 한 절차로 묶어 튜토리얼과 릴리스 노트 제작에 즉시 적용하기 좋음.",
+    tags: ["#콘텐츠디자인가이드", "#스크린샷", "#문서디자인", "#주석", "#개발자도구", "#테크IT"],
+    thumbnail: "https://www.telerik.com/documentation/style-guide/assets/f2b996b67ef944f48760bddf2fb412d1/screenshots-example.png",
+    visual: { background: "#f5f6f7", accent: "#ff5a37", ink: "#202124", radiusOne: "24px", radiusTwo: "0", rotate: "-2deg", label: "CAPTURE / ANNOTATE / EXPLAIN" },
+    review: {
+      "유형": "콘텐츠 디자인 가이드", "가치축_이름": "실행가능성", "scores": { "완성도": 5, "신규성": 3, "근거성": 5, "가치축": 5 }, "total": 18, "verdict": "accept",
+      "근거": "Progress 공식 가이드가 UI 캡처 준비, 자르기, 박스·화살표·라벨 주석, 파일명과 캡션 규칙을 실제 예시 화면과 함께 제시해 제품 문서 이미지 제작 절차로 곧바로 실행할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "접근성", "콘텐츠명료성"], "시각렌즈": ["미니멀", "그리드", "하드라이트", "절제"], "시각아티팩트_url": "https://www.telerik.com/documentation/style-guide/assets/f2b996b67ef944f48760bddf2fb412d1/screenshots-example.png", "커버리지_카테고리": "콘텐츠 디자인 가이드", "보안_등급": "raw_ok", "type_block": { "procedure": "제품 UI 정리→관련 영역 캡처·크롭→박스·화살표·번호·라벨 주석→설명 문장·캡션 연결→의미 있는 파일명 저장", "visible_examples": "그리드 UI 위 선택 영역 박스, 방향 화살표, 텍스트 라벨과 문서 전용 강조색 예시" } },
+      "출처": { "소스": "https://www.telerik.com/documentation/style-guide/screenshots", "수집일": "2026-07-27", "수집사유": "2026-07-16 갱신된 공식 스타일가이드에서 실제 제품 화면 주석 예시 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "DreamUI — 프롬프트에서 편집 가능한 화면·플로·토큰·코드까지 생성",
+    category: "Figma 플러그인", date: "2026-07-27", url: "https://www.figma.com/community/plugin/1656620010944492160/dreamui-ai-ui-generator-design-system-wireframe-generator-ai-design-copilot-tokens-html",
+    summary: "텍스트 프롬프트, 스크린샷, 사용자 스토리를 각각 편집 가능한 UI 화면, 연결 제품, 와이어프레임 플로와 개발용 코드로 바꾸는 Figma Community AI 플러그인.",
+    note: "단일 생성 버튼보다 화면 생성·선택 영역 대화 편집·토큰 추출·코드 변환을 한 도구 안에 묶어 초기 제품 구조와 디자인 시스템 실험을 빠르게 반복하기 좋음.",
+    tags: ["#Figma플러그인", "#AIUI", "#와이어프레임", "#디자인토큰", "#코드변환", "#테크IT"],
+    thumbnail: "https://www.figma.com/community/thumbnail?resource_id=1656620010944492160&resource_type=plugin",
+    visual: { background: "#161822", accent: "#8a70ff", ink: "#f7f4ff", radiusOne: "24px", radiusTwo: "50%", rotate: "3deg", label: "PROMPT / FLOW / TOKENS" },
+    review: {
+      "유형": "Figma 플러그인", "가치축_이름": "유용성", "scores": { "완성도": 4, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 18, "verdict": "accept",
+      "근거": "Figma Community 공식 1243×763 커버와 2026-07-24 공개 소개가 프롬프트 화면 생성, 연결 제품, 스크린샷 재구성, 선택 영역 편집, 플로·토큰·코드 기능을 실제 플러그인 화면으로 확인시킨다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "인터랙션", "AI활용"], "시각렌즈": [], "시각아티팩트_url": "https://www.figma.com/community/thumbnail?resource_id=1656620010944492160&resource_type=plugin", "커버리지_카테고리": "Figma 플러그인", "보안_등급": "raw_ok", "type_block": { "workflow": "프롬프트·스크린샷·사용자 스토리 입력→편집 가능한 UI·연결 화면·와이어프레임 생성→선택 영역 대화 편집→토큰·HTML 코드 출력", "repeated_task": "초기 화면 구조, 디자인 시스템 토큰, 사용자 플로와 개발 전달물의 반복 생성" } },
+      "출처": { "소스": "https://forum.figma.com/showcase-your-work-14/dreamui-figma-plugin-by-noor-maqsood-56341", "수집일": "2026-07-27", "수집사유": "2026-07-24 공개된 Figma Forum 소개와 Community 공식 커버·플러그인 페이지가 확인됨" }
+    }
+  },
+  {
+    title: "Blue-Glow Ruins Portrait — 청색 발광 페이지와 필름 톤의 시네마틱 초상",
+    category: "AI 이미지 프롬프트", date: "2026-07-27", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#cinematic-blue-glow",
+    summary: "고대 유적에서 책을 읽는 인물을 옅은 블루 발광, 얕은 심도, 저채도 시네마 팔레트와 미세 필름 그레인으로 묶은 공식 Gen-4 Image 결과.",
+    note: "광원 출처를 책 페이지로 한정하고 주변의 네이비·블루 톤을 렌즈·심도·그레인과 함께 제어해 AI·클라우드·지식 제품의 캠페인 키비주얼로 전이하기 좋음.",
+    prompt: "cinematic photograph of a contemplative elven woman reading a book in ancient ruins. the pages of the book emit a faint blue glow. medium close-up portrait with a shallow depth of field to focus on the queen. muted cinematic color palette with slight film grain. art directed, professional composition. movie still. theatrical, anamorphic lens, 35mm",
+    tags: ["#AI이미지프롬프트", "#블루톤", "#시네마틱", "#35mm", "#발광", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37153288703891",
+    visual: { background: "#152238", accent: "#63b9f4", ink: "#edf4fa", radiusOne: "50%", radiusTwo: "24px", rotate: "-3deg", label: "BLUE GLOW / 35MM / RUINS" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 프롬프트·Gen-4 Image 모델·1920×1088 결과를 함께 제공하고 청색 발광원, 35mm 아나모픽 렌즈, 얕은 심도, 저채도 팔레트와 필름 그레인을 독립 통제어로 분리한다.",
+      "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["에디토리얼", "듀오톤", "중앙집중", "필름그레인", "차가움"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37153288703891", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "cinematic photograph of a contemplative elven woman reading a book in ancient ruins. the pages of the book emit a faint blue glow. medium close-up portrait with a shallow depth of field to focus on the queen. muted cinematic color palette with slight film grain. art directed, professional composition. movie still. theatrical, anamorphic lens, 35mm", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Cinematic 예시·결과 1920×1088·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37153288703891", "fragment_map": [{ "조각": "pages ... emit a faint blue glow", "효과": "책을 유일한 시안·블루 발광원으로 설정" }, { "조각": "medium close-up ... shallow depth of field", "효과": "인물과 발광 페이지에 초점을 고정하고 유적을 흐림" }, { "조각": "muted cinematic color palette with slight film grain", "효과": "저채도 냉색 톤과 미세한 필름 입자 결합" }, { "조각": "theatrical, anamorphic lens, 35mm", "효과": "광원 번짐과 넓은 영화적 프레이밍 부여" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-27", "수집사유": "최근 갱신된 공식 프롬프트 가이드에서 전체 프롬프트·모델·1920×1088 블루톤 결과가 확인됨" }
+    }
+  },
+  {
+    title: "CRT Static Dancer — 어두운 들판의 발광 노이즈 인체",
+    category: "AI 이미지 프롬프트", date: "2026-07-27", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#static-hologram-dancer",
+    summary: "야간 들판의 동작 중인 인물을 CRT 정적 노이즈와 부드러운 자발광으로 구성하고 Portra 필름의 어두운 시네마 톤으로 마감한 공식 결과.",
+    note: "실루엣·노이즈 재질·동작 포즈·주변 노출을 분리해 사이버보안, 통신, 데이터 스트림처럼 보이지 않는 기술을 인체 중심 캠페인 그래픽으로 번역하기 좋음.",
+    prompt: "cinematic, ethereal mysterious. professional action shot of character made entirely of glowing and glitching CRT static. dynamic and expressive dance pose caught mid-motion. moody and dark cinematic scene captured on portra film. night time. a surreal action scene in a vast field.",
+    tags: ["#AI이미지프롬프트", "#CRT", "#글리치", "#홀로그램", "#Portra", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37153279794451",
+    visual: { background: "#111116", accent: "#a8e6ff", ink: "#f0edf7", radiusOne: "0", radiusTwo: "50%", rotate: "3deg", label: "STATIC / GLOW / MOTION" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 프롬프트·Gen-4 Image 모델·1360×768 결과를 제공하고 CRT 정적 재질, 자발광, 동작 중 포즈, Portra 필름과 야간 들판을 재조합 가능한 시각 통제어로 분리한다.",
+      "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["3D", "모노톤", "중앙집중", "필름그레인", "차가움"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37153279794451", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "cinematic, ethereal mysterious. professional action shot of character made entirely of glowing and glitching CRT static. dynamic and expressive dance pose caught mid-motion. moody and dark cinematic scene captured on portra film. night time. a surreal action scene in a vast field.", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Static hologram 예시·결과 1360×768·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37153279794451", "fragment_map": [{ "조각": "character made entirely of glowing and glitching CRT static", "효과": "인체 실루엣을 발광하는 스캔라인·노이즈 재질로 치환" }, { "조각": "dynamic and expressive dance pose caught mid-motion", "효과": "정지 이미지에 방향성과 운동 에너지 부여" }, { "조각": "moody and dark cinematic scene captured on portra film", "효과": "발광 피사체가 돋보이는 어두운 필름 톤 형성" }, { "조각": "night time ... in a vast field", "효과": "검은 여백이 큰 야외 공간으로 노이즈 윤곽 분리" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-27", "수집사유": "최근 갱신된 공식 프롬프트 가이드에서 전체 프롬프트·모델·1360×768 결과가 확인됨" }
+    }
+  },
+  {
+    title: "Red Circle High Angle — 안개 계곡의 원형 군무를 내려다보는 숏",
+    category: "AI 영상 프롬프트", date: "2026-07-27", url: "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples#high-angle-red-circle",
+    summary: "회청색 안개와 바위 사이에서 짙은 붉은 로브 인물들이 손을 잡고 원형으로 움직이는 장면을 하이앵글·확산 월광으로 통제한 공식 Gen-4.5 결과.",
+    note: "군집 형태, 카메라 높이, 중앙 여백, 적색과 냉회색 대비를 한 문장에 고정해 네트워크·커뮤니티·협업 시스템의 상징적 티저 모션으로 전이하기 좋음.",
+    prompt: "A group of figures wearing heavy, hooded robes, predominantly deep red with a few in grey, hold hands and dance in a circle within a misty valley. The high-angle shot captures the entire formation amidst a field of blooming red wildflowers and jagged grey rocks, with dense fog obscuring the background. Soft, diffused moonlight filters through the haze, casting long, faint shadows across the dirt clearing in the center. The color palette features a stark contrast between the blood-red robes and flowers against the cool, desaturated blue-greys of the mist and stone.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#하이앵글", "#원형구도", "#컬러대비", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/47313504721939",
+    visual: { background: "#303941", accent: "#a91f2c", ink: "#eef0ed", radiusOne: "50%", radiusTwo: "0", rotate: "-3deg", label: "CIRCLE / MIST / HIGH ANGLE" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway 공식 카메라 라이브러리가 전체 프롬프트·Gen-4.5 모델·640×360 결과 GIF를 제공하고 원형 군무, 하이앵글, 안개·월광, 적색과 냉회색 대비를 독립된 운동·색 통제어로 분리한다.",
+      "metadata": { "정보렌즈": ["AI활용", "사용자흐름", "인터랙션"], "시각렌즈": ["듀오톤", "중앙집중", "소프트확산광", "차가움", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313504721939", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "A group of figures wearing heavy, hooded robes, predominantly deep red with a few in grey, hold hands and dance in a circle within a misty valley. The high-angle shot captures the entire formation amidst a field of blooming red wildflowers and jagged grey rocks, with dense fog obscuring the background. Soft, diffused moonlight filters through the haze, casting long, faint shadows across the dirt clearing in the center. The color palette features a stark contrast between the blood-red robes and flowers against the cool, desaturated blue-greys of the mist and stone.", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·2~10초·1280×720 생성 지원·24/25fps·공식 High angle 예시·seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313504721939", "fragment_map": [{ "조각": "hold hands and dance in a circle", "효과": "집단의 연결을 하나의 반복 원형 운동으로 고정" }, { "조각": "high-angle shot captures the entire formation", "효과": "군집 형태와 중앙 여백을 한 프레임에서 읽히게 함" }, { "조각": "soft, diffused moonlight filters through the haze", "효과": "안개 속에 긴 약한 그림자와 확산된 깊이 생성" }, { "조각": "blood-red ... against cool, desaturated blue-greys", "효과": "적색 피사체와 냉회색 환경의 강한 온도 대비" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples", "수집일": "2026-07-27", "수집사유": "2026-06-27 갱신된 공식 카메라 예시에서 전체 프롬프트·모델·640×360 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Blue Corridor Frame-within-Frame — 빛의 문으로 걸어가는 냉색 실루엣",
+    category: "AI 영상 프롬프트", date: "2026-07-27", url: "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples#frame-within-frame-blue-corridor",
+    summary: "반투명 드레스의 인물이 물기 어린 끝없는 복도를 걸어가고, 수직 광원이 만든 내부 프레임이 실루엣을 감싸는 공식 Gen-4.5 숏.",
+    note: "외부 화면·복도·수직 빛을 삼중 깊이로 배치하고 저대비 블루그레이 팔레트를 유지해 보안 게이트, 데이터 터널, 미래 인터페이스의 전환 장면으로 활용하기 좋음.",
+    prompt: "Frame within frame composition of a lone female figure with a distinct bob haircut, wearing a flowing, semi-sheer dress with full sleeves, is silhouetted from behind as she walks away from the viewer. The composition is centered and framing the figure with a vertical light source at the far end of a seemingly endless, watery corridor. Ethereal, dreamscape, surreal, cinematic, low contrast, cool blue-gray.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#프레임인프레임", "#블루그레이", "#복도", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/47313504734355",
+    visual: { background: "#26333f", accent: "#b8dceb", ink: "#eef6f8", radiusOne: "0", radiusTwo: "50%", rotate: "2deg", label: "FRAME / CORRIDOR / BLUE" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Runway 공식 예시가 전체 프롬프트·Gen-4.5 모델·640×360 결과 GIF를 제공하고 후면 보행, 중앙 실루엣, 수직 광원 내부 프레임, 저대비 블루그레이를 재현 가능한 구도·운동 조각으로 분리한다.",
+      "metadata": { "정보렌즈": ["AI활용", "사용자흐름", "인터랙션"], "시각렌즈": ["미니멀", "모노톤", "중앙집중", "글로시", "차가움", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313504734355", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "Frame within frame composition of a lone female figure with a distinct bob haircut, wearing a flowing, semi-sheer dress with full sleeves, is silhouetted from behind as she walks away from the viewer. The composition is centered and framing the figure with a vertical light source at the far end of a seemingly endless, watery corridor. Ethereal, dreamscape, surreal, cinematic, low contrast, cool blue-gray.", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·2~10초·1280×720 생성 지원·24/25fps·공식 Frame within frame 예시·seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313504734355", "fragment_map": [{ "조각": "silhouetted from behind as she walks away", "효과": "후면 실루엣과 한 방향 보행으로 진입감을 형성" }, { "조각": "frame within frame composition", "효과": "외부 화면 안에 복도와 수직 빛의 내부 프레임 추가" }, { "조각": "vertical light source at the far end", "효과": "원근의 종착점을 밝은 세로선으로 고정" }, { "조각": "low contrast, cool blue-gray", "효과": "물기 있는 공간 전체를 저대비 냉색 톤으로 통일" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples", "수집일": "2026-07-27", "수집사유": "2026-06-27 갱신된 공식 카메라 예시에서 전체 프롬프트·모델·640×360 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Edição Folha — 인쇄 지면에서 네이티브 기사로 이어지는 두 탭 독서 흐름",
+    category: "웹·앱 UI", date: "2026-07-27", url: "https://www.behance.net/gallery/252515439/Edicao-Folha",
+    summary: "신문 지면 복제본의 각 헤드라인을 인터랙티브 영역으로 매핑해 앱 밖 검색 없이 반응형 기사, 공유·저장·선물 기능으로 이어지게 한 실제 편집 제품 개선.",
+    note: "익숙한 인쇄 지면은 보존하면서 숨은 링크 영역과 네이티브 액션 바를 덧붙여 수동 열람을 측정 가능한 디지털 독서 여정으로 바꾼 점이 콘텐츠 플랫폼 설계에 구체적임.",
+    tags: ["#웹앱UI", "#뉴스앱", "#에디토리얼", "#독서흐름", "#인터랙션", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/e43ad5252515439.6a5669e64c2c5.png",
+    visual: { background: "#f3efe7", accent: "#c51f2f", ink: "#171717", radiusOne: "0", radiusTwo: "24px", rotate: "-2deg", label: "PRINT / TAP / NATIVE" },
+    review: {
+      "유형": "웹·앱 UI", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "공개된 실제 지면·모바일 화면과 구현 결과가 헤드라인 터치 영역, 네이티브 기사, 공유·저장·선물 액션, 시작 화면 개인화를 연결해 편집 콘텐츠 앱의 재사용 가능한 독서 흐름으로 시스템화한다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "타이포그래피", "접근성", "인터랙션", "콘텐츠명료성"], "시각렌즈": ["에디토리얼", "그리드", "고밀도", "절제"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/e43ad5252515439.6a5669e64c2c5.png", "커버리지_카테고리": "웹·앱 UI", "보안_등급": "raw_ok", "type_block": { "flow": "인쇄 지면 열람→헤드라인 터치 영역 선택→반응형 네이티브 기사→공유·저장·선물→앱 시작 화면 개인화", "screens": "지면 복제본·터치 힌트·네이티브 기사·액션 바·공유 모달·업데이트 배너·홈 선택" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252515439/Edicao-Folha", "수집일": "2026-07-27", "수집사유": "2026-07-14 공개된 실제 제품 개선 사례에서 전체 독서 흐름과 200 응답 대표 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "This Is Random #17 — 데이터·AI·업무 압력을 초현실 편집 이미지로 번역",
+    category: "비주얼 그래픽", date: "2026-07-27", url: "https://www.behance.net/gallery/253245709/This-Is-Random-17-Personal-Project",
+    summary: "학업 성취의 평준화, 데이터 중심 의사결정, AI와 지속가능성 같은 추상 주제를 인물·사물의 비현실적 결합과 강한 여백으로 압축한 최신 에디토리얼 이미지 모음.",
+    note: "복잡한 산업 논점을 설명 아이콘으로 축소하지 않고 하나의 역설적 장면과 제한된 색으로 기억점 있게 만드는 방식이 리포트 표지·테크 아티클 일러스트에 유용함.",
+    tags: ["#비주얼그래픽", "#에디토리얼", "#초현실", "#개념일러스트", "#AI", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/48e70a253245709.6a63991c43ad6.jpg",
+    visual: { background: "#e9e2d6", accent: "#ea6045", ink: "#202020", radiusOne: "50%", radiusTwo: "0", rotate: "3deg", label: "IDEA / COLLISION / EDITORIAL" },
+    review: {
+      "유형": "비주얼 그래픽", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 5, "근거성": 4, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "2026년 5~7월 실제 발행 에디토리얼 이미지가 하나의 추상 논점을 인물·사물의 역설적 충돌, 제한 팔레트, 큰 여백과 단일 초점으로 압축해 테크 리포트용 개념 시각 문법으로 추출할 수 있다.",
+      "metadata": { "정보렌즈": ["콘텐츠명료성", "타이포그래피"], "시각렌즈": ["에디토리얼", "비대칭", "여백중심", "필름그레인", "몽환"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/48e70a253245709.6a63991c43ad6.jpg", "커버리지_카테고리": "비주얼 그래픽", "보안_등급": "raw_ok", "type_block": { "elements": "현실 인물·사물의 비례 전복, 제한된 색, 큰 여백, 단일 초현실 행동, 편집 캡션", "reusable_rule": "한 논점을 상반된 두 대상을 충돌시키는 단일 장면으로 만들고 배경 정보를 줄여 역설을 주 초점으로 고정" } },
+      "출처": { "소스": "Behance / Sebastian Cestaro", "수집일": "2026-07-27", "수집사유": "2026-07-24 공개된 Best of Behance 프로젝트에서 실제 발행 이미지 7개와 200 응답 대표 JPEG가 확인됨" }
+    }
+  },
+  {
+    title: "LÔCÔ Art Market — 상자·테이프·라벨을 문화 생산 라인으로 확장한 아이덴티티",
+    category: "브랜드", date: "2026-07-27", url: "https://www.behance.net/gallery/253122291/LOCO-Art-Market",
+    summary: "골판지 상자, 포장 테이프, 운송 라벨과 창고 표식을 모듈로 삼아 아트 마켓의 인쇄·공간·소셜·웹 경험을 하나의 유희적 공장 시스템으로 연결.",
+    note: "일상 물류 재료의 기능적 색과 반복 구조를 브랜드 규칙으로 추출하고 내부 글리프 생성 도구까지 만든 점이 시즌별 콘텐츠를 빠르게 확장하는 실무형 아이덴티티로 뛰어남.",
+    tags: ["#브랜드", "#아트마켓", "#패키징", "#모듈시스템", "#타이포그래피", "#툴메이킹"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/c0c904253122291.6a6190bcc96c3.png",
+    visual: { background: "#c9a879", accent: "#ff4f2f", ink: "#17120e", radiusOne: "0", radiusTwo: "24px", rotate: "-3deg", label: "BOX / LABEL / CULTURE" },
+    review: {
+      "유형": "브랜드", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "실제 행사·인쇄·디지털 화면과 내부 글리프 생성기가 상자 비례, 테이프 고채도, 모노 글꼴, 라벨·손글씨의 역할을 반복해 시즌형 문화 브랜드의 확장 가능한 스타일 시스템으로 추출할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "타이포그래피", "브랜드일관성", "콘텐츠명료성"], "시각렌즈": ["에디토리얼", "하이채도", "그리드", "비대칭", "매트", "유희적"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/c0c904253122291.6a6190bcc96c3.png", "커버리지_카테고리": "브랜드", "보안_등급": "raw_ok", "type_block": { "system": "기울고 겹치는 상자형 로고·골판지 매트 질감·고가시성 테이프·운송 라벨·모노/가변폭/손글씨 타이포·Glyph Box Generator", "applications": "행사 입구·부스 사인·배너·포스터·소셜 캐러셀·웹·패키지·스티커" } },
+      "출처": { "소스": "Behance / M — N Associates", "수집일": "2026-07-27", "수집사유": "2026-07-23 공개된 Best of Behance 프로젝트에서 전체 브랜드 시스템과 실제 행사·디지털 응용, 200 응답 대표 PNG가 확인됨" }
+    }
+  },
+  {
     title: "Lo-Fi Space Reader — 우주선 독서 장면을 1980년대 애니 패널로",
     category: "AI 이미지 프롬프트", date: "2026-07-26", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#lo-fi-spaceship-reading",
     summary: "우주선 안에서 책을 읽는 인물을 손그림 패널, 저채도 파스텔, 소프트 그레인으로 묶어 미래 배경과 향수 어린 인쇄 감각을 공존시킨 공식 Gen-4 Image 결과.",
