@@ -72,12 +72,35 @@ function getVisibleNews() {
   }).sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 }
 
+function getFilterCounts() {
+  const terms = normalize(state.query).split(/\s+/).filter(Boolean);
+  const items = state.view === "archive" ? references : visibleNews;
+  const matchesQuery = items.filter((item) => {
+    const haystack = state.view === "archive"
+      ? searchIndex.get(item)
+      : normalize([item.title, item.category, item.source, item.summary, item.impact, ...(item.tags || [])].join(" "));
+    return terms.every((term) => haystack.includes(term));
+  });
+  const categoryCounts = new Map();
+  matchesQuery.forEach((item) => categoryCounts.set(item.category, (categoryCounts.get(item.category) || 0) + 1));
+  return { total: matchesQuery.length, categoryCounts };
+}
+
 function renderFilters() {
   const values = state.view === "archive" ? [...new Set(references.map((item) => item.category))] : ["AI 디자인 뉴스", "피그마 뉴스", "UI·UX 뉴스", "디자인 일반"];
+  const { total, categoryCounts } = getFilterCounts();
   filters.replaceChildren();
   ["전체", ...values].forEach((category) => {
     const button = document.createElement("button");
-    button.className = "filter"; button.type = "button"; button.textContent = category;
+    const label = document.createElement("span");
+    const badge = document.createElement("span");
+    const categoryCount = category === "전체" ? total : categoryCounts.get(category) || 0;
+    button.className = "filter"; button.type = "button"; button.dataset.category = category;
+    label.className = "filter-label"; label.textContent = category;
+    badge.className = "filter-count"; badge.textContent = categoryCount;
+    badge.setAttribute("aria-hidden", "true");
+    button.setAttribute("aria-label", `${category} ${categoryCount}개`);
+    button.append(label, badge);
     button.setAttribute("aria-pressed", String(category === state.filter));
     button.addEventListener("click", () => { state.filter = category; renderFilters(); render(); });
     filters.append(button);
@@ -173,6 +196,7 @@ document.querySelectorAll("[data-view]").forEach((button) => button.addEventList
 function updateQuery(value) {
   state.query = value.trim();
   searchShell.classList.toggle("has-value", Boolean(value));
+  renderFilters();
   render();
 }
 search.addEventListener("input", (event) => updateQuery(event.target.value));
@@ -181,7 +205,7 @@ document.querySelector("#reset-search").addEventListener("click", () => {
   state.filter = "전체";
   search.value = "";
   updateQuery("");
-  [...filters.children].forEach((child) => child.setAttribute("aria-pressed", String(child.textContent === "전체")));
+  [...filters.children].forEach((child) => child.setAttribute("aria-pressed", String(child.dataset.category === "전체")));
   search.focus();
 });
 document.addEventListener("keydown", (event) => {
