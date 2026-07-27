@@ -2,6 +2,145 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "Runway Dev — 생성 미디어 모델·레시피·워크플로를 한 API로 묶은 개발자 플랫폼",
+    category: "AI 디자인", date: "2026-07-28", url: "https://runway.com/news/company-news/introducing-runway-dev",
+    summary: "이미지·영상·오디오·실시간 캐릭터 모델과 반복 제작 레시피, 다단계 워크플로, 사용량·보안 제어를 하나의 개발자 경험으로 통합한 AI 미디어 플랫폼.",
+    note: "모델 선택을 기능 목록으로 끝내지 않고 대량 상품 비주얼, 다국어 영상, 스크립트-스토리보드처럼 결과 중심 레시피로 추상화해 생성형 기능의 제품 정보 구조를 설계할 때 참고하기 좋음.",
+    tags: ["#AI디자인", "#개발자도구", "#생성미디어", "#API", "#워크플로", "#테크IT"],
+    thumbnail: "https://d3phaj0sisr2ct.cloudfront.net/site/images/news/runway-dev-cover.jpg",
+    visual: { background: "#101010", accent: "#d8ff5f", ink: "#f7f7f2", radiusOne: "24px", radiusTwo: "0", rotate: "-2deg", label: "MODEL / RECIPE / WORKFLOW" },
+    review: {
+      "유형": "AI 디자인", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "공식 출시 화면과 모델·레시피·워크플로·캐릭터·엔터프라이즈 제어 구조, 실제 대량 제작 사례가 생성 미디어 기능을 개발자 제품으로 패키징하는 재현 가능한 정보 구조를 보여 준다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "인터랙션", "AI활용", "콘텐츠명료성"], "시각렌즈": ["미니멀", "모노톤", "그리드", "절제"], "시각아티팩트_url": "https://d3phaj0sisr2ct.cloudfront.net/site/images/news/runway-dev-cover.jpg", "커버리지_카테고리": "AI 디자인", "보안_등급": "raw_ok", "type_block": { "workflow": "모델 선택→목적형 Recipe 호출→다단계 Workflow 연결→Characters 실시간 경험→사용량·보안 운영", "ai_role": "여러 생성 미디어 모델과 제작 규칙을 단일 API 및 결과 중심 엔드포인트로 추상화" } },
+      "출처": { "소스": "https://runway.com/news/company-news/introducing-runway-dev", "수집일": "2026-07-28", "수집사유": "2026-07-08 공개된 공식 출시 페이지에서 1920×1080 제품 커버와 구체적 기능·운영 구조가 확인됨" }
+    }
+  },
+  {
+    title: "Basis Design System — AI Chat까지 확장된 광고 기술 제품 컴포넌트 체계",
+    category: "웹 스타일가이드", date: "2026-07-28", url: "https://design.basis.com/",
+    summary: "광고 기술 애플리케이션을 위한 파운데이션·접근성·컴포넌트·패턴을 한 탐색 구조로 묶고 AI Chat과 Compass 파운데이션을 최신 항목으로 확장한 공개 디자인 시스템.",
+    note: "왼쪽 분류 탐색, 상태별 컴포넌트 예시, 디자이너·개발자 가이드를 한 셸에 배치해 데이터 밀도가 높은 B2B 도구와 AI 대화 기능을 같은 시스템 안에서 운영하는 방법이 명확함.",
+    tags: ["#웹스타일가이드", "#디자인시스템", "#AI챗", "#B2B", "#컴포넌트", "#테크IT"],
+    thumbnail: "https://framerusercontent.com/images/DQ7MDIQZy5y9hQOARrIXQ3efDGs.png",
+    visual: { background: "#f4f6f8", accent: "#3757d5", ink: "#18212b", radiusOne: "8px", radiusTwo: "24px", rotate: "2deg", label: "FOUNDATION / AI CHAT / COMPONENTS" },
+    review: {
+      "유형": "웹 스타일가이드", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "공식 사이트의 실제 문서 셸과 파운데이션·접근성·상태별 컴포넌트·AI Chat 항목이 B2B 제품 규칙을 탐색·비교·구현 가능한 단위로 시스템화한다.",
+      "metadata": { "정보렌즈": ["정보구조", "타이포그래피", "브랜드일관성", "접근성", "인터랙션", "AI활용"], "시각렌즈": ["미니멀", "그리드", "여백중심", "절제"], "시각아티팩트_url": "https://framerusercontent.com/images/DQ7MDIQZy5y9hQOARrIXQ3efDGs.png", "커버리지_카테고리": "웹 스타일가이드", "보안_등급": "raw_ok", "type_block": { "tokens": "색·타이포그래피·간격·테두리·애니메이션·접근성 파운데이션", "components": "Accordion·App Header·Card·폼 상태·Disabled Button 사례·AI Chat 컴포넌트" } },
+      "출처": { "소스": "https://design.basis.com/", "수집일": "2026-07-28", "수집사유": "2026-07-23 갱신된 공식 디자인 시스템에서 AI Chat·Compass 파운데이션과 200 응답 공식 커버가 확인됨" }
+    }
+  },
+  {
+    title: "Pixel Ruins Campfire — 밤의 거대 유적과 작은 불빛을 픽셀 장면으로 압축",
+    category: "AI 이미지 프롬프트", date: "2026-07-28", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#pixel-ruins",
+    summary: "광대한 폐허의 밤, 모닥불 옆 두 인물을 제한된 픽셀 단위와 고전 게임 화면 문법으로 구성해 규모 대비와 서사를 동시에 만든 공식 결과.",
+    note: "거대한 환경·작은 캐릭터·점광원을 세 덩어리로 단순화해 개발자 행사, 게임 기술, 데이터 인프라 주제의 히어로 그래픽을 저해상도 언어로 전환하기 좋음.",
+    prompt: "pixel art of two people resting near a campfire at night in vast ruins. pixelated scene reminiscent of a nostalgic video game.",
+    tags: ["#AI이미지프롬프트", "#픽셀아트", "#게임", "#야간", "#유적", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37148070572563",
+    visual: { background: "#151728", accent: "#ff9d45", ink: "#f1eadf", radiusOne: "0", radiusTwo: "8px", rotate: "2deg", label: "PIXEL / RUINS / CAMPFIRE" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 프롬프트·Gen-4 Image 모델·결과 이미지를 제공하고 픽셀 표현, 두 인물, 밤의 거대 폐허, 모닥불 점광원을 조합 가능한 통제 조각으로 분리한다.",
+      "metadata": { "정보렌즈": ["AI활용", "콘텐츠명료성"], "시각렌즈": ["일러스트", "중앙집중", "차가움"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37148070572563", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "pixel art of two people resting near a campfire at night in vast ruins. pixelated scene reminiscent of a nostalgic video game.", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Pixel 스타일 예시·720p/1080p 지원·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37148070572563", "fragment_map": [{ "조각": "pixel art", "효과": "형태와 명암을 제한된 픽셀 단위로 단순화" }, { "조각": "two people resting near a campfire", "효과": "작은 인물 두 명과 주황 점광원으로 서사 중심 형성" }, { "조각": "at night in vast ruins", "효과": "어두운 거대 구조와 작은 피사체의 규모 대비" }, { "조각": "reminiscent of a nostalgic video game", "효과": "고전 게임 화면의 제한 팔레트와 장면 문법 부여" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-28", "수집사유": "최근 갱신된 공식 프롬프트 가이드에서 전체 프롬프트·모델·공개 결과 이미지가 확인됨" }
+    }
+  },
+  {
+    title: "Dancer in Motion — 고정된 들판과 흐려지는 인물을 분리한 움직임 초상",
+    category: "AI 이미지 프롬프트", date: "2026-07-28", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#in-motion-dancer",
+    summary: "꽃밭 배경은 선명하게 유지하고 춤추는 인물에만 자연스러운 모션 블러와 부분 가림을 적용해 정지 이미지 안에 시간감을 만든 공식 결과.",
+    note: "배경 초점과 피사체 흐림을 반대로 설계해 음악·웨어러블·모션 기술 캠페인에서 기능 설명 없이 속도와 감정의 흔적을 전달하는 데 유용함.",
+    prompt: "dancer in a calm field of flowers. natural motion blur emphasizes the subject's movement against the still environment. Subject appears partially obscured, creating mysterious narrative. background in focus",
+    tags: ["#AI이미지프롬프트", "#모션블러", "#인물", "#꽃밭", "#서사"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37148070593171",
+    visual: { background: "#dedcc8", accent: "#8d5f96", ink: "#23211f", radiusOne: "50%", radiusTwo: "24px", rotate: "-2deg", label: "MOTION / STILL / OBSCURED" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 프롬프트·Gen-4 Image 모델·결과 이미지를 제공하고 고정 배경, 피사체 모션 블러, 부분 가림을 독립된 초점·서사 통제어로 재사용할 수 있게 한다.",
+      "metadata": { "정보렌즈": ["AI활용", "콘텐츠명료성"], "시각렌즈": ["에디토리얼", "비대칭", "소프트확산광", "몽환"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37148070593171", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "dancer in a calm field of flowers. natural motion blur emphasizes the subject's movement against the still environment. Subject appears partially obscured, creating mysterious narrative. background in focus", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 In motion 스타일 예시·720p/1080p 지원·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37148070593171", "fragment_map": [{ "조각": "dancer in a calm field of flowers", "효과": "정적인 자연 배경과 동작 인물을 한 프레임에 배치" }, { "조각": "natural motion blur emphasizes the subject's movement", "효과": "피사체에만 방향성 있는 흐림을 적용" }, { "조각": "Subject appears partially obscured", "효과": "형태 일부를 숨겨 잔상과 미스터리 강화" }, { "조각": "background in focus", "효과": "환경은 선명하게 고정해 움직임 대비를 극대화" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-28", "수집사유": "최근 갱신된 공식 프롬프트 가이드에서 전체 프롬프트·모델·공개 결과 이미지가 확인됨" }
+    }
+  },
+  {
+    title: "Abyssal Submarine Extreme Wide — 심해 협곡에서 시스템 규모를 드러내는 흑백 숏",
+    category: "AI 영상 프롬프트", date: "2026-07-28", url: "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples#extreme-wide-submarine",
+    summary: "거대한 고대 암반과 거의 보이지 않는 잠수함의 비율을 극단적 와이드·흑백 화면으로 고정해 심해의 압도적 규모와 고립감을 만든 공식 Gen-4.5 결과.",
+    note: "주체를 작게 두고 환경을 정보로 사용하는 구도가 클라우드·데이터센터·사이버보안처럼 보이지 않는 거대 인프라를 상징하는 오프닝 숏에 적합함.",
+    prompt: "An extreme wide shot, in black and white, reveals a vast, silent underwater canyon, its ancient rock formations dwarfing a small, barely visible submarine navigating the abyssal plain.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#익스트림와이드", "#심해", "#모노톤", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/47313504717843",
+    visual: { background: "#111820", accent: "#91a5b7", ink: "#edf2f4", radiusOne: "0", radiusTwo: "50%", rotate: "3deg", label: "ABYSS / SCALE / EXTREME WIDE" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Runway 공식 카메라 라이브러리가 전체 프롬프트·Gen-4.5 모델·결과 GIF를 제공하고 극단적 와이드, 흑백, 거대 협곡, 작은 잠수함의 규모 대비를 재현 가능한 숏 조각으로 분리한다.",
+      "metadata": { "정보렌즈": ["AI활용", "콘텐츠명료성"], "시각렌즈": ["모노톤", "여백중심", "차가움", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313504717843", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "An extreme wide shot, in black and white, reveals a vast, silent underwater canyon, its ancient rock formations dwarfing a small, barely visible submarine navigating the abyssal plain.", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·2~10초·1280×720·24/25fps·공식 Extreme wide 예시·seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313504717843", "fragment_map": [{ "조각": "extreme wide shot", "효과": "환경이 화면 대부분을 차지하는 초광역 숏" }, { "조각": "in black and white", "효과": "색 정보를 제거해 암반의 명암과 깊이 강조" }, { "조각": "ancient rock formations dwarfing", "효과": "거대 암반을 기준척도로 삼아 압도적 규모 생성" }, { "조각": "small, barely visible submarine navigating", "효과": "미세하게 이동하는 잠수함으로 방향성과 고립감 부여" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples", "수집일": "2026-07-28", "수집사유": "최근 갱신된 공식 카메라 예시에서 전체 프롬프트·모델·공개 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Salt Lake Negative Space — 광대한 마른 호수와 작은 붉은 지프의 이동",
+    category: "AI 영상 프롬프트", date: "2026-07-28", url: "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples#negative-space-jeep",
+    summary: "상공에서 본 마른 소금 호수의 빈 면에 작은 짙은 붉은 지프만 천천히 이동시키고 무거운 필름 그레인으로 관찰 다큐의 질감을 더한 공식 Gen-4.5 결과.",
+    note: "제품 크기를 과감히 줄이고 이동 경로와 빈 표면을 주인공으로 삼아 모빌리티·위치 데이터·원격 운영 캠페인의 여백 중심 모션 문법으로 활용하기 좋음.",
+    prompt: "Negative space scene, shot from above of a vast dried salt lake with a dark red jeep driving slowly. The composition frames the jeep extremely small against the environment of the salt lake, emphasizing the negative space. Raw indie film aesthetic. Heavy grain. Unpolished, authentic, low-budget realism with a surreal, observational feel.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#네거티브스페이스", "#탑뷰", "#필름그레인", "#모빌리티"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/47313504736403",
+    visual: { background: "#d6c9b0", accent: "#711f25", ink: "#29231f", radiusOne: "50%", radiusTwo: "0", rotate: "-3deg", label: "SALT / SPACE / SLOW DRIVE" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Runway 공식 예시가 전체 프롬프트·Gen-4.5 모델·결과 GIF를 제공하고 탑뷰, 작은 이동 주체, 광대한 여백, 느린 속도, 무거운 그레인을 독립된 모션 통제어로 재사용하게 한다.",
+      "metadata": { "정보렌즈": ["AI활용", "사용자흐름"], "시각렌즈": ["에디토리얼", "어스톤", "여백중심", "필름그레인", "절제", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313504736403", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "Negative space scene, shot from above of a vast dried salt lake with a dark red jeep driving slowly. The composition frames the jeep extremely small against the environment of the salt lake, emphasizing the negative space. Raw indie film aesthetic. Heavy grain. Unpolished, authentic, low-budget realism with a surreal, observational feel.", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·2~10초·1280×720·24/25fps·공식 Negative space 예시·seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313504736403", "fragment_map": [{ "조각": "shot from above of a vast dried salt lake", "효과": "표면 패턴과 이동 경로가 보이는 수직 탑뷰" }, { "조각": "dark red jeep driving slowly", "효과": "넓은 중성 배경에 작은 적색 이동점 생성" }, { "조각": "frames the jeep extremely small", "효과": "주체보다 여백을 강조하는 극단적 비율" }, { "조각": "Raw indie film aesthetic. Heavy grain", "효과": "매끈한 생성 영상에 거친 관찰 다큐 질감 추가" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples", "수집일": "2026-07-28", "수집사유": "최근 갱신된 공식 카메라 예시에서 전체 프롬프트·모델·공개 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Nova AI Smart Ring — 웨어러블·모바일·분석 대시보드를 잇는 건강 데이터 경험",
+    category: "웹·앱 UI", date: "2026-07-28", url: "https://www.behance.net/gallery/252633107/Nova-AI-Smart-Ring-UIUX-3D-Design",
+    summary: "스마트 링의 연속 건강 데이터를 하루 단위 안내, 장기 추세 대시보드, AI 설명으로 번역하고 3D 제품 표현까지 하나의 고급 웨어러블 생태계로 연결한 UI 사례.",
+    note: "센서 수치를 그대로 노출하지 않고 상태 요약→원인 설명→장기 비교로 점진 공개하며 제품 재질·모션과 인터페이스 톤을 일치시킨 점이 AI 헬스 제품 설계에 구체적임.",
+    tags: ["#웹앱UI", "#웨어러블", "#헬스데이터", "#대시보드", "#AI어시스턴트", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/32cb1a252633107.6a552cffc6797.jpg",
+    visual: { background: "#111416", accent: "#d8d1bf", ink: "#f2f0e9", radiusOne: "50%", radiusTwo: "24px", rotate: "2deg", label: "RING / INSIGHT / ECOSYSTEM" },
+    review: {
+      "유형": "웹·앱 UI", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "공개된 실제 모바일·분석 대시보드·AI 안내·3D 제품 화면이 연속 센서 데이터에서 일일 요약과 장기 추세, 설명 가능한 인사이트로 이어지는 웨어러블 경험을 시스템화한다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "타이포그래피", "브랜드일관성", "인터랙션", "AI활용", "콘텐츠명료성"], "시각렌즈": ["미니멀", "모노톤", "그리드", "글로시", "럭셔리"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/32cb1a252633107.6a552cffc6797.jpg", "커버리지_카테고리": "웹·앱 UI", "보안_등급": "raw_ok", "type_block": { "flow": "링 데이터 동기화→오늘의 상태 요약→AI 설명과 행동 안내→장기 추세 비교→제품·구독 탐색", "screens": "모바일 데일리 인사이트·건강 지표 상세·AI 어시스턴트·장기 분석 대시보드·랜딩 페이지" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252633107/Nova-AI-Smart-Ring-UIUX-3D-Design", "수집일": "2026-07-28", "수집사유": "2026-07-14 공개된 실제 UI·3D 제품·모션·대시보드 화면과 200 응답 대표 JPEG가 확인됨" }
+    }
+  },
+  {
+    title: "SAMSUNG VIVATECH 2026 — 십장생도를 360° AI 미디어 파사드로 재구성",
+    category: "비주얼 그래픽", date: "2026-07-28", url: "https://www.behance.net/gallery/251883341/SAMSUNG-VIVATECH-2026",
+    summary: "한국 전통 십장생도의 열 가지 자연 상징을 AI로 고해상도 재생성하고 초대형 360° 전시 파사드의 레이어·깊이·움직임으로 확장한 테크 전시 콘텐츠.",
+    note: "원화의 상징과 질감을 보존하면서 산·구름·물·동식물을 깊이별 모션 레이어로 분해해 로컬 문화 자산을 글로벌 기술 행사 스케일로 번역한 과정이 실무적으로 선명함.",
+    tags: ["#비주얼그래픽", "#미디어아트", "#360파사드", "#십장생도", "#AI활용", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a73a63251883341.6a44a215b171b.png",
+    visual: { background: "#efe6d4", accent: "#db4d37", ink: "#1f342d", radiusOne: "0", radiusTwo: "50%", rotate: "-2deg", label: "HERITAGE / AI / 360°" },
+    review: {
+      "유형": "비주얼 그래픽", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "실제 전시 파사드·스타일 프레임·제작 과정이 전통 회화의 상징·질감·색을 고해상도 AI 복원과 깊이별 모션 레이어로 전환하는 확장 가능한 미디어아트 문법을 보여 준다.",
+      "metadata": { "정보렌즈": ["브랜드일관성", "AI활용", "콘텐츠명료성"], "시각렌즈": ["일러스트", "하이채도", "비대칭", "매트", "몽환", "모션필"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a73a63251883341.6a44a215b171b.png", "커버리지_카테고리": "비주얼 그래픽", "보안_등급": "raw_ok", "type_block": { "elements": "십장생 자연 상징·전통 채색 질감·파노라마 산수·안개·수면·동식물 레이어", "reusable_rule": "문화 원형의 상징 목록과 색·질감을 보존한 뒤 전경·중경·후경으로 분해해 초대형 화면의 순환 모션으로 재조합" } },
+      "출처": { "소스": "https://www.behance.net/gallery/251883341/SAMSUNG-VIVATECH-2026", "수집일": "2026-07-28", "수집사유": "2026-07-07 공개된 실제 VivaTech 파사드·스타일 프레임·과정 이미지와 200 응답 대표 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "TENSTORRENT DEPLOY — 모듈 컴퓨팅을 살아 움직이는 데이터 경로로 만든 브랜드 패키지",
+    category: "브랜드", date: "2026-07-28", url: "https://www.behance.net/gallery/252051371/TENSTORRENT-DEPLOY",
+    summary: "정밀 그리드, 조립되는 큐브, 발광 데이터 경로, 2D 인터페이스 그래픽을 결합해 반도체 컴퓨팅 시스템의 배치·연결·처리를 하나의 모션 브랜드 언어로 시각화.",
+    note: "실물 칩을 반복 노출하지 않고 노드 연결, 블록 조립, 그리드 확장이라는 동사로 기술 브랜드의 기능을 표현해 반도체·클라우드 캠페인 시스템으로 전이하기 좋음.",
+    tags: ["#브랜드", "#반도체", "#모션브랜딩", "#모듈", "#데이터경로", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/projects/max_808/bc6f50252051371.Y3JvcCwyMjc4LDE3ODEsMCww.png",
+    visual: { background: "#080b12", accent: "#d8ff43", ink: "#f1f4f6", radiusOne: "0", radiusTwo: "24px", rotate: "3deg", label: "NODE / BLOCK / DEPLOY" },
+    review: {
+      "유형": "브랜드", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "실제 브랜드 모션과 다수 스타일 프레임이 그리드·모듈 블록·발광 경로·2D UI 그래픽을 반복해 컴퓨팅 배치와 데이터 이동을 확장 가능한 반도체 브랜드 문법으로 추출하게 한다.",
+      "metadata": { "정보렌즈": ["정보구조", "타이포그래피", "브랜드일관성", "AI활용", "콘텐츠명료성"], "시각렌즈": ["3D", "모노톤", "그리드", "고밀도", "하드라이트", "차가움", "모션필"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/projects/max_808/bc6f50252051371.Y3JvcCwyMjc4LDE3ODEsMCww.png", "커버리지_카테고리": "브랜드", "보안_등급": "raw_ok", "type_block": { "system": "정밀 그리드·모듈 큐브·발광 데이터 경로·2D 인터페이스 오버레이·암색 배경과 산성 라임 포인트", "applications": "브랜드 필름·제품 배치 메시지·이벤트 화면·소셜 모션·기술 프레젠테이션" } },
+      "출처": { "소스": "https://www.behance.net/gallery/252051371/TENSTORRENT-DEPLOY", "수집일": "2026-07-28", "수집사유": "2026-07-01 공개된 실제 클라이언트 브랜드 패키지에서 모션 결과·스타일 프레임·200 응답 대표 PNG가 확인됨" }
+    }
+  },
+  {
     title: "Forever Founder — 창립자의 지식을 실시간 대화형 아바타로 보존한 AI 경험",
     category: "AI 디자인", date: "2026-07-27", url: "https://runwayml.com/news/customers/rga",
     summary: "R/GA의 50년 기록과 창립자 관점을 지식 베이스·음성·실시간 비디오 에이전트로 결합해 조직의 역사와 원칙을 대화 가능한 경험으로 만든 사례.",
