@@ -2,6 +2,145 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "Gemini Omni Flash in Runway — 참조·첫 프레임·영상 편집을 한 패널에 결합",
+    category: "AI 디자인", date: "2026-07-29", url: "https://help.runwayml.com/hc/en-us/articles/53031657806611-Creating-with-Gemini-Omni-Flash",
+    summary: "텍스트, 첫 프레임, 최대 10개 참조 이미지와 기존 영상을 조합해 3~10초 생성·편집 결과를 만드는 Runway의 멀티모달 영상 워크플로.",
+    note: "첫 프레임은 시간축의 시작점, 참조는 외형 제약, 프롬프트는 동작 제어로 역할을 분리해 복합 생성 기능의 입력 정보 구조와 오류 예방 문구를 설계할 때 유용함.",
+    tags: ["#AI디자인", "#멀티모달", "#영상생성", "#참조이미지", "#워크플로", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/53056853154963",
+    visual: { background: "#17171a", accent: "#b9ff66", ink: "#f5f5f2", radiusOne: "24px", radiusTwo: "0", rotate: "-2deg", label: "FRAME / REFERENCE / EDIT" },
+    review: {
+      "유형": "AI 디자인", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "공식 가이드가 실제 입력·참조·출력 GIF와 모드별 단계, 길이·해상도·비율·비용을 함께 공개해 멀티모달 영상 생성 흐름을 제품 패턴으로 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "인터랙션", "AI활용", "콘텐츠명료성"], "시각렌즈": ["미니멀", "고밀도", "절제", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/53056853154963", "커버리지_카테고리": "AI 디자인", "보안_등급": "raw_ok", "type_block": { "workflow": "Video 탭·모델 선택→Frame 또는 Edit Video→프롬프트·첫 프레임·참조 입력→3~10초 720p 출력", "ai_role": "첫 프레임의 시간적 연속성과 여러 참조의 외형 제약을 결합해 신규 생성과 기존 영상 편집을 수행" } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/53031657806611-Creating-with-Gemini-Omni-Flash", "수집일": "2026-07-29", "수집사유": "최근 공개된 공식 가이드에서 모드별 UI 구조, 전체 예시 프롬프트와 200 응답 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "New York State Design System — 토큰·웹 컴포넌트·접근성·MCP를 묶은 공공 시스템",
+    category: "웹 스타일가이드", date: "2026-07-29", url: "https://designsystem.ny.gov/",
+    summary: "뉴욕주 기관 서비스용 디자인 토큰, WCAG 대응 웹 컴포넌트, Figma 라이브러리와 MCP 서버 업데이트를 하나의 공개 문서 체계로 운영하는 디자인 시스템.",
+    note: "실제 서비스 제작자가 토큰·컴포넌트·접근성·Figma·개발 자동화로 바로 이동하게 해 다기관 디자인 시스템의 역할별 탐색과 도입 가치를 설명하는 방식이 명확함.",
+    tags: ["#웹스타일가이드", "#디자인시스템", "#웹컴포넌트", "#접근성", "#MCP", "#테크IT"],
+    thumbnail: "https://designsystem.ny.gov/assets/img/nysds_og_image.png",
+    visual: { background: "#eef5f8", accent: "#154973", ink: "#182a38", radiusOne: "8px", radiusTwo: "24px", rotate: "2deg", label: "TOKENS / WCAG / COMPONENTS" },
+    review: {
+      "유형": "웹 스타일가이드", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "공식 사이트가 실제 토큰·WCAG 컴포넌트·Figma 라이브러리·코드 리소스와 2026년 7월 릴리스를 한 구조로 연결해 여러 기관이 공유할 규칙으로 즉시 흡수할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "브랜드일관성", "접근성", "인터랙션", "콘텐츠명료성"], "시각렌즈": ["미니멀", "그리드", "여백중심", "절제"], "시각아티팩트_url": "https://designsystem.ny.gov/assets/img/nysds_og_image.png", "커버리지_카테고리": "웹 스타일가이드", "보안_등급": "raw_ok", "type_block": { "tokens": "색·간격·타이포그래피·반응형 여백과 CSS 변수", "components": "WCAG 2.1 AA 웹 컴포넌트·Figma 라이브러리·MCP 서버·접근성 가이드" } },
+      "출처": { "소스": "https://designsystem.ny.gov/", "수집일": "2026-07-29", "수집사유": "2026-07-08 릴리스와 공식 1200×630 디자인 시스템 커버, 실제 컴포넌트·토큰 탐색 구조가 확인됨" }
+    }
+  },
+  {
+    title: "VA One Thing per Page — 단일 응답 폼을 주석 화면과 조건부 오류로 설명",
+    category: "콘텐츠 디자인 가이드", date: "2026-07-29", url: "https://design.va.gov/patterns/ask-users-for/a-single-response",
+    summary: "한 페이지에서 하나의 논리적 질문만 다루도록 폼을 나누고 라디오·설명·조건부 공개·오류 상태를 실제 주석 화면으로 규정한 VA 공식 패턴.",
+    note: "인지 부하 원칙을 추상 문장으로 끝내지 않고 질문 묶기, 흐름 테스트, 명확한 후속 라벨과 개별 오류 메시지까지 연결해 복잡한 신청 폼에 바로 적용 가능함.",
+    tags: ["#콘텐츠디자인가이드", "#폼디자인", "#원씽퍼페이지", "#접근성", "#오류메시지", "#테크IT"],
+    thumbnail: "https://design.va.gov/images/patterns/ask-users-for/a-single-response/single-response-annotated.png",
+    visual: { background: "#f4f7fb", accent: "#005ea8", ink: "#1b1b1b", radiusOne: "0", radiusTwo: "24px", rotate: "-2deg", label: "ONE QUESTION / ONE PAGE" },
+    review: {
+      "유형": "콘텐츠 디자인 가이드", "가치축_이름": "실행가능성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "VA 공식 가이드가 실제 주석 폼, 조건부 공개와 오류 화면, 8단계 질문 그룹화 절차, 접근성 기준을 함께 제시해 신청 폼 콘텐츠 설계에 즉시 실행할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "접근성", "콘텐츠명료성"], "시각렌즈": ["미니멀", "그리드", "여백중심", "절제"], "시각아티팩트_url": "https://design.va.gov/images/patterns/ask-users-for/a-single-response/single-response-annotated.png", "커버리지_카테고리": "콘텐츠 디자인 가이드", "보안_등급": "raw_ok", "type_block": { "procedure": "질문 개념 나열→페이지별 분리→카드소팅·조사→관련 묶음 구성→흐름 테스트→반복 개선", "visible_examples": "단일 라디오 응답 주석 화면·폼 설명 포함형·조건부 공개·필드별 오류 상태" } },
+      "출처": { "소스": "https://design.va.gov/patterns/ask-users-for/a-single-response", "수집일": "2026-07-29", "수집사유": "2026-06-18 갱신된 공식 패턴에서 실제 주석 PNG, 프로덕션 사례와 구현·접근성 절차가 확인됨" }
+    }
+  },
+  {
+    title: "Liquid Chrome Landmark — 고전 건축 전체를 유동 금속 표면으로 치환",
+    category: "AI 이미지 프롬프트", date: "2026-07-29", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#liquid-chrome-landmark",
+    summary: "고전 장식 건물을 액체 크롬으로 감싸 주변 백색 석조와 대비시키고 부드러운 무지갯빛 반사를 남긴 공식 Gen-4 Image 결과.",
+    note: "형태는 보존하고 표면 재질만 전환하는 지시가 반도체·하드웨어·미래 인터페이스 캠페인에서 익숙한 오브젝트를 기술적 키비주얼로 바꾸는 데 유용함.",
+    prompt: "facing a classic ornate building fully encased in liquid chrome. the shiny, reflective building starkly contrasts the white stone building around it. liquid chrome with a soft iridescent sheen",
+    tags: ["#AI이미지프롬프트", "#크롬", "#반사", "#건축", "#미래소재", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37148062184083",
+    visual: { background: "#dfe3e7", accent: "#7aa7c7", ink: "#20262b", radiusOne: "24px", radiusTwo: "0", rotate: "3deg", label: "CHROME / REFLECTION / LANDMARK" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 프롬프트·Gen-4 Image 모델·결과 PNG를 제공하고 건축 형태, 액체 크롬, 주변 석재 대비, 무지갯빛 반사를 독립 통제어로 재사용하게 한다.",
+      "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["3D", "모노톤", "중앙집중", "글로시", "차가움"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37148062184083", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "facing a classic ornate building fully encased in liquid chrome. the shiny, reflective building starkly contrasts the white stone building around it. liquid chrome with a soft iridescent sheen", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Chrome 스타일 예시·720p/1080p 지원·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37148062184083", "fragment_map": [{ "조각": "classic ornate building", "효과": "장식적 건축 실루엣과 세부 형태를 기준 오브젝트로 고정" }, { "조각": "fully encased in liquid chrome", "효과": "건물 전체 표면을 흐르는 금속 재질로 치환" }, { "조각": "starkly contrasts the white stone building around it", "효과": "반사 금속과 매트한 백색 석재의 재질 대비" }, { "조각": "soft iridescent sheen", "효과": "크롬 하이라이트에 은은한 스펙트럼 색 변화 추가" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-29", "수집사유": "최근 갱신된 공식 프롬프트 가이드에서 전체 프롬프트·모델·200 응답 결과 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "Marble Hand at Sea — 파도 속 거대 조각을 삼분할로 배치한 시네마틱 정지화",
+    category: "AI 이미지 프롬프트", date: "2026-07-29", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#rule-of-thirds-marble-hand",
+    summary: "바다 아래에서 솟는 거대한 대리석 손과 절벽을 부분 가림·삼분할 구도·저채도 무드로 제어해 규모와 긴장을 만든 공식 결과.",
+    note: "거대한 상징 오브젝트를 중앙에서 비켜 두고 파도·절벽·가림을 깊이 레이어로 사용해 클라우드 규모, 데이터 이동, 미래 인프라의 서사형 키비주얼로 전이하기 좋음.",
+    prompt: "cinematic still of a giant marble hand statue rising from beneath ocean waves and reaching towards rocky cliffs. partially obscured. rule of thirds composition. moody color palette.",
+    tags: ["#AI이미지프롬프트", "#삼분할", "#대리석", "#오션", "#스케일", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37148070579731",
+    visual: { background: "#cad3d8", accent: "#557482", ink: "#1d292f", radiusOne: "50%", radiusTwo: "24px", rotate: "-3deg", label: "MARBLE / OCEAN / THIRDS" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 프롬프트·Gen-4 Image 모델·결과 PNG를 제공하고 거대 대리석 손, 파도·절벽, 부분 가림, 삼분할 구도를 조합 가능한 제어 조각으로 분리한다.",
+      "metadata": { "정보렌즈": ["AI활용", "콘텐츠명료성"], "시각렌즈": ["에디토리얼", "모노톤", "비대칭", "매트", "차가움"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37148070579731", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "cinematic still of a giant marble hand statue rising from beneath ocean waves and reaching towards rocky cliffs. partially obscured. rule of thirds composition. moody color palette.", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Rule of thirds 예시·720p/1080p 지원·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37148070579731", "fragment_map": [{ "조각": "giant marble hand statue", "효과": "매트한 석재 표면의 초대형 상징 피사체" }, { "조각": "rising from beneath ocean waves", "효과": "파도 가림과 수직 상승 방향으로 규모감 생성" }, { "조각": "reaching towards rocky cliffs", "효과": "손끝과 절벽 사이에 화면 방향성과 긴장 형성" }, { "조각": "partially obscured. rule of thirds composition", "효과": "피사체 일부를 숨기고 중심에서 벗어나 깊이 강조" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-29", "수집사유": "최근 갱신된 공식 프롬프트 가이드에서 전체 프롬프트·모델·200 응답 결과 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "Luminous Fog Orbit — 발광 안개 속 인물을 공격적 원운동으로 흐리는 숏",
+    category: "AI 영상 프롬프트", date: "2026-07-29", url: "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples#soft-focus-fog-orbit",
+    summary: "정지한 반사 수면과 희미한 인물을 두꺼운 발광 안개로 감싸고 카메라가 빠르게 원을 돌며 주변을 회화적 흐림으로 바꾸는 공식 Gen-4.5 결과.",
+    note: "피사체 운동 없이 환경 확산과 카메라 궤도만으로 변화를 만들어 AI·데이터·보안처럼 비가시적 기술의 몰입형 전환 장면에 적용하기 좋음.",
+    prompt: "A solitary figure, their form indistinct and shimmering, stands at the edge of an impossibly still, reflective body of water. The entire scene is enveloped in a thick, luminous fog that diffuses all light into a soft, glowing halo around the figure and the water's surface. The aggressive camera movement circles the figure, further blurring the already indistinct surroundings into a painterly haze. Soft, all-encompassing ambient light from the luminous fog, creating a halo effect and dissolving harsh lines, enhancing the ethereal quality.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#소프트포커스", "#오비트", "#발광안개", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/47313515639955",
+    visual: { background: "#d8e3e4", accent: "#8fc9d1", ink: "#24363a", radiusOne: "50%", radiusTwo: "0", rotate: "2deg", label: "FOG / HALO / ORBIT" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway 공식 라이브러리가 전체 프롬프트·Gen-4.5 모델·결과 GIF를 제공하고 정지 수면, 발광 안개, 헤일로, 원형 카메라 운동과 회화적 흐림을 재현 가능한 모션 조각으로 분리한다.",
+      "metadata": { "정보렌즈": ["AI활용", "인터랙션"], "시각렌즈": ["그라디언트", "중앙집중", "소프트확산광", "몽환", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313515639955", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "A solitary figure, their form indistinct and shimmering, stands at the edge of an impossibly still, reflective body of water. The entire scene is enveloped in a thick, luminous fog that diffuses all light into a soft, glowing halo around the figure and the water's surface. The aggressive camera movement circles the figure, further blurring the already indistinct surroundings into a painterly haze. Soft, all-encompassing ambient light from the luminous fog, creating a halo effect and dissolving harsh lines, enhancing the ethereal quality.", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·2~10초·1280×720·24/25fps·공식 Soft focus 예시·seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313515639955", "fragment_map": [{ "조각": "impossibly still, reflective body of water", "효과": "움직임이 없는 거울 수면을 기준 배경으로 고정" }, { "조각": "thick, luminous fog", "효과": "환경 경계를 녹이는 밝은 확산층 생성" }, { "조각": "aggressive camera movement circles the figure", "효과": "중앙 인물을 축으로 빠른 원형 궤도 운동" }, { "조각": "painterly haze ... halo effect", "효과": "주변을 회화적 흐림과 빛 고리로 변환" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples", "수집일": "2026-07-29", "수집사유": "최근 갱신된 공식 카메라 예시에서 전체 프롬프트·모델·200 응답 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Scripted Elephant Close-up — 피부 위 백색 문양을 창백한 빛으로 고정한 숏",
+    category: "AI 영상 프롬프트", date: "2026-07-29", url: "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples#elephant-close-up",
+    summary: "노령 코끼리 얼굴을 꽉 채운 클로즈업에서 가죽 표면과 고대 문자 같은 백색 페인트를 창백한 단일 광원으로 드러낸 공식 Gen-4.5 결과.",
+    note: "대상·표면·문양·광원만으로 프레임을 제한해 바이오테크, 센서, 소재 연구처럼 미세한 표면 정보를 상징적으로 보여 주는 티저 숏에 활용하기 좋음.",
+    prompt: "A close-up isolates an elder elephant's face, where white paint patterns resembling ancient script are painted across its leathery surface under a pallid light.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#클로즈업", "#표면질감", "#문양", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/47313515593875",
+    visual: { background: "#b9b7ad", accent: "#f2efe5", ink: "#282a28", radiusOne: "0", radiusTwo: "50%", rotate: "-2deg", label: "CLOSE / SURFACE / SCRIPT" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Runway 공식 카메라 라이브러리가 전체 프롬프트·Gen-4.5 모델·결과 GIF를 제공하고 클로즈업, 노령 피부, 문자형 백색 페인트와 창백한 조명을 독립된 표면 통제어로 재사용하게 한다.",
+      "metadata": { "정보렌즈": ["AI활용", "콘텐츠명료성"], "시각렌즈": ["모노톤", "중앙집중", "하드라이트", "매트", "절제", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313515593875", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "A close-up isolates an elder elephant's face, where white paint patterns resembling ancient script are painted across its leathery surface under a pallid light.", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·2~10초·1280×720·24/25fps·공식 Close up 예시·seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313515593875", "fragment_map": [{ "조각": "close-up isolates", "효과": "배경을 배제하고 얼굴 표면을 화면 대부분에 배치" }, { "조각": "elder elephant's face", "효과": "깊은 주름과 두꺼운 피부의 자연 질감 강조" }, { "조각": "white paint patterns resembling ancient script", "효과": "유기적 표면 위에 고대 문자 같은 고대비 선형 문양" }, { "조각": "under a pallid light", "효과": "채도를 억제한 창백한 조명으로 표면 굴곡 분리" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples", "수집일": "2026-07-29", "수집사유": "최근 갱신된 공식 카메라 예시에서 전체 프롬프트·모델·200 응답 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "T-BL E-commerce — 거친 패션 이미지와 고대비 타이포로 만든 쇼핑 흐름",
+    category: "웹·앱 UI", date: "2026-07-29", url: "https://www.behance.net/gallery/252406761/T-BL-e-commerce-web",
+    summary: "대형 패션 이미지, 짧은 제품 카피, 극단적인 흑백 대비와 반복 그리드를 결합해 브랜드 탐색에서 상품 선택으로 이어지는 현대 의류 커머스 웹 UI.",
+    note: "브랜드 무드를 유지하면서 히어로·컬렉션·상품 카드의 정보 밀도를 단계적으로 높여 감성 이미지와 구매 정보가 충돌하지 않는 커머스 계층을 참고하기 좋음.",
+    tags: ["#웹앱UI", "#이커머스", "#패션", "#타이포그래피", "#그리드", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/projects/404/97207c252406761.Y3JvcCwyMTU4LDE2ODcsMCw1.jpg",
+    visual: { background: "#eceae4", accent: "#111111", ink: "#111111", radiusOne: "0", radiusTwo: "24px", rotate: "2deg", label: "FASHION / GRID / COMMERCE" },
+    review: {
+      "유형": "웹·앱 UI", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 4 }, "total": 18, "verdict": "accept",
+      "근거": "Behance 공개 프로젝트의 실제 반응형 커머스 화면과 Figma 제작 정보가 히어로·컬렉션·상품 카드·CTA를 반복 가능한 그리드와 타이포 위계로 시스템화한다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "타이포그래피", "브랜드일관성", "인터랙션"], "시각렌즈": ["에디토리얼", "모노톤", "그리드", "고밀도", "절제"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/projects/404/97207c252406761.Y3JvcCwyMTU4LDE2ODcsMCw1.jpg", "커버리지_카테고리": "웹·앱 UI", "보안_등급": "raw_ok", "type_block": { "flow": "브랜드 히어로→컬렉션 탐색→상품 그리드→제품 선택·구매 CTA", "ui_system": "대형 산세리프 타이포·흑백 팔레트·반복 카드 그리드·이미지 중심 섹션 위계" } },
+      "출처": { "소스": "Behance / Marta Verba", "수집일": "2026-07-29", "수집사유": "2026-07-13 공개된 UI/UX 프로젝트에서 실제 이커머스 화면과 200 응답 공식 커버 JPEG가 확인됨" }
+    }
+  },
+  {
+    title: "Choonsik at Bonte Museum — 미술관 공간과 캐릭터를 결합한 3D 모션 세계",
+    category: "비주얼 그래픽", date: "2026-07-29", url: "https://www.behance.net/gallery/216306583/KAKAO-CHOONSIK-with-BONTE-MUSEUM",
+    summary: "제주 본태박물관의 건축·전시 맥락 안에 춘식이 캐릭터를 배치하고 조형물, 공간 이동, 재질과 빛을 연결한 공식 협업 3D 모션 프로젝트.",
+    note: "실제 장소의 건축 특징을 캐릭터 비율과 동선에 맞게 단순화해 브랜드 캐릭터가 전시·공간 콘텐츠로 확장될 때 배경과 주체의 스케일을 조율하는 방식이 좋음.",
+    tags: ["#비주얼그래픽", "#3D모션", "#캐릭터", "#공간브랜딩", "#전시", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/projects/404/2a6179216306583.Y3JvcCwxMDA3LDc4OCwzNjEsMA.png",
+    visual: { background: "#e8dfcf", accent: "#f4c34f", ink: "#302b27", radiusOne: "50%", radiusTwo: "24px", rotate: "-3deg", label: "CHARACTER / SPACE / MOTION" },
+    review: {
+      "유형": "비주얼 그래픽", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 5, "근거성": 4, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "공개 프로젝트가 실제 박물관 건축과 캐릭터의 스케일, 3D 재질, 공간 이동, 전시형 장면을 다수 결과 이미지·영상으로 보여 줘 캐릭터 공간 콘텐츠의 스타일 규칙을 추출할 수 있다.",
+      "metadata": { "정보렌즈": ["브랜드일관성", "사용자흐름", "인터랙션"], "시각렌즈": ["3D", "파스텔", "중앙집중", "소프트확산광", "유희적", "모션필"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/projects/404/2a6179216306583.Y3JvcCwxMDA3LDc4OCwzNjEsMA.png", "커버리지_카테고리": "비주얼 그래픽", "보안_등급": "raw_ok", "type_block": { "transferable_style": "둥근 캐릭터 비율·실제 건축의 단순화·따뜻한 재질·전시 동선을 따른 공간 전환", "applications": "브랜드 캐릭터 전시·박물관 미디어월·공간형 캠페인·3D 티저 모션" } },
+      "출처": { "소스": "Behance / SUESS STUDIO 외", "수집일": "2026-07-29", "수집사유": "2026-05-29 공개된 90일 내 프로젝트에서 다수 3D 모션 결과와 200 응답 공식 커버 PNG가 확인됨" }
+    }
+  },
+  {
     title: "Runway Dev — 생성 미디어 모델·레시피·워크플로를 한 API로 묶은 개발자 플랫폼",
     category: "AI 디자인", date: "2026-07-28", url: "https://runway.com/news/company-news/introducing-runway-dev",
     summary: "이미지·영상·오디오·실시간 캐릭터 모델과 반복 제작 레시피, 다단계 워크플로, 사용량·보안 제어를 하나의 개발자 경험으로 통합한 AI 미디어 플랫폼.",
