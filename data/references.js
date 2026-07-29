@@ -2,6 +2,145 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "Runway Enhance Prompt — 짧은 의도를 카메라·조명·질감·모션 지시로 확장",
+    category: "AI 디자인", date: "2026-07-30", url: "https://help.runwayml.com/hc/en-us/articles/50012632982163-Enhancing-your-Prompts",
+    summary: "생성 입력창의 별 아이콘으로 짧은 문장을 이미지·영상 모델에 맞는 카메라, 조명, 질감, 움직임, 무드 지시로 확장하고 사용자가 다시 편집하게 하는 공식 워크플로.",
+    note: "AI가 제안한 상세 지시를 최종값이 아닌 검토 가능한 초안으로 남겨, 초보자의 진입 장벽을 낮추면서도 크리에이티브 디렉터가 통제권을 유지하는 입력 패턴을 참고하기 좋음.",
+    tags: ["#AI디자인", "#프롬프트보조", "#생성UI", "#카메라언어", "#검토흐름", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/50012632974611",
+    visual: { background: "#17171a", accent: "#c9ff67", ink: "#f7f7f4", radiusOne: "24px", radiusTwo: "8px", rotate: "-2deg", label: "INTENT / ENHANCE / REVIEW" },
+    review: {
+      "유형": "AI 디자인", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 실제 생성 입력 UI와 4단계 조작, 자동으로 보강되는 카메라·조명·질감·모션 항목을 함께 공개해 검토 가능한 프롬프트 보조 패턴으로 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "인터랙션", "AI활용", "콘텐츠명료성"], "시각렌즈": ["미니멀", "고밀도", "절제"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/50012632974611", "커버리지_카테고리": "AI 디자인", "보안_등급": "raw_ok", "type_block": { "workflow": "짧은 의도 입력→별 아이콘 선택→모델 최적화 상세 지시 생성→사용자 검토·수정→생성", "ai_role": "카메라·조명·질감·모션·무드의 누락을 보완하되 편집 가능한 초안으로 반환" } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/50012632982163-Enhancing-your-Prompts", "수집일": "2026-07-30", "수집사유": "최근 공개된 공식 기능 가이드에서 실제 입력 UI, 단계별 조작과 200 응답 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "VA Card Status Error — 문제·해결 행동·접근성 공지를 한 카드 상태로 결합",
+    category: "콘텐츠 디자인 가이드", date: "2026-07-30", url: "https://design.va.gov/components/card/card-status/",
+    summary: "누락 상태 라벨, 무엇이 잘못됐는지와 고치는 방법, 본문과 단일 행동 링크를 빨간 테두리 카드에 묶고 스크린리더 자동 공지까지 규정한 VA 공식 패턴.",
+    note: "오류 카피를 문제 설명에서 끝내지 않고 해결 행동과 구체적 링크 라벨까지 한 컴포넌트 계약으로 묶어 신청·계정·데이터 수정 흐름의 콘텐츠 품질을 일관되게 만들기 좋음.",
+    tags: ["#콘텐츠디자인가이드", "#오류메시지", "#상태카드", "#접근성", "#폼디자인", "#테크IT"],
+    thumbnail: "https://design.va.gov/images/components/card-status/card-status-with-error.png",
+    visual: { background: "#f3f6fa", accent: "#b50909", ink: "#1b1b1b", radiusOne: "8px", radiusTwo: "24px", rotate: "2deg", label: "STATUS / ERROR / RECOVERY" },
+    review: {
+      "유형": "콘텐츠 디자인 가이드", "가치축_이름": "실행가능성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "VA 공식 문서가 실제 오류 상태 PNG와 상태·제목·오류·본문·링크 구조, 50자 제목·행동형 카피·role=alert·aria-describedby 규칙을 함께 제공해 폼 오류 카드에 즉시 적용할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "접근성", "콘텐츠명료성"], "시각렌즈": ["미니멀", "그리드", "절제"], "시각아티팩트_url": "https://design.va.gov/images/components/card-status/card-status-with-error.png", "커버리지_카테고리": "콘텐츠 디자인 가이드", "보안_등급": "raw_ok", "type_block": { "procedure": "상태 라벨→무엇이 잘못됐는지→고치는 방법→설명 본문→구체적인 단일 행동 링크", "visible_examples": "빨간 테두리·상태 태그·인라인 오류·본문·행동 링크가 결합된 Card Status 오류 상태" } },
+      "출처": { "소스": "https://design.va.gov/components/card/card-status/", "수집일": "2026-07-30", "수집사유": "최근 90일 내 갱신된 공식 컴포넌트 문서에서 실제 오류 상태 PNG와 콘텐츠·접근성 구현 규칙이 확인됨" }
+    }
+  },
+  {
+    title: "Astronaut Helmet Reflection — 중앙 인물과 헬멧 속 우주를 한 초점으로 고정",
+    category: "AI 이미지 프롬프트", date: "2026-07-30", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#centered-astronaut",
+    summary: "중앙 배치한 우주비행사, 헬멧에 비친 심우주, 위쪽의 희미한 광원과 얕은 심도를 최소 문장으로 통제한 공식 Gen-4 Image 결과.",
+    note: "제품·인물을 정면 영웅 구도로 고정하면서 반사면 안에 기술 세계관을 압축해 반도체, 우주산업, 미래형 인터페이스 캠페인의 키비주얼 문법으로 전이하기 좋음.",
+    prompt: "cinematic portrait of an astronaut in center frame. deep space visible in helmet reflection. shadows, lit by dim light from above. shallow depth of field",
+    tags: ["#AI이미지프롬프트", "#우주비행사", "#헬멧반사", "#중앙구도", "#얕은심도", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37148070574611",
+    visual: { background: "#141821", accent: "#6f8db8", ink: "#f2f4f7", radiusOne: "50%", radiusTwo: "24px", rotate: "2deg", label: "ASTRONAUT / REFLECTION / CENTER" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 프롬프트·Gen-4 Image 모델·결과 PNG를 제공하고 중앙 배치, 헬멧 반사, 상부 저조도와 얕은 심도를 독립 통제어로 재사용하게 한다.",
+      "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["미니멀", "중앙집중", "하드라이트", "글로시", "차가움"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37148070574611", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "cinematic portrait of an astronaut in center frame. deep space visible in helmet reflection. shadows, lit by dim light from above. shallow depth of field", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Centered subject 예시·720p/1080p 지원·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37148070574611", "fragment_map": [{ "조각": "astronaut in center frame", "효과": "우주복 인물을 화면 중앙의 대칭적 영웅 피사체로 고정" }, { "조각": "deep space visible in helmet reflection", "효과": "유리 헬멧 반사면 안에 심우주 환경을 압축" }, { "조각": "lit by dim light from above", "효과": "상부의 약한 키라이트로 헬멧과 어깨 윤곽 분리" }, { "조각": "shallow depth of field", "효과": "배경 정보를 흐리고 얼굴·헬멧에 초점 집중" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-30", "수집사유": "최근 갱신된 공식 프롬프트 가이드에서 전체 프롬프트·모델·200 응답 결과 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "RUNWAY Theater Marquee — 대칭 극장과 네온 간판에 읽히는 문자를 배치",
+    category: "AI 이미지 프롬프트", date: "2026-07-30", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#theater-marquee-text",
+    summary: "극장 정면의 대형 네온 간판에 RUNWAY와 FRAMES 문자를 명시하고 대칭 구도로 고정해 텍스트가 중심이 되는 공식 Gen-4 Image 결과.",
+    note: "이미지 생성에서 장식과 문자를 따로 지시하지 않고 장소·간판·표시 문구·대칭을 한 구조로 묶어 행사 타이틀, 제품 출시, 개발자 컨퍼런스 그래픽을 설계할 때 유용함.",
+    prompt: "cinematic still of a theater with a large neon sign that reads RUNWAY. the marquee boldly spells the word FRAMES. symmetrical",
+    tags: ["#AI이미지프롬프트", "#네온사인", "#타이포그래피", "#대칭구도", "#이벤트그래픽", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37148070603411",
+    visual: { background: "#21162e", accent: "#f2b04d", ink: "#fff2d4", radiusOne: "24px", radiusTwo: "0", rotate: "-2deg", label: "MARQUEE / TYPE / SYMMETRY" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 프롬프트·Gen-4 Image 모델·결과 PNG를 제공하고 극장, 대형 네온 간판, 두 단계 문자와 대칭 구도를 텍스트 중심 생성 조각으로 분리한다.",
+      "metadata": { "정보렌즈": ["AI활용", "타이포그래피", "콘텐츠명료성"], "시각렌즈": ["에디토리얼", "하이채도", "중앙집중", "하드라이트", "럭셔리"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37148070603411", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "cinematic still of a theater with a large neon sign that reads RUNWAY. the marquee boldly spells the word FRAMES. symmetrical", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Theater marquee 예시·720p/1080p 지원·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37148070603411", "fragment_map": [{ "조각": "cinematic still of a theater", "효과": "극장 정면을 영화적 야간 장면으로 설정" }, { "조각": "large neon sign that reads RUNWAY", "효과": "대형 발광 간판에 첫 번째 읽을 문구 지정" }, { "조각": "marquee boldly spells the word FRAMES", "효과": "마키 영역에 굵고 명확한 두 번째 타이틀 지정" }, { "조각": "symmetrical", "효과": "간판과 건축 축을 중앙에 맞춘 정면 대칭 구도" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide", "수집일": "2026-07-30", "수집사유": "최근 갱신된 공식 프롬프트 가이드에서 전체 프롬프트·모델·200 응답 결과 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "Cowboy Fall at Golden Hour — 림라이트와 낙마 동작을 중간 숏에 고정",
+    category: "AI 영상 프롬프트", date: "2026-07-30", url: "https://help.runwayml.com/hc/en-us/articles/46749315925395-Camera-Terms-Prompts-Examples#medium-cowboy-fall",
+    summary: "황금 시간대의 먼지 낀 환경에서 말이 몸을 비틀며 일어서고 카우보이가 왼쪽으로 떨어지는 순간을 중간 숏·역광·림라이트로 통제한 공식 Gen-4.5 결과.",
+    note: "주체와 탈것의 서로 다른 동작, 낙하 방향, 역광과 먼지 레이어를 한 문장에 분리해 로보틱스·모빌리티·게임 트레일러의 고에너지 액션 숏 설계에 참고하기 좋음.",
+    prompt: "Medium shot of a cowboy perched on a horse in a dusty environment. The horse rears violently, its body twisting, causing the cowboy to lose his seat and begin to fall off to the left. Backlit, western epic, cinematic, high contrast, golden hour, dusty, warm amber, deep orange, rich brown, atmospheric, dramatic backlighting, rim light, silhouette, soft glow, high contrast shadows.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#미디엄숏", "#낙하동작", "#림라이트", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/46972905969171",
+    visual: { background: "#38271e", accent: "#e58b3c", ink: "#fff0d2", radiusOne: "24px", radiusTwo: "0", rotate: "2deg", label: "REAR / FALL / RIM LIGHT" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway 공식 카메라 라이브러리가 전체 프롬프트·Gen-4.5 모델·결과 GIF를 제공하고 중간 숏, 말의 비틀림, 왼쪽 낙하, 먼지·역광·림라이트를 재현 가능한 액션 조각으로 분리한다.",
+      "metadata": { "정보렌즈": ["AI활용", "사용자흐름"], "시각렌즈": ["에디토리얼", "어스톤", "비대칭", "하드라이트", "따뜻", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/46972905969171", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "Medium shot of a cowboy perched on a horse in a dusty environment. The horse rears violently, its body twisting, causing the cowboy to lose his seat and begin to fall off to the left. Backlit, western epic, cinematic, high contrast, golden hour, dusty, warm amber, deep orange, rich brown, atmospheric, dramatic backlighting, rim light, silhouette, soft glow, high contrast shadows.", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·2~10초·1280×720·24/25fps·공식 Medium shot 예시·seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/46972905969171", "fragment_map": [{ "조각": "Medium shot ... in a dusty environment", "효과": "인물과 말의 상반신 동작, 먼지 공간을 함께 유지" }, { "조각": "horse rears violently, its body twisting", "효과": "말의 수직 상승과 몸통 회전을 결합" }, { "조각": "cowboy ... fall off to the left", "효과": "인물의 균형 상실과 왼쪽 낙하 방향 고정" }, { "조각": "dramatic backlighting, rim light, silhouette", "효과": "황금빛 역광으로 두 피사체의 윤곽과 먼지 분리" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/46749315925395-Camera-Terms-Prompts-Examples", "수집일": "2026-07-30", "수집사유": "최근 갱신된 공식 카메라 예시에서 전체 프롬프트·모델·200 응답 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Egret Feather Push-in — 조감 시점에서 깃털의 미세 떨림을 추적",
+    category: "AI 영상 프롬프트", date: "2026-07-30", url: "https://help.runwayml.com/hc/en-us/articles/46749315925395-Camera-Terms-Prompts-Examples#birds-eye-egret",
+    summary: "백로의 몸통과 주 날개깃을 정확한 조감 구도로 프레이밍하고 미세한 떨림과 매우 느린 푸시인으로 층진 흰 깃털 표면을 탐색하는 공식 Gen-4.5 결과.",
+    note: "형태 변화가 적은 소재에서 미세 진동과 느린 카메라 전진만으로 정보를 드러내 반도체 웨이퍼, 섬유, 바이오 소재처럼 정교한 표면 연구를 보여 주는 숏에 전이하기 좋음.",
+    prompt: "The central body and primary feathers of a majestic white egret, viewed from a bird's eye view directly from above, are meticulously framed, showcasing the pristine texture and layered structure of its plumage. The egret's body shivers slightly, causing a minute ripple through its feathers, suggesting preening or adjusting, while the camera performs a very slow, controlled push-in, focusing on the feather details.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#조감", "#표면질감", "#슬로우푸시인", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/46974654696723",
+    visual: { background: "#e9eceb", accent: "#b9c9ce", ink: "#24292b", radiusOne: "50%", radiusTwo: "24px", rotate: "-2deg", label: "FEATHER / RIPPLE / PUSH IN" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway 공식 카메라 라이브러리가 전체 프롬프트·Gen-4.5 모델·결과 GIF를 제공하고 조감 프레이밍, 깃털 층, 미세 떨림과 느린 푸시인을 표면 탐색 모션으로 재현하게 한다.",
+      "metadata": { "정보렌즈": ["AI활용", "콘텐츠명료성"], "시각렌즈": ["미니멀", "모노톤", "중앙집중", "소프트확산광", "절제", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/46974654696723", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "The central body and primary feathers of a majestic white egret, viewed from a bird's eye view directly from above, are meticulously framed, showcasing the pristine texture and layered structure of its plumage. The egret's body shivers slightly, causing a minute ripple through its feathers, suggesting preening or adjusting, while the camera performs a very slow, controlled push-in, focusing on the feather details.", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·2~10초·1280×720·24/25fps·공식 Bird's eye view 예시·seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/46974654696723", "fragment_map": [{ "조각": "bird's eye view directly from above", "효과": "피사체의 중심축과 날개 구조를 수직 조감으로 고정" }, { "조각": "pristine texture and layered structure", "효과": "흰 깃털의 겹과 표면 결을 주요 정보로 강조" }, { "조각": "body shivers slightly ... minute ripple", "효과": "구도를 유지한 채 깃털 사이로 미세한 파동 전달" }, { "조각": "very slow, controlled push-in", "효과": "표면 세부를 향해 안정적으로 느리게 전진" }] } },
+      "출처": { "소스": "https://help.runwayml.com/hc/en-us/articles/46749315925395-Camera-Terms-Prompts-Examples", "수집일": "2026-07-30", "수집사유": "최근 갱신된 공식 카메라 예시에서 전체 프롬프트·모델·200 응답 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Sedai.io — 자율 클라우드를 3D 시스템과 다크·라이트 제품 화면으로 설명",
+    category: "웹·앱 UI", date: "2026-07-30", url: "https://www.behance.net/gallery/249646897/Sedaiio",
+    summary: "스스로 최적화하는 클라우드 플랫폼의 추상 개념을 3D 오브젝트, 다크·라이트 테마, 모듈형 CMS 웹사이트와 기술 설명 영상으로 연결한 제품 경험.",
+    note: "신뢰가 필요한 B2B 클라우드 기능을 추상 3D에만 맡기지 않고 가치 제안·제품 화면·설명 영상의 정보 밀도를 단계적으로 높여 기술과 효용을 함께 이해시키는 방식이 좋음.",
+    tags: ["#웹앱UI", "#클라우드", "#SaaS", "#3D", "#다크모드", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/e473b3249646897.6a0da0cfb5500.jpg",
+    visual: { background: "#17181d", accent: "#8ce1c5", ink: "#f6f6f4", radiusOne: "24px", radiusTwo: "8px", rotate: "2deg", label: "CLOUD / 3D / AUTONOMOUS" },
+    review: {
+      "유형": "웹·앱 UI", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "공개 프로젝트가 자율 클라우드의 가치 제안, 실제 웹 화면, 라이트·다크 테마, 3D 그래픽, CMS 구조와 성능 최적화 맥락을 함께 보여 제품 UI 시스템으로 전이할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "타이포그래피", "브랜드일관성", "인터랙션", "콘텐츠명료성"], "시각렌즈": ["3D", "그라디언트", "그리드", "고밀도", "글로시", "차가움"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/e473b3249646897.6a0da0cfb5500.jpg", "커버리지_카테고리": "웹·앱 UI", "보안_등급": "raw_ok", "type_block": { "flow": "추상 클라우드 가치 제안→3D 원리 시각화→제품 기능 화면→설명 영상·전환", "system": "라이트·다크 테마, 3D 기반 비주얼, 유연한 CMS 모듈과 최적화된 이미지·영상·셰이더" } },
+      "출처": { "소스": "Behance / Sedai.io project", "수집일": "2026-07-30", "수집사유": "최근 90일 내 공개된 프로젝트에서 실제 클라우드 제품 웹 화면, 3D 시스템과 1400px 공식 대표 JPEG가 확인됨" }
+    }
+  },
+  {
+    title: "HUAWEI MATEPAD PRO MAX — 억제된 조명과 모션으로 하드웨어 형태를 부각",
+    category: "비주얼 그래픽", date: "2026-07-30", url: "https://www.behance.net/gallery/249574703/HUAWEI-MATEPAD-PRO-MAX",
+    summary: "경량 설계와 하드웨어 성능의 균형을 미니멀한 구도, 절제된 광원, 유동적 모션과 정밀한 제품 CGI로 보여 주는 태블릿 캠페인 비주얼.",
+    note: "기능 아이콘이나 수치보다 얇은 단면, 금속 표면, 화면과 프레임의 경계를 광원과 카메라 이동으로 읽게 해 프리미엄 하드웨어 런칭 영상의 장면 밀도를 조절하는 법을 참고하기 좋음.",
+    tags: ["#비주얼그래픽", "#하드웨어", "#태블릿", "#제품CGI", "#미니멀", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a0bd2b249574703.6a4275342653a.png",
+    visual: { background: "#eef0f1", accent: "#77838f", ink: "#14171a", radiusOne: "8px", radiusTwo: "24px", rotate: "-2deg", label: "HARDWARE / LIGHT / MOTION" },
+    review: {
+      "유형": "비주얼 그래픽", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "공개 프로젝트가 태블릿의 얇은 비례와 금속·유리 표면을 미니멀 구도, 통제된 광원, 유동적 모션으로 반복 적용한 3D 캠페인 시스템과 고해상도 결과를 보여 준다.",
+      "metadata": { "정보렌즈": ["브랜드일관성", "타이포그래피"], "시각렌즈": ["3D", "미니멀", "모노톤", "중앙집중", "하드라이트", "글로시", "절제"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a0bd2b249574703.6a4275342653a.png", "커버리지_카테고리": "비주얼 그래픽", "보안_등급": "raw_ok", "type_block": { "style_system": "밝은 중성 배경·금속/유리 제품 CGI·절제된 키/림라이트·느린 제품 중심 모션", "applications": "제품 단면·후면 카메라·디스플레이·액세서리의 런칭 필름과 스틸 프레임" } },
+      "출처": { "소스": "Behance / MILLARC CGI", "수집일": "2026-07-30", "수집사유": "최근 90일 내 공개된 프로젝트에서 실제 제품 CGI·모션 프레임과 1400px 공식 대표 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "Verabid — 체크 심볼과 규칙형 레이아웃으로 신뢰를 만드는 프롭테크 아이덴티티",
+    category: "브랜드", date: "2026-07-30", url: "https://www.behance.net/gallery/252984105/Verabid-logo-brand-Identity-modern-check-mark-tech",
+    summary: "부동산 소프트웨어의 단순성·신뢰성·현대 기술을 체크 형태의 V 심볼, 선명한 색 대비와 일관된 가이드 응용으로 연결한 테크 브랜드 시스템.",
+    note: "검증을 뜻하는 익숙한 체크 제스처를 소프트웨어 이름의 이니셜과 결합해 작은 앱 아이콘부터 마케팅 화면까지 인지가 유지되는 B2B 신뢰 신호를 설계한 점이 실무적임.",
+    tags: ["#브랜드", "#프롭테크", "#소프트웨어", "#체크심볼", "#브랜드가이드", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/0d17d9252984105.6a5d7858b50cc.jpg",
+    visual: { background: "#f5f7f6", accent: "#38c69a", ink: "#142522", radiusOne: "24px", radiusTwo: "8px", rotate: "2deg", label: "VERIFY / V / TRUST" },
+    review: {
+      "유형": "브랜드", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 4, "근거성": 4, "가치축": 5 }, "total": 18, "verdict": "accept",
+      "근거": "공개 프로젝트가 부동산 소프트웨어의 검증·신뢰 의미를 체크형 V 심볼, 컬러, 로고 규칙과 실제 브랜드 가이드 응용으로 반복해 B2B 제품 아이덴티티에 전이 가능하다.",
+      "metadata": { "정보렌즈": ["브랜드일관성", "타이포그래피", "콘텐츠명료성"], "시각렌즈": ["미니멀", "하이채도", "그리드", "여백중심", "절제"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/0d17d9252984105.6a5d7858b50cc.jpg", "커버리지_카테고리": "브랜드", "보안_등급": "raw_ok", "type_block": { "system": "체크 제스처와 V 이니셜을 결합한 심볼·고대비 포인트 컬러·규칙형 가이드", "applications": "로고 락업·아이콘·디지털 제품·브랜드 문서·마케팅 터치포인트" } },
+      "출처": { "소스": "Behance / Verabid brand identity", "수집일": "2026-07-30", "수집사유": "2026-07-20 공개된 프로젝트에서 소프트웨어 브랜드의 시각 시스템, 실제 응용과 1400px 공식 대표 JPEG가 확인됨" }
+    }
+  },
+  {
     title: "Gemini Omni Flash in Runway — 참조·첫 프레임·영상 편집을 한 패널에 결합",
     category: "AI 디자인", date: "2026-07-29", url: "https://help.runwayml.com/hc/en-us/articles/53031657806611-Creating-with-Gemini-Omni-Flash",
     summary: "텍스트, 첫 프레임, 최대 10개 참조 이미지와 기존 영상을 조합해 3~10초 생성·편집 결과를 만드는 Runway의 멀티모달 영상 워크플로.",
