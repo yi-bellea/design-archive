@@ -2,6 +2,160 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "Carbon AI Modal — 생성 범위와 설명 가능성을 한 대화상자에서 표시",
+    category: "AI 디자인", date: "2026-07-31", url: "https://carbondesignsystem.com/components/modal/usage/",
+    summary: "AI가 모달 전체에 관여할 때 전용 라벨과 설명 팝오버를 일관되게 적용하고, 일부 콘텐츠만 생성됐을 때는 해당 요소에만 AI 상태를 한정하는 Carbon 공식 패턴.",
+    note: "AI 개입 범위를 컨테이너 전체와 부분 생성으로 나눠 표시해 사용자가 무엇을 검토해야 하는지 빠르게 판단하게 만드는 설명 가능성 패턴으로 전이하기 좋음.",
+    tags: ["#AI디자인", "#모달", "#설명가능성", "#AI상태", "#디자인시스템", "#테크IT"],
+    thumbnail: "https://carbondesignsystem.com/static/57bc4193daba4848eb3152b719d15243/3cbba/modal-usage-ai-presence-w.png",
+    visual: { background: "#f4f4f4", accent: "#8a3ffc", ink: "#161616", radiusOne: "8px", radiusTwo: "24px", rotate: "-2deg", label: "AI / SCOPE / EXPLAIN" },
+    review: {
+      "유형": "AI 디자인", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Carbon 공식 문서가 AI 라벨이 포함된 실제 모달 화면과 전체·부분 AI 개입 규칙, 설명 팝오버 동작을 함께 제공해 생성형 기능의 설명 가능성 상태로 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "접근성", "인터랙션", "AI활용", "콘텐츠명료성"], "시각렌즈": ["미니멀", "그라디언트", "그리드", "절제"], "시각아티팩트_url": "https://carbondesignsystem.com/static/57bc4193daba4848eb3152b719d15243/3cbba/modal-usage-ai-presence-w.png", "커버리지_카테고리": "AI 디자인", "보안_등급": "raw_ok", "type_block": { "workflow": "AI 범위 판단→전체 모달 또는 생성된 하위 요소에 AI 라벨 적용→라벨 선택 시 설명 팝오버→사용자 검토·행동", "ai_role": "생성된 콘텐츠의 범위와 근거 확인 진입점을 시각적으로 표시" } },
+      "출처": { "소스": "Carbon Design System / Modal usage", "수집일": "2026-07-31", "수집사유": "2026-07-17 갱신된 공식 문서에서 AI presence 실제 모달 PNG와 범위별 적용 규칙이 확인됨" }
+    }
+  },
+  {
+    title: "Carbon Inline Loading States — 처리·완료·오류를 같은 자리에서 전환",
+    category: "웹 스타일가이드", date: "2026-07-31", url: "https://carbondesignsystem.com/components/inline-loading/usage/",
+    summary: "데이터 처리 중인 위치를 유지한 채 inactive·active·finished·error 상태와 라벨을 전환하고, 완료 후 1.5초 유지와 오류 알림 연결까지 규정한 Carbon 컴포넌트.",
+    note: "저장·생성·업데이트처럼 짧은 비동기 작업에서 레이아웃 점프 없이 상태와 후속 행동을 연결하는 토큰·컴포넌트 계약으로 흡수하기 좋음.",
+    tags: ["#웹스타일가이드", "#인라인로딩", "#상태전환", "#비동기UI", "#접근성", "#테크IT"],
+    thumbnail: "https://carbondesignsystem.com/static/4f87738c3eff94a870c4fffb9d32898e/3cbba/inline-loading-states.png",
+    visual: { background: "#f4f4f4", accent: "#0f62fe", ink: "#161616", radiusOne: "8px", radiusTwo: "50%", rotate: "2deg", label: "LOAD / DONE / ERROR" },
+    review: {
+      "유형": "웹 스타일가이드", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Carbon 공식 문서가 네 가지 로딩 상태의 실제 PNG, 라벨 전환, 정렬·완료 시간·오류 처리 규칙을 함께 제공해 비동기 상태 컴포넌트로 시스템화할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "접근성", "인터랙션", "콘텐츠명료성"], "시각렌즈": ["미니멀", "그리드", "절제"], "시각아티팩트_url": "https://carbondesignsystem.com/static/4f87738c3eff94a870c4fffb9d32898e/3cbba/inline-loading-states.png", "커버리지_카테고리": "웹 스타일가이드", "보안_등급": "raw_ok", "type_block": { "tokens": "상태 아이콘·16px 정렬·active/finished/error 라벨·완료 1.5초 유지", "states": "inactive→active→finished 또는 error→인라인 알림·폼 오류 처리" } },
+      "출처": { "소스": "Carbon Design System / Inline loading usage", "수집일": "2026-07-31", "수집사유": "2026-07-23 갱신된 공식 컴포넌트 문서에서 실제 상태 PNG와 구현 가능한 상태·행동 규칙이 확인됨" }
+    }
+  },
+  {
+    title: "Carbon Toggle Content — 대상 라벨과 3단어 상태를 분리해 쓰는 규칙",
+    category: "콘텐츠 디자인 가이드", date: "2026-07-31", url: "https://carbondesignsystem.com/components/toggle/usage/",
+    summary: "토글 라벨은 영향을 받는 대상을 설명하고 상태 텍스트는 세 단어 이하의 형용사로 쓰며, 즉시 적용되지 않는 선택에는 체크박스와 버튼을 쓰도록 구분한 공식 가이드.",
+    note: "설정 화면에서 대상·현재 상태·행동을 한 문구에 섞지 않게 해 번역, 접근성 이름, 제품별 설정 카피를 일관되게 운영하는 체크리스트로 바로 적용할 수 있음.",
+    tags: ["#콘텐츠디자인가이드", "#토글", "#상태카피", "#설정UI", "#접근성", "#테크IT"],
+    thumbnail: "https://carbondesignsystem.com/static/20cc6cc2c93aa843e54d6cbb67fdd1bd/3cbba/toggle-usage-anatomy.png",
+    visual: { background: "#f4f4f4", accent: "#0f62fe", ink: "#161616", radiusOne: "50%", radiusTwo: "8px", rotate: "-2deg", label: "LABEL / STATE / ACTION" },
+    review: {
+      "유형": "콘텐츠 디자인 가이드", "가치축_이름": "실행가능성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Carbon 공식 문서가 실제 토글 해부도와 필수 라벨·상태 텍스트 위치, 세 단어 제한, 형용사 사용과 대체 컴포넌트 기준을 함께 제시해 설정 카피에 즉시 적용할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "접근성", "콘텐츠명료성"], "시각렌즈": ["미니멀", "그리드", "절제"], "시각아티팩트_url": "https://carbondesignsystem.com/static/20cc6cc2c93aa843e54d6cbb67fdd1bd/3cbba/toggle-usage-anatomy.png", "커버리지_카테고리": "콘텐츠 디자인 가이드", "보안_등급": "raw_ok", "type_block": { "procedure": "영향 대상 라벨 작성→현재 상태를 세 단어 이하 형용사로 표시→즉시 적용 여부 확인→아니면 체크박스+버튼으로 전환", "visible_examples": "기본·소형 토글의 라벨, 스위치, 상태 텍스트, 체크 표시를 구분한 실제 해부도" } },
+      "출처": { "소스": "Carbon Design System / Toggle usage", "수집일": "2026-07-31", "수집사유": "2026-07-22 갱신된 공식 문서에서 실제 토글 해부도와 구체적인 라벨·상태 카피 규칙이 확인됨" }
+    }
+  },
+  {
+    title: "Neighborhood Coffee Flow — 읽히는 5단계 공정을 한 패널에 생성",
+    category: "AI 이미지 프롬프트", date: "2026-07-31", url: "https://help.runwayml.com/hc/en-us/articles/53253654113299-Creating-with-Seedream-5-0-Pro#text-graphic-coffee-flow",
+    summary: "크림 배경, 테라코타·포레스트 그린, 라인 아이콘과 현대적 산세리프로 커피 공정을 5단계 수평 인포그래픽으로 생성한 공식 Seedream 5.0 Pro 결과.",
+    note: "제목·단계명·아이콘·색·레이아웃을 한 프롬프트에서 명시해 온보딩, 서비스 프로세스, 기술 파이프라인 설명 그래픽의 초안을 빠르게 만드는 데 유용함.",
+    prompt: "A clean, single-panel infographic titled \"Neighborhood Coffee Co: From Bean to Cup\" with a horizontal five-step process flow: \"1. Sourced\" \"2. Roasted\" \"3. Ground\" \"4. Brewed\" \"5. Served,\" each with a simple line-icon above it. Warm cream background, terracotta and forest-green accent colors, modern sans-serif typography, small-batch coffee shop branding aesthetic.",
+    tags: ["#AI이미지프롬프트", "#인포그래픽", "#프로세스", "#타이포그래피", "#그리드", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/53289784398739",
+    visual: { background: "#f4ead7", accent: "#b5543c", ink: "#234536", radiusOne: "24px", radiusTwo: "8px", rotate: "2deg", label: "FLOW / TYPE / ICON" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 프롬프트·Seedream 5.0 Pro 모델·해상도와 비율 설정·결과 PNG를 제공해 텍스트가 포함된 단계형 인포그래픽으로 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "타이포그래피", "AI활용", "콘텐츠명료성"], "시각렌즈": ["에디토리얼", "어스톤", "그리드", "여백중심", "매트", "따뜻"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/53289784398739", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "A clean, single-panel infographic titled \"Neighborhood Coffee Co: From Bean to Cup\" with a horizontal five-step process flow: \"1. Sourced\" \"2. Roasted\" \"3. Ground\" \"4. Brewed\" \"5. Served,\" each with a simple line-icon above it. Warm cream background, terracotta and forest-green accent colors, modern sans-serif typography, small-batch coffee shop branding aesthetic.", "tool_model": "Runway Seedream 5.0 Pro", "params": "Text to Image·1K/2K·1:1/4:3/3:4/16:9/9:16/3:2/2:3·기본 16:9·기본 4 outputs·seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/53289784398739", "fragment_map": [{ "조각": "clean, single-panel infographic", "효과": "공정 전체를 하나의 독립 패널에 고정" }, { "조각": "horizontal five-step process flow", "효과": "좌→우로 읽는 5단계 정보 계층 생성" }, { "조각": "simple line-icon above it", "효과": "각 단계명 위에 동일 굵기의 시각 표식 배치" }, { "조각": "warm cream ... terracotta and forest-green", "효과": "따뜻한 바탕과 두 보조색으로 브랜드 일관성 확보" }] } },
+      "출처": { "소스": "Runway / Creating with Seedream 5.0 Pro", "수집일": "2026-07-31", "수집사유": "2026-07-08 갱신된 공식 모델 가이드에서 전체 프롬프트·모델·설정·200 응답 결과 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "Liquid Chrome AR Intrusion — 일상 도시에 전기 블루 CGI를 침투",
+    category: "AI 이미지 프롬프트", date: "2026-07-31", url: "https://prompthero.com/prompt/eb697bc5c34-riverflow-riverflow-25-imageanalysis-subjectmatter-mainsubject-a-sunny-ordinary-russian-street-with-trolleybus-wires-and-old-buildings-daytime-but-a-huge-liquid-chrome",
+    summary: "낮은 시점의 일상 거리 위로 전기 블루 액체 크롬 조형물이 전선과 하늘을 가르며 솟는 장면을 실사 휴대폰 질감과 무결점 CGI의 대비로 통제한 공개 결과.",
+    note: "현실 배경과 합성 레이어의 재질·엣지·광원을 의도적으로 다르게 정의해 AR, 공간 컴퓨팅, 미래형 인터페이스 캠페인의 침투형 키비주얼로 전이하기 좋음.",
+    prompt: `{"image_analysis":{"subject_matter":{"main_subject":"A sunny ordinary Russian street with trolleybus wires and old buildings, daytime — but a huge liquid-chrome 3D AR sculpture, like a frozen blue splash crossed with a winged figure, erupts upward through the wires as if rendered into the real city","visible_features":["real street, marshrutka, pedestrians","massive glossy blue 3D liquid form rising","white sketchy energy lines trailing"],"digital_layer":"an AR / 3D-rendered chrome creature composited into a real phone-shot street"},"composition_and_layout":{"type":"vertical phone video still, low angle up","framing":"AR form dominating sky, street below","background":"blue sky, city facades"},"aesthetic_style":{"core_aesthetics":["AR intrusion","Cyber-gothic","Web 3D"],"visual_artifacts":{"texture":"phone-video grain on the real, flawless CGI on the form","edges":"hard seam between real and rendered"}},"color_palette":{"dominant":"bright real-city daylight","accents":["electric chrome blue","white energy streaks"],"lighting":"natural daylight on street, self-lit CGI"},"mood_and_vibe":{"atmosphere":"something divine rendering itself into ordinary reality","keywords":["apparition","AR","intrusion"]},"negative":"no text, no letters, no captions, no watermark, no logo"}}`,
+    tags: ["#AI이미지프롬프트", "#블루톤", "#액체크롬", "#AR", "#3D", "#테크IT"],
+    thumbnail: "https://cdn.prompthero.com/ycrrz6dnvmah724a280ezf2kql-riverflow-riverflow-25-imageanalysis-subjectmatter-mainsubject-a-sunny-ordinary-russian-street-with-trolleybus-wires-and-old-buildings-daytime-but-a-huge-liquid-chrome.jpeg",
+    visual: { background: "#72b8ee", accent: "#1557ff", ink: "#f7fbff", radiusOne: "50%", radiusTwo: "24px", rotate: "-3deg", label: "AR / CHROME / BLUE" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "PromptHero 공개 페이지가 전체 구조화 프롬프트·Riverflow 2.5 모델·832×1248 JPG 설정·공개 결과 JPEG를 함께 제공해 현실과 블루 CGI의 재질 대비를 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["AI활용", "브랜드일관성"], "시각렌즈": ["3D", "하이채도", "중앙집중", "글로시", "차가움"], "시각아티팩트_url": "https://cdn.prompthero.com/ycrrz6dnvmah724a280ezf2kql-riverflow-riverflow-25-imageanalysis-subjectmatter-mainsubject-a-sunny-ordinary-russian-street-with-trolleybus-wires-and-old-buildings-daytime-but-a-huge-liquid-chrome.jpeg", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": `{"image_analysis":{"subject_matter":{"main_subject":"A sunny ordinary Russian street with trolleybus wires and old buildings, daytime — but a huge liquid-chrome 3D AR sculpture, like a frozen blue splash crossed with a winged figure, erupts upward through the wires as if rendered into the real city","visible_features":["real street, marshrutka, pedestrians","massive glossy blue 3D liquid form rising","white sketchy energy lines trailing"],"digital_layer":"an AR / 3D-rendered chrome creature composited into a real phone-shot street"},"composition_and_layout":{"type":"vertical phone video still, low angle up","framing":"AR form dominating sky, street below","background":"blue sky, city facades"},"aesthetic_style":{"core_aesthetics":["AR intrusion","Cyber-gothic","Web 3D"],"visual_artifacts":{"texture":"phone-video grain on the real, flawless CGI on the form","edges":"hard seam between real and rendered"}},"color_palette":{"dominant":"bright real-city daylight","accents":["electric chrome blue","white energy streaks"],"lighting":"natural daylight on street, self-lit CGI"},"mood_and_vibe":{"atmosphere":"something divine rendering itself into ordinary reality","keywords":["apparition","AR","intrusion"]},"negative":"no text, no letters, no captions, no watermark, no logo"}}`, "tool_model": "Riverflow 2.5", "params": "Image·832×1248·JPG·세로 2:3 근사·공개 seed 없음", "output_url": "https://cdn.prompthero.com/ycrrz6dnvmah724a280ezf2kql-riverflow-riverflow-25-imageanalysis-subjectmatter-mainsubject-a-sunny-ordinary-russian-street-with-trolleybus-wires-and-old-buildings-daytime-but-a-huge-liquid-chrome.jpeg", "fragment_map": [{ "조각": "massive glossy blue 3D liquid form rising", "효과": "전기 블루의 유광 액체 조형물을 화면 중심에 수직 배치" }, { "조각": "vertical phone video still, low angle up", "효과": "거리와 하늘을 함께 잡는 낮은 세로 시점" }, { "조각": "phone-video grain on the real, flawless CGI on the form", "효과": "현실 레이어의 그레인과 CGI 표면의 매끈함을 분리" }, { "조각": "natural daylight on street, self-lit CGI", "효과": "환경광과 자체 발광의 이중 조명 체계 생성" }] } },
+      "출처": { "소스": "PromptHero / @rewera", "수집일": "2026-07-31", "수집사유": "2026-06-24 공개된 비주얼 우선 소스에서 전체 프롬프트·모델·설정·200 응답 결과 JPEG와 실제 블루 CGI가 확인됨" }
+    }
+  },
+  {
+    title: "Crane Down to Glowing Monitor — 고립된 작업자를 수직 하강으로 발견",
+    category: "AI 영상 프롬프트", date: "2026-07-31", url: "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples#crane-glowing-monitor",
+    summary: "어두운 사무실 위에서 카메라가 부드럽게 내려와 빛나는 모니터를 응시하는 인물의 얼굴에서 멈추며 저대비 색보정으로 고립감을 만든 공식 Gen-4.5 결과.",
+    note: "수직 카메라 경로와 단일 발광 화면만으로 개발자 작업, 보안 관제, 데이터 운영처럼 정적인 기술 업무에 발견과 긴장을 부여하는 도입 숏으로 활용하기 좋음.",
+    prompt: "A crane/jib shot moves smoothly downwards, revealing a lone figure hunched over a desk in a dimly lit office, the camera stopping to frame their face as they stare intently at a glowing monitor, the scene bathed in a moody color grade with low contrast, emphasizing their isolation.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#크레인숏", "#모니터", "#저대비", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/47313504755859",
+    visual: { background: "#191d24", accent: "#78b8d8", ink: "#f4f7f8", radiusOne: "24px", radiusTwo: "0", rotate: "2deg", label: "CRANE / SCREEN / ISOLATION" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Runway 공식 카메라 라이브러리가 전체 프롬프트·Gen-4.5 모델·결과 GIF를 제공하고 하강 크레인, 정지 지점, 모니터 광원과 저대비 색보정을 독립 제어어로 재사용하게 한다.",
+      "metadata": { "정보렌즈": ["AI활용", "인터랙션", "콘텐츠명료성"], "시각렌즈": ["모노톤", "중앙집중", "하드라이트", "차가움", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313504755859", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "A crane/jib shot moves smoothly downwards, revealing a lone figure hunched over a desk in a dimly lit office, the camera stopping to frame their face as they stare intently at a glowing monitor, the scene bathed in a moody color grade with low contrast, emphasizing their isolation.", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·2~10초·1280×720·24/25fps·공식 Crane/Jib 예시·seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313504755859", "fragment_map": [{ "조각": "crane/jib shot moves smoothly downwards", "효과": "높은 위치에서 책상으로 이어지는 안정적 수직 하강" }, { "조각": "camera stopping to frame their face", "효과": "이동을 멈추고 인물의 집중 표정을 최종 초점으로 고정" }, { "조각": "stare intently at a glowing monitor", "효과": "화면을 단일 동기와 발광 광원으로 사용" }, { "조각": "moody color grade with low contrast", "효과": "어두운 환경의 경계를 부드럽게 눌러 고립감 강화" }] } },
+      "출처": { "소스": "Runway / Camera Terms, Prompts, & Examples", "수집일": "2026-07-31", "수집사유": "2026-06-27 갱신된 공식 카메라 가이드에서 전체 프롬프트·모델·200 응답 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Elastic Building Static Shot — 고정 프레임 안에서 건축만 유기적으로 변형",
+    category: "AI 영상 프롬프트", date: "2026-07-31", url: "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples#static-elastic-building",
+    summary: "카메라는 완전히 고정한 채 아파트 건물만 원형과 유기적 추상 형태로 늘어나고 휘게 해, 시점 이동 없이 변형 자체를 읽히게 만든 공식 Gen-4.5 결과.",
+    note: "카메라 운동과 피사체 운동을 명시적으로 분리해 클라우드 확장, 적응형 UI, 가변 인프라처럼 시스템 변화의 전후를 한 구도에서 비교하는 모션 문법으로 유용함.",
+    prompt: "Static, completely still establishing shot remains motionless, focused on a single apartment building. The apartment building begins to stretch and curve with an elastic-like quality, bending into circular shapes and impossibly stretching and bending into an organic abstract shape. The camera is entirely motionless for the duration of the scene, with movement only occurring from the building moving within the locked perspective.",
+    tags: ["#AI영상프롬프트", "#Gen45", "#고정카메라", "#건축변형", "#모션제어", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/47313515634835",
+    visual: { background: "#d8d5cf", accent: "#535b61", ink: "#1c2023", radiusOne: "0", radiusTwo: "24px", rotate: "-2deg", label: "STATIC / ELASTIC / TRANSFORM" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway 공식 라이브러리가 전체 프롬프트·Gen-4.5 모델·결과 GIF를 제공하고 고정 카메라, 잠긴 원근, 탄성 변형과 원형·유기 형태를 재현 가능한 모션 조각으로 분리한다.",
+      "metadata": { "정보렌즈": ["AI활용", "인터랙션"], "시각렌즈": ["미니멀", "모노톤", "중앙집중", "매트", "절제", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/47313515634835", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "Static, completely still establishing shot remains motionless, focused on a single apartment building. The apartment building begins to stretch and curve with an elastic-like quality, bending into circular shapes and impossibly stretching and bending into an organic abstract shape. The camera is entirely motionless for the duration of the scene, with movement only occurring from the building moving within the locked perspective.", "tool_model": "Runway Gen-4.5 Text to Video", "params": "Text to Video·2~10초·1280×720·24/25fps·공식 Static camera 예시·seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/47313515634835", "fragment_map": [{ "조각": "Static, completely still establishing shot", "효과": "장면 전체의 기준 구도를 완전히 고정" }, { "조각": "stretch and curve with an elastic-like quality", "효과": "건물 표면과 구조에 고무 같은 연속 변형 적용" }, { "조각": "bending into circular shapes ... organic abstract shape", "효과": "직선 건축을 원형·유기 실루엣으로 단계적 변환" }, { "조각": "movement only occurring from the building", "효과": "환경·카메라 운동을 억제하고 피사체 변화만 분리" }] } },
+      "출처": { "소스": "Runway / Camera Terms, Prompts, & Examples", "수집일": "2026-07-31", "수집사유": "2026-06-27 갱신된 공식 카메라 가이드에서 전체 프롬프트·모델·200 응답 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "KONTOUR Studios Web — 검정·시그널 레드로 서비스 계층을 압축",
+    category: "웹·앱 UI", date: "2026-07-31", url: "https://www.behance.net/gallery/252611015/KONTOUR-STUDIOS-Website-Brand-Identity",
+    summary: "고대비 검정·시그널 레드, 큰 제목과 짧은 서비스 태그, 프로젝트 메타데이터를 조합해 크리에이티브 스튜디오의 포지셔닝과 작업 탐색을 빠르게 연결한 웹 UI.",
+    note: "브랜드 강도가 높은 색과 타이포를 유지하면서 서비스·프로젝트·상세 메타를 그리드로 분리해 에이전시·개발 스튜디오 포트폴리오의 정보 밀도를 설계하기 좋음.",
+    tags: ["#웹앱UI", "#포트폴리오", "#고대비", "#그리드", "#에이전시", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/55442b252611015.6a5443964aa51.png",
+    visual: { background: "#090909", accent: "#f22d22", ink: "#f5f5f2", radiusOne: "0", radiusTwo: "24px", rotate: "2deg", label: "STUDIO / GRID / RED" },
+    review: {
+      "유형": "웹·앱 UI", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Behance 프로젝트가 실제 데스크톱 웹 화면과 브랜드 색·타입·그리드·프로젝트 정보 계층을 함께 공개해 스튜디오 포트폴리오의 재사용 가능한 UI 시스템으로 분석할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "타이포그래피", "브랜드일관성", "콘텐츠명료성"], "시각렌즈": ["브루탈리즘", "모노톤", "하이채도", "그리드", "고밀도", "하드라이트"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/55442b252611015.6a5443964aa51.png", "커버리지_카테고리": "웹·앱 UI", "보안_등급": "raw_ok", "type_block": { "screens": "브랜드 히어로·서비스 태그·프로젝트 리뷰·작업 메타·웹 적용", "reusable_pattern": "검정 바탕+시그널 레드 행동점+대형 제목+짧은 태그+세부 메타 그리드" } },
+      "출처": { "소스": "Behance / KONTOUR STUDIOS", "수집일": "2026-07-31", "수집사유": "2026-07-13 공개된 프로젝트에서 실제 웹 화면, 정보 계층과 1400px 공식 대표 WebP가 확인됨" }
+    }
+  },
+  {
+    title: "Galaxy S25 Material Frames — 스마트폰 표면을 색·질감 실험의 무대로 전환",
+    category: "비주얼 그래픽", date: "2026-07-31", url: "https://www.behance.net/gallery/249693711/Galaxy-S25-S25-%28Personal-Project%29",
+    summary: "스마트폰의 카메라 링, 금속 프레임, 유리와 화면을 다양한 각도·재질·조명으로 재구성해 제품 형태를 유지하면서도 독립적인 3D 모션 스타일프레임으로 확장한 개인 연구.",
+    note: "하드웨어의 고정된 비례와 디테일을 보존한 채 표면 재질·반사·카메라·색만 변주해 반도체·디바이스 캠페인의 제품 중심 비주얼 시스템을 설계하기 좋음.",
+    tags: ["#비주얼그래픽", "#3D", "#제품모션", "#스마트폰", "#재질", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/41e917249693711.6a0ed7d9ba977.png",
+    visual: { background: "#d8d9dc", accent: "#6f52d9", ink: "#121316", radiusOne: "24px", radiusTwo: "50%", rotate: "-2deg", label: "DEVICE / MATERIAL / FRAME" },
+    review: {
+      "유형": "비주얼 그래픽", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Behance 프로젝트가 스마트폰 형태를 다양한 각도에서 유지하며 금속·유리·화면 재질과 조명·모션 스타일프레임을 다수 공개해 하드웨어 캠페인의 시각 규칙을 추출할 수 있다.",
+      "metadata": { "정보렌즈": ["브랜드일관성", "타이포그래피"], "시각렌즈": ["3D", "모노톤", "비대칭", "글로시", "럭셔리", "모션필"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/41e917249693711.6a0ed7d9ba977.png", "커버리지_카테고리": "비주얼 그래픽", "보안_등급": "raw_ok", "type_block": { "elements": "카메라 링·금속 프레임·유리 패널·제품 실루엣·근접 카메라·재질별 하이라이트", "reusable_rule": "제품 비례는 고정하고 카메라 각도, 표면 재질, 키·림 라이트와 색만 장면별 변주" } },
+      "출처": { "소스": "Behance / Galaxy S25 S25+ Personal Project", "수집일": "2026-07-31", "수집사유": "2026-07-02 공개된 프로젝트에서 실제 3D 스타일프레임·모션 테스트와 1398px 공식 대표 WebP가 확인됨" }
+    }
+  },
+  {
+    title: "ENRICH Identity — 모듈 교체 그리드로 매번 다른 브랜드 패턴 생성",
+    category: "브랜드", date: "2026-07-31", url: "https://www.behance.net/gallery/252109841/ENRICH-Brand-Identity-System",
+    summary: "정사각 그리드의 각 셀을 승인된 도형과 투명 요소로 자동 교체해 반복되지 않으면서도 일관된 패턴을 만들고, 전진 화살표·이중 언어 타이포·3D 그래픽까지 확장한 B2B 아이덴티티.",
+    note: "브랜드 자산을 고정 템플릿이 아니라 승인 요소의 조합 규칙으로 정의해 캠페인·프레젠테이션·디지털 화면에 확장 가능한 생성형 브랜드 시스템으로 참고하기 좋음.",
+    tags: ["#브랜드", "#브랜드시스템", "#모듈그리드", "#생성패턴", "#B2B", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/af4bfe252109841.6a46d3960895e.jpg",
+    visual: { background: "#f3f1ed", accent: "#ef5a2e", ink: "#151515", radiusOne: "24px", radiusTwo: "8px", rotate: "3deg", label: "GRID / REPLACE / GROW" },
+    review: {
+      "유형": "브랜드", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Behance 프로젝트가 정사각 모듈 교체 규칙, 승인 도형·투명 요소, 전진 화살표, 이중 언어 타입과 실제 디지털·인쇄 응용을 공개해 생성형 브랜드 문법을 추출할 수 있다.",
+      "metadata": { "정보렌즈": ["타이포그래피", "브랜드일관성", "AI활용", "콘텐츠명료성"], "시각렌즈": ["3D", "하이채도", "그리드", "글로시", "유희적"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/af4bfe252109841.6a46d3960895e.jpg", "커버리지_카테고리": "브랜드", "보안_등급": "raw_ok", "type_block": { "identity_system": "e+전진 화살표 심벌·Jali 이중 언어 타입·정사각 모듈·승인 도형·투명 요소·3D 응용", "transferable_rule": "그리드 셀을 승인 자산으로 자동 교체하되 크기와 투명도만 달리해 비반복 패턴 생성" } },
+      "출처": { "소스": "Behance / ENRICH Brand Identity System", "수집일": "2026-07-31", "수집사유": "2026-07-12 공개된 프로젝트에서 패턴 생성 규칙, 실제 응용과 1400px 공식 대표 WebP가 확인됨" }
+    }
+  },
+  {
     title: "Runway Enhance Prompt — 짧은 의도를 카메라·조명·질감·모션 지시로 확장",
     category: "AI 디자인", date: "2026-07-30", url: "https://help.runwayml.com/hc/en-us/articles/50012632982163-Enhancing-your-Prompts",
     summary: "생성 입력창의 별 아이콘으로 짧은 문장을 이미지·영상 모델에 맞는 카메라, 조명, 질감, 움직임, 무드 지시로 확장하고 사용자가 다시 편집하게 하는 공식 워크플로.",
