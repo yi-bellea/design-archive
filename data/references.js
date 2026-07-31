@@ -2,6 +2,145 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "Carbon Checkbox AI Presence — 선택 항목의 생성 근거를 라벨에서 확인",
+    category: "AI 디자인", date: "2026-08-01", url: "https://carbondesignsystem.com/components/checkbox/usage/#ai-presence",
+    summary: "체크박스 그룹 또는 개별 라벨에 AI 표시를 붙이고, 같은 표시를 설명 가능성 팝오버의 트리거로 사용하는 Carbon 공식 패턴.",
+    note: "AI가 추천한 선택지와 사용자가 직접 고른 항목을 같은 폼 안에서 구분하면서도 기존 체크 동작을 유지하는 설명 가능성 패턴으로 전이하기 좋음.",
+    tags: ["#AI디자인", "#체크박스", "#설명가능성", "#폼", "#디자인시스템", "#테크IT"],
+    thumbnail: "https://carbondesignsystem.com/static/9b292d6421efda71c44fa96f4be93833/3cbba/checkbox-usage-10.png",
+    visual: { background: "#f4f4f4", accent: "#8a3ffc", ink: "#161616", radiusOne: "8px", radiusTwo: "24px", rotate: "-2deg", label: "AI / SELECT / EXPLAIN" },
+    review: {
+      "유형": "AI 디자인", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Carbon 공식 문서가 AI 라벨이 결합된 실제 체크박스 화면과 그룹·개별 배치, 설명 팝오버 트리거 규칙을 함께 제공해 AI 추천 선택 상태로 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "접근성", "인터랙션", "AI활용", "콘텐츠명료성"], "시각렌즈": ["미니멀", "그리드", "절제"], "시각아티팩트_url": "https://carbondesignsystem.com/static/9b292d6421efda71c44fa96f4be93833/3cbba/checkbox-usage-10.png", "커버리지_카테고리": "AI 디자인", "보안_등급": "raw_ok", "type_block": { "workflow": "AI 추천 범위 판단→그룹 또는 개별 체크박스 라벨에 AI 표시→표시 선택 시 설명 팝오버→사용자 선택 유지", "ai_role": "추천·생성된 선택 항목의 범위와 근거 확인 진입점을 표시" } },
+      "출처": { "소스": "Carbon Design System / Checkbox usage", "수집일": "2026-08-01", "수집사유": "2026-07-23 갱신된 공식 문서에서 AI presence 체크박스 PNG와 구현 규칙이 확인됨" }
+    }
+  },
+  {
+    title: "Carbon AI Data Table Tokens — 전체·셀·행 단위 생성 상태를 계층화",
+    category: "웹 스타일가이드", date: "2026-08-01", url: "https://carbondesignsystem.com/components/data-table/style/#ai-presence",
+    summary: "AI가 만든 범위에 따라 테이블 전체, 개별 셀, 행·열에 서로 다른 라벨 크기와 그라디언트·테두리·호버 토큰을 적용하는 공식 스타일 규칙.",
+    note: "데이터 제품에서 생성 범위를 표 전체와 부분 결과로 나눠 보여 주되 기존 밀도와 선택 행동을 유지하는 토큰 계약으로 흡수하기 좋음.",
+    tags: ["#웹스타일가이드", "#데이터테이블", "#AI상태", "#토큰", "#B2B", "#테크IT"],
+    thumbnail: "https://carbondesignsystem.com/static/bdb0b42225252338ea81fce0a3ff94e7/3cbba/style-ai-presence-datatable-row-hover.png",
+    visual: { background: "#f4f4f4", accent: "#8a3ffc", ink: "#161616", radiusOne: "0", radiusTwo: "8px", rotate: "2deg", label: "TABLE / CELL / ROW" },
+    review: {
+      "유형": "웹 스타일가이드", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Carbon 공식 스타일 문서가 AI 행 호버 실제 화면과 전체·셀·행별 라벨 크기, 배경·테두리·그림자 토큰을 명시해 데이터 테이블 상태 체계로 시스템화할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "브랜드일관성", "접근성", "인터랙션", "AI활용"], "시각렌즈": ["미니멀", "그라디언트", "그리드", "고밀도", "절제"], "시각아티팩트_url": "https://carbondesignsystem.com/static/bdb0b42225252338ea81fce0a3ff94e7/3cbba/style-ai-presence-datatable-row-hover.png", "커버리지_카테고리": "웹 스타일가이드", "보안_등급": "raw_ok", "type_block": { "tokens": "$ai-drop-shadow·$ai-inner-shadow·$ai-aura-start-sm/$ai-aura-stop·$ai-border-strong", "states": "전체 테이블 large 라벨→개별 셀 medium 라벨→행·열 mini 라벨→AI 행 hover" } },
+      "출처": { "소스": "Carbon Design System / Data table style", "수집일": "2026-08-01", "수집사유": "2026-07-23 갱신된 공식 문서에서 AI 생성 행의 실제 호버 PNG와 범위별 토큰 표가 확인됨" }
+    }
+  },
+  {
+    title: "Carbon Tooltip Naming — 아이콘 버튼의 보이는 이름을 설계 주석으로 고정",
+    category: "콘텐츠 디자인 가이드", date: "2026-08-01", url: "https://carbondesignsystem.com/components/tooltip/accessibility/#design-recommendations",
+    summary: "아이콘 전용 버튼에 툴팁 텍스트를 직접 배치하거나 설계 주석으로 명시하고, 이름 없는 아이콘 버튼은 사용하지 않도록 실제 화면으로 비교한 공식 가이드.",
+    note: "개발 전달 전에 아이콘의 동작 이름을 카피로 확정해 시각 사용자와 스크린리더 사용자에게 같은 의미를 제공하는 검수 절차로 바로 적용할 수 있음.",
+    tags: ["#콘텐츠디자인가이드", "#툴팁", "#아이콘버튼", "#접근성", "#UI카피", "#테크IT"],
+    thumbnail: "https://carbondesignsystem.com/static/f7588222a7d58e32c9bd5123ce07233c/3cbba/tooltip-accessibility-tab-1.png",
+    visual: { background: "#f4f4f4", accent: "#0f62fe", ink: "#161616", radiusOne: "8px", radiusTwo: "0", rotate: "-2deg", label: "NAME / FOCUS / TOOLTIP" },
+    review: {
+      "유형": "콘텐츠 디자인 가이드", "가치축_이름": "실행가능성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Carbon 공식 접근성 문서가 키보드 포커스와 툴팁 이름이 보이는 실제 화면, 권장·비권장 예시, aria-labelledby 구현 근거를 함께 제공해 아이콘 카피 검수에 즉시 적용할 수 있다.",
+      "metadata": { "정보렌즈": ["사용자흐름", "접근성", "인터랙션", "콘텐츠명료성"], "시각렌즈": ["미니멀", "그리드", "절제"], "시각아티팩트_url": "https://carbondesignsystem.com/static/f7588222a7d58e32c9bd5123ce07233c/3cbba/tooltip-accessibility-tab-1.png", "커버리지_카테고리": "콘텐츠 디자인 가이드", "보안_등급": "raw_ok", "type_block": { "procedure": "아이콘 동작 이름 작성→툴팁 또는 설계 주석에 고정→키보드 포커스 노출 확인→접근성 이름과 화면 카피 일치 검수", "visible_examples": "Tab 포커스에서 툴팁 이름이 노출되는 아이콘 버튼과 이름 없는 버튼의 권장·비권장 비교" } },
+      "출처": { "소스": "Carbon Design System / Tooltip accessibility", "수집일": "2026-08-01", "수집사유": "2026-07-23 갱신된 공식 문서에서 실제 툴팁 포커스 PNG와 구체적인 버튼 이름 작성 기준이 확인됨" }
+    }
+  },
+  {
+    title: "Seedream Market Composite — 인물·제품·모자를 세 레퍼런스에서 결합",
+    category: "AI 이미지 프롬프트", date: "2026-08-01", url: "https://help.runwayml.com/hc/en-us/articles/53253654113299-Creating-with-Seedream-5-0-Pro#multi-image-market-composite",
+    summary: "은빛 로크 헤어의 상인, 도자기 꿀단지, 직조 모자를 세 입력에서 가져와 아침 시장의 다큐멘터리형 상업 사진으로 결합한 공식 결과.",
+    note: "인물 정체성·제품·착용 소품·환경광을 역할별 레퍼런스로 분리해 브랜드 캠페인의 합성 요구를 한 문장으로 통제하는 데 유용함.",
+    prompt: "A woman in her 60s with silver locs, wearing a canvas apron, standing behind a wooden market stall. She's holding the ceramic honey jar from the second reference image and wearing the woven sun hat from the third. Morning market setting, string lights overhead, wooden crates of produce softly out of focus behind her, warm early light, documentary-style commercial photography, natural unposed expression.",
+    tags: ["#AI이미지프롬프트", "#멀티레퍼런스", "#제품합성", "#상업사진", "#자연광"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/53289728908435",
+    visual: { background: "#b88a5e", accent: "#e8c886", ink: "#33261f", radiusOne: "24px", radiusTwo: "50%", rotate: "2deg", label: "PERSON / PRODUCT / PROP" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 프롬프트·Seedream 5.0 Pro 모델·세 입력 이미지·지원 설정·최종 결과 PNG를 제공해 역할 분리형 상업 합성으로 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["브랜드일관성", "AI활용", "콘텐츠명료성"], "시각렌즈": ["에디토리얼", "어스톤", "비대칭", "소프트확산광", "따뜻"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/53289728908435", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "A woman in her 60s with silver locs, wearing a canvas apron, standing behind a wooden market stall. She's holding the ceramic honey jar from the second reference image and wearing the woven sun hat from the third. Morning market setting, string lights overhead, wooden crates of produce softly out of focus behind her, warm early light, documentary-style commercial photography, natural unposed expression.", "tool_model": "Runway Seedream 5.0 Pro", "params": "Image·3 reference images·1K/2K·1:1/4:3/3:4/16:9/9:16/3:2/2:3·최대 10 references·seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/53289728908435", "fragment_map": [{ "조각": "woman ... silver locs, wearing a canvas apron", "효과": "인물의 연령·헤어·작업복을 주체 기준으로 고정" }, { "조각": "ceramic honey jar from the second reference", "효과": "두 번째 입력의 제품 형태를 손에 결합" }, { "조각": "woven sun hat from the third", "효과": "세 번째 입력의 직조 소품을 착용 상태로 이전" }, { "조각": "warm early light, documentary-style commercial photography", "효과": "자연스러운 아침 확산광과 비연출 상업 사진 톤 부여" }] } },
+      "출처": { "소스": "Runway / Creating with Seedream 5.0 Pro", "수집일": "2026-08-01", "수집사유": "2026-07-08 갱신된 공식 가이드에서 전체 프롬프트·모델·설정·입력 레퍼런스·200 응답 결과 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "Seedream Sketch Repair — 표시 영역을 실제 오브젝트로 치환하고 구도를 보존",
+    category: "AI 이미지 프롬프트", date: "2026-08-01", url: "https://help.runwayml.com/hc/en-us/articles/53253654113299-Creating-with-Seedream-5-0-Pro#sketch-guided-scene-edit",
+    summary: "스케치로 표시한 집·헛간·인물·구름 위치에 거대 정원 장식, 소, 로봇 농부, 문자를 넣고 표시선은 지우되 원래 구도를 유지한 공식 편집 결과.",
+    note: "러프 주석을 위치 계약으로 쓰면서 추가·이동·교체·문자 삽입·선 제거를 한 번에 명시해 아트디렉션 피드백을 재현 가능한 편집 명령으로 바꾸기 좋음.",
+    prompt: "Edit the image based on the sketching. Add a giant garden gnome sitting on the house in the upper-left marked area, move the cow from the fiel to the top of the red barn, replace the stick figure with a robot farmer, and write Odd Day in the clouds in the top right area. Remove all the read and white sketched lines. Keep the composition unchanged. Make the newly added objects blend naturally into the original scene.",
+    tags: ["#AI이미지프롬프트", "#스케치편집", "#구도보존", "#로봇", "#아트디렉션", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/53289728913683",
+    visual: { background: "#d9d8be", accent: "#bf3c35", ink: "#293329", radiusOne: "8px", radiusTwo: "24px", rotate: "-3deg", label: "SKETCH / EDIT / PRESERVE" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 편집 프롬프트·Seedream 5.0 Pro 모델·스케치 입력·지원 설정·최종 결과 PNG를 함께 제공해 위치 주석 기반 장면 편집으로 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["사용자흐름", "AI활용", "콘텐츠명료성"], "시각렌즈": ["일러스트", "그리드", "하이채도", "유희적"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/53289728913683", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "Edit the image based on the sketching. Add a giant garden gnome sitting on the house in the upper-left marked area, move the cow from the fiel to the top of the red barn, replace the stick figure with a robot farmer, and write Odd Day in the clouds in the top right area. Remove all the read and white sketched lines. Keep the composition unchanged. Make the newly added objects blend naturally into the original scene.", "tool_model": "Runway Seedream 5.0 Pro", "params": "Image edit·1 sketch reference·1K/2K·1:1/4:3/3:4/16:9/9:16/3:2/2:3·seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/53289728913683", "fragment_map": [{ "조각": "based on the sketching", "효과": "주석선과 표시 영역을 편집 좌표로 사용" }, { "조각": "add ... move ... replace ... write", "효과": "추가·이동·교체·문자 삽입을 명시적 작업 목록으로 분리" }, { "조각": "Remove all the ... sketched lines", "효과": "완성본에서 지시용 표시선을 제거" }, { "조각": "Keep the composition unchanged", "효과": "새 오브젝트가 들어가도 원래 프레이밍과 공간 배치를 보존" }] } },
+      "출처": { "소스": "Runway / Creating with Seedream 5.0 Pro", "수집일": "2026-08-01", "수집사유": "2026-07-08 갱신된 공식 가이드에서 전체 편집 프롬프트·모델·설정·스케치 입력·200 응답 결과 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "Mechanical Bull Desert Track — 기계 생물의 질주와 먼지를 핸드헬드로 추적",
+    category: "AI 영상 프롬프트", date: "2026-08-01", url: "https://help.runwayml.com/hc/en-us/articles/39789879462419-Gen-4-Video-Prompting-Guide#mechanical-bull-desert-track",
+    summary: "사막을 달리는 기계 황소를 핸드헬드 카메라가 따라가고, 이동에 반응한 먼지 꼬리와 시네마틱 실사 질감을 결합한 공식 Gen-4 결과.",
+    note: "주체 이동·환경 반응·카메라 추적·모션 스타일을 짧은 네 조각으로 분리해 로보틱스와 하드웨어 캠페인의 동작 검증 숏으로 쓰기 좋음.",
+    prompt: "a handheld camera tracks the mechanical bull as it runs across the desert. the movement disturbs dust that trails behind the mechanical creature. cinematic live-action.",
+    tags: ["#AI영상프롬프트", "#Gen4", "#핸드헬드", "#로보틱스", "#먼지", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/39855504656659",
+    visual: { background: "#b99266", accent: "#4d5b60", ink: "#1f2425", radiusOne: "24px", radiusTwo: "0", rotate: "2deg", label: "TRACK / MACHINE / DUST" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 프롬프트·Gen-4 모델·입력 이미지·결과 GIF를 제공하고 추적 카메라, 기계 주체, 먼지 반응, 실사 모션을 독립 통제어로 재사용하게 한다.",
+      "metadata": { "정보렌즈": ["인터랙션", "AI활용", "콘텐츠명료성"], "시각렌즈": ["어스톤", "비대칭", "하드라이트", "필름그레인", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/39855504656659", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "a handheld camera tracks the mechanical bull as it runs across the desert. the movement disturbs dust that trails behind the mechanical creature. cinematic live-action.", "tool_model": "Runway Gen-4 Image to Video", "params": "Image to Video·5/10초·공식 입력 이미지·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/39855504656659", "fragment_map": [{ "조각": "handheld camera tracks", "효과": "미세 흔들림을 가진 추적 카메라 경로" }, { "조각": "mechanical bull ... runs across the desert", "효과": "기계 생물의 횡방향 질주 동작" }, { "조각": "dust that trails behind", "효과": "이동 속도에 반응하는 먼지 꼬리 생성" }, { "조각": "cinematic live-action", "효과": "렌더보다 실제 촬영에 가까운 모션 질감 부여" }] } },
+      "출처": { "소스": "Runway / Gen-4 Video Prompting Guide", "수집일": "2026-08-01", "수집사유": "2026-07-31 KST 갱신된 공식 가이드에서 전체 프롬프트·모델·입력·200 응답 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Bubbling Mirror Lock-off — 반사면만 유기적으로 변형하는 고정 숏",
+    category: "AI 영상 프롬프트", date: "2026-08-01", url: "https://help.runwayml.com/hc/en-us/articles/39789879462419-Gen-4-Video-Prompting-Guide#bubbling-mirror-lockoff",
+    summary: "거울을 살피는 인물은 유지하고 반사면에서 크기가 다른 반투명 거품만 솟게 하며 카메라를 고정한 공식 Gen-4 결과.",
+    note: "정지 카메라·주체 행동·재질 변화의 범위를 분리해 스마트 미러, 디스플레이 재질, 미래형 인터페이스 콘셉트에서 한 요소만 변형하는 숏으로 활용하기 좋음.",
+    prompt: "the woman inspects her reflection in the mirror. the surface of the mirror bubbles with large, organically-shaped translucent bubbles in varying sizes. locked camera",
+    tags: ["#AI영상프롬프트", "#Gen4", "#고정카메라", "#재질변형", "#미래인터페이스", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/39884510635667",
+    visual: { background: "#b6acaa", accent: "#d5e2dd", ink: "#292726", radiusOne: "50%", radiusTwo: "24px", rotate: "-2deg", label: "LOCK / REFLECT / BUBBLE" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 프롬프트·Gen-4 모델·입력 이미지·결과 GIF를 제공하고 인물 행동, 거울 표면, 거품 크기, 고정 카메라를 독립 통제어로 재현하게 한다.",
+      "metadata": { "정보렌즈": ["인터랙션", "AI활용", "콘텐츠명료성"], "시각렌즈": ["미니멀", "중앙집중", "소프트확산광", "글로시", "몽환", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/39884510635667", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "the woman inspects her reflection in the mirror. the surface of the mirror bubbles with large, organically-shaped translucent bubbles in varying sizes. locked camera", "tool_model": "Runway Gen-4 Image to Video", "params": "Image to Video·5/10초·공식 입력 이미지·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/39884510635667", "fragment_map": [{ "조각": "inspects her reflection", "효과": "인물의 시선과 작은 관찰 동작을 유지" }, { "조각": "surface of the mirror bubbles", "효과": "변형 범위를 거울 표면에만 제한" }, { "조각": "organically-shaped translucent bubbles in varying sizes", "효과": "크기 차가 있는 반투명 유기 거품 재질 생성" }, { "조각": "locked camera", "효과": "프레임 이동 없이 표면 변화만 비교 가능하게 고정" }] } },
+      "출처": { "소스": "Runway / Gen-4 Video Prompting Guide", "수집일": "2026-08-01", "수집사유": "2026-07-31 KST 갱신된 공식 가이드에서 전체 프롬프트·모델·입력·200 응답 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "ATLAS AI Workspace — 문서·에이전트·일정·자동화를 한 셸에 통합",
+    category: "웹·앱 UI", date: "2026-08-01", url: "https://www.behance.net/gallery/252272351/ATLAS-AI-Operating-System-for-Modern-Teams",
+    summary: "팀의 문서, AI 에이전트, 일정, 워크플로, 인사이트를 하나의 작업 공간에 묶어 여러 도구 전환을 줄인 다크 테마 SaaS UI 콘셉트.",
+    note: "탐색 셸과 대시보드 모듈을 유지한 채 문서·에이전트·자동화를 작업 객체로 나란히 배치해 복합 AI 제품의 정보 구조를 비교하기 좋음.",
+    tags: ["#웹앱UI", "#AI워크스페이스", "#에이전트", "#대시보드", "#SaaS", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/projects/404/aae9ff252272351.Y3JvcCw1MjM2LDQwOTYsMCww.png",
+    visual: { background: "#111216", accent: "#9f8cff", ink: "#f2f2f4", radiusOne: "24px", radiusTwo: "8px", rotate: "2deg", label: "DOCS / AGENTS / FLOW" },
+    review: {
+      "유형": "웹·앱 UI", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 4, "근거성": 4, "가치축": 4 }, "total": 17, "verdict": "accept",
+      "근거": "Behance 공개 프로젝트가 문서·AI 에이전트·일정·워크플로·인사이트가 결합된 실제 Figma 화면과 다크 SaaS 셸을 보여 줘 복합 AI 작업 공간의 탐색·모듈 구조로 시스템화할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "타이포그래피", "브랜드일관성", "인터랙션", "AI활용"], "시각렌즈": ["미니멀", "모노톤", "그라디언트", "그리드", "고밀도", "차가움"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/projects/404/aae9ff252272351.Y3JvcCw1MjM2LDQwOTYsMCww.png", "커버리지_카테고리": "웹·앱 UI", "보안_등급": "raw_ok", "type_block": { "flow": "통합 홈→문서·프로젝트 탐색→AI 에이전트 호출→일정·워크플로 실행→인사이트 확인", "ui_system": "다크 셸·좌측 탐색·모듈 카드·보라색 상태 강조·고밀도 대시보드 그리드" } },
+      "출처": { "소스": "Behance / Mariana Kosovchych", "수집일": "2026-08-01", "수집사유": "2026-07-06 공개된 Figma UI/UX 프로젝트에서 통합 AI 작업 공간의 실제 화면과 200 응답 공식 커버 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "KyroAI — 복잡한 비즈니스 데이터를 선명한 신뢰 언어로 바꾼 브랜드",
+    category: "브랜드", date: "2026-08-01", url: "https://www.behance.net/gallery/252500427/KyroAI-AI-Startup-Branding",
+    summary: "데이터 복잡성을 명확한 인사이트로 바꾸는 AI 비즈니스 인텔리전스의 약속을 미니멀 로고, 굵은 타이포, 정밀한 색 체계와 디지털 응용으로 확장한 브랜드 시스템.",
+    note: "추상적인 AI 지능을 장식적 신호보다 정보의 선명도와 정렬, 대비로 표현해 B2B 데이터 제품이 프리미엄과 신뢰를 동시에 구축하는 방식을 참고하기 좋음.",
+    tags: ["#브랜드", "#AI스타트업", "#비즈니스인텔리전스", "#데이터", "#미니멀", "#테크IT"],
+    thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/63ea2d252500427.6a50de8cc3dae.jpg",
+    visual: { background: "#101419", accent: "#95f0cf", ink: "#f4f7f7", radiusOne: "8px", radiusTwo: "24px", rotate: "-2deg", label: "DATA / CLARITY / TRUST" },
+    review: {
+      "유형": "브랜드", "가치축_이름": "스타일추출성", "scores": { "완성도": 5, "신규성": 4, "근거성": 4, "가치축": 5 }, "total": 18, "verdict": "accept",
+      "근거": "Behance 공개 프로젝트가 AI 비즈니스 인텔리전스의 로고·타이포·팔레트·디지털 응용을 다수 실제 이미지로 보여 줘 데이터 명료성과 신뢰를 연결하는 B2B 브랜드 문법을 추출할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "타이포그래피", "브랜드일관성", "AI활용"], "시각렌즈": ["미니멀", "모노톤", "그리드", "여백중심", "글로시", "절제"], "시각아티팩트_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/63ea2d252500427.6a50de8cc3dae.jpg", "커버리지_카테고리": "브랜드", "보안_등급": "raw_ok", "type_block": { "transferable_style": "정밀한 산세리프·어두운 데이터 배경·민트 포인트·정렬 중심 레이아웃·절제된 광택", "applications": "AI SaaS 로고·대시보드 브랜드 셸·세일즈 자료·디지털 캠페인" } },
+      "출처": { "소스": "Behance / Tasrif Uddin·Lyro", "수집일": "2026-08-01", "수집사유": "2026-07-10 공개된 AI 스타트업 브랜드 프로젝트에서 로고·타이포·팔레트·디지털 응용과 공개 대표 JPEG가 확인됨" }
+    }
+  },
+  {
     title: "Carbon AI Modal — 생성 범위와 설명 가능성을 한 대화상자에서 표시",
     category: "AI 디자인", date: "2026-07-31", url: "https://carbondesignsystem.com/components/modal/usage/",
     summary: "AI가 모달 전체에 관여할 때 전용 라벨과 설명 팝오버를 일관되게 적용하고, 일부 콘텐츠만 생성됐을 때는 해당 요소에만 AI 상태를 한정하는 Carbon 공식 패턴.",
