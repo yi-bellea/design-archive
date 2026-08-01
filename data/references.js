@@ -2,6 +2,115 @@
 // 원본 이미지 사용 권한이나 안정적인 직접 이미지 URL이 없을 때에는 visual 필드로 카드 미리보기를 만듭니다.
 let references = [
   {
+    title: "Carbon AI Label — 설명 가능성 팝오버를 여는 일관된 진입점",
+    category: "AI 디자인", date: "2026-08-02", url: "https://carbondesignsystem.com/components/ai-label/usage/#explainability-popover",
+    summary: "AI 생성 여부를 표시하는 라벨을 설명 가능성 팝오버의 트리거로 사용하고, 개요·근거·아티팩트·추가 행동을 한 흐름으로 연결한 Carbon 공식 패턴.",
+    note: "AI 표식을 장식이나 생성 버튼으로 오용하지 않고, 사용자가 모델 근거를 확인하는 고정 진입점으로 운영하는 제품 규칙을 설계하기 좋음.",
+    tags: ["#AI디자인", "#설명가능성", "#AI라벨", "#팝오버", "#투명성", "#테크IT"],
+    thumbnail: "https://carbondesignsystem.com/static/64d77c6982c783a3227be6c1d38dada2/3cbba/ai-label-explainability-01.png",
+    visual: { background: "#f4f4f4", accent: "#8a3ffc", ink: "#161616", radiusOne: "8px", radiusTwo: "24px", rotate: "-2deg", label: "AI / EXPLAIN / VERIFY" },
+    review: {
+      "유형": "AI 디자인", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Carbon 공식 문서가 AI 라벨과 설명 가능성 팝오버의 실제 화면, 열기·닫기 동작, 콘텐츠 구조와 되돌리기 규칙을 함께 제공해 생성형 제품의 투명성 패턴으로 재현할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "접근성", "인터랙션", "AI활용", "콘텐츠명료성"], "시각렌즈": ["미니멀", "그라디언트", "그리드", "절제"], "시각아티팩트_url": "https://carbondesignsystem.com/static/64d77c6982c783a3227be6c1d38dada2/3cbba/ai-label-explainability-01.png", "커버리지_카테고리": "AI 디자인", "보안_등급": "raw_ok", "type_block": { "workflow": "AI 라벨 인지→선택 또는 키보드 포커스→설명 가능성 팝오버→근거·아티팩트 확인→추가 행동 또는 닫기", "ai_role": "AI 생성 상태를 표시하고 설명·검증 정보에 접근하는 일관된 트리거" } },
+      "출처": { "소스": "Carbon Design System / AI label usage", "수집일": "2026-08-02", "수집사유": "2026-07-29 갱신된 공식 문서에서 설명 가능성 팝오버 실제 PNG와 AI 라벨의 배치·행동·되돌리기 규칙이 확인됨" }
+    }
+  },
+  {
+    title: "Carbon UI Shell Header — 상태·간격·반응형을 하나의 헤더 계약으로",
+    category: "웹 스타일가이드", date: "2026-08-02", url: "https://carbondesignsystem.com/components/UI-shell-header/style/#structure",
+    summary: "48px 헤더 안에서 메뉴·제품명·링크·액션의 토큰과 상호작용 상태를 규정하고, 작은 화면에서는 메뉴를 좌측 패널로 접는 Carbon 공식 사양.",
+    note: "복합 B2B 제품의 전역 탐색을 상태 토큰, 클릭 영역, 반응형 이동 규칙까지 포함한 재사용 가능한 셸 컴포넌트로 정리하기 좋음.",
+    tags: ["#웹스타일가이드", "#UIShell", "#헤더", "#상태토큰", "#반응형", "#테크IT"],
+    thumbnail: "https://carbondesignsystem.com/static/00d98d07d00c19094c33c61ad30cf009/3cbba/header-style-6.png",
+    visual: { background: "#f4f4f4", accent: "#0f62fe", ink: "#161616", radiusOne: "8px", radiusTwo: "24px", rotate: "2deg", label: "SHELL / STATE / SCALE" },
+    review: {
+      "유형": "웹 스타일가이드", "가치축_이름": "시스템화", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Carbon 공식 문서가 헤더의 실제 구조 측정 PNG, 48px 규격, 간격·색상 토큰, 상태와 모바일 접힘 규칙을 함께 제공해 전역 탐색 컴포넌트로 시스템화할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "타이포그래피", "접근성", "인터랙션"], "시각렌즈": ["미니멀", "그리드", "고밀도", "절제"], "시각아티팩트_url": "https://carbondesignsystem.com/static/00d98d07d00c19094c33c61ad30cf009/3cbba/header-style-6.png", "커버리지_카테고리": "웹 스타일가이드", "보안_등급": "raw_ok", "type_block": { "tokens": "48px 헤더·16/32px 제품명 여백·16px 링크 여백·상태별 배경/텍스트/포커스 토큰", "states": "enabled→hover→focus→active→selected, 좁은 화면에서 헤더 메뉴를 좌측 내비게이션 상단으로 이동" } },
+      "출처": { "소스": "Carbon Design System / UI shell header style", "수집일": "2026-08-02", "수집사유": "2026-07-29 갱신된 공식 문서에서 실제 구조·반응형 PNG와 상태·크기·간격 토큰이 확인됨" }
+    }
+  },
+  {
+    title: "Carbon Header Accessibility — 기본 동작과 제품별 예외만 구분해 주석",
+    category: "콘텐츠 디자인 가이드", date: "2026-08-02", url: "https://carbondesignsystem.com/components/UI-shell-header/accessibility/#design-recommendations",
+    summary: "기본 헤더의 Tab·Enter·Space·Skip link 동작을 재사용하고, 제품이 이름이나 키보드 흐름을 바꿀 때만 차이를 명시적으로 주석 처리하는 Carbon 공식 가이드.",
+    note: "모든 화면에 같은 설명을 반복하지 않고 기준 동작과 예외 카피만 남겨 디자이너·개발자 QA 문서를 간결하고 검증 가능하게 만들기 좋음.",
+    tags: ["#콘텐츠디자인가이드", "#접근성주석", "#키보드탐색", "#헤더", "#디자인QA", "#테크IT"],
+    thumbnail: "https://carbondesignsystem.com/static/a0161850237784042e803c337eb412ea/3cbba/header-accessibility-1.png",
+    visual: { background: "#f4f4f4", accent: "#0f62fe", ink: "#161616", radiusOne: "8px", radiusTwo: "24px", rotate: "-2deg", label: "TAB / LABEL / EXCEPTION" },
+    review: {
+      "유형": "콘텐츠 디자인 가이드", "가치축_이름": "실행가능성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Carbon 공식 문서가 Skip link와 키보드 이동의 실제 PNG, 기본 접근성 동작, 제품별 예외 주석 절차를 함께 제시해 디자인 QA 문서에 즉시 적용할 수 있다.",
+      "metadata": { "정보렌즈": ["정보구조", "사용자흐름", "접근성", "인터랙션", "콘텐츠명료성"], "시각렌즈": ["미니멀", "그리드", "절제"], "시각아티팩트_url": "https://carbondesignsystem.com/static/a0161850237784042e803c337eb412ea/3cbba/header-accessibility-1.png", "커버리지_카테고리": "콘텐츠 디자인 가이드", "보안_등급": "raw_ok", "type_block": { "procedure": "Carbon 기본 Tab·Enter·Space·Skip link 확인→제품별 아이콘 이름과 포커스 순서 비교→다른 동작만 화면에 주석→개발·QA 기준으로 공유", "visible_examples": "Tab 키로 Skip to main을 드러내고 헤더 요소 사이를 이동하는 실제 화면과 주석 예시" } },
+      "출처": { "소스": "Carbon Design System / UI shell header accessibility", "수집일": "2026-08-02", "수집사유": "2026-07-29 갱신된 공식 문서에서 실제 키보드 포커스 PNG와 기본·예외 접근성 주석 절차가 확인됨" }
+    }
+  },
+  {
+    title: "Storybook Frog Picnic — 굵은 선과 단순 도형으로 고정한 동화 삽화",
+    category: "AI 이미지 프롬프트", date: "2026-08-02", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#storybook-frog-picnic",
+    summary: "연잎 위 피크닉 장면을 굵은 외곽선, 정돈된 색면, 손그림 잉크선으로 제한해 작은 화면에서도 읽히는 공식 Gen-4 삽화 결과.",
+    note: "주체·행동 뒤에 선 굵기와 도형 단순화 규칙을 붙이는 구조가 온보딩 일러스트와 캐릭터 카드의 스타일 일관성을 빠르게 테스트하기 좋음.",
+    prompt: "Storybook illustration of a frog having a picnic on a lily pad, thick lines, clean bold shapes, hand-drawn quality, precise ink-like lines",
+    tags: ["#AI이미지프롬프트", "#Gen4Image", "#동화삽화", "#굵은선", "#캐릭터", "#생성형AI"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37148070563475",
+    visual: { background: "#a9d88f", accent: "#f2c45f", ink: "#24382b", radiusOne: "24px", radiusTwo: "50%", rotate: "2deg", label: "STORY / BOLD / INK" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 프롬프트·Gen-4 Image 모델·지원 설정·결과 PNG를 제공하고 주체, 행동, 선 굵기, 도형, 잉크 질감을 조합 가능한 통제어로 분리한다.",
+      "metadata": { "정보렌즈": ["AI활용", "브랜드일관성", "콘텐츠명료성"], "시각렌즈": ["일러스트", "하이채도", "중앙집중", "매트", "유희적"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37148070563475", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "Storybook illustration of a frog having a picnic on a lily pad, thick lines, clean bold shapes, hand-drawn quality, precise ink-like lines", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Illustration 예시·720p/1080p 지원·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37148070563475", "fragment_map": [{ "조각": "frog having a picnic on a lily pad", "효과": "한 장면에서 주체·행동·장소를 명확히 고정" }, { "조각": "thick lines", "효과": "축소 화면에서도 캐릭터 윤곽을 선명하게 유지" }, { "조각": "clean bold shapes", "효과": "세부 묘사를 줄이고 큰 색면 중심으로 단순화" }, { "조각": "hand-drawn quality, precise ink-like lines", "효과": "기계적 벡터보다 손그림 잉크의 미세한 결을 부여" }] } },
+      "출처": { "소스": "Runway / Gen-4 Image Prompting Guide", "수집일": "2026-08-02", "수집사유": "2026-07-31 KST 갱신된 공식 가이드에서 전체 프롬프트·모델·지원 설정·200 응답 결과 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "Surreal Anatomy — 흰 배경에서 인체 왜곡만 전면화한 아방가르드 이미지",
+    category: "AI 이미지 프롬프트", date: "2026-08-02", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#surreal-anatomy-white-stage",
+    summary: "인체를 비현실적으로 굽히고 압축한 형태를 순백 배경과 시네마틱 표현으로 분리해 실루엣 변화가 즉시 읽히는 공식 Gen-4 결과.",
+    note: "변형 동사와 강도, 배경, 무드를 따로 제어해 패션 키비주얼이나 콘셉트 포스터에서 형태 실험의 범위를 비교하기 좋음.",
+    prompt: "the man curves and bends impossibly. distorted, warped, squished, and extremely deformed and exaggerated. surreal anatomy. cinematic, avant garde. solid white background",
+    tags: ["#AI이미지프롬프트", "#Gen4Image", "#초현실", "#인체왜곡", "#아방가르드", "#생성형AI"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/37148062162067",
+    visual: { background: "#f4f4f1", accent: "#222222", ink: "#111111", radiusOne: "50%", radiusTwo: "8px", rotate: "-2deg", label: "BEND / WARP / STAGE" },
+    review: {
+      "유형": "AI 이미지 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 프롬프트·Gen-4 Image 모델·지원 설정·결과 PNG를 제공하고 왜곡 동사, 강도, 무드, 흰 배경을 독립적인 형태 통제어로 재사용하게 한다.",
+      "metadata": { "정보렌즈": ["AI활용", "콘텐츠명료성"], "시각렌즈": ["에디토리얼", "모노톤", "중앙집중", "여백중심", "매트", "절제"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/37148062162067", "커버리지_카테고리": "AI 이미지 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "the man curves and bends impossibly. distorted, warped, squished, and extremely deformed and exaggerated. surreal anatomy. cinematic, avant garde. solid white background", "tool_model": "Runway Gen-4 Image", "params": "Text to Image·공식 Surreal anatomy 예시·720p/1080p 지원·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/37148062162067", "fragment_map": [{ "조각": "curves and bends impossibly", "효과": "관절과 몸통의 방향을 비현실적인 곡선으로 전환" }, { "조각": "distorted, warped, squished", "효과": "늘임·비틀림·압축 변형을 중첩" }, { "조각": "extremely deformed and exaggerated", "효과": "형태 변형 강도를 최대치로 올려 실루엣 차이를 명확화" }, { "조각": "solid white background", "효과": "환경 정보를 제거해 인체 형태만 전면에 분리" }] } },
+      "출처": { "소스": "Runway / Gen-4 Image Prompting Guide", "수집일": "2026-08-02", "수집사유": "2026-07-31 KST 갱신된 공식 가이드에서 전체 프롬프트·모델·지원 설정·200 응답 결과 PNG가 확인됨" }
+    }
+  },
+  {
+    title: "Volcanic Rock Humanoid — 바위 더미가 보행 생명체로 변하는 단일 숏",
+    category: "AI 영상 프롬프트", date: "2026-08-02", url: "https://help.runwayml.com/hc/en-us/articles/39789879462419-Gen-4-Video-Prompting-Guide#volcanic-rock-humanoid",
+    summary: "정지한 화산암 더미를 거친 암석 표면의 인간형으로 변환한 뒤 장면 안을 걷게 하는 두 단계 동작의 공식 Gen-4 결과.",
+    note: "변형과 후속 보행을 짧은 문장으로 분리해 소재 일관성을 유지하면서 로봇·게임 크리처·VFX 콘셉트의 상태 전환을 검증하기 좋음.",
+    prompt: "the pile of rocks transforms into a humanoid made out of rugged volcanic rocks. the rock humanoid walks around the scene.",
+    tags: ["#AI영상프롬프트", "#Gen4", "#변형", "#화산암", "#크리처", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/39884510638227",
+    visual: { background: "#4a453f", accent: "#9b7656", ink: "#f0e8df", radiusOne: "24px", radiusTwo: "8px", rotate: "2deg", label: "ROCK / FORM / WALK" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 5, "근거성": 5, "가치축": 5 }, "total": 20, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 프롬프트·Gen-4 모델·입력 이미지·결과 GIF를 제공하고 초기 오브젝트, 변형 재질, 인간형 상태, 후속 보행을 단계별 통제어로 재현하게 한다.",
+      "metadata": { "정보렌즈": ["인터랙션", "AI활용", "콘텐츠명료성"], "시각렌즈": ["3D", "어스톤", "중앙집중", "매트", "하드라이트", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/39884510638227", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "the pile of rocks transforms into a humanoid made out of rugged volcanic rocks. the rock humanoid walks around the scene.", "tool_model": "Runway Gen-4 Image to Video", "params": "Image to Video·5/10초·공식 입력 이미지·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/39884510638227", "fragment_map": [{ "조각": "pile of rocks", "효과": "변형 전 정지 오브젝트와 재질 기준을 설정" }, { "조각": "transforms into a humanoid", "효과": "바위 더미를 인간형 관절 구조로 단계적으로 전환" }, { "조각": "made out of rugged volcanic rocks", "효과": "변형 뒤에도 거친 화산암 표면을 유지" }, { "조각": "walks around the scene", "효과": "완성된 인간형에 공간 내 보행 동작을 부여" }] } },
+      "출처": { "소스": "Runway / Gen-4 Video Prompting Guide", "수집일": "2026-08-02", "수집사유": "2026-07-31 KST 갱신된 공식 가이드에서 전체 프롬프트·모델·입력·200 응답 결과 GIF가 확인됨" }
+    }
+  },
+  {
+    title: "Handheld Mouse Track — 작은 주체의 도주를 낮은 시점으로 추적",
+    category: "AI 영상 프롬프트", date: "2026-08-02", url: "https://help.runwayml.com/hc/en-us/articles/39789879462419-Gen-4-Video-Prompting-Guide#handheld-mouse-track",
+    summary: "작은 쥐가 빠르게 달아나는 동작을 핸드헬드 카메라가 같은 높이에서 따라가며 속도감과 미세 흔들림을 만드는 공식 Gen-4 결과.",
+    note: "카메라 스타일·추적 대상·동작 방향만 남긴 최소 프롬프트가 로봇 주행, 미니어처 제품, 게임 카메라의 추적 안정성을 비교하기 좋음.",
+    prompt: "the handheld camera tracks the mouse as it scurries away.",
+    tags: ["#AI영상프롬프트", "#Gen4", "#핸드헬드", "#추적카메라", "#미니어처", "#테크IT"],
+    thumbnail: "https://help.runwayml.com/hc/article_attachments/39885554866067",
+    visual: { background: "#847466", accent: "#c9b59c", ink: "#211d19", radiusOne: "50%", radiusTwo: "24px", rotate: "-2deg", label: "LOW / TRACK / SCURRY" },
+    review: {
+      "유형": "AI 영상 프롬프트", "가치축_이름": "재현성", "scores": { "완성도": 5, "신규성": 4, "근거성": 5, "가치축": 5 }, "total": 19, "verdict": "accept",
+      "근거": "Runway 공식 가이드가 전체 프롬프트·Gen-4 모델·입력 이미지·결과 GIF를 제공하고 핸드헬드 질감, 추적 관계, 빠른 도주 동작을 최소 통제어로 재현하게 한다.",
+      "metadata": { "정보렌즈": ["인터랙션", "AI활용", "콘텐츠명료성"], "시각렌즈": ["어스톤", "비대칭", "소프트확산광", "필름그레인", "모션필"], "시각아티팩트_url": "https://help.runwayml.com/hc/article_attachments/39885554866067", "커버리지_카테고리": "AI 영상 프롬프트", "보안_등급": "raw_ok", "type_block": { "prompt": "the handheld camera tracks the mouse as it scurries away.", "tool_model": "Runway Gen-4 Image to Video", "params": "Image to Video·5/10초·공식 입력 이미지·aspect ratio/seed 미공개", "output_url": "https://help.runwayml.com/hc/article_attachments/39885554866067", "fragment_map": [{ "조각": "handheld camera", "효과": "미세 흔들림과 즉흥적인 촬영 질감을 부여" }, { "조각": "tracks the mouse", "효과": "작은 주체를 프레임 안에 유지하는 추적 관계 설정" }, { "조각": "scurries", "효과": "짧고 빠른 보폭과 불규칙한 이동 속도 생성" }, { "조각": "away", "효과": "카메라에서 멀어지는 진행 방향과 공간 깊이를 명시" }] } },
+      "출처": { "소스": "Runway / Gen-4 Video Prompting Guide", "수집일": "2026-08-02", "수집사유": "2026-07-31 KST 갱신된 공식 가이드에서 전체 프롬프트·모델·입력·200 응답 결과 GIF가 확인됨" }
+    }
+  },
+  {
     title: "Carbon Checkbox AI Presence — 선택 항목의 생성 근거를 라벨에서 확인",
     category: "AI 디자인", date: "2026-08-01", url: "https://carbondesignsystem.com/components/checkbox/usage/#ai-presence",
     summary: "체크박스 그룹 또는 개별 라벨에 AI 표시를 붙이고, 같은 표시를 설명 가능성 팝오버의 트리거로 사용하는 Carbon 공식 패턴.",
