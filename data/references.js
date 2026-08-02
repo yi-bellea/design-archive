@@ -990,6 +990,21 @@ let references = [
     }
   },
   {
+    title: "헤빵 — 집순이·운동 회피·그냥 힘든 날을 밝게 푸는 공감형 인스타툰",
+    category: "공감형 웹툰", date: "2026-07-26", url: "https://www.hankookilbo.com/News/Read/A2023071306070001632",
+    summary: "평범한 일상을 귀여운 그림체와 짧은 컷 전개로 가볍게 넘기면서도, 다들 내심 갖고 있는 귀찮음과 무기력을 유쾌한 공감 포인트로 묶는 국내 인스타툰 사례.",
+    note: "직장·관계 같은 큰 서사보다 집순이, 운동 싫음, 그냥 다 힘든 날 같은 미세한 감정을 짧은 카피와 캐릭터 반응으로 정리해 소셜 캐러셀형 공감 콘텐츠 문법을 참고하기 좋음.",
+    tags: ["#공감형웹툰", "#국내작가", "#인스타툰", "#일상공감", "#짧은서사", "#캐릭터반응"],
+    thumbnail: "https://newsimg.hankookilbo.com/cms/articlerelease/2023/07/13/94aa49b5-e7ee-4136-bc1c-e87e0b7b74a5.png",
+    visual: { background: "#f3e6d8", accent: "#ff9772", ink: "#2e2a26", radiusOne: "50%", radiusTwo: "24px", rotate: "-2deg", label: "RELATABLE / DAILY / LIGHT" },
+    review: {
+      "유형": "공감형 웹툰", "가치축_이름": "스타일추출성", "scores": { "완성도": 4, "신규성": 4, "근거성": 4, "가치축": 4 }, "total": 16, "verdict": "accept",
+      "근거": "한국일보 기사가 헤빵을 인스타툰 작가로 직접 소개하고 실제 컷 이미지를 여러 장 공개하며 집순이, 운동이 싫은 사람의 특징 같은 일상 공감 소재를 밝고 유쾌한 톤으로 반복 전개하는 방식을 확인할 수 있다.",
+      "metadata": { "정보렌즈": ["콘텐츠명료성", "브랜드일관성"], "시각렌즈": ["일러스트", "여백중심", "유희적"], "시각아티팩트_url": "https://newsimg.hankookilbo.com/cms/articlerelease/2023/07/13/94aa49b5-e7ee-4136-bc1c-e87e0b7b74a5.png", "커버리지_카테고리": "공감형 웹툰", "보안_등급": "raw_ok", "type_block": { "format": "인스타그램 캐러셀형 단편 일상툰", "transferable_style": "짧은 공감 카피·둥근 캐릭터 반응·일상 무기력 소재·한 화 완결 구조" } },
+      "출처": { "소스": "https://www.hankookilbo.com/News/Read/A2023071306070001632", "수집일": "2026-07-26", "수집사유": "한국일보가 2023-07-14 기사에서 헤빵을 국내 인스타툰 작가로 소개하고 실제 작품 컷 이미지를 다수 공개하며 일상 공감형 소재를 직접 설명함" }
+    }
+  },
+  {
     title: "Lo-Fi Space Reader — 우주선 독서 장면을 1980년대 애니 패널로",
     category: "AI 이미지 프롬프트", date: "2026-07-26", url: "https://help.runwayml.com/hc/en-us/articles/35694045317139-Gen-4-Image-Prompting-Guide#lo-fi-spaceship-reading",
     summary: "우주선 안에서 책을 읽는 인물을 손그림 패널, 저채도 파스텔, 소프트 그레인으로 묶어 미래 배경과 향수 어린 인쇄 감각을 공존시킨 공식 Gen-4 Image 결과.",
