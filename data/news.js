@@ -1,6 +1,26 @@
 // 뉴스 전용 규칙은 NEWS.md를 따릅니다. 최신 항목이 위에 오도록 발행일순 렌더링됩니다.
 let designNews = [
   {
+    title: "Figma의 AI 보안 리뷰 — 정책·평가·사람의 판단을 한 루프로", category: "AI 디자인 뉴스", source: "Figma", publishedAt: "2026-07-23", collectedAt: "2026-08-12",
+    url: "https://www.figma.com/blog/how-figma-stays-ahead-of-vulnerabilities-with-agents/", thumbnail: "https://cdn.sanity.io/images/599r6htc/regionalized/0aafc60d3967aa228537a2f8379ce3308849f643-3264x1836.jpg?w=1200&q=70&fit=max&auto=format",
+    summary: "Figma가 코드 생성, PR 검토, 과거 코드 감사에 같은 보안 정책을 적용하고 사람의 판정과 알려진 취약점 재생 평가로 에이전트의 정밀도와 재현율을 개선한 운영 방식을 공개했습니다.", impact: "AI 작업의 품질을 프롬프트 한 번에 맡기지 않고 명시적 정책, 평가 세트, 사람의 승인, 관측 지표로 관리하는 실무 운영 모델로 전환할 근거가 됩니다.", tags: ["#AI에이전트", "#평가", "#보안", "#디자인운영"]
+  },
+  {
+    title: "Figma 캔버스 접근성 — 장면 그래프를 Mirror DOM으로 연결", category: "피그마 뉴스", source: "Figma", publishedAt: "2026-07-01", collectedAt: "2026-08-12",
+    url: "https://www.figma.com/blog/building-accessibility-into-a-canvas-based-product/", thumbnail: "https://cdn.sanity.io/images/599r6htc/regionalized/3b56ac84ef6b2e3fd6ffc923b4093009bcc6a3b4-3262x1836.png?w=1200&q=70&fit=max&auto=format",
+    summary: "HTML 요소가 없는 고성능 캔버스에 내부 접근성 트리와 Mirror DOM, 선택 동기화, 상태 알림을 결합해 키보드와 스크린리더 탐색을 구현한 구조를 공개했습니다.", impact: "캔버스형 편집기에서도 시각 렌더링과 보조기술용 의미 구조를 분리해 접근성을 제품 기반 구조로 설계할 수 있음을 보여줍니다.", tags: ["#Figma", "#접근성", "#스크린리더", "#MirrorDOM"]
+  },
+  {
+    title: "GOV.UK Frontend 6.4 — 흐름을 멈추는 Panel 변형과 역색 토큰", category: "UI·UX 뉴스", source: "GOV.UK Design System", publishedAt: "2026-07-16", collectedAt: "2026-08-12",
+    url: "https://design-system.service.gov.uk/", thumbnail: "https://design-system.service.gov.uk/assets/images/govuk-opengraph-image.png",
+    summary: "GOV.UK가 사용자 여정을 잠시 멈추고 중요한 정보를 전달하는 interruption Panel 변형, 개선된 Date input, 어두운 배경용 inverse-text 기능 색상을 공개했습니다.", impact: "중요 경고를 일반 완료 메시지와 구분하고, 컴포넌트 상태와 기능 색상을 함께 버전 관리하는 공공 서비스 UX 사례로 활용할 수 있습니다.", tags: ["#GOVUK", "#디자인시스템", "#Panel", "#접근성"]
+  },
+  {
+    title: "Queens Tourism Council — Unisphere를 축구공으로 바꾼 도시 캠페인", category: "디자인 일반", source: "Pentagram", publishedAt: "2026-07-20", collectedAt: "2026-08-12",
+    url: "https://www.pentagram.com/work/queens-tourism-council", thumbnail: "https://pentagram-production.imgix.net/cbd29310-2863-45a7-b984-87b3aa5bac41/Blog1QUEENScopy.jpg?auto=compress%2Cformat&crop=entropy&fit=crop&fm=jpg&h=470&q=80&rect=96%2C0%2C1728%2C1080&w=900&s=9f309305985575550b93dd28ae602752",
+    summary: "Pentagram이 2026 FIFA 월드컵을 계기로 Queens의 Unisphere를 축구공으로 재해석하고, Milton Glaser의 Einstein에서 파생한 전용 서체로 관광 캠페인과 조직 아이덴티티를 통합했습니다.", impact: "지역의 익숙한 상징과 기존 서체 유산을 행사성 캠페인에만 소비하지 않고 장기 도시 브랜드 자산으로 확장한 방식을 참고할 수 있습니다.", tags: ["#브랜드디자인", "#도시브랜딩", "#타이포그래피", "#캠페인"]
+  },
+  {
     title: "코드 기반 화면을 Figma 변수와 Auto Layout으로 가져오기", category: "피그마 뉴스", source: "Figma Release Notes", publishedAt: "2026-07-16", collectedAt: "2026-07-18",
     url: "https://www.figma.com/release-notes/", thumbnail: "https://cdn.sanity.io/images/599r6htc/regionalized/ae0303b2ad7753600fee94eb32a43e026cc220ae-3264x1836.png?w=1200&q=70&fit=max&auto=format",
     summary: "Make 미리보기, MCP 서버, Chrome 확장으로 가져온 코드 기반 화면이 파일의 색상·타입·간격 변수에 연결되고 더 많은 프레임에 Auto Layout이 적용됩니다.", impact: "기존 웹 화면을 편집 가능한 디자인 레이어로 되돌릴 때 하드코딩된 스타일을 정리하는 비용이 줄어 디자인 시스템과 코드의 왕복 흐름이 짧아집니다.", tags: ["#Figma", "#디자인투코드", "#변수", "#AutoLayout"]
