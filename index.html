@@ -11,7 +11,11 @@
   <body>
     <header class="site-header">
       <a class="wordmark" href="./">DESIGN<br />ARCHIVE</a>
-      <p class="header-note">UI · Brand · AI · Visual</p>
+      <nav class="header-view-switcher view-switcher" aria-label="콘텐츠 보기">
+        <button type="button" data-view="archive" aria-pressed="true">레퍼런스</button>
+        <button type="button" data-view="news" aria-pressed="false">디자인 뉴스</button>
+        <button type="button" data-view="translation" aria-pressed="false">주간 번역</button>
+      </nav>
       <p class="header-date" id="today"></p>
     </header>
     <main>
@@ -21,10 +25,6 @@
           <h1>좋은 디자인을<br />더 쉽게 발견하세요.</h1>
         </div>
         <div class="hero-controls">
-          <div class="hero-view-switcher" aria-label="콘텐츠 보기">
-            <button type="button" data-view="archive" aria-pressed="true">레퍼런스</button>
-            <button type="button" data-view="news" aria-pressed="false">디자인 뉴스</button>
-          </div>
           <p>실무에 다시 쓸 수 있는 화면과 디자인 변화를 한곳에서 탐색합니다.</p>
         </div>
         <div class="search-shell">
@@ -36,15 +36,12 @@
         </div>
       </section>
       <nav class="archive-navigation" aria-label="아카이브 보기와 분야 필터">
-        <div class="view-switcher" aria-label="콘텐츠 보기">
-          <button type="button" data-view="archive" aria-pressed="true">레퍼런스</button>
-          <button type="button" data-view="news" aria-pressed="false">디자인 뉴스</button>
-        </div>
         <div class="filters" id="filters"></div>
         <p id="count" class="count" aria-live="polite"></p>
       </nav>
       <section id="archive" class="archive-grid" aria-live="polite"></section>
       <section id="news" class="news-list" aria-live="polite" hidden></section>
+      <section id="translation" class="translation-list" aria-live="polite" hidden></section>
       <section id="empty-state" class="empty-state" hidden>
         <p class="empty-code">NO MATCH / 404</p>
         <h2>찾는 레퍼런스가 없습니다.</h2>
@@ -87,8 +84,25 @@
         <a class="news-arrow" target="_blank" rel="noreferrer" aria-label="원문 읽기">↗</a>
       </article>
     </template>
+    <template id="translation-template">
+      <article class="translation-card">
+        <div class="translation-source">
+          <div class="translation-example"><img alt="" loading="lazy" /></div>
+          <div class="translation-source-row"><p class="translation-source-label">APPLIED PREVIEW</p><a class="translation-reference-link" target="_blank" rel="noreferrer">기준 보기 ↗</a></div>
+        </div>
+        <div class="translation-content">
+          <div class="translation-meta"><span class="translation-channel"></span><span class="translation-decision"></span><span class="translation-priority"></span></div>
+          <h3 class="translation-application-title"></h3>
+          <p class="translation-application-line"></p>
+          <div class="translation-action"><span>실제로 바꿀 것</span><ul></ul></div>
+          <div class="translation-outcome"><span>기대 효과</span><p></p></div>
+          <details class="translation-rationale"><summary>레퍼런스에서 가져온 판단</summary><p class="translation-steal"></p><p class="translation-source-title"></p></details>
+        </div>
+      </article>
+    </template>
     <script src="data/references.js"></script>
     <script src="data/news.js"></script>
+    <script src="data/weekly-translations.js"></script>
     <script src="assets/app.js"></script>
   </body>
 </html>

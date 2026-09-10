@@ -1,10 +1,12 @@
 const state = { view: "archive", filter: "전체", query: "" };
 const archive = document.querySelector("#archive");
 const newsList = document.querySelector("#news");
+const translationList = document.querySelector("#translation");
 const filters = document.querySelector("#filters");
 const count = document.querySelector("#count");
 const template = document.querySelector("#card-template");
 const newsTemplate = document.querySelector("#news-template");
+const translationTemplate = document.querySelector("#translation-template");
 const search = document.querySelector("#archive-search");
 const searchShell = document.querySelector(".search-shell");
 const clearSearch = document.querySelector("#search-clear");
@@ -27,7 +29,8 @@ const thumbnailByTitle = {
 };
 const viewCopy = {
   archive: { placeholder: "제목, 태그, 메모 검색" },
-  news: { placeholder: "뉴스 제목, 출처, 주제 검색" }
+  news: { placeholder: "뉴스 제목, 출처, 주제 검색" },
+  translation: { placeholder: "적용 채널, 원본 카드, 이식안 검색" }
 };
 const normalize = (value) => String(value || "").toLocaleLowerCase("ko-KR").normalize("NFKC");
 const archivedUrls = new Set(references.map((item) => item.url));
@@ -72,22 +75,40 @@ function getVisibleNews() {
   }).sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 }
 
+function getTranslationItems() {
+  const terms = normalize(state.query).split(/\s+/).filter(Boolean);
+  return weeklyTranslations.flatMap((week) => week.items.map((item) => ({ ...item, week: week.week, weekTitle: week.title }))).filter((item) => {
+    const matchesChannel = state.filter === "전체" || item.channel === state.filter;
+    const haystack = normalize([item.channel, item.applicationTitle, item.applicationLine, item.target, item.deliverable, ...(item.changes || []), item.expectedResult, item.sourceTitle, item.steal, item.decision, item.priority].join(" "));
+    return matchesChannel && terms.every((term) => haystack.includes(term));
+  });
+}
+
 function getFilterCounts() {
   const terms = normalize(state.query).split(/\s+/).filter(Boolean);
-  const items = state.view === "archive" ? references : visibleNews;
+  const items = state.view === "archive" ? references : state.view === "news" ? visibleNews : weeklyTranslations.flatMap((week) => week.items);
   const matchesQuery = items.filter((item) => {
     const haystack = state.view === "archive"
       ? searchIndex.get(item)
-      : normalize([item.title, item.category, item.source, item.summary, item.impact, ...(item.tags || [])].join(" "));
+      : state.view === "news"
+        ? normalize([item.title, item.category, item.source, item.summary, item.impact, ...(item.tags || [])].join(" "))
+        : normalize([item.channel, item.applicationTitle, item.applicationLine, item.target, item.deliverable, ...(item.changes || []), item.expectedResult, item.sourceTitle, item.steal, item.decision, item.priority].join(" "));
     return terms.every((term) => haystack.includes(term));
   });
   const categoryCounts = new Map();
-  matchesQuery.forEach((item) => categoryCounts.set(item.category, (categoryCounts.get(item.category) || 0) + 1));
+  matchesQuery.forEach((item) => {
+    const key = state.view === "translation" ? item.channel : item.category;
+    categoryCounts.set(key, (categoryCounts.get(key) || 0) + 1);
+  });
   return { total: matchesQuery.length, categoryCounts };
 }
 
 function renderFilters() {
-  const values = state.view === "archive" ? [...new Set(references.map((item) => item.category))] : ["AI 디자인 뉴스", "피그마 뉴스", "UI·UX 뉴스", "디자인 일반"];
+  const values = state.view === "archive"
+    ? [...new Set(references.map((item) => item.category))]
+    : state.view === "news"
+      ? ["AI 디자인 뉴스", "피그마 뉴스", "UI·UX 뉴스", "디자인 일반"]
+      : [...new Set(weeklyTranslations.flatMap((week) => week.items.map((item) => item.channel)))];
   const { total, categoryCounts } = getFilterCounts();
   filters.replaceChildren();
   ["전체", ...values].forEach((category) => {
@@ -108,6 +129,47 @@ function renderFilters() {
 }
 
 function render() {
+  if (state.view === "translation") {
+    const items = getTranslationItems();
+    translationList.replaceChildren();
+    const activeWeek = weeklyTranslations[0];
+    if (activeWeek) {
+      const briefing = document.createElement("header");
+      briefing.className = "translation-briefing";
+      const eyebrow = document.createElement("p"); eyebrow.className = "translation-week"; eyebrow.textContent = `WEEKLY TRANSLATION / ${activeWeek.week}`;
+      const title = document.createElement("h2"); title.textContent = activeWeek.title;
+      const summary = document.createElement("p"); summary.className = "translation-summary"; summary.textContent = activeWeek.summary;
+      const stats = document.createElement("p"); stats.className = "translation-stats"; stats.textContent = `${activeWeek.status} / ${activeWeek.totalCollected} COLLECTED / ${activeWeek.selectedCount} SELECTED`;
+      const drift = document.createElement("p"); drift.className = "translation-drift"; drift.textContent = `DRIFT — ${activeWeek.drift}`;
+      const untreated = document.createElement("p"); untreated.className = "translation-untreated"; untreated.textContent = `이번 주 안 다룬 채널 — ${activeWeek.untreated.join(", ")}`;
+      briefing.append(eyebrow, title, summary, stats, drift, untreated);
+      translationList.append(briefing);
+    }
+    items.forEach((item, index) => {
+      const node = translationTemplate.content.cloneNode(true);
+      const source = references.find((reference) => reference.title === item.sourceTitle);
+      const card = node.querySelector(".translation-card");
+      card.style.setProperty("--card-order", index);
+      const link = node.querySelector(".translation-reference-link");
+      const image = node.querySelector(".translation-source img");
+      link.href = source?.url || "#";
+      image.src = item.exampleImage;
+      image.alt = `${item.channel} AutoInside 적용 예시 디자인`;
+      node.querySelector(".translation-channel").textContent = item.channel;
+      node.querySelector(".translation-decision").textContent = item.decision;
+      node.querySelector(".translation-priority").textContent = `우선순위 ${item.priority}`;
+      node.querySelector(".translation-application-title").textContent = item.applicationTitle;
+      node.querySelector(".translation-application-line").textContent = item.applicationLine;
+      item.changes.forEach((change) => { const li = document.createElement("li"); li.textContent = change; node.querySelector(".translation-action ul").append(li); });
+      node.querySelector(".translation-outcome p").textContent = item.expectedResult;
+      node.querySelector(".translation-steal").textContent = item.steal;
+      node.querySelector(".translation-source-title").textContent = `기준 — ${item.sourceTitle}`;
+      translationList.append(node);
+    });
+    archive.hidden = true; newsList.hidden = true; translationList.hidden = items.length === 0; emptyState.hidden = items.length !== 0;
+    count.textContent = `${items.length} TRANSLATIONS`;
+    return;
+  }
   if (state.view === "news") {
     const items = getVisibleNews();
     newsList.replaceChildren();
@@ -126,7 +188,7 @@ function render() {
       item.tags.forEach((tag) => { const li = document.createElement("li"); li.textContent = tag; node.querySelector(".tags").append(li); });
       newsList.append(node);
     });
-    archive.hidden = true; newsList.hidden = items.length === 0; emptyState.hidden = items.length !== 0;
+    archive.hidden = true; translationList.hidden = true; newsList.hidden = items.length === 0; emptyState.hidden = items.length !== 0;
     count.textContent = `${items.length} / ${visibleNews.length} NEWS`;
     return;
   }
@@ -182,6 +244,7 @@ function render() {
   });
   archive.hidden = items.length === 0;
   newsList.hidden = true;
+  translationList.hidden = true;
   emptyState.hidden = items.length !== 0;
   count.textContent = `${items.length} / ${references.length} REFERENCES`;
 }
@@ -189,7 +252,7 @@ document.querySelectorAll("[data-view]").forEach((button) => button.addEventList
   state.view = button.dataset.view; state.filter = "전체"; state.query = ""; search.value = "";
   document.querySelectorAll("[data-view]").forEach((item) => item.setAttribute("aria-pressed", String(item.dataset.view === state.view)));
   const copy = viewCopy[state.view];
-  emptyState.querySelector("h2").textContent = state.view === "news" ? "찾는 디자인 뉴스가 없습니다." : "찾는 레퍼런스가 없습니다.";
+  emptyState.querySelector("h2").textContent = state.view === "news" ? "찾는 디자인 뉴스가 없습니다." : state.view === "translation" ? "찾는 주간 번역이 없습니다." : "찾는 레퍼런스가 없습니다.";
   search.placeholder = copy.placeholder; searchShell.classList.remove("has-value");
   renderFilters(); render();
 }));

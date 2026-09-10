@@ -10,6 +10,7 @@
 body{background:#fff;color:#000;font-family:Inter,"Noto Sans KR",system-ui,sans-serif;font-weight:340}
 a{color:#000}
 .site-header{position:relative;z-index:30;height:64px;padding:0 32px;align-items:center;border-bottom:1px solid #e6e6e6;background:#fff}
+.header-view-switcher{justify-self:center}
 .wordmark{font:700 16px/.9 Inter,"Noto Sans KR",sans-serif;letter-spacing:-.04em}
 .header-note,.header-date{color:#000;font:400 12px/1 "JetBrains Mono",monospace;letter-spacing:.05em}
 main{max-width:1280px;padding:0 32px 96px}
@@ -33,7 +34,7 @@ main{max-width:1280px;padding:0 32px 96px}
 .discovery-hero .search-shell kbd{border:1px solid #e6e6e6;border-radius:6px;background:#f7f7f5;color:#000}
 .discovery-hero .search-clear{border-left:1px solid #e6e6e6;color:#000;font-family:Inter,"Noto Sans KR",sans-serif}
 
-.archive-navigation{top:0;grid-template-columns:auto 1fr auto;gap:24px;margin:0 0 32px;padding:12px 0;border-top:0;border-bottom:1px solid #e6e6e6;background:rgba(255,255,255,.96);backdrop-filter:blur(14px)}
+.archive-navigation{top:0;grid-template-columns:1fr auto;gap:24px;margin:0 0 32px;padding:12px 0;border-top:0;border-bottom:1px solid #e6e6e6;background:rgba(255,255,255,.96);backdrop-filter:blur(14px)}
 .view-switcher{padding:3px;border:1px solid #e6e6e6;border-radius:50px;background:#fff}
 .view-switcher button{padding:8px 14px;border-radius:50px;color:#000;font:480 14px/1.4 Inter,"Noto Sans KR",sans-serif}
 .view-switcher button[aria-pressed="true"]{background:#000;color:#fff}
@@ -82,6 +83,44 @@ main{max-width:1280px;padding:0 32px 96px}
 .news-arrow{border:0;background:#fff;color:#000}
 .news-arrow:hover{background:#000;color:#fff}
 
+.translation-list{display:grid;gap:24px}
+.translation-briefing{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:28px;padding:36px 40px;border-radius:24px;background:var(--block-navy);color:#fff}
+.translation-week{grid-column:1/-1;margin:0;font:400 11px/1.3 "JetBrains Mono",monospace;letter-spacing:.08em}
+.translation-briefing h2{margin:12px 0 0;font-size:clamp(36px,5vw,64px);font-weight:340;line-height:1.03;letter-spacing:-.045em;word-break:keep-all}
+.translation-summary{align-self:end;margin:12px 0 0;font-size:16px;line-height:1.6;word-break:keep-all}
+.translation-stats{grid-column:1/-1;margin:0;font:400 11px/1.3 "JetBrains Mono",monospace;letter-spacing:.08em;color:var(--block-lime)}
+.translation-drift,.translation-untreated{grid-column:1/-1;margin:0;padding-top:18px;border-top:1px solid rgba(255,255,255,.22);font-size:13px;line-height:1.6;word-break:keep-all}
+.translation-untreated{padding-top:0;border-top:0;color:rgba(255,255,255,.7);font-family:"JetBrains Mono",monospace;font-size:11px}
+.translation-card{display:grid;grid-template-columns:minmax(260px,.72fr) minmax(0,1.28fr);overflow:hidden;border:1px solid #e6e6e6;border-radius:24px;background:var(--block-cream);animation:card-in .45s both;animation-delay:calc(var(--card-order,0) * 45ms)}
+.translation-card:nth-child(3n+2){background:var(--block-mint)}
+.translation-card:nth-child(3n+3){background:var(--block-lilac)}
+.translation-source{display:flex;flex-direction:column;padding:24px;border-right:1px solid rgba(0,0,0,.12)}
+.translation-example{display:block;aspect-ratio:16/10;overflow:hidden;border-radius:14px;background:#fff}
+.translation-reference-link:focus-visible{outline:2px solid #000;outline-offset:2px}
+.translation-source img{width:100%;height:100%;object-fit:cover;transition:transform .25s}
+.translation-example:hover img{transform:scale(1.025)}
+.translation-source-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:20px 0 8px}
+.translation-source-label{margin:0;font:400 10px/1.2 "JetBrains Mono",monospace;letter-spacing:.08em}
+.translation-reference-link{flex:0 0 auto;padding:7px 10px;border:1px solid rgba(0,0,0,.2);border-radius:50px;background:rgba(255,255,255,.65);font-size:11px;font-weight:480;text-decoration:none}
+.translation-reference-link:hover{border-color:#000;background:#fff}
+.translation-content{padding:28px}
+.translation-meta{display:flex;flex-wrap:wrap;gap:7px}
+.translation-meta span{padding:7px 10px;border:1px solid rgba(0,0,0,.18);border-radius:50px;background:rgba(255,255,255,.5);font:400 11px/1 "JetBrains Mono",monospace}
+.translation-channel{background:#000!important;color:#fff}
+.translation-application-title{margin:28px 0 22px;font-size:32px;font-weight:700;line-height:1.2;letter-spacing:-.045em;word-break:keep-all}
+.translation-application-line{margin:0;padding:15px 16px;border:1px solid rgba(0,0,0,.15);border-radius:12px;background:rgba(255,255,255,.58);font-size:15px;font-weight:540;line-height:1.5;word-break:keep-all}
+.translation-application-line::before{display:block;margin-bottom:8px;font:400 10px/1 "JetBrains Mono",monospace;letter-spacing:.07em;content:"APPLY"}
+.translation-action>span,.translation-outcome>span{margin:0 0 8px;font:400 10px/1 "JetBrains Mono",monospace;letter-spacing:.07em}
+.translation-action{margin-top:10px;padding:18px;border-radius:12px;background:#000;color:#fff}
+.translation-action ul{display:grid;gap:8px;margin:12px 0 0;padding-left:19px}
+.translation-action li{padding-left:2px;font-size:14px;line-height:1.55;word-break:keep-all}
+.translation-outcome{margin-top:10px;padding:17px 18px;border-radius:12px;background:rgba(255,255,255,.68)}
+.translation-outcome p{margin:8px 0 0;font-size:14px;font-weight:540;line-height:1.55;word-break:keep-all}
+.translation-rationale{margin-top:12px;border-top:1px solid rgba(0,0,0,.16);padding-top:12px}
+.translation-rationale summary{cursor:pointer;font-size:12px;font-weight:540}
+.translation-rationale p{margin:10px 0 0;color:rgba(0,0,0,.7);font-size:12px;line-height:1.55;word-break:keep-all}
+.translation-source-title{font-family:"JetBrains Mono",monospace;font-size:10px!important}
+
 .empty-state{margin-top:0;padding:96px 32px;border:0;border-radius:24px;background:var(--block-lime)}
 .empty-code{color:#000;font-family:"JetBrains Mono",monospace}
 .empty-state h2{font-size:48px;font-weight:340;letter-spacing:-.04em}
@@ -98,6 +137,8 @@ main{max-width:1280px;padding:0 32px 96px}
 }
 @media(max-width:600px){
   .site-header{height:56px;padding:0 18px}
+  .header-view-switcher button{padding:7px 10px;font-size:12px}
+  .wordmark{font-size:12px}
   main{padding:0 18px 56px}
   .discovery-hero{display:block;width:auto;margin:18px 0;padding:32px 22px;border-radius:24px}
   .hero-heading p{margin-bottom:18px;font-size:10px}
@@ -114,4 +155,11 @@ main{max-width:1280px;padding:0 32px 96px}
   .news-card{grid-template-columns:1fr;padding:22px}
   .news-thumbnail{width:132px}
   .news-content h2{font-size:26px}
+  .translation-card{grid-template-columns:1fr}
+  .translation-briefing{grid-template-columns:1fr;padding:28px 22px}
+  .translation-briefing h2{font-size:36px}
+  .translation-source{border-right:0;border-bottom:1px solid rgba(0,0,0,.12)}
+  .translation-content{padding:22px}
+  .translation-steal{font-size:21px}
+  .translation-application-title{font-size:26px}
 }

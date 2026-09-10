@@ -1,0 +1,115 @@
+// TEST VERSION — 2026-08-10(월)–08-16(일)에 accept된 아카이브 카드만 근거로 작성했습니다.
+const weeklyTranslations = [
+  {
+    week: "2026-08-10 — 2026-08-16",
+    title: "지난주 아카이브에서 AutoInside가 가져갈 6가지 결정",
+    summary: "지난주 accept 카드 46개를 검토해 AutoInside의 웹·콘텐츠·AI 그래픽·영상·브랜드·공감툰으로 전이 근거가 분명한 6개를 테스트 후보로 골랐다.",
+    drift: "테스트 버전에서는 일별 트렌드 신호의 3주 누적 필드가 없어 정량 드리프트를 산출하지 않음. 지난주 반복 신호는 ‘복잡한 정보를 단계·지표·시각 레이어로 나누기’였다.",
+    totalCollected: 46,
+    selectedCount: 6,
+    status: "TEST",
+    items: [
+      {
+        channel: "웹·앱 UI",
+        exampleImage: "assets/weekly-translations/2026-08-16-web-ui.png",
+        applicationTitle: "차량 상세에 ‘상태 요약 카드’ 4종 만들기",
+        target: "차량 상세 > 사고이력 및 점검상태",
+        deliverable: "상태 요약 UI 컴포넌트",
+        applicationLine: "차량 상세 ‘사고이력 및 점검상태’에 4종 상태 요약 카드 적용",
+        changes: ["외부패널·프레임·압류/저당·보증을 같은 카드 형식으로 표시", "각 카드에서 성능점검·보험이력 원문으로 바로 이동"],
+        expectedResult: "차량의 신뢰 상태를 먼저 훑고 필요한 근거만 자세히 확인할 수 있음",
+        sourceTitle: "First Street Risk Factor — 기후 위험을 세 지표와 지도 행동으로",
+        steal: "서로 다른 위험 정보를 동일한 카드 구조로 비교한 뒤 상세 근거로 내려가게 한다.",
+        publicApplication: "고관여 상품 서비스에서 여러 상태 지표를 같은 단위와 구조로 요약하고, 각 지표에서 상세 근거로 바로 이동하게 한다.",
+        privateApplication: "AutoInside 상세의 사고·점검·보증 정보를 ‘외부패널·프레임·압류/저당·보증’ 요약 카드로 맞추고 각 카드에서 성능점검·보험이력 원문으로 이동시킨다.",
+        decision: "추천",
+        priority: "높음"
+      },
+      {
+        channel: "콘텐츠 디자인",
+        exampleImage: "assets/weekly-translations/2026-08-16-content-flow.png",
+        applicationTitle: "홈서비스·방문예약에 4단계 진행 안내 넣기",
+        target: "홈서비스 구매·방문예약 신청",
+        deliverable: "진행 표시기와 단계별 안내 문구",
+        applicationLine: "홈서비스 구매·방문예약 신청 화면에 4단계 진행 안내 적용",
+        changes: ["차량 확인→정보 입력→일정 선택→신청 완료의 현재 위치 표시", "환불·예약 확정 조건이 필요한 단계에만 도움말 유지"],
+        expectedResult: "남은 절차와 다음 행동을 예측해 신청 중 이탈을 줄일 수 있음",
+        sourceTitle: "Carbon Progress Copy — 짧은 단계명과 선택적 보조 설명",
+        steal: "단계 이름은 짧게 고정하고, 이해가 필요한 단계에만 보조 설명을 붙인다.",
+        publicApplication: "예약·상담처럼 여러 단계가 있는 흐름에서 현재 위치와 다음 행동을 짧은 단계명으로 예측하게 한다.",
+        privateApplication: "AutoInside 홈서비스 구매와 방문예약에 ‘차량 확인→정보 입력→일정 선택→신청 완료’ 단계를 표시하고, 환불·확정 조건이 있는 단계에만 보조 설명을 둔다.",
+        decision: "추천",
+        priority: "높음"
+      },
+      {
+        channel: "AI 그래픽",
+        exampleImage: "assets/weekly-translations/2026-08-16-ai-inspection.png",
+        applicationTitle: "‘205가지 점검’을 한 장의 차량 그래픽으로 시각화하기",
+        target: "차량 상세·SNS 점검 콘텐츠",
+        deliverable: "실차 기반 점검 키비주얼",
+        applicationLine: "차량 상세와 SNS 점검 콘텐츠에 실차 기반 ‘205가지 점검’ 그래픽 적용",
+        changes: ["실차 사진 위에 블루·시안 점검 영역과 부위 연결선 추가", "차체·유리·타이어·엔진의 확인 결과를 동일한 표시로 통일"],
+        expectedResult: "숫자로만 보이던 점검 범위를 고객이 시각적으로 이해할 수 있음",
+        sourceTitle: "Pfizer Next Chapter — 과학 이미지를 데이터형 파랑 레이어로",
+        steal: "복잡한 전문 정보를 실사·데이터 선·투명한 파랑 레이어의 반복 문법으로 브랜드화한다.",
+        publicApplication: "기술 기반 서비스가 검증 과정과 데이터를 차가운 색면·선·실사 레이어로 함께 보여줘 신뢰를 시각화한다.",
+        privateApplication: "AutoInside 차량 점검 콘텐츠에서 실차 사진 위에 블루·시안 반투명 레이어와 점검 부위 선을 겹쳐 ‘205가지 점검’을 한 장의 브랜드 그래픽으로 설명한다.",
+        decision: "추천",
+        priority: "높음"
+      },
+      {
+        channel: "AI 영상",
+        exampleImage: "assets/weekly-translations/2026-08-16-ai-video.png",
+        applicationTitle: "인증 차량 외관을 8초 세로 영상으로 보여주기",
+        target: "SNS 릴스·차량 상세 영상",
+        deliverable: "9:16 실매물 점검 숏폼",
+        applicationLine: "SNS 릴스와 차량 상세에 9:16 인증 차량 점검 숏폼 적용",
+        changes: ["휠에서 루프까지 카메라가 상승하며 외관 상태를 순서대로 공개", "실제 점검장 블루 라이트와 검사 포인트만 강조"],
+        expectedResult: "짧은 영상에서도 차량의 상태와 인증 근거가 함께 기억됨",
+        sourceTitle: "Perfume Pedestal — 향수병 상승을 따라가는 제품 숏",
+        steal: "제품의 한 방향 움직임과 카메라 이동을 일치시켜 짧은 시간 안에 주체를 크게 읽히게 한다.",
+        publicApplication: "제품 숏폼에서 오브젝트의 공개 동작과 카메라 축을 맞춰 기능 또는 형태의 발견 순간을 강조한다.",
+        privateApplication: "AutoInside 인증 차량 숏폼에서 카메라가 휠에서 차체 상단으로 천천히 상승하며 외관·유리·루프 상태를 순서대로 보여준다. 프리즘광 대신 실제 점검장의 블루 라이트를 사용한다.",
+        decision: "조건부 추천",
+        priority: "중간"
+      },
+      {
+        channel: "브랜드 콘텐츠",
+        exampleImage: "assets/weekly-translations/2026-08-16-brand-system.png",
+        applicationTitle: "AutoInside 블루 라인을 콘텐츠 공통 장치로 만들기",
+        target: "실매물 사진·SNS·영상·직영점 안내",
+        deliverable: "채널 공통 브랜드 그래픽 규칙",
+        applicationLine: "실매물 사진·SNS·영상·직영점 안내에 공통 블루 라인 그래픽 적용",
+        changes: ["촬영장 상단 블루 띠의 곡선을 카드와 영상 전환선으로 재사용", "출처 표식·섹션 구분·이동 방향을 하나의 선 문법으로 통일"],
+        expectedResult: "로고가 작아도 AutoInside가 만든 콘텐츠임을 빠르게 인지할 수 있음",
+        sourceTitle: "JETOUR — 유연한 J 심볼과 차체 그래픽의 모빌리티 아이덴티티",
+        steal: "하나의 이동 형태를 심볼·모션·차량·공간까지 같은 문법으로 반복한다.",
+        publicApplication: "모빌리티 브랜드가 로고를 장식이 아니라 이동 경로와 화면 전환을 만드는 동작 문법으로 확장한다.",
+        privateApplication: "AutoInside 워드마크의 기울기와 블루 라인을 차량 촬영장 상단 띠, 영상 전환선, 카드뉴스 구분선에 반복해 실매물과 콘텐츠의 출처를 즉시 인지하게 한다.",
+        decision: "검토 추천",
+        priority: "중간"
+      },
+      {
+        channel: "공감툰",
+        exampleImage: "assets/weekly-translations/2026-08-16-webtoon.png",
+        applicationTitle: "‘무사고, 믿어도 될까?’ 블루베어 6컷 만들기",
+        target: "인스타그램 캐러셀·상세 점검 안내",
+        deliverable: "6컷 공감형 브랜드툰",
+        applicationLine: "인스타그램 캐러셀과 상세 점검 안내에 블루베어 6컷 공감툰 적용",
+        changes: ["검색→비교→재확인 장면으로 첫 중고차 구매자의 불안을 누적", "마지막 컷을 점검 카드와 보험이력 확인 행동으로 연결"],
+        expectedResult: "서비스 설명보다 고객의 실제 걱정에서 출발해 점검 기능으로 자연스럽게 유도함",
+        sourceTitle: "Under the Skin — 완벽주의가 자기 의심으로 굳어지는 순간",
+        steal: "설명으로 감정을 선언하지 않고 반복되는 상황·표정·색 변화로 불안을 누적한다.",
+        publicApplication: "고관여 구매의 불안을 질문과 망설임이 반복되는 짧은 장면으로 보여준 뒤 확인 가능한 근거로 해소한다.",
+        privateApplication: "블루베어 6컷 공감툰에서 ‘무사고라고 써 있지만 믿어도 될까?’라는 망설임을 검색·비교·재확인 장면으로 누적하고, 마지막에 AutoInside 점검 카드와 보험이력 확인으로 끝낸다.",
+        decision: "추천",
+        priority: "높음"
+      }
+    ],
+    untreated: ["캐릭터 단독 콘텐츠", "유튜브 장편"],
+    log: [
+      "Cool-chrome Architecture는 시각적 완성도는 높지만 실매물 신뢰 톤보다 콘셉트카 인상이 강해 테스트 후보에서 제외.",
+      "SUMMER VIBES 26은 고채도 3D 표현이 AutoInside의 현재 신뢰 톤과 충돌해 제외."
+    ]
+  }
+];
