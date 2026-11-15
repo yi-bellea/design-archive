@@ -1,4 +1,4 @@
-const state = { view: "archive", filter: "전체", query: "" };
+const state = { view: "news", filter: "전체", query: "" };
 const archive = document.querySelector("#archive");
 const newsList = document.querySelector("#news");
 const translationList = document.querySelector("#translation");
@@ -11,6 +11,10 @@ const search = document.querySelector("#archive-search");
 const searchShell = document.querySelector(".search-shell");
 const clearSearch = document.querySelector("#search-clear");
 const emptyState = document.querySelector("#empty-state");
+const heroEyebrow = document.querySelector("#hero-eyebrow");
+const heroTitle = document.querySelector("#hero-title");
+const heroDescription = document.querySelector("#hero-description");
+const searchLabel = document.querySelector("#search-label");
 const thumbnails = {
   "https://higgsfield.ai/plugins/figma": { image: "https://static.higgsfield.ai/adobe/og.png", position: "center", size: "cover" },
   "https://helpx.adobe.com/firefly/web/app-integrations/figma/firefly-plugin-for-figma.html": { image: "assets/thumbnails/prompt-sheet.png", position: "0% 0%", size: "300% 200%" },
@@ -28,10 +32,36 @@ const thumbnailByTitle = {
   "반투명 오브젝트의 제품 스틸라이프": { image: "assets/thumbnails/prompt-sheet.png", position: "100% 0%", size: "300% 200%" }
 };
 const viewCopy = {
-  archive: { placeholder: "제목, 태그, 메모 검색" },
-  news: { placeholder: "뉴스 제목, 출처, 주제 검색" },
-  translation: { placeholder: "적용 채널, 원본 카드, 이식안 검색" }
+  archive: {
+    eyebrow: "CURATED DESIGN LIBRARY",
+    title: "좋은 디자인을<br />더 쉽게 발견하세요.",
+    description: "기존에 수집한 재현·재사용 가능한 시각 표본을 분야와 스타일별로 탐색합니다.",
+    placeholder: "제목, 태그, 메모 검색",
+    label: "기존 디자인 레퍼런스 검색"
+  },
+  news: {
+    eyebrow: "DESIGN AI INTELLIGENCE",
+    title: "디자인 AI의 변화를<br />놓치지 마세요.",
+    description: "공식 발표에서 새 기능과 실무 사례만 골라, 디자이너에게 미치는 영향까지 한눈에 정리합니다.",
+    placeholder: "기능, 제품, 사례, 출처 검색",
+    label: "디자인 AI 소식 검색"
+  },
+  translation: {
+    eyebrow: "WEEKLY DESIGN TRANSLATION",
+    title: "수집한 신호를<br />실무의 언어로 바꿉니다.",
+    description: "한 주의 주요 변화를 실제 화면과 콘텐츠에 적용할 수 있는 실행안으로 번역합니다.",
+    placeholder: "적용 채널, 원본 카드, 이식안 검색",
+    label: "주간 번역 검색"
+  }
 };
+const newsKinds = ["새 기능", "제품 소식", "실무 사례", "리서치·업계 동향"];
+const categoryKindMap = {
+  "AI 디자인 뉴스": "제품 소식",
+  "피그마 뉴스": "새 기능",
+  "UI·UX 뉴스": "실무 사례",
+  "디자인 일반": "리서치·업계 동향"
+};
+const getNewsKind = (item) => item.kind || categoryKindMap[item.category] || "제품 소식";
 const normalize = (value) => String(value || "").toLocaleLowerCase("ko-KR").normalize("NFKC");
 const archivedUrls = new Set(references.map((item) => item.url));
 const visibleNews = designNews.filter((item) => !archivedUrls.has(item.url));
@@ -69,8 +99,8 @@ function getVisibleItems() {
 function getVisibleNews() {
   const terms = normalize(state.query).split(/\s+/).filter(Boolean);
   return visibleNews.filter((item) => {
-    const matchesTopic = state.filter === "전체" || item.category === state.filter;
-    const haystack = normalize([item.title, item.category, item.source, item.summary, item.impact, ...(item.tags || [])].join(" "));
+    const matchesTopic = state.filter === "전체" || getNewsKind(item) === state.filter;
+    const haystack = normalize([item.title, getNewsKind(item), item.category, item.source, item.summary, item.impact, ...(item.tags || [])].join(" "));
     return matchesTopic && terms.every((term) => haystack.includes(term));
   }).sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 }
@@ -91,13 +121,13 @@ function getFilterCounts() {
     const haystack = state.view === "archive"
       ? searchIndex.get(item)
       : state.view === "news"
-        ? normalize([item.title, item.category, item.source, item.summary, item.impact, ...(item.tags || [])].join(" "))
+        ? normalize([item.title, getNewsKind(item), item.category, item.source, item.summary, item.impact, ...(item.tags || [])].join(" "))
         : normalize([item.channel, item.applicationTitle, item.applicationLine, item.target, item.deliverable, ...(item.changes || []), item.expectedResult, item.sourceTitle, item.steal, item.decision, item.priority].join(" "));
     return terms.every((term) => haystack.includes(term));
   });
   const categoryCounts = new Map();
   matchesQuery.forEach((item) => {
-    const key = state.view === "translation" ? item.channel : item.category;
+    const key = state.view === "translation" ? item.channel : state.view === "news" ? getNewsKind(item) : item.category;
     categoryCounts.set(key, (categoryCounts.get(key) || 0) + 1);
   });
   return { total: matchesQuery.length, categoryCounts };
@@ -107,7 +137,7 @@ function renderFilters() {
   const values = state.view === "archive"
     ? [...new Set(references.map((item) => item.category))]
     : state.view === "news"
-      ? ["AI 디자인 뉴스", "피그마 뉴스", "UI·UX 뉴스", "디자인 일반"]
+      ? newsKinds
       : [...new Set(weeklyTranslations.flatMap((week) => week.items.map((item) => item.channel)))];
   const { total, categoryCounts } = getFilterCounts();
   filters.replaceChildren();
@@ -178,8 +208,8 @@ function render() {
       node.querySelector(".news-card").style.setProperty("--card-order", index);
       const imageLink = node.querySelector(".news-thumbnail"); imageLink.href = item.url;
       const image = node.querySelector("img"); image.src = item.thumbnail; image.alt = `${item.title} 대표 이미지`;
-      node.querySelector(".news-topic").textContent = item.category;
-      node.querySelector(".news-source").textContent = item.source;
+      node.querySelector(".news-topic").textContent = getNewsKind(item);
+      node.querySelector(".news-source").textContent = `${item.source} / ${item.category}`;
       const time = node.querySelector("time"); time.textContent = item.publishedAt; time.dateTime = item.publishedAt;
       const titleLink = node.querySelector("h2 a"); titleLink.textContent = item.title; titleLink.href = item.url;
       node.querySelector(".news-summary").textContent = item.summary;
@@ -189,7 +219,7 @@ function render() {
       newsList.append(node);
     });
     archive.hidden = true; translationList.hidden = true; newsList.hidden = items.length === 0; emptyState.hidden = items.length !== 0;
-    count.textContent = `${items.length} / ${visibleNews.length} NEWS`;
+    count.textContent = `${items.length} / ${visibleNews.length} SIGNALS`;
     return;
   }
   const items = getVisibleItems();
@@ -253,6 +283,10 @@ document.querySelectorAll("[data-view]").forEach((button) => button.addEventList
   document.querySelectorAll("[data-view]").forEach((item) => item.setAttribute("aria-pressed", String(item.dataset.view === state.view)));
   const copy = viewCopy[state.view];
   emptyState.querySelector("h2").textContent = state.view === "news" ? "찾는 디자인 뉴스가 없습니다." : state.view === "translation" ? "찾는 주간 번역이 없습니다." : "찾는 레퍼런스가 없습니다.";
+  heroEyebrow.textContent = copy.eyebrow;
+  heroTitle.innerHTML = copy.title;
+  heroDescription.textContent = copy.description;
+  searchLabel.textContent = copy.label;
   search.placeholder = copy.placeholder; searchShell.classList.remove("has-value");
   renderFilters(); render();
 }));

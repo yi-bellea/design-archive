@@ -4,33 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f6f5f1" />
-    <title>Design Archive</title>
+    <title>Design AI Signal</title>
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="assets/figma-theme.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="wordmark" href="./">DESIGN<br />ARCHIVE</a>
+      <a class="wordmark" href="./">DESIGN AI<br />SIGNAL</a>
       <nav class="header-view-switcher view-switcher" aria-label="콘텐츠 보기">
-        <button type="button" data-view="archive" aria-pressed="true">레퍼런스</button>
-        <button type="button" data-view="news" aria-pressed="false">디자인 뉴스</button>
+        <button type="button" data-view="news" aria-pressed="true">디자인 AI 피드</button>
+        <button type="button" data-view="archive" aria-pressed="false">기존 아카이브</button>
         <button type="button" data-view="translation" aria-pressed="false">주간 번역</button>
       </nav>
       <p class="header-date" id="today"></p>
     </header>
     <main>
-      <section class="toolbar discovery-hero" aria-label="아카이브 탐색">
+      <section class="toolbar discovery-hero" aria-label="디자인 AI 소식 탐색">
         <div class="hero-heading">
-          <p>CURATED DESIGN LIBRARY</p>
-          <h1>좋은 디자인을<br />더 쉽게 발견하세요.</h1>
+          <p id="hero-eyebrow">DESIGN AI INTELLIGENCE</p>
+          <h1 id="hero-title">디자인 AI의 변화를<br />놓치지 마세요.</h1>
         </div>
         <div class="hero-controls">
-          <p>실무에 다시 쓸 수 있는 화면과 디자인 변화를 한곳에서 탐색합니다.</p>
+          <p id="hero-description">공식 발표에서 새 기능과 실무 사례만 골라, 디자이너에게 미치는 영향까지 한눈에 정리합니다.</p>
         </div>
         <div class="search-shell">
           <span class="search-icon" aria-hidden="true"></span>
-          <label class="sr-only" for="archive-search">레퍼런스 검색</label>
-          <input id="archive-search" type="search" placeholder="제목, 태그, 메모 검색" autocomplete="off" />
+          <label class="sr-only" id="search-label" for="archive-search">디자인 AI 소식 검색</label>
+          <input id="archive-search" type="search" placeholder="기능, 제품, 사례, 출처 검색" autocomplete="off" />
           <kbd aria-hidden="true">/</kbd>
           <button class="search-clear" id="search-clear" type="button" aria-label="검색어 지우기">지우기</button>
         </div>
@@ -39,12 +39,12 @@
         <div class="filters" id="filters"></div>
         <p id="count" class="count" aria-live="polite"></p>
       </nav>
-      <section id="archive" class="archive-grid" aria-live="polite"></section>
-      <section id="news" class="news-list" aria-live="polite" hidden></section>
+      <section id="archive" class="archive-grid" aria-live="polite" hidden></section>
+      <section id="news" class="news-list" aria-live="polite"></section>
       <section id="translation" class="translation-list" aria-live="polite" hidden></section>
       <section id="empty-state" class="empty-state" hidden>
         <p class="empty-code">NO MATCH / 404</p>
-        <h2>찾는 레퍼런스가 없습니다.</h2>
+        <h2>찾는 디자인 AI 소식이 없습니다.</h2>
         <p>검색어를 줄이거나 다른 카테고리를 선택해 보세요.</p>
         <button id="reset-search" type="button">전체 목록으로 돌아가기</button>
       </section>

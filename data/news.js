@@ -1,6 +1,36 @@
 // 뉴스 전용 규칙은 NEWS.md를 따릅니다. 최신 항목이 위에 오도록 발행일순 렌더링됩니다.
 let designNews = [
   {
+    kind: "새 기능", title: "Figma Motion — 물리 기반 스프링을 디자인 시스템 변수로", category: "피그마 뉴스", source: "Figma", publishedAt: "2026-11-10", collectedAt: "2026-11-16",
+    url: "https://help.figma.com/hc/en-us/articles/41414048690839-Adjust-an-animation-s-easing", thumbnail: "https://help.figma.com/hc/article_attachments/44921175238295",
+    summary: "Figma Motion이 질량·강성·감쇠를 조절하는 iOS·Android 물리 기반 스프링과 애니메이션 스타일 미리보기, Lottie 내보내기 미리보기를 추가했습니다.", impact: "모션 값을 감각적인 일회성 조정이 아니라 플랫폼별 물리 파라미터와 재사용 변수로 관리해 제품 전반의 움직임을 디자인 시스템 자산으로 표준화할 수 있습니다.", tags: ["#FigmaMotion", "#모션디자인", "#디자인시스템", "#Lottie"]
+  },
+  {
+    kind: "새 기능", title: "Framer Agent — 이미지 생성과 인터랙티브 셰이더를 한 캔버스에서", category: "AI 디자인 뉴스", source: "Framer", publishedAt: "2026-11-12", collectedAt: "2026-11-16",
+    url: "https://www.framer.com/updates/image-shader-generation", thumbnail: "https://framerusercontent.com/images/188hlNOfbDRG4rHCkWqDpBILpg.png?width=1600&height=900",
+    summary: "Framer Agent가 사이트용 이미지·텍스처·일러스트 생성과 피사체 교체·배경 제거·스타일 변경을 지원하고, 자연어로 생성·수정한 셰이더에 이미지를 입력할 수 있게 됐습니다.", impact: "웹 디자이너가 외부 생성 도구로 왕복하지 않고 브랜드 비주얼과 포인터 반응 효과를 같은 캔버스에서 함께 탐색하므로 랜딩 페이지의 시각 실험과 프로토타이핑 주기가 짧아집니다.", tags: ["#Framer", "#AI에이전트", "#이미지생성", "#셰이더"]
+  },
+  {
+    kind: "제품 소식", title: "Affinity for iPad — 스케치부터 인쇄 레이아웃까지 하나의 파일로", category: "AI 디자인 뉴스", source: "Canva", publishedAt: "2026-11-03", collectedAt: "2026-11-16",
+    url: "https://www.canva.com/newsroom/news/affinity-for-ipad/", thumbnail: "https://content-management-files.canva.com/abb8fc96-3c0f-4a4e-9ee2-590e7e0fa4c8/Affinity-iPad-Canva-Newsroom-Banner2880x880v2.png",
+    summary: "Canva가 Apple Pencil·터치에 맞춘 Affinity for iPad를 출시해 스케치, 벡터, 픽셀 편집, 다중 페이지 레이아웃을 단일 .af 파일에 통합하고 Canva AI Studio를 연결했습니다.", impact: "현장 스케치와 정교한 벡터·사진 보정·편집 레이아웃 사이의 파일 변환을 줄이고, 생성 확장·업스케일·모션 블러 보정·레이어 분해를 비파괴 제작 흐름 안에서 선택할 수 있습니다.", tags: ["#Affinity", "#iPad", "#CanvaAI", "#크리에이티브워크플로"]
+  },
+  {
+    kind: "실무 사례", title: "Google Gemini UX — 생성형 UI에 편집 원칙과 시각적 판단을 심는 법", category: "UI·UX 뉴스", source: "Google Design", publishedAt: "2026-11-04", collectedAt: "2026-11-16",
+    url: "https://design.google/library/the-next-interface-gemini", thumbnail: "https://storage.googleapis.com/gd-prod/images/82050f2f-bf41-4ca5-9744-24cb76f9ebf0.0db06b6b53a87fb0.png",
+    summary: "Gemini 디자인팀이 실제 프롬프트 실패를 기록하고 수백 개의 골든 응답, 이미지 초점·재질·조명 규칙, 실시간 타이포 스트레스 테스트 도구와 라이브 UI 편집 확장을 만든 과정을 공개했습니다.", impact: "생성형 UI의 품질을 화면 시안이 아니라 시스템 지침·평가 예시·시각 규칙·실제 코드 수정 도구로 운영하는 방법을 보여줘 AI 제품의 콘텐츠 디자인과 디자인 시스템 거버넌스에 직접 적용할 수 있습니다.", tags: ["#Gemini", "#생성형UI", "#UX디자인", "#시스템지침"]
+  },
+  {
+    kind: "실무 사례", title: "Theodo — Markdown·Figma MCP·Code Connect로 제품 루프 단축", category: "피그마 뉴스", source: "Figma", publishedAt: "2026-10-27", collectedAt: "2026-11-16",
+    url: "https://www.figma.com/customers/how-theodo-reinvents-the-product-workflow-with-figma/", thumbnail: "https://cdn.sanity.io/images/599r6htc/regionalized/0be2bf61d7a5f2cc9225131d035c00d92764046e-1500x1200.png?w=1200&q=70&fit=max&auto=format",
+    summary: "Theodo가 Markdown 요구사항을 단일 정보원으로 삼고 Figma Make, MCP, Code Connect를 연결해 실제 데이터·엣지 케이스가 포함된 프로토타입을 만들며 디자인·개발 주기를 6주에서 2주로 줄였습니다.", impact: "디자인 시스템 토큰과 React 컴포넌트를 동기화하고 AI가 가속한 단계별 60~85% 시간 절감 수치를 공개해, AI 프로토타이핑을 팀 거버넌스와 엔지니어링 핸드오프에 연결할 때의 기준을 제공합니다.", tags: ["#FigmaMCP", "#CodeConnect", "#디자인시스템", "#프로토타이핑"]
+  },
+  {
+    kind: "리서치·업계 동향", title: "Adobe 조사 — AI 사용 창작자의 68%가 결과를 타협한 경험", category: "AI 디자인 뉴스", source: "Adobe", publishedAt: "2026-11-09", collectedAt: "2026-11-16",
+    url: "https://blog.adobe.com/en/publish/2026/11/09/from-big-ideas-bigger-opportunities-creators-say-creative-ai-accelerating-growth", thumbnail: "https://blog.adobe.com/en/publish/2026/11/09/media_1ed761e1bf8ec4c91c7d4772d6b9af034afe9366a.png?format=png&optimize=medium&width=750",
+    summary: "Adobe와 Harris Poll이 미국 창작자 2,000명 이상을 조사한 결과 AI 사용자 78%는 사업·팔로워 성장 가속을 체감했지만, 68%는 의도와 다른 결과를 타협했고 47%는 최근 3개월 안에 작업 중 AI 사용을 포기했습니다.", impact: "생성 속도보다 부분 수정, 일관성, 중간 결과 보존과 인간의 최종 결정권이 제품 선택과 워크플로 설계의 핵심 요구임을 보여주므로 AI 제작 도구 평가 기준을 정량적으로 조정할 수 있습니다.", tags: ["#크리에이터조사", "#생성형AI", "#편집제어", "#워크플로"]
+  },
+  {
     title: "Figma의 AI 보안 리뷰 — 정책·평가·사람의 판단을 한 루프로", category: "AI 디자인 뉴스", source: "Figma", publishedAt: "2026-07-23", collectedAt: "2026-08-12",
     url: "https://www.figma.com/blog/how-figma-stays-ahead-of-vulnerabilities-with-agents/", thumbnail: "https://cdn.sanity.io/images/599r6htc/regionalized/0aafc60d3967aa228537a2f8379ce3308849f643-3264x1836.jpg?w=1200&q=70&fit=max&auto=format",
     summary: "Figma가 코드 생성, PR 검토, 과거 코드 감사에 같은 보안 정책을 적용하고 사람의 판정과 알려진 취약점 재생 평가로 에이전트의 정밀도와 재현율을 개선한 운영 방식을 공개했습니다.", impact: "AI 작업의 품질을 프롬프트 한 번에 맡기지 않고 명시적 정책, 평가 세트, 사람의 승인, 관측 지표로 관리하는 실무 운영 모델로 전환할 근거가 됩니다.", tags: ["#AI에이전트", "#평가", "#보안", "#디자인운영"]
