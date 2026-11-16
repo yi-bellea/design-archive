@@ -1,6 +1,36 @@
 // 뉴스 전용 규칙은 NEWS.md를 따릅니다. 최신 항목이 위에 오도록 발행일순 렌더링됩니다.
 let designNews = [
   {
+    kind: "새 기능", title: "Photoshop 28.0 — 조명을 다시 설계하고 생성 편집 강도를 슬라이더로", category: "AI 디자인 뉴스", source: "Adobe", publishedAt: "2026-11-10", collectedAt: "2026-11-17",
+    url: "https://helpx.adobe.com/photoshop/desktop/whats-new/whats-new-in-adobe-photoshop-on-desktop.html", thumbnail: "https://helpx-prod.scene7.com/is/image/HelpxProdLoc/whats-new-relight-ps-desktop?$png$&jpegSize=200&wid=1200",
+    summary: "Photoshop 28.0이 최대 세 개의 광원을 비파괴 레이어로 추가·조절하는 Relight, 생성 결과의 효과 강도를 슬라이더로 다듬는 Generative Restyle, 전후 비교와 주변 흔적까지 지우는 Remove 도구를 공개했습니다.", impact: "제품 사진과 캠페인 비주얼에서 재촬영이나 전체 재생성 대신 빛·스타일 강도·반사와 그림자를 레이어 단위로 수정할 수 있어 아트디렉션 피드백을 더 작고 되돌릴 수 있는 편집 단위로 운영할 수 있습니다.", tags: ["#Photoshop", "#Relight", "#생성편집", "#비파괴워크플로"]
+  },
+  {
+    kind: "새 기능", title: "InDesign 22.0 — AI Assistant·문서 검사·반응형 레이아웃을 편집 화면에", category: "AI 디자인 뉴스", source: "Adobe", publishedAt: "2026-11-10", collectedAt: "2026-11-17",
+    url: "https://helpx.adobe.com/indesign/desktop/whats-new/whats-new.html", thumbnail: "https://helpx-prod.scene7.com/is/image/HelpxProdLoc/whats-new-id-max-miami-ai-assistant?$pjpeg$&jpegSize=200&wid=1200",
+    summary: "InDesign 22.0이 자연어로 레이아웃·오브젝트를 수정하는 AI Assistant 베타, 문법·용어·대체 텍스트·표 요약을 한 패널에서 점검하는 Check Document, 콘텐츠 변화에 맞춰 프레임을 재배치하는 Flex Layout을 추가했습니다.", impact: "편집 디자이너가 카피 일관성·접근성·다중 포맷 리사이징을 내보내기 직전에 수동 점검하지 않고 문서 구조 안에서 함께 검토하므로 출판 디자인 시스템의 품질 기준을 작업 중에 적용할 수 있습니다.", tags: ["#InDesign", "#AIAssistant", "#접근성", "#FlexLayout"]
+  },
+  {
+    kind: "제품 소식", title: "Adobe Firefly 확장 — Design·Graph 베타와 Builder 프리뷰 공개", category: "AI 디자인 뉴스", source: "Adobe", publishedAt: "2026-11-10", collectedAt: "2026-11-17",
+    url: "https://news.adobe.com/news/2026/11/adobe-firefly-expands", thumbnail: "https://news.adobe.com/news/2026/11/media_1be983d78cf64b14905c05379432c9a51f63f93b1.jpg?width=1200&format=pjpg&optimize=medium",
+    summary: "Adobe가 벡터·래스터·모션·3D·인쇄를 한 파일에서 다루는 Firefly Design과 노드 기반 반복 제작 흐름을 만드는 Firefly Graph를 베타로 공개하고, 디자인 시스템을 유지하며 웹·앱 프로토타입을 만드는 Builder를 비공개 베타로 예고했습니다.", impact: "단일 이미지 생성에서 벗어나 브랜드 자산, 여러 매체, 반복 가능한 생성 단계와 클라이언트 검토를 하나의 제작 시스템으로 묶을 수 있어 캠페인 확장성과 AI 워크플로 거버넌스를 함께 판단해야 합니다.", tags: ["#AdobeFirefly", "#FireflyDesign", "#FireflyGraph", "#프로토타이핑"]
+  },
+  {
+    kind: "실무 사례", title: "Adobe Made to Create — 18개국 30여 명의 작업을 한 달 안에 조율한 제작 루프", category: "AI 디자인 뉴스", source: "Adobe", publishedAt: "2026-11-10", collectedAt: "2026-11-17",
+    url: "https://blog.adobe.com/en/publish/2026/11/10/behind-the-scenes-of-adobe-made-to-create-film", thumbnail: "https://blog.adobe.com/en/publish/2026/11/10/media_1a912174d7a3061915a24df8d4b23eb23ca431eea.png?width=1200&format=pjpg&optimize=medium",
+    summary: "Adobe와 72andSunny가 18개국 30여 명의 아티스트가 참여한 글로벌 브랜드 필름을 Firefly의 아이데이션·스토리보드, Frame.io의 버전 리뷰, Acrobat AI Assistant의 브리프 합성, Workfront의 자원 계획으로 한 달 안에 제작한 과정을 공개했습니다.", impact: "생성 AI를 최종 비주얼 대체가 아니라 브리프 정리·방향 탐색·정지 이미지의 모션화에 배치하고 중앙 자산·버전·승인 흐름과 결합한 사례라 대규모 브랜드 콘텐츠 제작의 역할 분담과 검수 체계를 설계할 때 참고할 수 있습니다.", tags: ["#브랜드캠페인", "#Firefly", "#FrameIO", "#콘텐츠워크플로"]
+  },
+  {
+    kind: "실무 사례", title: "Amplitude Wave — 세션 리플레이에서 UI 개선·A/B 테스트까지 1~2일", category: "UI·UX 뉴스", source: "OpenAI", publishedAt: "2026-11-12", collectedAt: "2026-11-17",
+    url: "https://openai.com/business/customer-stories/amplitude/", thumbnail: "https://images.ctfassets.net/kftzwdyauwt9/2BBTZsqFM3kvrX5Aq081SW/4636fa59c50e62172558d21effcaeca4/amplitude-wave-art-card.png?w=3840&q=90&fm=webp",
+    summary: "Amplitude의 제품 에이전트 Wave가 세션 리플레이 100건과 분석·피드백·코드를 조사해 홈페이지 추천 카드 개인화를 제안하고 목업·기술 계획·인수 기준을 만든 뒤 A/B 테스트에서 카드 기반 메시지 전송을 160% 높였습니다.", impact: "UX 리서치의 관찰 근거를 UI 제안, 와이어프레임 평가, 구현 기준, 실험 결과로 연결하면서도 새 기능은 사람이 검토하는 구조를 보여줘 AI가 제안한 제품 개선의 증거 수준과 승인 경계를 설계하는 기준이 됩니다.", tags: ["#Amplitude", "#제품분석", "#UX리서치", "#AB테스트"]
+  },
+  {
+    kind: "리서치·업계 동향", title: "Adobe MAX Sneaks 2026 — 생성 결과보다 직접 조작 가능한 AI 편집 연구", category: "AI 디자인 뉴스", source: "Adobe", publishedAt: "2026-11-11", collectedAt: "2026-11-17",
+    url: "https://blog.adobe.com/en/publish/2026/11/11/adobe-max-sneaks", thumbnail: "https://blog.adobe.com/en/publish/2026/11/11/media_190dc6538435b84ba934466b8eac6942f9e97a33d.png?width=1200&format=pjpg&optimize=medium",
+    summary: "Adobe가 이미지의 형태·색·조명을 이해하는 Deep Brush, 한 장면을 탐색 가능한 공간으로 바꾸는 Sight Span, 제스처로 오브젝트를 조작하는 Hands On, 편집 동작을 네이티브 도구로 반복 적용하는 Rinse Repeat 등 10개 연구 프로토타입을 공개했습니다.", impact: "텍스트 프롬프트만으로 결과를 다시 만드는 대신 브러시·제스처·타이밍 신호와 편집 가능한 네이티브 레이어로 의도를 전달하는 흐름이 늘고 있어 AI 제작 도구를 평가할 때 직접 조작성과 후편집 가능성을 핵심 기준으로 볼 수 있습니다.", tags: ["#AdobeMAX", "#디자인리서치", "#직접조작", "#편집가능성"]
+  },
+  {
     kind: "새 기능", title: "Figma Motion — 물리 기반 스프링을 디자인 시스템 변수로", category: "피그마 뉴스", source: "Figma", publishedAt: "2026-11-10", collectedAt: "2026-11-16",
     url: "https://help.figma.com/hc/en-us/articles/41414048690839-Adjust-an-animation-s-easing", thumbnail: "https://help.figma.com/hc/article_attachments/44921175238295",
     summary: "Figma Motion이 질량·강성·감쇠를 조절하는 iOS·Android 물리 기반 스프링과 애니메이션 스타일 미리보기, Lottie 내보내기 미리보기를 추가했습니다.", impact: "모션 값을 감각적인 일회성 조정이 아니라 플랫폼별 물리 파라미터와 재사용 변수로 관리해 제품 전반의 움직임을 디자인 시스템 자산으로 표준화할 수 있습니다.", tags: ["#FigmaMotion", "#모션디자인", "#디자인시스템", "#Lottie"]
