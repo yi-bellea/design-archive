@@ -1,6 +1,16 @@
 // 뉴스 전용 규칙은 NEWS.md를 따릅니다. 최신 항목이 위에 오도록 발행일순 렌더링됩니다.
 let designNews = [
   {
+    kind: "실무 사례", title: "1Password — 20년치 디자인 규칙을 코드 프로토타입의 AI 가드레일로", category: "피그마 뉴스", source: "Figma", publishedAt: "2026-11-16", collectedAt: "2026-11-18",
+    url: "https://www.figma.com/blog/1password-figma-make/", thumbnail: "https://cdn.sanity.io/images/599r6htc/regionalized/6b15ec50dc702fef03a4af49a333d03abd8c70f5-464x476.png?auto=format&fit=max&h=476&q=75&w=464",
+    summary: "1Password가 콘텐츠 원칙·컴포넌트·타이포 근거를 코드 템플릿과 Code Connect에 연결한 내부 프로토타입 플레이그라운드를 구축했습니다. Figma Make가 30개 수정 중 약 80%를 처리했고, 디자이너 100%와 엔지니어·PM이 실제 코드형 프로토타입에 합류했습니다.", impact: "AI 프로토타이핑의 품질을 프롬프트 숙련도가 아니라 제품별 실제 데이터·디자인 시스템 변수·인증 UX 원칙·사람 검수로 제어하는 구조라, 보안 제품의 고충실도 사용자 테스트와 팀 핸드오프에 적용할 수 있습니다.", tags: ["#1Password", "#FigmaMake", "#CodeConnect", "#디자인시스템"]
+  },
+  {
+    kind: "새 기능", title: "Figma 3D Transform — 편집 가능한 레이어를 3축·깊이·원근으로 직접 조정", category: "피그마 뉴스", source: "Figma", publishedAt: "2026-11-12", collectedAt: "2026-11-18",
+    url: "https://help.figma.com/hc/en-us/articles/44568893374999-Create-3D-effects-in-Figma-Design", thumbnail: "https://help.figma.com/hc/article_attachments/44957118157591",
+    summary: "Figma가 벡터·이미지·프레임·컴포넌트·텍스트를 X·Y·Z축으로 회전하고 깊이와 원근을 조절하는 3D Transform을 전 플랜에 추가했습니다. 원본 레이어와 텍스트는 편집 가능한 상태로 유지되며 Motion·CSS·MCP 전달에 연결됩니다.", impact: "목업과 카드 플립, 공간형 UI를 별도 3D 도구에서 평면화하지 않고 디자인 시스템 컴포넌트로 유지할 수 있어, 시각 탐색과 실제 CSS 구현 사이의 속성 손실을 줄일 수 있습니다.", tags: ["#Figma", "#3DTransform", "#원근", "#디자인투코드"]
+  },
+  {
     kind: "새 기능", title: "Photoshop 28.0 — 조명을 다시 설계하고 생성 편집 강도를 슬라이더로", category: "AI 디자인 뉴스", source: "Adobe", publishedAt: "2026-11-10", collectedAt: "2026-11-17",
     url: "https://helpx.adobe.com/photoshop/desktop/whats-new/whats-new-in-adobe-photoshop-on-desktop.html", thumbnail: "https://helpx-prod.scene7.com/is/image/HelpxProdLoc/whats-new-relight-ps-desktop?$png$&jpegSize=200&wid=1200",
     summary: "Photoshop 28.0이 최대 세 개의 광원을 비파괴 레이어로 추가·조절하는 Relight, 생성 결과의 효과 강도를 슬라이더로 다듬는 Generative Restyle, 전후 비교와 주변 흔적까지 지우는 Remove 도구를 공개했습니다.", impact: "제품 사진과 캠페인 비주얼에서 재촬영이나 전체 재생성 대신 빛·스타일 강도·반사와 그림자를 레이어 단위로 수정할 수 있어 아트디렉션 피드백을 더 작고 되돌릴 수 있는 편집 단위로 운영할 수 있습니다.", tags: ["#Photoshop", "#Relight", "#생성편집", "#비파괴워크플로"]
