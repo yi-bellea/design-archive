@@ -1,6 +1,16 @@
 // 뉴스 전용 규칙은 NEWS.md를 따릅니다. 최신 항목이 위에 오도록 발행일순 렌더링됩니다.
 let designNews = [
   {
+    kind: "새 기능", title: "Figma AI 이미지 다중 생성 — 한 프롬프트로 모델·결과를 나란히 비교", category: "피그마 뉴스", source: "Figma", publishedAt: "2026-11-18", collectedAt: "2026-11-19",
+    url: "https://help.figma.com/hc/en-us/articles/24004542669463-Generate-and-edit-images-with-Figma-AI", thumbnail: "https://help.figma.com/hc/article_attachments/36912269499671",
+    summary: "Figma가 Make image와 Edit image에서 하나의 모델로 2·4·6개 이미지를 동시 생성하거나, 최대 세 개 모델에 같은 프롬프트를 보내 각 모델의 결과를 한 번에 비교하는 기능을 추가했습니다.", impact: "아트 디렉션 탐색에서 프롬프트를 반복해 바꾸기보다 같은 조건의 다중 안과 모델별 해석을 동일 캔버스에서 비교할 수 있어, 브랜드 비주얼의 선택 근거와 탐색 속도를 함께 개선할 수 있습니다.", tags: ["#FigmaAI", "#이미지생성", "#모델비교", "#아트디렉션"]
+  },
+  {
+    kind: "새 기능", title: "Figma OAuth·MCP 허용 목록 — 에이전트 접속을 조직 단위로 승인", category: "피그마 뉴스", source: "Figma", publishedAt: "2026-11-17", collectedAt: "2026-11-19",
+    url: "https://help.figma.com/hc/en-us/articles/44716871463319-Manage-OAuth-apps-and-MCP-clients-for-your-organization", thumbnail: "https://help.figma.com/hc/article_attachments/44800167121943",
+    summary: "Figma가 Organization·Enterprise 관리자가 Cursor와 Claude Code 같은 MCP 클라이언트를 포함한 OAuth 앱의 접속을 허용 목록으로 관리하고, 요청한 권한 범위를 검토·승인·철회하는 Extensions 관리 흐름을 추가했습니다.", impact: "디자인 파일과 컴포넌트를 읽는 AI 에이전트를 팀에 도입할 때 도구별 허용 여부와 읽기·쓰기 권한을 조직 정책으로 통제할 수 있어, 디자인 시스템 자산의 보안과 AI 작업 거버넌스를 구체적으로 설계할 수 있습니다.", tags: ["#FigmaMCP", "#OAuth", "#AI거버넌스", "#디자인시스템"]
+  },
+  {
     kind: "실무 사례", title: "1Password — 20년치 디자인 규칙을 코드 프로토타입의 AI 가드레일로", category: "피그마 뉴스", source: "Figma", publishedAt: "2026-11-16", collectedAt: "2026-11-18",
     url: "https://www.figma.com/blog/1password-figma-make/", thumbnail: "https://cdn.sanity.io/images/599r6htc/regionalized/6b15ec50dc702fef03a4af49a333d03abd8c70f5-464x476.png?auto=format&fit=max&h=476&q=75&w=464",
     summary: "1Password가 콘텐츠 원칙·컴포넌트·타이포 근거를 코드 템플릿과 Code Connect에 연결한 내부 프로토타입 플레이그라운드를 구축했습니다. Figma Make가 30개 수정 중 약 80%를 처리했고, 디자이너 100%와 엔지니어·PM이 실제 코드형 프로토타입에 합류했습니다.", impact: "AI 프로토타이핑의 품질을 프롬프트 숙련도가 아니라 제품별 실제 데이터·디자인 시스템 변수·인증 UX 원칙·사람 검수로 제어하는 구조라, 보안 제품의 고충실도 사용자 테스트와 팀 핸드오프에 적용할 수 있습니다.", tags: ["#1Password", "#FigmaMake", "#CodeConnect", "#디자인시스템"]
