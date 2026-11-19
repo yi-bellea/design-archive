@@ -1,6 +1,16 @@
 // 뉴스 전용 규칙은 NEWS.md를 따릅니다. 최신 항목이 위에 오도록 발행일순 렌더링됩니다.
 let designNews = [
   {
+    kind: "새 기능", title: "Canva AI Controls — 생성 기능과 AI 콘텐츠 노출을 사용자가 분리 제어", category: "AI 디자인 뉴스", source: "Canva", publishedAt: "2026-11-19", collectedAt: "2026-11-20",
+    url: "https://www.canva.com/newsroom/news/ai-controls-canva/", thumbnail: "https://content-management-files.canva.com/fbe5cbd3-16ba-4555-9cdc-f93c8ff96490/BRCA26057_AI_Off_Switch_Newsroom_Banner.png",
+    summary: "Canva가 Free·Pro 사용자에게 생성형 AI 기능 전체를 켜거나 끄는 설정과, 라이브러리 검색·추천에서 AI 생성 콘텐츠 비중을 줄이는 설정을 추가했습니다. 배경 제거·Magic Grab 같은 기존 콘텐츠 보조 편집은 생성 AI를 꺼도 계속 사용할 수 있습니다.", impact: "팀의 생성 도입 여부를 하나의 찬반 선택으로 다루지 않고, 생성과 보조 편집을 분리해 작업 규칙을 정할 수 있습니다. 브랜드·콘텐츠 운영에서는 AI 사용 고지, 라이브러리 소싱 기준, 최종 시각물의 사람 검수를 별도 체크포인트로 두는 기준이 됩니다.", tags: ["#Canva", "#AI거버넌스", "#콘텐츠소싱", "#디자인운영"]
+  },
+  {
+    kind: "리서치·업계 동향", title: "Canva 2027 디자인 트렌드 — 생성의 평준화에 맞선 물성·개성 신호", category: "디자인 일반", source: "Canva", publishedAt: "2026-11-18", collectedAt: "2026-11-20",
+    url: "https://www.canva.com/newsroom/news/canva-2027-design-trends/", thumbnail: "https://content-management-files.canva.com/66308a25-c19a-4aa5-93db-96d66e59ec34/BRCA26044_Newsroom_Article_1_Banner_2880x880.png",
+    summary: "Canva가 수백만 건의 검색·템플릿·요소 사용 데이터를 바탕으로 Archive Era, Codebreaking, Slow Burn, Rebel by Design, Wonderstruck의 다섯 2027 디자인 경향과 각 실행용 디자인 키트를 공개했습니다. ‘whimsy’ 검색은 720%, ‘vibe coding’은 334%, ‘junk journal’은 249% 증가했다고 밝혔습니다.", impact: "브랜드와 콘텐츠의 시각 방향을 정할 때 AI 생성물의 매끈한 균질성 대신 기록성·제작 흔적·개인적 관점·코드를 재료로 쓰는 표현을 가설로 둘 수 있습니다. 다만 트렌드를 그대로 복제하지 말고 타깃·접근성·브랜드 자산과의 적합성을 사람이 검토한 뒤 무드보드와 컴포넌트 실험으로 검증해야 합니다.", tags: ["#디자인트렌드", "#브랜드전략", "#콘텐츠디자인", "#AI시대의디자인"]
+  },
+  {
     kind: "새 기능", title: "Figma AI 이미지 다중 생성 — 한 프롬프트로 모델·결과를 나란히 비교", category: "피그마 뉴스", source: "Figma", publishedAt: "2026-11-18", collectedAt: "2026-11-19",
     url: "https://help.figma.com/hc/en-us/articles/24004542669463-Generate-and-edit-images-with-Figma-AI", thumbnail: "https://help.figma.com/hc/article_attachments/36912269499671",
     summary: "Figma가 Make image와 Edit image에서 하나의 모델로 2·4·6개 이미지를 동시 생성하거나, 최대 세 개 모델에 같은 프롬프트를 보내 각 모델의 결과를 한 번에 비교하는 기능을 추가했습니다.", impact: "아트 디렉션 탐색에서 프롬프트를 반복해 바꾸기보다 같은 조건의 다중 안과 모델별 해석을 동일 캔버스에서 비교할 수 있어, 브랜드 비주얼의 선택 근거와 탐색 속도를 함께 개선할 수 있습니다.", tags: ["#FigmaAI", "#이미지생성", "#모델비교", "#아트디렉션"]
