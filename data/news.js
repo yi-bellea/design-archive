@@ -11,6 +11,26 @@ let designNews = [
     summary: "Figma가 Organization·Enterprise 관리자가 Cursor와 Claude Code 같은 MCP 클라이언트를 포함한 OAuth 앱의 접속을 허용 목록으로 관리하고, 요청한 권한 범위를 검토·승인·철회하는 Extensions 관리 흐름을 추가했습니다.", impact: "디자인 파일과 컴포넌트를 읽는 AI 에이전트를 팀에 도입할 때 도구별 허용 여부와 읽기·쓰기 권한을 조직 정책으로 통제할 수 있어, 디자인 시스템 자산의 보안과 AI 작업 거버넌스를 구체적으로 설계할 수 있습니다.", tags: ["#FigmaMCP", "#OAuth", "#AI거버넌스", "#디자인시스템"]
   },
   {
+    kind: "새 기능", title: "Claude Code Frontend Design — 전형적인 AI UI를 피하는 공식 디자인 스킬", category: "AI 디자인 뉴스", source: "Anthropic GitHub", publishedAt: "2026-10-26", collectedAt: "2026-11-19",
+    url: "https://github.com/anthropics/claude-code/blob/main/plugins/frontend-design/README.md", thumbnail: "https://opengraph.githubassets.com/1/anthropics/claude-code",
+    summary: "Anthropic의 Claude Code 공식 frontend-design 플러그인은 제작 물성과 사용자를 먼저 정의한 뒤 의도적인 타이포그래피·팔레트·레이아웃·모션을 선택하고, 반응형·키보드 포커스·reduced motion과 스크린샷 자가 비평까지 수행하도록 안내합니다.", impact: "랜딩 페이지는 주제의 세계관과 히어로를, 제품 UI는 상태·빈 화면·오류 카피를 포함해 요청하고 결과 스크린샷을 다시 비평하게 하면, 생성 코드의 시각적 평준화를 줄이고 접근성·콘텐츠 완성도를 함께 검수할 수 있습니다.", tags: ["#ClaudeCode", "#FrontendDesign", "#AgentSkill", "#UI자가비평"]
+  },
+  {
+    kind: "제품 소식", title: "Anthropic Design Plugin — 비평·디자인 시스템·UX 카피를 묶은 오픈소스", category: "AI 디자인 뉴스", source: "Anthropic GitHub", publishedAt: "2026-09-21", collectedAt: "2026-11-19",
+    url: "https://github.com/anthropics/knowledge-work-plugins/blob/main/design/README.md", thumbnail: "https://opengraph.githubassets.com/1/anthropics/knowledge-work-plugins",
+    summary: "Anthropic의 Apache-2.0 knowledge-work-plugins 저장소가 디자인 비평, 디자인 시스템 감사, UX 카피, 개발 핸드오프, WCAG 2.1 AA 접근성 검사, 사용자 리서치 합성을 하나의 design 플러그인 워크플로로 공개했습니다.", impact: "Figma 링크나 스크린샷을 `/critique`로 비평한 뒤 `/design-system audit`, `/ux-copy`, `/handoff`, `/accessibility`를 같은 자료에 연속 적용하면, 화면 품질·토큰·상태·카피·개발 사양을 하나의 검수 루프로 관리할 수 있습니다.", tags: ["#ClaudeDesign", "#디자인비평", "#UXWriting", "#오픈소스"]
+  },
+  {
+    kind: "제품 소식", title: "Anthropic Agent Skills 저장소 — 디자인·문서·MCP 스킬의 공식 오픈소스 카탈로그", category: "AI 디자인 뉴스", source: "Anthropic GitHub", publishedAt: "2026-09-03", collectedAt: "2026-11-19",
+    url: "https://github.com/anthropics/skills", thumbnail: "https://opengraph.githubassets.com/1/anthropics/skills",
+    summary: "Anthropic이 Apache-2.0 Agent Skills 저장소에 frontend-design, canvas-design, brand-guidelines, theme-factory, skill-creator, MCP builder, 웹앱 테스팅과 PDF·Word·PowerPoint·Excel 스킬, SKILL.md 템플릿과 표준 사양을 공개했습니다.", impact: "팀의 반복 업무를 바로 새로 쓰기보다 유사한 공식 스킬의 SKILL.md·scripts·references 구조를 복제해 브랜드 규칙과 검수 절차만 바꾸면, Claude Code·Claude.ai·API에서 같은 제작 방식을 버전 관리하기 쉽습니다.", tags: ["#AgentSkills", "#SKILLmd", "#디자인자동화", "#Apache2"]
+  },
+  {
+    kind: "리서치·업계 동향", title: "Agent Skills의 AAIF 기부 — Claude에서 시작한 스킬을 벤더 중립 표준으로", category: "AI 디자인 뉴스", source: "Anthropic", publishedAt: "2026-10-22", collectedAt: "2026-11-19",
+    url: "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation", thumbnail: "https://assets.claude.com/6d4a0d28992ade92d6fa63646fd9c9d318245c6c.jpg",
+    summary: "Anthropic이 SKILL.md와 스크립트·참고 자료로 에이전트의 절차 지식을 패키징하는 Agent Skills 표준을 Linux Foundation 산하 Agentic AI Foundation에 기부했으며, 버전 릴리스·제안 절차·보안 지침을 다음 로드맵으로 제시했습니다.", impact: "디자인 비평·브랜드 가이드·핸드오프 절차를 특정 AI 제품의 프롬프트로만 보관하지 않고 독립된 스킬 패키지로 관리하면, Claude·Codex·Cursor 등 서로 다른 에이전트에서 팀의 제작 기준을 재사용할 수 있습니다.", tags: ["#AgentSkills", "#AAIF", "#오픈표준", "#에이전트상호운용"]
+  },
+  {
     kind: "실무 사례", title: "1Password — 20년치 디자인 규칙을 코드 프로토타입의 AI 가드레일로", category: "피그마 뉴스", source: "Figma", publishedAt: "2026-11-16", collectedAt: "2026-11-18",
     url: "https://www.figma.com/blog/1password-figma-make/", thumbnail: "https://cdn.sanity.io/images/599r6htc/regionalized/6b15ec50dc702fef03a4af49a333d03abd8c70f5-464x476.png?auto=format&fit=max&h=476&q=75&w=464",
     summary: "1Password가 콘텐츠 원칙·컴포넌트·타이포 근거를 코드 템플릿과 Code Connect에 연결한 내부 프로토타입 플레이그라운드를 구축했습니다. Figma Make가 30개 수정 중 약 80%를 처리했고, 디자이너 100%와 엔지니어·PM이 실제 코드형 프로토타입에 합류했습니다.", impact: "AI 프로토타이핑의 품질을 프롬프트 숙련도가 아니라 제품별 실제 데이터·디자인 시스템 변수·인증 UX 원칙·사람 검수로 제어하는 구조라, 보안 제품의 고충실도 사용자 테스트와 팀 핸드오프에 적용할 수 있습니다.", tags: ["#1Password", "#FigmaMake", "#CodeConnect", "#디자인시스템"]
