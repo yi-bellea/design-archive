@@ -1,6 +1,16 @@
 // 뉴스 전용 규칙은 NEWS.md를 따릅니다. 최신 항목이 위에 오도록 발행일순 렌더링됩니다.
 let designNews = [
   {
+    kind: "새 기능", title: "Figma Agent in Dev Mode — 디자인 비교에서 코드·에셋 전달까지", category: "피그마 뉴스", source: "Figma", publishedAt: "2026-11-19", collectedAt: "2026-11-21",
+    url: "https://help.figma.com/hc/en-us/articles/37998629035799-Work-with-the-Figma-agent-in-design-files", thumbnail: "https://help.figma.com/hc/article_attachments/44029810967447",
+    summary: "Figma가 Dev Mode에서 에이전트가 디자인을 읽고 설명하며, 버전별 시각 차이를 비교하고 CSS·React 코드 조각과 일괄 에셋 다운로드 링크를 제공하도록 확장했습니다.", impact: "핸드오프는 에이전트에게 컴포넌트 상태·변수·상호작용을 먼저 요약하게 한 뒤 버전 차이→구현 가이드→에셋 목록 순으로 진행하면 효율적입니다. 다만 생성된 코드는 실제 디자인 시스템 토큰·반응형 규칙·접근성과 맞는지 디자이너와 엔지니어가 다시 검수해야 합니다.", tags: ["#FigmaAgent", "#DevMode", "#디자인핸드오프", "#버전비교"]
+  },
+  {
+    kind: "제품 소식", title: "Project Genie 4 — 프롬프트로 실시간 편집하는 인터랙티브 월드", category: "AI 디자인 뉴스", source: "Google DeepMind", publishedAt: "2026-11-18", collectedAt: "2026-11-21",
+    url: "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/", thumbnail: "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/resized_ProjectGenie_Thumbnail_v02.width-1300.png",
+    summary: "Google이 AI Ultra 구독자에게 Genie 4와 Project Genie 에이전트를 공개했습니다. 사용자는 자연어로 월드의 날씨·캐릭터·행동을 탐색 중에 바꾸고, 실시간 네이티브 오디오와 갤러리 공유·리믹스를 이용할 수 있습니다.", impact: "공간형 UI나 인터랙티브 브랜드 경험은 시작 이미지→세계관·시각 규칙→이벤트·전환→오디오 피드백 순으로 프로토타입할 수 있습니다. 사람은 물리 일관성, 멀미·가독성, 캐릭터·브랜드 일관성, 생성 오디오의 타이밍과 안전성을 세션 단위로 다시 테스트해야 합니다.", tags: ["#ProjectGenie", "#Genie4", "#인터랙티브월드", "#공간UX"]
+  },
+  {
     kind: "새 기능", title: "Canva AI Controls — 생성 기능과 AI 콘텐츠 노출을 사용자가 분리 제어", category: "AI 디자인 뉴스", source: "Canva", publishedAt: "2026-11-19", collectedAt: "2026-11-20",
     url: "https://www.canva.com/newsroom/news/ai-controls-canva/", thumbnail: "https://content-management-files.canva.com/fbe5cbd3-16ba-4555-9cdc-f93c8ff96490/BRCA26057_AI_Off_Switch_Newsroom_Banner.png",
     summary: "Canva가 Free·Pro 사용자에게 생성형 AI 기능 전체를 켜거나 끄는 설정과, 라이브러리 검색·추천에서 AI 생성 콘텐츠 비중을 줄이는 설정을 추가했습니다. 배경 제거·Magic Grab 같은 기존 콘텐츠 보조 편집은 생성 AI를 꺼도 계속 사용할 수 있습니다.", impact: "팀의 생성 도입 여부를 하나의 찬반 선택으로 다루지 않고, 생성과 보조 편집을 분리해 작업 규칙을 정할 수 있습니다. 브랜드·콘텐츠 운영에서는 AI 사용 고지, 라이브러리 소싱 기준, 최종 시각물의 사람 검수를 별도 체크포인트로 두는 기준이 됩니다.", tags: ["#Canva", "#AI거버넌스", "#콘텐츠소싱", "#디자인운영"]
