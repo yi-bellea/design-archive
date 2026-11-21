@@ -1,6 +1,11 @@
 // 뉴스 전용 규칙은 NEWS.md를 따릅니다. 최신 항목이 위에 오도록 발행일순 렌더링됩니다.
 let designNews = [
   {
+    kind: "실무 사례", title: "Figma Specs·Agent — 흩어진 제품 맥락을 검수 가능한 구현 계획으로", category: "피그마 뉴스", source: "Figma", publishedAt: "2026-11-20", collectedAt: "2026-11-22",
+    url: "https://www.figma.com/blog/workflow-lab-specs-and-the-figma-agent/", thumbnail: "https://cdn.sanity.io/images/599r6htc/regionalized/cd07278409c7dde6161b239b5719090d5e74ae22-512x512.jpg?auto=format&fit=max&h=512&q=75&w=512",
+    summary: "Figma가 Specs와 Agent를 이용해 PRD·Hex 사용 데이터·FigJam 흐름도·주석이 달린 디자인·인터랙티브 코드 레이어·디자인 시스템 지침을 하나의 구현 계획으로 합치는 샘플 워크플로를 공개했습니다. 검토된 계획 링크는 MCP를 통해 Codex가 관련 화면과 컴포넌트 맥락까지 함께 읽을 수 있습니다.", impact: "제품 계획은 데이터 근거→기술·디자인 맥락 수집→`build-implementation-plan` 스킬 실행→사람의 코멘트·수정→코딩 에이전트 전달 순으로 운영할 수 있습니다. 디자이너와 엔지니어는 생성 계획의 컴포넌트 상태, 현지화·통화, 접근성, 테스트·관측성, 단계적 출시 조건을 직접 확인하고 승인해야 합니다.", tags: ["#FigmaSpecs", "#FigmaAgent", "#디자인시스템", "#제품핸드오프"]
+  },
+  {
     kind: "새 기능", title: "Figma Agent in Dev Mode — 디자인 비교에서 코드·에셋 전달까지", category: "피그마 뉴스", source: "Figma", publishedAt: "2026-11-19", collectedAt: "2026-11-21",
     url: "https://help.figma.com/hc/en-us/articles/37998629035799-Work-with-the-Figma-agent-in-design-files", thumbnail: "https://help.figma.com/hc/article_attachments/44029810967447",
     summary: "Figma가 Dev Mode에서 에이전트가 디자인을 읽고 설명하며, 버전별 시각 차이를 비교하고 CSS·React 코드 조각과 일괄 에셋 다운로드 링크를 제공하도록 확장했습니다.", impact: "핸드오프는 에이전트에게 컴포넌트 상태·변수·상호작용을 먼저 요약하게 한 뒤 버전 차이→구현 가이드→에셋 목록 순으로 진행하면 효율적입니다. 다만 생성된 코드는 실제 디자인 시스템 토큰·반응형 규칙·접근성과 맞는지 디자이너와 엔지니어가 다시 검수해야 합니다.", tags: ["#FigmaAgent", "#DevMode", "#디자인핸드오프", "#버전비교"]
