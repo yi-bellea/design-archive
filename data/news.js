@@ -6,6 +6,16 @@ let designNews = [
     summary: "Figma가 Specs와 Agent를 이용해 PRD·Hex 사용 데이터·FigJam 흐름도·주석이 달린 디자인·인터랙티브 코드 레이어·디자인 시스템 지침을 하나의 구현 계획으로 합치는 샘플 워크플로를 공개했습니다. 검토된 계획 링크는 MCP를 통해 Codex가 관련 화면과 컴포넌트 맥락까지 함께 읽을 수 있습니다.", impact: "제품 계획은 데이터 근거→기술·디자인 맥락 수집→`build-implementation-plan` 스킬 실행→사람의 코멘트·수정→코딩 에이전트 전달 순으로 운영할 수 있습니다. 디자이너와 엔지니어는 생성 계획의 컴포넌트 상태, 현지화·통화, 접근성, 테스트·관측성, 단계적 출시 조건을 직접 확인하고 승인해야 합니다.", tags: ["#FigmaSpecs", "#FigmaAgent", "#디자인시스템", "#제품핸드오프"]
   },
   {
+    kind: "새 기능", title: "Adobe Express AI Assistant — 대화형 생성·브랜드 검사·레이어 내보내기", category: "AI 디자인 뉴스", source: "Adobe", publishedAt: "2026-11-19", collectedAt: "2026-11-23",
+    url: "https://helpx.adobe.com/express/web/whats-new/release-notes.html", thumbnail: "https://helpx-prod.scene7.com/is/image/HelpxProd/whats-new-generate-design-express?$png$=&jpegSize=200&wid=1201",
+    summary: "Adobe Express가 대화형 AI Assistant로 디자인 생성·레이아웃 수정·이미지 리스타일을 지원하고, PDF·이미지에서 색상·서체·로고·브랜드 보이스를 추출해 브랜드를 만들며 로고·색·서체 준수 여부를 검사하는 기능을 11월 릴리스에 추가했습니다. 결과는 레이어가 유지된 PSD와 IDML로 내보낼 수 있습니다.", impact: "브랜드 콘텐츠는 원본 자산에서 규칙 추출→AI Assistant로 초안 생성·수정→Brand check로 로고·색·서체 검증→Photoshop·InDesign에서 정밀 편집 순으로 운영할 수 있습니다. 사람은 추출된 브랜드 보이스, 레이아웃 계층, 접근성, 라이선스와 최종 산출물의 레이어 구조를 직접 확인해야 합니다.", tags: ["#AdobeExpress", "#AIAssistant", "#브랜드검사", "#편집워크플로"]
+  },
+  {
+    kind: "새 기능", title: "Figma Agent in FigJam — 워크숍에서 여정맵·스펙·다음 행동까지", category: "피그마 뉴스", source: "Figma", publishedAt: "2026-11-19", collectedAt: "2026-11-23",
+    url: "https://help.figma.com/hc/en-us/articles/42091138637079-Work-with-the-Figma-agent-in-FigJam-boards", thumbnail: "https://help.figma.com/hc/article_attachments/45098153060759",
+    summary: "Figma가 FigJam에서 에이전트를 기본 AI 작업 방식으로 확장해 보드·다이어그램 생성, 스티키·댓글 요약, 리서치 기반 여정맵, 편집 가능한 스펙과 다음 행동 작성을 지원합니다. 파일·이미지·스킬과 20개 이상의 검증된 커넥터를 맥락으로 붙이고 여러 채팅을 동시에 실행할 수 있습니다.", impact: "UX 워크숍은 원자료·정량 데이터 연결→에이전트로 군집화·여정맵·결정사항 초안 생성→팀 코멘트→스펙 전환 순으로 진행할 수 있습니다. 사람은 누락된 리서치 근거와 드롭오프 해석, 표·차트 정확성, 위젯·벡터·커스텀 폰트 제한, 결정과 담당자 배정을 다시 검수해야 합니다.", tags: ["#FigJam", "#FigmaAgent", "#UX리서치", "#워크숍"]
+  },
+  {
     kind: "새 기능", title: "Figma Agent in Dev Mode — 디자인 비교에서 코드·에셋 전달까지", category: "피그마 뉴스", source: "Figma", publishedAt: "2026-11-19", collectedAt: "2026-11-21",
     url: "https://help.figma.com/hc/en-us/articles/37998629035799-Work-with-the-Figma-agent-in-design-files", thumbnail: "https://help.figma.com/hc/article_attachments/44029810967447",
     summary: "Figma가 Dev Mode에서 에이전트가 디자인을 읽고 설명하며, 버전별 시각 차이를 비교하고 CSS·React 코드 조각과 일괄 에셋 다운로드 링크를 제공하도록 확장했습니다.", impact: "핸드오프는 에이전트에게 컴포넌트 상태·변수·상호작용을 먼저 요약하게 한 뒤 버전 차이→구현 가이드→에셋 목록 순으로 진행하면 효율적입니다. 다만 생성된 코드는 실제 디자인 시스템 토큰·반응형 규칙·접근성과 맞는지 디자이너와 엔지니어가 다시 검수해야 합니다.", tags: ["#FigmaAgent", "#DevMode", "#디자인핸드오프", "#버전비교"]
