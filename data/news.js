@@ -1,6 +1,16 @@
 // 뉴스 전용 규칙은 NEWS.md를 따릅니다. 최신 항목이 위에 오도록 발행일순 렌더링됩니다.
 let designNews = [
   {
+    kind: "새 기능", title: "Figma Agent in Slides — 소스·브랜드 템플릿에서 검수 가능한 덱으로", category: "피그마 뉴스", source: "Figma", publishedAt: "2026-11-23", collectedAt: "2026-11-24",
+    url: "https://help.figma.com/hc/en-us/articles/42091139542679-Work-with-the-Figma-agent-in-slide-decks", thumbnail: "https://help.figma.com/hc/article_attachments/45138823162391",
+    summary: "Figma가 Slides 에이전트를 유료 플랜에 정식 공개해 문서·데이터·공개 URL·Figma 파일을 바탕으로 발표 개요를 만들고, 사용자가 개요를 승인한 뒤 덱을 생성·편집하도록 했습니다. 브랜드 템플릿, 발표자 노트, 다중 채팅, 선택 영역 수정과 MCP 커넥터·스킬도 지원합니다.", impact: "발표 제작은 원자료·청중·목적 지정→에이전트의 핵심 주장·개요 검토→브랜드 템플릿 적용→슬라이드별 카피·레이아웃 수정→발표자 노트·출처 검수 순으로 운영할 수 있습니다. 사람은 템플릿 재현도, 차트 값·비율, 복잡한 다이어그램 연결, 출처 정확성, 접근성과 발표 흐름을 최종 확인해야 합니다.", tags: ["#FigmaSlides", "#FigmaAgent", "#프레젠테이션", "#브랜드템플릿"]
+  },
+  {
+    kind: "실무 사례", title: "Codex Ultrafast — 큰 생성보다 짧은 UI 피드백 루프로 몰입 유지", category: "AI 디자인 뉴스", source: "OpenAI Developers", publishedAt: "2026-11-20", collectedAt: "2026-11-24",
+    url: "https://developers.openai.com/blog/how-i-stay-in-the-flow-with-ultrafast", thumbnail: "https://developers.openai.com/images/blog/how-i-stay-in-the-flow-with-ultrafast/cover.webp",
+    summary: "OpenAI 개발자가 Codex Ultrafast로 UI를 한 번에 완성시키는 대신 작은 시각 수정 요청을 수초 단위로 반복한 작업법을 공개했습니다. 인앱 브라우저·핫 리로드·화면 주석·음성 입력을 함께 쓰고, 슬라이드와 문서도 한 화면·한 문단씩 검토하며 수정합니다.", impact: "UI 제작은 러프 화면→인앱 미리보기→주석이 붙은 단일 수정→사람의 즉시 시각 판단→다음 수정→마지막 테스트 순으로 나누는 편이 적합합니다. 디자이너는 색·간격·모션의 의도, 반응형·접근성, 디자인 시스템 일치 여부를 매 반복에서 확인하고, 빌드·테스트·이미지 생성처럼 도구 대기가 큰 작업은 Ultrafast의 체감 이득과 분리해 판단해야 합니다.", tags: ["#Codex", "#Ultrafast", "#UI반복", "#디자인검수"]
+  },
+  {
     kind: "실무 사례", title: "Figma Specs·Agent — 흩어진 제품 맥락을 검수 가능한 구현 계획으로", category: "피그마 뉴스", source: "Figma", publishedAt: "2026-11-20", collectedAt: "2026-11-22",
     url: "https://www.figma.com/blog/workflow-lab-specs-and-the-figma-agent/", thumbnail: "https://cdn.sanity.io/images/599r6htc/regionalized/cd07278409c7dde6161b239b5719090d5e74ae22-512x512.jpg?auto=format&fit=max&h=512&q=75&w=512",
     summary: "Figma가 Specs와 Agent를 이용해 PRD·Hex 사용 데이터·FigJam 흐름도·주석이 달린 디자인·인터랙티브 코드 레이어·디자인 시스템 지침을 하나의 구현 계획으로 합치는 샘플 워크플로를 공개했습니다. 검토된 계획 링크는 MCP를 통해 Codex가 관련 화면과 컴포넌트 맥락까지 함께 읽을 수 있습니다.", impact: "제품 계획은 데이터 근거→기술·디자인 맥락 수집→`build-implementation-plan` 스킬 실행→사람의 코멘트·수정→코딩 에이전트 전달 순으로 운영할 수 있습니다. 디자이너와 엔지니어는 생성 계획의 컴포넌트 상태, 현지화·통화, 접근성, 테스트·관측성, 단계적 출시 조건을 직접 확인하고 승인해야 합니다.", tags: ["#FigmaSpecs", "#FigmaAgent", "#디자인시스템", "#제품핸드오프"]
