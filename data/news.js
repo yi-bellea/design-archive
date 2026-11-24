@@ -1,6 +1,21 @@
 // 뉴스 전용 규칙은 NEWS.md를 따릅니다. 최신 항목이 위에 오도록 발행일순 렌더링됩니다.
 let designNews = [
   {
+    kind: "새 기능", title: "Framer Automations — 사이트 이벤트·커넥터를 에이전트 실행으로 연결", category: "AI 디자인 뉴스", source: "Framer", publishedAt: "2026-11-24", collectedAt: "2026-11-25",
+    url: "https://www.framer.com/academy/lessons/automations-connectors-slack", thumbnail: "https://framerusercontent.com/images/RctzP34lp9oB9qXjjjI6qh9jcHc.jpg?height=2160&width=3840",
+    summary: "Framer가 저장한 프롬프트를 일정·게시·배포·브랜치 병합·댓글·A/B 테스트·폼 제출로 실행하는 Automations와 Notion·Slack 커넥터, Slack에서 분석 조회와 CMS 수정을 요청하는 Framer Agent 흐름을 공개했습니다.", impact: "반복 작업은 Agent 채팅에서 먼저 검증한 뒤 정확한 페이지·CMS·기간·출력 형식으로 범위를 좁혀 자동화하고, 필요한 Edit·Publish·Code 권한만 켜는 순서가 안전합니다. 디자이너는 첫 수동 실행과 Runs 기록을 확인하고, Slack에서 받은 CMS·레이아웃 변경은 브랜치 미리보기와 캔버스에서 사람이 검수한 뒤 병합·게시해야 합니다.", tags: ["#Framer", "#자동화", "#커넥터", "#웹운영"]
+  },
+  {
+    kind: "새 기능", title: "Canva MCP 영상 생성 — 채팅의 브리프를 편집 가능한 브랜드 영상으로", category: "AI 디자인 뉴스", source: "Canva", publishedAt: "2026-11-23", collectedAt: "2026-11-25",
+    url: "https://www.canva.com/newsroom/news/canva-mcp-video-generation/", thumbnail: "https://content-management-files.canva.com/04d1eed5-8056-4943-891c-c0b742ac5e45/Canva_VideoGen_Newsroom_Banner_2880x880_A_centre-safe.png",
+    summary: "Canva가 Claude·ChatGPT의 MCP 연결에서 브랜드 자산과 브리프로 Seedance 2.5 기반 영상을 만들고, 생성 전 타임라인 계획 승인·제품 참조 고정·Magic Layers·배경 제거·사이드 패널 편집을 거쳐 Canva 영상 편집기로 넘기는 기능을 공개했습니다.", impact: "콘텐츠 제작은 채널·길이·제품 기준이 담긴 브리프→브랜드 자산 첨부→샷별 시간 계획 승인→생성→자막·레이아웃·레이어 편집 순으로 구성할 수 있습니다. 사람은 생성 전에 메시지와 샷 구성을 승인하고, 이후 제품 형태·라벨·브랜드 톤·접근 가능한 자막·사용 권리를 검수해야 합니다.", tags: ["#CanvaMCP", "#영상생성", "#MagicLayers", "#브랜드콘텐츠"]
+  },
+  {
+    kind: "제품 소식", title: "Canva MCP 정식 공개 — 디자인·이미지·영상 도구를 에이전트 인프라로", category: "AI 디자인 뉴스", source: "Canva", publishedAt: "2026-11-23", collectedAt: "2026-11-25",
+    url: "https://www.canva.com/newsroom/news/canva-mcp-update/", thumbnail: "https://content-management-files.canva.com/2ba5ed0b-fb50-4b28-b485-2104e0f2db67/Canva_MCP_Newsroom_Banner_2880x880_A_centre-safe.png",
+    summary: "Canva가 대기 명단 없이 MCP를 정식 공개하고 디자인·이미지·영상 생성, 배경 제거, Magic Layers, 리사이즈·내보내기를 에이전트에 제공했습니다. 예측 가능한 REST API, 반복 작업용 CLI, 서비스 계정과 Canva Craft API·MCP 접근도 함께 발표했습니다.", impact: "탐색형 제작은 Developer Portal에서 직접 URL을 등록한 MCP로, 고정된 입력·출력은 REST API로, 대량 Autofill은 CLI·서비스 계정으로 분리하는 기준이 생겼습니다. 디자인 시스템·브랜드 팀은 편집 가능한 결과와 템플릿·브랜드 키트 연결을 확인하고, 인증 범위·사용량·비용·현지화·최종 내보내기를 사람이 승인하는 거버넌스를 함께 설계해야 합니다.", tags: ["#CanvaMCP", "#디자인API", "#CanvaCraft", "#에이전트워크플로"]
+  },
+  {
     kind: "새 기능", title: "Figma Agent in Slides — 소스·브랜드 템플릿에서 검수 가능한 덱으로", category: "피그마 뉴스", source: "Figma", publishedAt: "2026-11-23", collectedAt: "2026-11-24",
     url: "https://help.figma.com/hc/en-us/articles/42091139542679-Work-with-the-Figma-agent-in-slide-decks", thumbnail: "https://help.figma.com/hc/article_attachments/45138823162391",
     summary: "Figma가 Slides 에이전트를 유료 플랜에 정식 공개해 문서·데이터·공개 URL·Figma 파일을 바탕으로 발표 개요를 만들고, 사용자가 개요를 승인한 뒤 덱을 생성·편집하도록 했습니다. 브랜드 템플릿, 발표자 노트, 다중 채팅, 선택 영역 수정과 MCP 커넥터·스킬도 지원합니다.", impact: "발표 제작은 원자료·청중·목적 지정→에이전트의 핵심 주장·개요 검토→브랜드 템플릿 적용→슬라이드별 카피·레이아웃 수정→발표자 노트·출처 검수 순으로 운영할 수 있습니다. 사람은 템플릿 재현도, 차트 값·비율, 복잡한 다이어그램 연결, 출처 정확성, 접근성과 발표 흐름을 최종 확인해야 합니다.", tags: ["#FigmaSlides", "#FigmaAgent", "#프레젠테이션", "#브랜드템플릿"]
