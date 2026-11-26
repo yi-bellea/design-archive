@@ -1,6 +1,11 @@
 // 뉴스 전용 규칙은 NEWS.md를 따릅니다. 최신 항목이 위에 오도록 발행일순 렌더링됩니다.
 let designNews = [
   {
+    kind: "새 기능", title: "Claude Code MCP 스킬 — 서버가 제공한 디자인 절차를 / 메뉴에서 직접 호출", category: "AI 디자인 뉴스", source: "Anthropic GitHub", publishedAt: "2026-11-25", collectedAt: "2026-11-27",
+    url: "https://github.com/anthropics/claude-code/releases/tag/v2.1.332", thumbnail: "https://opengraph.githubassets.com/1/anthropics/claude-code",
+    summary: "Anthropic 공식 Claude Code v2.1.332가 연결된 MCP 서버가 제공하는 스킬을 베타로 불러와 `/` 메뉴에 `server:skill` 형식으로 표시하고, 스킬 로딩 중 인라인 셸 명령을 `PreSkillShellCommand` 훅으로 거부할 수 있게 했습니다. Claude Code는 상업 약관 적용 소프트웨어이며 저장소 코드는 재배포형 오픈소스 라이선스가 아닙니다.", impact: "Claude Code를 최신 버전으로 갱신한 뒤 신뢰할 MCP 서버 연결→`server:skill`의 출처·유지보수·권한 확인→frontend-design→critique→accessibility→handoff 순으로 호출하면 서버가 제공한 지침·리소스를 입력으로 코드·디자인 산출물을 만들 수 있습니다. 베타 기능이고 연결된 서버에만 의존하므로 사람은 서버 신뢰도, 셸 명령, 디자인 시스템 일치, 시각 품질·접근성·개발 사양을 단계마다 승인해야 합니다.", tags: ["#ClaudeCode", "#MCP", "#AgentSkills", "#디자인워크플로"]
+  },
+  {
     kind: "새 기능", title: "Framer Automations — 사이트 이벤트·커넥터를 에이전트 실행으로 연결", category: "AI 디자인 뉴스", source: "Framer", publishedAt: "2026-11-24", collectedAt: "2026-11-25",
     url: "https://www.framer.com/academy/lessons/automations-connectors-slack", thumbnail: "https://framerusercontent.com/images/RctzP34lp9oB9qXjjjI6qh9jcHc.jpg?height=2160&width=3840",
     summary: "Framer가 저장한 프롬프트를 일정·게시·배포·브랜치 병합·댓글·A/B 테스트·폼 제출로 실행하는 Automations와 Notion·Slack 커넥터, Slack에서 분석 조회와 CMS 수정을 요청하는 Framer Agent 흐름을 공개했습니다.", impact: "반복 작업은 Agent 채팅에서 먼저 검증한 뒤 정확한 페이지·CMS·기간·출력 형식으로 범위를 좁혀 자동화하고, 필요한 Edit·Publish·Code 권한만 켜는 순서가 안전합니다. 디자이너는 첫 수동 실행과 Runs 기록을 확인하고, Slack에서 받은 CMS·레이아웃 변경은 브랜치 미리보기와 캔버스에서 사람이 검수한 뒤 병합·게시해야 합니다.", tags: ["#Framer", "#자동화", "#커넥터", "#웹운영"]
